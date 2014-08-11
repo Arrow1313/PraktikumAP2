@@ -103,14 +103,44 @@ und einer Halbleiterdiode.
 	\text{R}_{i}= \frac{\text{U}_0}					{\text{I}_k}
 	\end{align}
 	U$_0$ die EMK, I$_k$ der Klemmenstrom.
-	Mit dem Fehler:
+	
+	Fehler:
 	\begin{align}
 	\sigma_{\text{R}_i} = 							\sqrt{\left(\frac{1}{\text{I}_k}\sigma_{\text{U}_0}\right)^2
 	+\left(\frac{\text{U}_0}{(\text{I}_k)^2}\sigma_{\text{I}_k}\right)^2}
 	\end{align}	 
 	\item
+	%Gesamtwiderstand muss ausgerechnet werden
 	\item
+	Die beiden Formeln für den Widerstand 			R$_x$ sind:
+	\begin{align}
+	\text{R}_x=\frac{\text{U}}						{\text{I}}-\text{R}_{i_I}
+	\end{align}
+	\begin{align}
+	\text{R}_x= 										\frac{\text{U}\text{R}_{i_U}}					{\text{I}\text{R}_{i_U}-\text{U}}
+	\end{align}
+	U die am Digitalmultimeter gemessene 			Spannung, I der am Drehspulinstrument 			gemessene Strom, R$_{i_I}$ der 					Innenwiderstand des Drehspulinstruments 			und R$_{i_U}$ die am Digitalmultimeter 			gemessene Spannung.
+	
+	Fehler:
+	\begin{align}
+	\sigma_{\text{R}_x}=
+	\sqrt{\left(\frac{1}								{\text{I}}\sigma_U\right)^2+
+	\left(\frac{U}{I^2}\sigma_I\right)^2+
+	\left(\sigma_{\text{R}_{i_I}}\right)^2}
+	\end{align}		
+	\begin{align}
+	\sigma_{\text{R}_x}=
+	\sqrt{\left(\frac{\text{I}
+	\text{R}_{i_U}^2}								{(\text{I}\text{R}_{i_U}-
+	\text{U})^2}\sigma_U\right)^2+
+	\left(\frac{\text{U}\text{R}_{i_U}^2}			{(\text{I}\text{R}_{i_U}-
+	\text{U})^2}\sigma_I\right)^2+
+	\left(\frac{\text{U}}							{(\text{I}\text{R}_{i_U}-
+	\text{U})^2}\sigma_{
+	\text{R}_{i_U}}\right)^2}
+	\end{align}	 
 	\item
+	%Während des versuches Dokumentieren
 	\item
 	\item
 	
