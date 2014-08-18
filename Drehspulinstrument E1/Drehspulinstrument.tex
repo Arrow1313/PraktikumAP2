@@ -139,6 +139,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	Um den Innenwiderstand R$_i$ des 				Drehspulmeßgerätes zu bestimmen benutzen 	wir die Formel:
 	\begin{align}
 	\text{R}_{i}= \frac{\text{U}_0}					{\text{I}_k}
+	\label{eqn:aufgabe_1}
 	\end{align}
 	U$_0$ die Maximalspannung, I$_k$ der maximale Klemmenstrom.
 	
@@ -154,6 +155,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\begin{align}
 	\text{R}_{i_n} = \frac{1}{\frac{1}{\text{R}_i}+\frac{\text{R}_1(\text{R}_2+
 	\text{R}_3)}{\text{R}_1+\text{R}_2+\text{R}_3}}	
+	\label{eqn:aufgabe_2}
 	\end{align}
 	Da hier aber gilt: R$_1$ = R$_2$ = R$_3$
 	und diese mit dem selben Fehler behaftet sind vereinfacht sich die Formel zu:
@@ -163,15 +165,18 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	mit einem Fehler von:
 	\begin{align}
 	\sigma_{\text{R}_{i_n}} = \sqrt{\left(\frac{2}{3\left(\frac{\text{R}}{\text{R}_i}+\frac{2}{3}\right)^2}\right)^2}\sigma_R
+	\label{eqn:aufgabe_2_sigma}
 	\end{align}
 	%Gesamtwiderstand muss ausgerechnet werden
 	\item
 	Die beiden Formeln für den Widerstand 			R$_x$ sind:
 	\begin{align}
 	\text{R}_x=\frac{\text{U}}						{\text{I}}-\text{R}_{i_I}
+	\label{eqn:aufgabe_3_schaltung_2}
 	\end{align}
 	\begin{align}
 	\text{R}_x= 										\frac{\text{U}\text{R}_{i_U}}					{\text{I}\text{R}_{i_U}-\text{U}}
+	\label{eqn:aufgabe_3_schaltung_1}
 	\end{align}
 	U die am Digitalmultimeter gemessene 			Spannung, I der am Drehspulinstrument 			gemessene Strom, R$_{i_I}$ der 					Innenwiderstand des Drehspulinstruments 			und R$_{i_U}$ die am Digitalmultimeter 			gemessene Spannung.
 	
@@ -181,6 +186,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\sqrt{\left(\frac{1}								{\text{I}}\sigma_U\right)^2+
 	\left(\frac{U}{I^2}\sigma_I\right)^2+
 	\left(\sigma_{\text{R}_{i_I}}\right)^2}
+	\label{eqn:aufgabe_3_schaltung_2_sigma}
 	\end{align}		
 	\begin{align}
 	\sigma_{\text{R}_x}=
@@ -192,15 +198,18 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\left(\frac{\text{U}}							{(\text{I}\text{R}_{i_U}-
 	\text{U})^2}\sigma_{
 	\text{R}_{i_U}}\right)^2}
+	\label{eqn:aufgabe_3_schaltung_1_sigma}
 	\end{align}	 
 	\item
 	Der Innenwiderstand R$_{i_V}$ des Spannungsmeßgerätes berechnet sich nach der Formel:
 	\begin{align}
 	\text{R}_{i_V} = \text{R}_4 + \text{R}_5 + \text{R}_i 
+	\label{eqn:aufgabe_4}
 	\end{align}
 	Mit dem Fehler:
 	\begin{align}
 	\sigma_{\text{R}_{i_V}} = \sqrt{\sigma_{\text{R}_4}^2 + \sigma_{\text{R}_5}^2}
+	\label{eqn:aufgabe_4_sigma}
 	\end{align}
 	R$_i$ wurde als Fehlerfrei angenommen.
 	%Während des Versuchs Dokumentieren
@@ -214,6 +223,61 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 
 \section{Auswertung}
 
+\subsection{Aufgabe 1}
+Nach Gleichung \ref{eqn:aufgabe_1} ergibt sich ein Wert von 200 Ohm.
+
+\subsection{Aufgabe 2}
+Der neue Innenwiederstand ergibt sich nach Gleichung \ref{eqn:aufgabe_2} und der Fehler nach Gleichung \ref{eqn:aufgabe_2_sigma}, dabei kommt ein Wert von $0.\overline{6}(\pm 0,2)$ Ohm raus.
+
+\subsection{Aufgabe 3}
+Der Widerstand sollte mit zwei verschiden Schaltungen bestimmt werden (siehe Abbilung \ref{fig:abb_versuch_3}).
+Bei der ersten Schaltung ergab sich der Wert nach Gleichung \ref{eqn:aufgabe_3_schaltung_1} und der Fehler nach Gleichung \ref{eqn:aufgabe_3_schaltung_1_sigma}, dabei kam ein Wert von $5,02	(\pm 0,18)$ Ohm heraus.
+Verwendet man nur das Ohmschegesetz, dann erhält man einen Wert von 5,01 Ohm heraus.
+
+Bei der zweiten Schaltung ergab sich der Wert nach Gleichung \ref{eqn:aufgabe_3_schaltung_2} und der Fehler nach Gleichung \ref{eqn:aufgabe_3_schaltung_2_sigma}, dabei kam ein Wert von $5,07 (\pm 0,20)$ Ohm heraus.
+Verwendet man nur das Ohmschegesetz, dann erhält man einen Wert von 5,74 Ohm.
+
+\subsection{Aufgabe 4}
+Das Drehspulinstument soll nun zu einem Spannungsmessgerät mit Vollausschlag bei 1,76 Volt umgebaut werden, der neu Innenwiederstand ergibt sich nach Gleichung \ref{eqn:aufgabe_4} und der Fehler nach Gleichung \ref{eqn:aufgabe_4_sigma}.
+Dabei ergibt sich ein Wert von $1760 (\pm 30)$ Ohm.
+Bei für die Spannung der Batterie ergab sich mit den Drehspulinstrument ein Wert von $0,704 (\pm 0,352)$ Volt, mit dem DMM $1,523 (\pm 0,006)$ Volt, bei einem Innenwiederstand von 10000 Ohm und beim Unigor ergab sich eine Spannung von $1,51 (\pm 0,02)$ Volt, bei einem Innenwiederstand von 316000 Ohm.
+Der Unterschied kommt von den unterschiedlich großen Innenwiederständen.
+
+\subsection{Aufgabe 5}
+Bei der Messung der Spannung in Abhängigkeit der Stromstärke ergab sich folgender Plot:
+
+\begin{figure}[htbp] 
+	 \centering
+	   \includegraphics[scale = 1]{Wiederstand.pdf}
+	 	\caption[Graphische Darstellung der Messung zur bestimmung des Innerenwiederstandes der Batterie]{Graphische Darstellung der Messung zur bestimmung des Innerenwiederstandes der Batterie}
+	 \label{fig:aufgabe_5_plot}
+\end{figure}
+
+Dabei ergab sich eine Steigung von $-1940 (\pm 24)$ Ohm als ist der Innenwiederstand $1940 (\pm 24)$ Ohm.
+Für den Y-Achsenabschnitt ergab sich ein Wert von $1,49	(\pm 0,09)$ Volt, was U$_0$ entspricht.
+
+\newpage
+
+\subsection{Aufgabe 6}
+Im ersten Teil sollte die Kennlinie einer Glühlampe ausgemessen werden dabei ergab sich folgender Plot:
+
+\begin{figure}[htbp] 
+	 \centering
+	   \includegraphics[scale = 1]{Gluebirne.pdf}
+	 	\caption[Graphische Darstellung der Messung für die bestimmung der Kennline der Gluebirne]{Graphische Darstellung der Messung für die bestimmung der Kennline der Gluebirne}
+	 \label{fig:aufgabe_6_a_plot}
+\end{figure}
+
+Für die Diode ergab sich der folgende Plot:
+
+\begin{figure}[htbp] 
+	 \centering
+	   \includegraphics[scale = 1]{Diode.pdf}
+	 	\caption[Graphische Darstellung der Messung für die bestimmung der Kennline der Diode]{Graphische Darstellung der Messung für die bestimmung der Kennline der Diode}
+	 \label{fig:aufgabe_6_a_plot}
+\end{figure}
+
+\newpage
 
 \section{Diskussion}
 
