@@ -90,6 +90,8 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\item
 	Bauen Sie nun mit dem Drehspulinstrument 	und den Widerständen $\text{R}_1$ bis 			$\text{R}_5$ ein Spannungsmeßgerät mit 			Vollausschlag bei 1,75 V. Wie groß ist 			sein Innenwiderstand? Verwenden Sie 				dieses Gerät zur Messung der Spannung 			der Batterie. Messen Sie dieselbe 				Spannung mit dem DMM und dem 					Vielzweckmeßgerät (Unigor). Den 					Innenwiderstand des Unigors entnehmen 			Sie einer Tabelle auf der Rückseite des 			Meßgerätes. Erklären Sie die 					unterschiedlichen Meßergebnisse.
 	(Die Batterie sollte nur durch 					kurzen Druck auf den Taster belastet 			werden. Warum?)
+	
+	% bitte Foto einfügen
 	\item
 	Messen Sie den Innenwiderstand der 				Batterie. Er wird größer sein als bei 			einer normalen Batterie, da ein 					”zusätzlicher Innenwiderstand“ eingebaut 	ist. Verwenden Sie zur Spannungsmessung 			das Vielzweckinstrument (Unigor). Messen 	Sie U und I und tragen Sie U gegen I 			auf. Bestimmen Sie $\text{U}_0$ und 				$\text{R}_i$.
 	
@@ -138,15 +140,30 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\begin{align}
 	\text{R}_{i}= \frac{\text{U}_0}					{\text{I}_k}
 	\end{align}
-	U$_0$ die Maximalspannung, I$_k$ der Klemmenstrom.
+	U$_0$ die Maximalspannung, I$_k$ der maximale Klemmenstrom.
 	
 	Fehler:
 	\begin{align}
 	\sigma_{\text{R}_i} = 							\sqrt{\left(\frac{1}{\text{I}_k}\sigma_{\text{U}_0}\right)^2
 	+\left(\frac{\text{U}_0}{(\text{I}_k)^2}\sigma_{\text{I}_k}\right)^2}
-	\end{align}	 
-	\item
+	\end{align}
 	
+	Da wir keinen Fehler auf U$_0$ und I$_k$ angenommen haben wird diese Fehlerformel nicht verwendet. 
+	\item
+	Für den neuen Innenwiderstand R$_{i_n}$ gilt die Formel:
+	\begin{align}
+	\text{R}_{i_n} = \frac{1}{\frac{1}{\text{R}_i}+\frac{\text{R}_1(\text{R}_2+
+	\text{R}_3)}{\text{R}_1+\text{R}_2+\text{R}_3}}	
+	\end{align}
+	Da hier aber gilt: R$_1$ = R$_2$ = R$_3$
+	und diese mit dem selben Fehler behaftet sind vereinfacht sich die Formel zu:
+	\begin{align}
+	\text{R}_{i_n} = \frac{1}{\frac{1}{\text{R}_i}+\frac{2}{3\text{R}}}
+	\end{align}
+	mit einem Fehler von:
+	\begin{align}
+	\sigma_{\text{R}_{i_n}} = \frac{2}{3\left(\frac{\text{R}}{\text{R}_i}+\frac{2}{3}\right)^2}\sigma_R
+	\end{align}
 	%Gesamtwiderstand muss ausgerechnet werden
 	\item
 	Die beiden Formeln für den Widerstand 			R$_x$ sind:
