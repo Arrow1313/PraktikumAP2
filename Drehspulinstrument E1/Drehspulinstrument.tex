@@ -93,7 +93,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	
 	% bitte Foto einfügen
 	\item
-	Messen Sie den Innenwiderstand der 				Batterie. Er wird größer sein als bei 			einer normalen Batterie, da ein 					”zusätzlicher Innenwiderstand“ eingebaut 	ist. Verwenden Sie zur Spannungsmessung 			das Vielzweckinstrument (Unigor). Messen 	Sie U und I und tragen Sie U gegen I 			auf. Bestimmen Sie $\text{U}_0$ und 				$\text{R}_i$.
+	Messen Sie den Innenwiderstand der 				Batterie. Er wird größer sein als bei 			einer normalen Batterie, da ein 					”zusätzlicher Innenwiderstand“ eingebaut 	ist. Verwenden Sie zur Spannungsmessung 			das Vielzweckinstrument (Unigor). Messen 	Sie U und I und tragen Sie U gegen I 			auf. Bestimmen Sie die EMK $\text{U}_0$ und 		den Innenwiderstand $\text{R}_i$.
 	
 	\begin{figure}[htbp] 
 	  \centering
@@ -162,7 +162,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\end{align}
 	mit einem Fehler von:
 	\begin{align}
-	\sigma_{\text{R}_{i_n}} = \frac{2}{3\left(\frac{\text{R}}{\text{R}_i}+\frac{2}{3}\right)^2}\sigma_R
+	\sigma_{\text{R}_{i_n}} = \sqrt{\left(\frac{2}{3\left(\frac{\text{R}}{\text{R}_i}+\frac{2}{3}\right)^2}\right)^2}\sigma_R
 	\end{align}
 	%Gesamtwiderstand muss ausgerechnet werden
 	\item
@@ -194,9 +194,16 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\text{R}_{i_U}}\right)^2}
 	\end{align}	 
 	\item
+	Der Innenwiderstand R$_{i_V}$ des Spannungsmeßgerätes berechnet sich nach der Formel:
+	\begin{align}
+	\text{R}_{i_V} = \text{R}_4 + \text{R}_5 + \text{R}_i 
+	\end{align}
+	Mit dem Fehler:
+	\begin{align}
+	\sigma_{\text{R}_{i_V}} = \sqrt{\sigma_{\text{R}_4}^2 + \sigma_{\text{R}_5}^2}
+	\end{align}
+	R$_i$ wurde als Fehlerfrei angenommen.
 	%Während des Versuchs Dokumentieren
-	\item
-	\item
 	
 \end{enumerate}
 
