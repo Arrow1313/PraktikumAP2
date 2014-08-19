@@ -43,13 +43,12 @@ zur Messung von Strömen und Spannungen verwendet werden.
 Die Elektromotorische Kraft (EMK) und der Innenwiderstand sind wichtige Kenngrößen einer Spannungsquelle.
 
 Im Rahmen dieses Versuchs sollen diese beiden Größen einer Batterie ausgemessen werden.
-Nichtlineare Widerstandselemente spielen eine wichtige Rolle auf dem Gebiet der Elek-
-tronik. Ausgemessen werden soll die Strom–Spannungs–Charakteristik einer Glühlampe
+Nichtlineare Widerstandselemente spielen eine wichtige Rolle auf dem Gebiet der Elektronik. Ausgemessen werden soll die Strom–Spannungs–Charakteristik einer Glühlampe
 und einer Halbleiterdiode.
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
-Der Versuchaufbau besteht aus einem Netzgerät, digitalen- und analogen Multimeter, sowie ein Versuchkasten, welcher mit fünf Wiederstängen, einer Diode, einer Lampe, einer Batterie und einem Drehspulinstument versehen ist. Die Komponenten haben alle vorgefertigte Kontakte zum verbinden.
+Der Versuchaufbau besteht aus einem Netzgerät, digitalem- und analogen Multimeter, sowie ein Versuchkasten, welcher mit fünf Wiederstängen, einer Diode, einer Lampe, einer Batterie und einem Drehspulinstument versehen ist. Die Komponenten haben alle vorgefertigte Kontakte zum verbinden.
 
 
 \begin{figure}[htbp] 
@@ -74,10 +73,11 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	zeigt Vollausschlag bei einem Strom von 			1 mA bzw. einer Spannung von 200 mV.
 	\item
 	Bauen Sie aus diesem Instrument mit 				Hilfe der Ihnen zur Verfügung stehenden 			Widerstände $\text{R}_1$ bis 					$\text{R}_5$ ein 								Strommeßgerät mit Vollausschlag bei 300 			mA. Wie groß ist sein Innenwiderstand?
+	\newpage
 	\begin{figure}[htbp] 
 	  \centering
 	    \includegraphics[scale = 0.1]{tafel_1.JPG}
-	  	\caption[Abbildung der Schaltung, der Wiederstände]{Abbildung der Schaltung, der Wiederstände}
+	  	\caption[Abbildung der Schaltung, der Wiederstände parallel zum Drehspulinstrument]{Abbildung der Schaltung, der Wiederstände}
 	  \label{fig:tafel_1}
 	\end{figure}
 		
@@ -170,7 +170,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\text{R}_3)}{\text{R}_1+\text{R}_2+\text{R}_3}}	
 	\label{eqn:aufgabe_2}
 	\end{align}
-	Da hier aber gilt: R$_1$ = R$_2$ = R$_3$
+	Da hier jedoch gilt: R$_1$ = R$_2$ = R$_3$
 	und diese mit dem selben Fehler behaftet sind vereinfacht sich die Formel zu:
 	\begin{align}
 	\text{R}_{i_n} = \frac{1}{\frac{1}{\text{R}_i}+\frac{2}{3\text{R}}}
@@ -191,7 +191,7 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 	\text{R}_x= 										\frac{\text{U}\text{R}_{i_U}}					{\text{I}\text{R}_{i_U}-\text{U}}
 	\label{eqn:aufgabe_3_schaltung_1}
 	\end{align}
-	U die am Digitalmultimeter gemessene 			Spannung, I der am Drehspulinstrument 			gemessene Strom, R$_{i_I}$ der 					Innenwiderstand des Drehspulinstruments 			und R$_{i_U}$ die am Digitalmultimeter 			gemessene Spannung.
+	U die am Digitalmultimeter gemessene 			Spannung, I der am Drehspulinstrument 			gemessene Strom, R$_{i_I}$ der 					Innenwiderstand des Drehspulinstruments 			und R$_{i_U}$ der Innenwiderstand des DMM.
 	
 	Fehler:
 	\begin{align}
@@ -234,11 +234,12 @@ Die Aufbauten der Aufgaben werden bei der jeweiligen Durchführung angegeben.
 
 \subsection{Grundwerte}
 \begin{table}[htbp]
-\caption{Werte der fünf Wiederstände}
+\caption{Werte der fünf Widerstände}
+\centering
 \begin{tabular}{|l|r|r|r|r|r|}
 \hline
  & \multicolumn{1}{l|}{DMM} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{Abgelesen} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
- & \multicolumn{1}{l|}{Wiederstand[Ohm]} & \multicolumn{1}{l|}{Fehler[Ohm]} & \multicolumn{1}{l|}{Wiederstand[Ohm]} & \multicolumn{1}{l|}{Fehler[Ohm]} & \multicolumn{1}{l|}{Gesamtfehler[Ohm]} \\ \hline
+ & \multicolumn{1}{l|}{Widerstand[Ohm]} & \multicolumn{1}{l|}{Fehler[Ohm]} & \multicolumn{1}{l|}{Widerstand[Ohm]} & \multicolumn{1}{l|}{Fehler[Ohm]} & \multicolumn{1}{l|}{Gesamtfehler[Ohm]} \\ \hline
 R\_1 & 1,3 & 0,05 & 1 & 0,1 & 0,15 \\ \hline
 R\_2 & 1,2 & 0,05 & 1 & 0,1 & 0,15 \\ \hline
 R\_3 & 1,2 & 0,05 & 1 & 0,1 & 0,15 \\ \hline
@@ -253,6 +254,7 @@ R\_5 & 1000 & 0,5 & 1000 & 10 & 10 \\ \hline
 \subsection{Aufgabe 1}
 \begin{table}[htbp]
 \caption{Werte aus der Aufgabenstellung zu Aufgabe 1}
+\centering
 \begin{tabular}{|l|l|}
 \hline
 Strom[A] & Spannung[V] \\ \hline
@@ -265,6 +267,7 @@ Strom[A] & Spannung[V] \\ \hline
 \subsection{Aufgabe 2}
 \begin{table}[htbp]
 \caption{Werte der Ströme in der zweiten Aufgabe}
+\centering
 \begin{tabular}{|l|r|}
 \hline
  & \multicolumn{1}{l|}{Strom[A]} \\ \hline
@@ -275,34 +278,38 @@ I\_2 & 0,299 \\ \hline
 \end{table}
 
 \begin{table}[htbp]
-\caption{Werte der Wiederstände in der zweiten Aufgabe}
+\caption{Werte der Widerstände in der zweiten Aufgabe}
+\centering
 \begin{tabular}{|l|r|r|}
 \hline
-Bezeichung & \multicolumn{1}{l|}{Wiederstände[Ohm]} & \multicolumn{1}{l|}{Fehler} \\ \hline
+Bezeichung & \multicolumn{1}{l|}{Widerstände[Ohm]} & \multicolumn{1}{l|}{Fehler} \\ \hline
 R\_i & 200 & 0 \\ \hline
-R\_m & 0,7 & 0 \\ \hline
-R\_i\_n & 076 & 0,1 \\ \hline
+R\_m & 0,67 & 0 \\ \hline
+R\_i\_n & 0,67 & 0,1 \\ \hline
 \end{tabular}
-\label{aufgabe_2_Wiederstände}
+\label{aufgabe_2_Widerstände}
 \end{table}
+R\_m ist leicht größer als R\_i und wird dazu parallel geschaltet.
 
 \newpage
 
 \subsection{Aufgabe 3}
 
 \begin{table}[htbp]
-\caption{Werte der Wiederstände in der dritten Aufgabe}
+\caption{Werte der Widerstände in der dritten Aufgabe}
+\centering
 \begin{tabular}{|l|r|}
 \hline
-Bezeichnung & \multicolumn{1}{l|}{Wiederstände[Ohm]} \\ \hline
+Bezeichnung & \multicolumn{1}{l|}{Widerstände[Ohm]} \\ \hline
 R\_i\_U & 10000 \\ \hline
 R\_i\_I & 0,7 \\ \hline
 \end{tabular}
-\label{aufgabe_3_Wiederstände}
+\label{aufgabe_3_Widerstände}
 \end{table}
 
 \begin{table}[htbp]
 \caption{Werte des ersten Aufbaus}
+\centering
 \begin{tabular}{|l|l|l|l|}
 \hline
 Aufbau 1 &  &  &  \\ \hline
@@ -317,6 +324,7 @@ R\_x & Fehler & R\_x & Fehler \\ \hline
 
 \begin{table}[htbp]
 \caption{Werte des zweiten Aufbaus}
+\centering
 \begin{tabular}{|l|l|l|l|}
 \hline
 Aufbau 2 &  &  &  \\ \hline
@@ -334,18 +342,20 @@ R\_x & Fehler & R\_x & Fehler \\ \hline
 \subsection{Aufgabe 4}
 
 \begin{table}[htbp]
-\caption{Werte der Wiederstände für Aufgabe 4}
+\caption{Werte der Widerstände für Aufgabe 4}
+\centering
 \begin{tabular}{|l|r|r|}
 \hline
-Bezeichnung & \multicolumn{1}{l|}{Wiederstände[Ohm]} & \multicolumn{1}{l|}{Fehler} \\ \hline
+Bezeichnung & \multicolumn{1}{l|}{Widerstände[Ohm]} & \multicolumn{1}{l|}{Fehler} \\ \hline
 R\_i & 200 & 0 \\ \hline
 R\_s (R4 und R5) & 1560 & 114 \\ \hline
 \end{tabular}
-\label{aufgabe_4_wiederstände}
+\label{aufgabe_4_widerstände}
 \end{table}
 
 \begin{table}[htbp]
-\caption{Werte für Strom, Spannung und den Wiederstand}
+\caption{Werte für Strom, Spannung und den Widerstand}
+\centering
 \begin{tabular}{|l|l|}
 \hline
 Strom[A] & Neue Spannung[V] \\ \hline
@@ -358,16 +368,17 @@ R\_i\_V & Fehler \\ \hline
 
 \begin{table}[htbp]
 \caption{Die gemessenen Werte}
+\centering
 \begin{tabular}{|l|l|l|}
 \hline
 Drehspulinstument &  &  \\ \hline
-Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
+Spannung[V] & Fehler & Innenwiderstand[Ohm] \\ \hline
 \multicolumn{1}{|r|}{0,7} & \multicolumn{1}{r|}{0,4} & \multicolumn{1}{r|}{1760} \\ \hline
 DMM &  &  \\ \hline
-Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
+Spannung[V] & Fehler & Innenwiderstand[Ohm] \\ \hline
 \multicolumn{1}{|r|}{1,523} & \multicolumn{1}{r|}{0,006} & \multicolumn{1}{r|}{10000} \\ \hline
 Unigor &  &  \\ \hline
-Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
+Spannung[V] & Fehler & Innenwiderstand[Ohm] \\ \hline
 \multicolumn{1}{|r|}{1,51} & \multicolumn{1}{r|}{0,02} & \multicolumn{1}{r|}{316000} \\ \hline
 \end{tabular}
 \label{aufgabe_4_messwerte}
@@ -379,6 +390,7 @@ Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
 
 \begin{table}[htbp]
 \caption{Die gemessenen Werte für Aufgabe 5}
+\centering
 \begin{tabular}{|r|r|r|r|}
 \hline
 \multicolumn{1}{|l|}{Strom[A]} & \multicolumn{1}{l|}{Fehler} & \multicolumn{1}{l|}{Spannung[V]} & \multicolumn{1}{l|}{Fehler} \\ \hline
@@ -397,7 +409,8 @@ Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
 
 \subsection{Aufgabe 6}
 \begin{table}[htbp]
-\caption{Die gemessenen Werte für die Gluebirne}
+\caption{Die gemessenen Werte für die Glühbirne}
+\centering
 \begin{tabular}{|r|r|r|r|}
 \hline
 \multicolumn{1}{|l|}{Strom[A]} & \multicolumn{1}{l|}{Fehler} & \multicolumn{1}{l|}{Spannung[V]} & \multicolumn{1}{l|}{Fehler} \\ \hline
@@ -421,6 +434,7 @@ Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
 
 \begin{table}[htbp]
 \caption{Die gemessenen Werte für die Diode}
+\centering
 \begin{tabular}{|r|r|r|r|}
 \hline
 \multicolumn{1}{|l|}{Strom[A]} & \multicolumn{1}{l|}{Fehler} & \multicolumn{1}{l|}{Spannung[V]} & \multicolumn{1}{l|}{Fehler} \\ \hline
@@ -448,33 +462,33 @@ Spannung[V] & Fehler & Innenwiederstand[Ohm] \\ \hline
 Nach Gleichung \ref{eqn:aufgabe_1} ergibt sich ein Wert von 200$\Omega$.
 
 \subsection{Aufgabe 2}
-Der neue Innenwiederstand ergibt sich nach Gleichung \ref{eqn:aufgabe_2} und der Fehler nach Gleichung \ref{eqn:aufgabe_2_sigma}, dabei kommt ein Wert von $0.\overline{6}(\pm 0,2)\Omega$ raus.
+Der neue Innenwiderstand ergibt sich nach Gleichung \ref{eqn:aufgabe_2} und der Fehler nach Gleichung \ref{eqn:aufgabe_2_sigma}, dabei kommt ein Wert von $0.\overline{6}(\pm 0,2)\Omega$ raus.
 
 \subsection{Aufgabe 3}
-Der Widerstand sollte mit zwei verschiden Schaltungen bestimmt werden (siehe Abbilung \ref{fig:abb_versuch_3}).
+Der Widerstand sollte mit zwei verschiedenen Schaltungen bestimmt werden (siehe Abbilung \ref{fig:abb_versuch_3}).
 Bei der ersten Schaltung ergab sich der Wert nach Gleichung \ref{eqn:aufgabe_3_schaltung_1} und der Fehler nach Gleichung \ref{eqn:aufgabe_3_schaltung_1_sigma}, dabei kam ein Wert von $5,02	(\pm 0,18)\Omega$ heraus.
-Verwendet man nur das Ohmschegesetz, dann erhält man einen Wert von 5,01$\Omega$ heraus.
+Verwendet man nur das Ohmsche Gesetz, dann erhält man einen Wert von 5,01$\Omega$.
 
-Bei der zweiten Schaltung ergab sich der Wert nach Gleichung \ref{eqn:aufgabe_3_schaltung_2} und der Fehler nach Gleichung \ref{eqn:aufgabe_3_schaltung_2_sigma}, dabei kam ein Wert von $5,07 (\pm 0,20)\Omega$ heraus.
-Verwendet man nur das Ohmschegesetz, dann erhält man einen Wert von 5,74$\Omega$.
+Bei der zweiten Schaltung ergab sich der Wert nach Gleichung \ref{eqn:aufgabe_3_schaltung_2} und der Fehler nach Gleichung \ref{eqn:aufgabe_3_schaltung_2_sigma}, dabei ergab sich ein Wert von $5,07 (\pm 0,20)\Omega$.
+Verwendet man das Ohmsche Gesetz, dann erhält man einen Wert von 5,74$\Omega$.
 
 \subsection{Aufgabe 4}
-Das Drehspulinstument soll nun zu einem Spannungsmessgerät mit Vollausschlag bei 1,76 Volt umgebaut werden, der neu Innenwiederstand ergibt sich nach Gleichung \ref{eqn:aufgabe_4} und der Fehler nach Gleichung \ref{eqn:aufgabe_4_sigma}.
+Das Drehspulinstument soll nun zu einem Spannungsmessgerät mit Vollausschlag bei 1,76 Volt umgebaut werden, der neue Innenwiederstand ergibt sich nach Gleichung \ref{eqn:aufgabe_4} und der Fehler nach Gleichung \ref{eqn:aufgabe_4_sigma}.
 Dabei ergibt sich ein Wert von $1760 (\pm 30)$ Ohm.
-Bei für die Spannung der Batterie ergab sich mit den Drehspulinstrument ein Wert von $0,704 (\pm 0,352)$ Volt, mit dem DMM $1,523 (\pm 0,006)$ Volt, bei einem Innenwiederstand von 10000$\Omega$ und beim Unigor ergab sich eine Spannung von $1,51 (\pm 0,02)$ Volt, bei einem Innenwiederstand von 316k$\Omega$.
-Der Unterschied kommt von den unterschiedlich großen Innenwiederständen.
+Für die Spannung der Batterie ergab sich mit dem Drehspulinstrument ein Wert von $0,704 (\pm 0,352)$ Volt, mit dem DMM $1,523 (\pm 0,006)$ Volt, bei einem Innenwiederstand von 10000$\Omega$ und mit dem Unigor ergab sich eine Spannung von $1,51 (\pm 0,02)$ Volt, bei einem Innenwiederstand von 316k$\Omega$.
+Der Unterschied entsteht durch die unterschiedlich großen Innenwiderständen.
 
 \subsection{Aufgabe 5}
 Bei der Messung der Spannung in Abhängigkeit der Stromstärke ergab sich folgender Plot:
 
 \begin{figure}[htbp] 
 	 \centering
-	   \includegraphics[scale = 1]{Wiederstand.pdf}
-	 	\caption[Graphische Darstellung der Messung zur bestimmung des Innerenwiederstandes der Batterie]{Graphische Darstellung der Messung zur bestimmung des Innerenwiederstandes der Batterie}
+	   \includegraphics[scale = 1]{Widerstand.pdf}
+	 	\caption[Graphische Darstellung der Messung zur Bestimmung des Innerenwiderstandes der Batterie]{Graphische Darstellung der Messung zur bestimmung des Innerenwiderstandes der Batterie}
 	 \label{fig:aufgabe_5_plot}
 \end{figure}
 
-Dabei ergab sich eine Steigung von $-1940 (\pm 24)\Omega$ als ist der Innenwiederstand $1940 (\pm 24)\Omega$.
+Dabei ergab sich eine Steigung von $-1940 (\pm 24)\Omega$, also ist der Innenwiderstand $1940 (\pm 24)\Omega$.
 Für den Y-Achsenabschnitt ergab sich ein Wert von $1,49	(\pm 0,09)$ Volt, was U$_0$ entspricht.
 
 \newpage
@@ -485,7 +499,7 @@ Im ersten Teil sollte die Kennlinie einer Glühlampe ausgemessen werden dabei er
 \begin{figure}[htbp] 
 	 \centering
 	   \includegraphics[scale = 1]{Gluebirne.pdf}
-	 	\caption[Graphische Darstellung der Messung für die bestimmung der Kennline der Gluebirne]{Graphische Darstellung der Messung für die bestimmung der Kennline der Gluebirne}
+	 	\caption[Graphische Darstellung der Messung für die bestimmung der Kennline der Glühbirne]{Graphische Darstellung der Messung für die bestimmung der Kennline der Glühbirne}
 	 \label{fig:aufgabe_6_a_plot}
 \end{figure}
 
@@ -494,7 +508,7 @@ Für die Diode ergab sich der folgende Plot:
 \begin{figure}[htbp] 
 	 \centering
 	   \includegraphics[scale = 1]{Diode.pdf}
-	 	\caption[Graphische Darstellung der Messung für die bestimmung der Kennline der Diode]{Graphische Darstellung der Messung für die bestimmung der Kennline der Diode}
+	 	\caption[Graphische Darstellung der Messung für die Bestimmung der Kennline der Diode]{Graphische Darstellung der Messung für die Bestimmung der Kennline der Diode}
 	 \label{fig:aufgabe_6_a_plot}
 \end{figure}
 
@@ -503,12 +517,12 @@ Für die Diode ergab sich der folgende Plot:
 \section{Diskussion}
 
 Die erste Aufgabe war sehr kurz, und da wir keine Fehlerangaben hatten, haben wir den Innenwiderstand unseres Drehspulinstruments als Fehlerlos angenommen.\\
-Beim zusammenschalten des erweiterten Drehspulinstruments fiel auf, dass die Widerstände R$_1$ bis R$_5$, welche wir mit dem DMM nachgemessen haben, ca. 0.25$\Omega$ größer waren als angegeben. Dies ist ein systematischer Fehler, der z.B. durch Verunreinigungen der Kabelanschlüsse verursacht wird. Aufgabe 2 war ebenfalls nach kurzer Zeit erledigt, da nur der neue Innenwiderstand zu bestimmen war.\\
-Unsere Messergebnisse in Aufgabe 3 liegen nach den beiden "genauen" Formeln für die verschiedenen aufbauten sehr nahe beieinander und lassen auf einen Widerstand von ca. 5$\Omega$ schließen. Die Berechnung des Widerstandes mit der Formel U = RI für den ersten Aufbau war ebenfalls sehr nahe an 5$\Omega$, dagegen beim zweiten Aufbau weit außerhalb der Fehlerbalken, was an dem Innenwiderstand des Strommessgerätes von $\frac{2}{3}\Omega$ liegt, den man zusätzlich misst.\\
-Für Aufgabe 4 musste das Drehspulinstrument in ein Spannungsmeßgerät umgebaut werden. Bei der Messung der Spannung der Batterie mit den verschiedenen Spannungsmessgeräten DMM, Unigor und dem umgebauten Drehspulinstrument fiel auf, dass das Drehspulinstrument weniger als die Hälfte der mit DMM und Unigor gemessenen Spannung anzeigte. Dieses Ergebnis veranschaulicht sehr gut, dass eine Batterie keine Ideale Spannungsquelle ist und man die EMK am besten mit hochohmigen Messgeräten misst oder an einer Regressionsgeraden abliest.\\
-In Aufgabe 5 sollten wir dann U gegen I autragen, sowie U$_0$ und R$_i$ daraus bestimmen. Es ergab sich eine etwas kleinere EMK als in Aufgabe 4, was an der Ungenauigkeit unserer Regressionsgeraden liegt, die hier nach der Methode der kleinsten Fehlerquadrate angepasst wurde.\\
+Beim zusammenschalten des erweiterten Drehspulinstruments fiel auf, dass die Widerstände R$_1$ bis R$_5$, welche wir mit dem DMM nachgemessen haben, ca. 0.25$\Omega$ größer waren als angegeben. Dies ist ein systematischer Fehler, der z.B. durch Verunreinigungen der Kabelanschlüsse verursacht wird. Aufgabe 2 war ebenfalls nach kurzer Zeit erledigt, da lediglich der neue Innenwiderstand zu bestimmen war.\\
+Unsere Messergebnisse in Aufgabe 3 liegen nach den beiden "genauen" Formeln für die verschiedenen aufbauten sehr nahe beieinander und lassen auf einen Widerstand von ca. 5$\Omega$ schließen. Die Berechnung des Widerstandes mit der Formel U = RI für den ersten Aufbau lag ebenfalls sehr nahe an 5$\Omega$, dagegen beim zweiten Aufbau weit außerhalb der Fehlerbalken, was an dem Innenwiderstand des Strommessgerätes von $\frac{2}{3}\Omega$ liegt, den man zusätzlich misst.\\
+Für Aufgabe 4 musste das Drehspulinstrument in ein Spannungsmessgerät umgebaut werden. Bei der Messung der Spannung der Batterie mit den verschiedenen Spannungsmessgeräten DMM, Unigor und dem umgebauten Drehspulinstrument fiel auf, dass das Drehspulinstrument weniger als die Hälfte der mit DMM und Unigor gemessenen Spannung anzeigte, wobei der Fehler der Messung mit dem Drehspulinstrument relativ groß war. Dieses Ergebnis veranschaulicht gut, dass eine Batterie keine Ideale Spannungsquelle ist und man die EMK am besten mit hochohmigen Messgeräten misst oder an Regressionsgeraden eines U-I Plots abliest.\\
+In Aufgabe 5 sollten wir mit regelbarem Widerstand U gegen I autragen, sowie U$_0$ und R$_i$ daraus bestimmen. Es ergab sich eine etwas kleinere EMK als in Aufgabe 4, was an der Ungenauigkeit unserer Regressionsgeraden liegt, die hier nach der Methode der kleinsten Fehlerquadrate angepasst wurde.\\
 Der Plot der Glühlampe in Aufgabe 6 ist nicht sehr aussagekräftig, da wir mit zu niedrigen Strömen gearbeitet haben, wodurch die Glühbirne nicht leuchtete. Also zeigte sie nur das Verhalten eines linearen Widerstandes.
-Am Plot der Diode kann man gut erkennen, dass der Widerstand ab einer Spannung von ca 0,8 V gegen null knovergiert. Genauere Angaben der Grenzspannung sind nicht möglich, da wir in diesem Bereich zu wenig Messwerte haben.\\
+Am Plot der Diode kann man gut erkennen, dass der Widerstand ab einer Spannung von ca 0,8 V gegen null konvergiert. Genauere Angaben der Grenzspannung sind nicht möglich, da wir in diesem Bereich zu wenig Messwerte haben.\\
 Abschließend lässt sich sagen, dass die Messungen bis auf den ersten Teil der 6. Aufgabe zufriedenstellend verlaufen sind.
 
  %Werte stimmen mit den Formeln überein/nicht überein
