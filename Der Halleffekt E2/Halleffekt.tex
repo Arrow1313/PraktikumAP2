@@ -43,7 +43,24 @@ Wheatstoneschen Brückenschaltung.
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
+Der Versuchsaufbau besteht haupsächlich aus zwei Komponenten, der Spule mit der Hallsonde und dem Steuerkasten.
+Der Schaltplan ist in Abbilung \ref{fig:aufbau} zu sehen.
 
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5]{kasten_und_spule.JPG}
+  	\caption[Foto der beiden Hauptbestandteile des Versuchs]{Foto der beiden Hauptbestandteile des Versuchs\footnotemark}
+  \label{fig:kasten_und_spule}
+\end{figure}
+\footnotetext{Graphik wurde am 19.08.2014 von der Seite: http://www.atlas.uni-wuppertal.de/~kind/apjpg/ap1e2a.JPG entnommen}
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5]{kasten.JPG}
+  	\caption[Foto des Schaltkastens]{Foto des Schaltkastens\footnotemark}
+  \label{fig:kasten}
+\end{figure}
+\footnotetext{Graphik wurde am 19.08.2014 von der Seite: http://www.atlas.uni-wuppertal.de/~kind/apjpg/ap1e2vkg.JPG entnommen}
 
 \section{Versuchsdurchführung}
 
@@ -52,7 +69,50 @@ Wheatstoneschen Brückenschaltung.
 
 \begin{enumerate}
 \item Schaltskizze \newline
-%Schaltskizze einfügen und beschriften
+
+\begin{figure}[htbp] 
+	  \centering
+	    \includegraphics[trim = 1mm 135mm 1mm 30mm, clip, scale = 1]{aufbau.pdf}
+	  	\caption[Schaltskizze des Versuchsaufbaus]{Schaltskizze des Versuchsaufbaus\footnotemark}
+	  \label{fig:aufbau}
+	\end{figure}
+	\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E2.pdf Seite 7 am 19.08.2014}
+
+\begin{itemize}
+\item 1,5V: Batterie
+
+\item S: Schalter für die Batterie
+
+\item P$_\text{M}$: Potentiometer zum Einstellen der maximalen Kompensationsspannung
+
+\item R$_\text{M}$: Wiederstand für die Strombegrenzung von P$_\text{M}$ und der Batterie
+
+\item U$_\text{KM}$: Bananenbuchse, zum messen der Kompensationsspannung
+
+\item P$_\text{K}$: Präzisionspotentiometer mit Skala
+
+\item A: Abgriff am Potentiometer P$_\text{K}$, der das Potentiometer an die Widerstände R$_\text{1}$ und $_\text{2}$ aufteilt
+
+\item I$_\text{0}$: Nullpunktgalvanometer. Mit Taster zum erhöhen der Empfindlichkeit um den Faktor 10. S schaltet den Messverstärker ein.
+
+\item B$_\text{UH}$: Anschlüsse für die Hallsondenspannung
+
+\item R$_\text{0}$: Bekannter Widerstand
+
+\item S$_\text{R}$: Schalter um den Widerstand R$_\text{0}$ in den Stromkreis einzufügen und die Wheatstonesche Brücke zu vervollständigen
+
+\item 12V: Buchsen für Spannungsquelle des Hallstroms
+
+\item P$_\text{H}$: Potentiometer zum einstellen des Hallstroms
+
+\item R$_\text{H}$: Vorwiderstand zur Begrenzung des Hallstroms
+
+\item I$_\text{H}$: Drehspulamperemeter zur Messung des maximalen Hallstroms
+
+\item B$_\text{IH}$: Anschlüsse für den Hallstrom
+
+\end{itemize}
+
 \item Vorversuche: \newline
 a) Schließen Sie die Spule an das Netzgerät an und stellen Sie einen Strom von 1A ein. Achten Sie auf die richtige Polarität des Magnetfeldes, damit es keine negativen Hallspannungen gibt (siehe b)).
 \newline
