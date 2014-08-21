@@ -278,17 +278,19 @@ e die Elementarladung, n die Anzahl der Ladungen pro Volumenelement, I$_H$ der H
 Die Hallspannung messen wir mithilfe einer Kompensationsschaltung nach folgender Formel:
 \begin{align}
 \text{U}_H = \text{U}_{KM} \frac{\text{R}_2}{\text{R}_1+\text{R}_2}
+\label{eqn:U_H}
 \end{align}
 Mit dem Fehler:
 \begin{align}
 \sigma_{\text{U}_H} = \sqrt{
 \left(\frac{\text{R}_2}{\text{R}_1+\text{R}_2}\sigma_{\text{U}_{KM}}\right)^2+
 \left(\text{U}_{KM}\sigma_{\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}\right)^2}
+\label{eqn:U_H_Fehler}
 \end{align}
 Das Verhältnis R$_2$ zu R$_1$ + R$_2$ wird am Potentiometer abgelesen.\\
 Die Magnetische Flussdichte wird nach Gleichung \ref{eqn:Aufgabe 3_TD_B-Feld_2} und dessen Fehler mit Gleichung \ref{eqn:Aufgabe 3_TD_B-Feld_2_Fehler} berechnet.
 \item
-Die Hallkonstante $\frac{1}{\text{ne}}$ berechnet sich nach Gleichung \ref{eqn:Hallspannung}:
+Die Hallkonstante $\frac{1}{\text{ne}}$ berechnen wir nach Gleichung \ref{eqn:Hallspannung}:
 \begin{align*}
 \frac{1}{ne} = \frac{\text{U}_H \text{d}}
 {\text{I}_H \text{B}}
@@ -321,7 +323,27 @@ Zu erwarten ist die Abhängigkeit von Hallspannung zu Hallstrom nach Gleichung \
 \end{enumerate}
 \item[4.]
 \begin{enumerate}
-\item[b)] Die Messerte für das B-Feld sollen mit der Formel
+\item
+Das B-Feld wird nach Gleichung \ref{eqn:Hallspannung} bestimmt:
+\begin{align*}
+ \text{B}= \frac{\text{U}_H \text{d}}{\frac{1}{ne} \text{I}_H}
+\end{align*}
+mit einem Fehler von:
+\begin{align}
+\sigma_{\text{B}} = 
+\sqrt{\left(\frac{\text{d}}
+{\text{I}_H \frac{1}{\text{ne}}}\sigma_{\text{U}_H}\right)^2+
+\left(\frac{\text{U}_H}
+{\text{I}_H \frac{1}{\text{ne}}}\sigma_{\text{d}}\right)^2+
+\left(\frac{\text{U}_H \text{d}}
+{\text{I}_H^2 \frac{1}{\text{ne}}}\sigma_{\text{I}_H}\right)^2+
+\left(\frac{\text{U}_H \text{d}}
+{\text{I}_H \frac{1}{\text{ne}}^2}\sigma_{\frac{1}{\text{ne}}}\right)^2}
+\end{align}
+U$_H$ wird wieder mit Gleichung \ref{eqn:U_H}
+und zugehörigem Fehler ermittelt.
+\item
+Die Messerte für das B-Feld sollen mit der Formel
 \begin{align}
 \text{B}_z = \frac{1}{2} \mu_0 \text{I}_S \text{N} (\cos(\theta_1) - \cos(\theta_2))
 \label{eqn:Aufgabe 3_TD_B-Feld_1} 
@@ -339,16 +361,14 @@ Der zugehörige Fehler für die Vergleichswerte ist:
 \begin{enumerate}
 \item[c)] Der Innenwiderstand der Hallsonde lässt sich nach folgender Formel berechnen:
 \begin{align}
-\text{R}_X = \frac{\text{R}_0\text{R}_2}{\text{R}_1}
+\text{R}_X = \frac{\text{R}_0}{1-\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}\frac{\text{R}_2}{\text{R}_1+\text{R}_2}
 \end{align}
 Mit dem Fehler:
 \begin{align}
-\sigma_{\text{R}_X} = \sqrt{
-\left(\frac{\text{R}_2}{\text{R}_1}\sigma_{\text{R}_0}\right)^2+
-\left(\frac{\text{R}_0}{\text{R}_1}\sigma_{\text{R}_2}\right)^2+
-\left(\frac{\text{R}_0\text{R}_2}{\text{R}_1^2}\sigma_{\text{R}_1}\right)^2}
+\sigma_{\text{R}_X} = \sqrt{\left(\frac{\text{R}_0}{\left(\frac{1}{\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}-1\right)^2}\frac{1}{\left(\frac{\text{R}_2}{\text{R}_1+
+\text{R}_2}\right)^2}\sigma_{\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}\right)^2}
 \end{align}
-%Formel und Fehlerformel für R1 und R2 fehlen noch
+
 \item[d)]
 Die Formel für die Berechnung der Strecke $\Delta$x ist:
 \begin{align}
