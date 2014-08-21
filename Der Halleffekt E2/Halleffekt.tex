@@ -291,10 +291,11 @@ Das Verhältnis R$_2$ zu R$_1$ + R$_2$ wird am Potentiometer abgelesen.\\
 Die Magnetische Flussdichte wird nach Gleichung \ref{eqn:Aufgabe 3_TD_B-Feld_2} und dessen Fehler mit Gleichung \ref{eqn:Aufgabe 3_TD_B-Feld_2_Fehler} berechnet.
 \item
 Die Hallkonstante $\frac{1}{\text{ne}}$ berechnen wir nach Gleichung \ref{eqn:Hallspannung}:
-\begin{align*}
+\begin{align}
 \frac{1}{ne} = \frac{\text{m} \text{d}}
 {\text{I}_H}
-\end{align*}
+\label{eqn:hallkonstante}
+\end{align}
 m ist die Steigung der Geraden die sich aus dem Plot von U$_H$ gegen B ergibt.\\
 Mit einem Fehler von:
 \begin{align}
@@ -311,10 +312,12 @@ Mit einem Fehler von:
 Die Konzentration an freien Elektronen Berechnet sich durch:
 \begin{align}
 \text{n} = \frac{1}{\text{e}\frac{1}{\text{ne}}}
+\label{eqn:freie_elektronen}
 \end{align}
 Mit einem Fehler von:
 \begin{align}
 \sigma_n = \frac{1}{\text{e}\left(\frac{1}{\text{ne}}\right)^2}\sigma_{\frac{1}{\text{ne}}}
+\label{eqn:freie_elektronen_sigma}
 \end{align}
 e wird als fehlerlos betrachtet.
 \item
@@ -354,6 +357,7 @@ Der zugehörige Fehler für die Vergleichswerte ist:
 \sqrt{\left((\cos(\theta_1) - \cos(\theta_2)) \sigma_{\text{I}_S}\right)^2+
 \left(\text{I}_S \sin(\theta_1) \sigma_{\theta_1}\right)^2+
 \left(\text{I}_S \sin(\theta_2) \sigma_{\theta_2}\right)^2}
+\label{eqn:aufgabe_3_sigma}
 \end{align}
 \end{enumerate}
 \item[5.]
@@ -361,17 +365,20 @@ Der zugehörige Fehler für die Vergleichswerte ist:
 \item[c)] Der Innenwiderstand der Hallsonde lässt sich nach folgender Formel berechnen:
 \begin{align}
 \text{R}_X = \frac{\text{R}_0}{1-\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}\frac{\text{R}_2}{\text{R}_1+\text{R}_2}
+\label{eqn:innen_widerstand}
 \end{align}
 Mit dem Fehler:
 \begin{align}
 \sigma_{\text{R}_X} = \sqrt{\left(\frac{\text{R}_0}{\left(\frac{1}{\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}-1\right)^2}\frac{1}{\left(\frac{\text{R}_2}{\text{R}_1+
 \text{R}_2}\right)^2}\sigma_{\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}\right)^2}
+\label{eqn:innen_widerstand_sigma}
 \end{align}
 
 \item[d)]
 Die Formel für die Berechnung der Strecke $\Delta$x ist:
 \begin{align}
 \Delta \text{x} = \frac{\text{U}_{H0}\text{l}}{\text{U}_G}
+\label{eqn:delta}
 \end{align}
 Mit einem Fehler von:
 \begin{align}
@@ -379,6 +386,7 @@ Mit einem Fehler von:
 \left(\frac{\text{l}}{\text{U}_G}\sigma_{\text{U}_{H0}}\right)^2+
 \left(\frac{\text{U}_{H0}}{\text{U}_G}\sigma_{\text{l}}\right)^2+
 \left(\frac{\text{U}_{H0}\text{l}}{\text{U}_G^2}\sigma_{\text{U}_G}\right)^2}
+\label{eqn:delta_sigma}
 \end{align}
 \end{enumerate}
 
@@ -389,6 +397,78 @@ Mit einem Fehler von:
 
 
 \section{Auswertung}
+
+\subsection{Aufgabe 3}
+In der ersten Teilaufgabe sollte das B-Feld auf zwei unterschiedliche Methoden bestimmt werden.
+Der gemessene Wert nach Formel \ref{eqn:Aufgabe 3_PD_B-Feld_2} und der Fehler nach Formel \ref{eqn:Aufgabe 3_TD_B-Feld_2_Fehler} ergab 0,01633 $(\pm 0,0002)$ Tesla, nach Formel \ref{eqn:Aufgabe 3_PD_B-Feld_1} und der Fehlerformel \ref{eqn:aufgabe_3_sigma} ergab sich ein Wert von 0,01151 $(\pm 0,0002)$ Tesla.
+
+Im zweiten Aufgabenteil sollte die Abhängigkeit der Hallspannung vom Magnetfeld überprüft werden dabei ergab sich der folgende Plot.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1.3]{aufgabe_3_b.pdf}
+  	\caption[Plot der Hallspannung in Abhängigkeit des Magnetfeldes]{Plot der Hallspannung in Abhängigkeit des Magnetfeldes}
+  \label{fig:kasten}
+\end{figure}
+
+Im der dritten Teilaufgabe sollte die Hallkonstante mit Formel \ref{eqn:Hallspannung_Fehler} und der mit Formel \ref{eqn:Hallspannung_Fehler} bestimmt werden, dabei ergab sich ein Wert von -2,70E-005 $(\pm 0,05E-005)$ m$^3$/C.
+
+Nun sollte n bestimmt werden, dafür wurde Formel \ref{eqn:freie_elektronen} und für den Fehler Formel \ref{eqn:freie_elektronen_sigma} verwendet, dabei ergab sich ein Wert von -2,313E023 $(\pm 6,2277E015)$ Teilchen/m$^3$.
+
+Im letzten Aufgabenteil sollten gezeigt werden, dass die Hallspannung und der Hallstrom linear zusammenhängen, dafür wurde einmal mit und ohne Magnetfeld gemessen.
+Graphisch ausgewertet ergibt sich:
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1.3]{aufgabe_3_e_m.pdf}
+  	\caption[Zusammenhang von Hallspannung und Hallstrom mit Magnetfeld]{Zusammenhang von Hallspannung und Hallstrom mit Magnetfeld}
+  \label{fig:kasten}
+\end{figure}
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1.3]{aufgabe_3_e_o.pdf}
+  	\caption[Zusammenhang von Hallspannung und Hallstrom ohne Magnetfeld]{Zusammenhang von Hallspannung und Hallstrom ohne Magnetfeld}
+  \label{fig:kasten}
+\end{figure}
+
+\newpage
+
+\subsection{Aufgabe 4}
+In Aufgabe 4 sollte das Magnetfeld auf der x-Achse ausgemessen werden und mit Werten die mit Gleichung \ref{eqn:Aufgabe 3_PD_B-Feld_2} verglichen werden.
+
+\begin{table}[htbp]
+\caption{Vergleich der gemessenen Werte mit den aus den Materialeigenschaften bestimmten Werten.}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{B-Feld[T]} & Fehler & \multicolumn{1}{l|}{B-Feld Formel [T]} & \multicolumn{1}{l|}{Fehler} \\ \hline
+-0,0538 & 0,0005 & 0,014 & 0,008 \\ \hline
+-0,0522 & 0,0005 & 0,013 & 0,009 \\ \hline
+-0,0503 & 0,0005 & 0,013 & 0,011 \\ \hline
+-0,0484 & 0,0005 & 0,012 & 0,013 \\ \hline
+-0,0456 & 0,0005 & 0,011 & 0,016 \\ \hline
+-0,0434 & 0,0004 & 0,010 & 0,020 \\ \hline
+-0,0417 & 0,0004 & 0,008 & 0,026 \\ \hline
+-0,0404 & 0,0004 & 0,006 & 0,036 \\ \hline
+-0,0397 & 0,0004 & 0,003 & 0,057 \\ \hline
+-0,0397 & 0,0004 & 0,004 & 0,131 \\ \hline
+-0,0406 & 0,0004 & 0,004 & 0,029 \\ \hline
+-0,0415 & 0,0004 & 0,006 & 0,022 \\ \hline
+-0,0431 & 0,0004 & 0,008 & 0,024 \\ \hline
+-0,0453 & 0,0005 & 0,010 & 0,019 \\ \hline
+-0,0481 & 0,0005 & 0,012 & 0,015 \\ \hline
+-0,0503 & 0,0005 & 0,012 & 0,012 \\ \hline
+\end{tabular}
+\end{center}
+\label{aufgabe_4}
+\end{table}
+
+\subsection{Aufgabe 5}
+In der letzten Aufgabe sollte im ersten Teil die der Innenwiderstand der Hallsonde bestimmt werden, dafür wurde Formel \ref{eqn:innen_widerstand} für den Innenwiderstand und mit Formel \ref{eqn:innen_widerstand_sigma} der Fehler bestimmt. Es ergab sich ein Wert von 28,5 $(\pm 0,4)$ Ohm.
+
+Zum Schluss sollte die Versetzung der Hallspannungsabfriffe bestimmt werden, dafür wurde Formel \ref{eqn:delta} werwendet und für den Fehler wurde Formel \ref{eqn:delta_sigma} verwendet, dabei ergab sich ein Wert von 0,0019 $(\pm 0,0002)$.
+
 
 
 \section{Diskussion}
