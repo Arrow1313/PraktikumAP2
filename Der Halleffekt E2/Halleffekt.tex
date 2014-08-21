@@ -166,7 +166,9 @@ $\theta_1$ und $\theta_2$ aus
 	  	\caption[Skizze der Winkel für das Biot-Savat-Gesetz in einer kurzen Spule]{Skizze der Winkel für das Biot-Savat-Gesetz in einer kurzen Spule\footnotemark}
 	  \label{fig:winkel}
 	\end{figure}
+	\newpage
 	\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E2.pdf Seite 2 am 19.08.2014}
+	
 
  ab und vergleichen Sie den gemessenen Wert des Magnetfeldes mit dem Wert nach
  \begin{align}
@@ -190,10 +192,11 @@ U$_{HO}$ meßbar ist.
 	  	\caption[Skizze für das abgreifen der Hallspannung wenn kein B-Feld vorhanden ist]{Skizze für das abgreifen der Hallspannung wenn kein B-Feld vorhanden ist\footnotemark}
 	  \label{fig:U0H}
 	\end{figure}
+	\newpage
 	\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E2.pdf Seite 4 am 19.08.2014}
 
 \begin{align}
-\frac{\text{U}_G}{l} = \frac{\text{U}_{HO}}{\Delta\text{x}}
+\frac{\text{U}_G}{\text{l}} = \frac{\text{U}_{HO}}{\Delta\text{x}}
 \label{eqn: U_H0}
 \end{align}
 \newline
@@ -232,7 +235,6 @@ S$_R$. Schalten Sie den Hallstrom aus (stöpseln Sie die Spannungsquelle für de
 
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E2.pdf Seite 6 am 19.08.2014}
 
-%\newline
 
 \item
 Die Spannung U$_{KM}$ hat sich nun deutlich verringert (warum?).
@@ -272,7 +274,18 @@ Folgender Zusammenhang ist zwischen Hallspannung und Magnetischer Flussdichte zu
 \text{U}_H = \frac{1}{ne} \text{I}_H \text{B} \frac{1}{d}
 \label{eqn:Hallspannung}
 \end{align}
-e die Elementarladung, n die Anzahl der Ladungen pro Volumenelement, I$_H$ der Hallstrom und B die Magnetische Flussdichte.
+e die Elementarladung, n die Anzahl der Ladungen pro Volumenelement, I$_H$ der Hallstrom und B die Magnetische Flussdichte.\\
+Die Hallspannung messen wir mithilfe einer Kompensationsschaltung nach folgender Formel:
+\begin{align}
+\text{U}_H = \text{U}_{KM} \frac{\text{R}_2}{\text{R}_1+\text{R}_2}
+\end{align}
+Mit dem Fehler:
+\begin{align}
+\sigma_{\text{U}_H} = \sqrt{
+\left(\frac{\text{R}_2}{\text{R}_1+\text{R}_2}\sigma_{\text{U}_{KM}}\right)^2+
+\left(\text{U}_{KM}\sigma_{\frac{\text{R}_2}{\text{R}_1+\text{R}_2}}\right)^2}
+\end{align}
+Das Verhältnis R$_2$ zu R$_1$ + R$_2$ wird am Potentiometer abgelesen.\\
 Die Magnetische Flussdichte wird nach Gleichung \ref{eqn:Aufgabe 3_TD_B-Feld_2} und dessen Fehler mit Gleichung \ref{eqn:Aufgabe 3_TD_B-Feld_2_Fehler} berechnet.
 \item
 Die Hallkonstante $\frac{1}{\text{ne}}$ berechnet sich nach Gleichung \ref{eqn:Hallspannung}:
@@ -296,7 +309,7 @@ Mit einem Fehler von:
 \item
 Die Konzentration an freien Elektronen Berechnet sich durch:
 \begin{align}
-n = \frac{1}{\text{e}\frac{1}{\text{ne}}}
+\text{n} = \frac{1}{\text{e}\frac{1}{\text{ne}}}
 \end{align}
 Mit einem Fehler von:
 \begin{align}
@@ -323,6 +336,32 @@ Der zugehörige Fehler für die Vergleichswerte ist:
 \end{align}
 \end{enumerate}
 \item[5.]
+\begin{enumerate}
+\item[c)] Der Innenwiderstand der Hallsonde lässt sich nach folgender Formel berechnen:
+\begin{align}
+\text{R}_X = \frac{\text{R}_0\text{R}_2}{\text{R}_1}
+\end{align}
+Mit dem Fehler:
+\begin{align}
+\sigma_{\text{R}_X} = \sqrt{
+\left(\frac{\text{R}_2}{\text{R}_1}\sigma_{\text{R}_0}\right)^2+
+\left(\frac{\text{R}_0}{\text{R}_1}\sigma_{\text{R}_2}\right)^2+
+\left(\frac{\text{R}_0\text{R}_2}{\text{R}_1^2}\sigma_{\text{R}_1}\right)^2}
+\end{align}
+%Formel und Fehlerformel für R1 und R2 fehlen noch
+\item[d)]
+Die Formel für die Berechnung der Strecke $\Delta$x ist:
+\begin{align}
+\Delta \text{x} = \frac{\text{U}_{H0}\text{l}}{\text{U}_G}
+\end{align}
+Mit einem Fehler von:
+\begin{align}
+\sigma_{\Delta \text{x}} = \sqrt{
+\left(\frac{\text{l}}{\text{U}_G}\sigma_{\text{U}_{H0}}\right)^2+
+\left(\frac{\text{U}_{H0}}{\text{U}_G}\sigma_{\text{l}}\right)^2+
+\left(\frac{\text{U}_{H0}\text{l}}{\text{U}_G^2}\sigma_{\text{U}_G}\right)^2}
+\end{align}
+\end{enumerate}
 
 \end{enumerate}
 
