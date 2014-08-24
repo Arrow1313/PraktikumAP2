@@ -1,0 +1,9 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{2}
+\contentsline {section}{\numberline {2}Versuchsaufbau}{2}
+\contentsline {section}{\numberline {3}Versuchsdurchf\IeC {\"u}hrung}{2}
+\contentsline {subsection}{\numberline {3.1}Praktische Durchf\IeC {\"u}hrung}{2}
+\contentsline {subsection}{\numberline {3.2}Theoretische Durchf\IeC {\"u}hrung}{6}
+\contentsline {section}{\numberline {4}Messergebnisse}{6}
+\contentsline {section}{\numberline {5}Auswertung}{6}
+\contentsline {section}{\numberline {6}Diskussion}{6}
