@@ -170,25 +170,56 @@ ansetzen (bei ferromagnetischen Ablenkplatten würde der Strahl magnetisch abges
 \subsection{Theoretische Durchführung}
 \begin{itemize}
 \item[6.]
-Der Fehler von $U_B k$ ist:
-
+Der Fehler von $U \cdot k$ ist:
+\begin{align}
+\sigma_U = \sqrt{\left(U \sigma_k \right)^2+\left(k \sigma_U\right)^2}
+\end{align}
 \item[7.]
+Der Mittelwert ist:
+\begin{align}
+M = \frac{(U_{\text{B}}k)_1+
+(U_{\text{B}}k)_2+
+(U_{\text{B}}k)_3}{3}
+\end{align}
 Der Fehler auf den Mittelwert ist:
-
+\begin{align}
+\sigma_M =\sqrt{
+\left(\frac{\sigma_{(U_{\text{B}}k)_1}}{3}\right)^2+ \left(\frac{\sigma_{(U_{\text{B}}k)_2}}{3}\right)^2+
+\left(\frac{\sigma_{(U_{\text{B}}k)_3}}{3}\right)^2}
+\end{align}
 Der Plattenabstand d berechnet sich nach der Formel:
 \begin{align}
 d= \frac{L l}{2 U_\text{B} k}
 \end{align}
 (wobei $\tan(\theta) \simeq \frac{S}{L}$ nur für $L \gg S$ gilt.)\\
 Mit dem Fehler:
+\begin{align}
+\sigma_d = \sqrt{
+\left(\frac{l}{2 U_\text{B} k}\sigma_{L}\right)^2+
+\left(\frac{L}{2 U_\text{B} k}\sigma_l\right)^2+
+\left(\frac{L l}{2 (U_\text{B} k)^2}\sigma_{U_\text{B} k}\right)^2}
+\end{align}
 \item[8.]
 Berechung der Werte analog zu 7.
 \item[13.]
-Der Fehler von $\sqrt{U_\text{B}}k_s$ ist:
+Der Fehler von $\sqrt{U_\text{B}} \cdot k$ ist:
+\begin{align}
+\sigma_{\sqrt{U_\text{B}}k} = \sqrt{
+\left(\frac{k}{2\sqrt{U_\text{B}}}\sigma_{U_\text{B}}\right)^2+
+\left(\sqrt{U_\text{B}}\sigma{k}\right)^2}
+\end{align}
 \item[15.]
 Die Formel zur Berechnung des B-Feldes ist:
 \begin{align}
-B = \frac{2 S_\text{S}\sqrt{2mU_\text{B}}}{l^2 \sqrt{e}}
+B = \frac{2 S_\text{S}\sqrt{2 m_e U_\text{B}}}{l^2 \sqrt{e}}
+\end{align}
+Mit einem Fehler von:
+\begin{align}
+\sigma_B = \sqrt{
+\left(\frac{2 \sqrt{2 m_e U_\text{B}}}{l^2 \sqrt{e}}\sigma_{S_\text{S}}\right)^2+
+\left(\frac{S_\text{S}\sqrt{2 m_e}}{l^2 \sqrt{e U_\text{B}}}\sigma{U_\text{B}}\right)^2+
+\left(\frac{4 S_\text{S}\sqrt{2 m_e U_\text{B}}}{l^3 \sqrt{e}}\sigma_l\right)^2
+}
 \end{align}
 \end{itemize}
 
