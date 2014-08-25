@@ -190,6 +190,7 @@ Der Fehler auf den Mittelwert ist:
 Der Plattenabstand d berechnet sich nach der Formel:
 \begin{align}
 d= \frac{L l}{2 U_\text{B} k}
+\label{eqn: Plattenabstand}
 \end{align}
 (wobei $\tan(\theta) \simeq \frac{S}{L}$ nur für $L \gg S$ gilt.)\\
 Mit dem Fehler:
@@ -205,6 +206,7 @@ Berechung der Werte analog zu 7.
 Da die magnetische Flussdichte proportional zur Spulenspannung U$_S$ und k die Steigung der Geraden vom Plot von U$_S$ gegen S$_S$ ist, erwarten wir, dass das Produkt $k\cdot\sqrt{U_B}$ nach folgender Formel konstant ist:
 \begin{align}
 S_S = \frac{leB}{\sqrt{2em U_B}}(L+\frac{1}{2}l)
+\label{eqn: Auslenkung Spulenspannung}
 \end{align}
 Diese Formel gilt jedoch nur für kleine Auslenkwinkel $\theta$
 Der Fehler von $\sqrt{U_\text{B}} \cdot k$ ist:
@@ -522,7 +524,7 @@ Für eine Beschleunigungsspannung von 1325V ergab sich die Regressionsgerade mit
 Für U$_\text{B} \cdot \text{k}$ ergab sich der Mittelwert 335 $(\pm 11)$ mm für die X-Achsenauslenkung und ein Wert von 872	$(\pm 21)$ mm Y-Achsenauslenkung.
 Daraus ergeben sich für die Abstände der Platten jeweils 3,9 $(\pm 0,3)$ mm und 2,3	$(\pm 0,2)$, der gemessene Wert liegt zwischen 2-5 mm, aufgrund der Biegung der Plättchen.
 
-Die Messung wurde durch mehrere Faktoren beeinflusst, dazu gehören das Erdmagnetfeld unsere eigenen EM-Felder und die EM-Felder die von den Geräten (Computer, Netzgeräte,...) ausgesendet wurden, als auch statische Aufladungen.
+Die Messung wurde durch mehrere Faktoren beeinflusst. Dazu gehören das Erdmagnetfeld, unsere eigenen EM-Felder, die EM-Felder, die von den Geräten (Computer, Netzgeräte,...) ausgesendet wurden, als auch statische Aufladungen.
 
 \subsection{magnetisches Feld}
 
@@ -557,19 +559,30 @@ Für eine Beschleunigungsspannung von 350V ergab sich die Regressionsgerade mit 
   \label{fig:x_1}
 \end{figure}
 
-Für k$_\text{s} \cdot \text{U}_\text{S}$ ergab sich bei einer Spannung von 1100V ein Wert von 223 $(\pm 6)$ mm, bei 1180V ein Wert von 189 $(\pm 7)$ mm und ein Wert von 236 $(\pm 12)$ mm für eine Spannung von 350V. Der erste und der letzte Wert liegen innerhalb des Sigma zwei Intervalls der zweite Wert jedoch liegt sehr weit weg von den anderen beiden. Erwartet wurde, dass die drei Werte im Idealfall gleich sind.
+Für $k_\text{s} \cdot \sqrt{U_\text{B}}$ ergab sich bei einer Spannung von 1100V ein Wert von 223 $(\pm 6)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$, bei 1180V ein Wert von 189 $(\pm 7)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$ und ein Wert von 236 $(\pm 12)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$ für eine Spannung von 350V. Der erste und der letzte Wert liegen innerhalb des Sigma zwei Intervalls der zweite Wert jedoch liegt sehr weit weg von den anderen beiden. Erwartet wurde, dass die drei Werte im Idealfall gleich sind.
+Die Messung wurde durch mehrere Faktoren beeinflusst. Dazu gehören das Erdmagnetfeld, unsere eigenen EM-Felder, die EM-Felder, die von den Geräten (Computer, Netzgeräte,...) ausgesendet wurden, als auch statische Aufladungen.
 
 \subsection{Erdmagnetfeld}
-Bei der Bestimmung des Erdmagnetfeldes ergab sich ein Wert von 7,4E-005 $(\pm 7E-006)$ T, der Literaturwert liegt bei 4,8E-005.
+Bei der Bestimmung des Erdmagnetfeldes ergab sich ein Wert von 7,4E-005 $(\pm 7E-006)$ T, der Literaturwert liegt bei 4,8E-005 T.
 
 \newpage
 \section{Diskussion}
 
 Im der ersten Aufgabe des Versuchsteils (a)
 war es schwierig die Abstände der Ablenkplatten 1 und 2 sowie der Ablenkplatten 3 und 4 (d$_{12}$ und d$_{34}$) zu bestimmen, da der zu vermessende Bereich  durch lackiertes Glas verdeckt war.\\
-Während der 6 Messungen mit verschiedenen Ablenkspannungen gab es keine Probleme, wobei auffiel, dass die linearen Fits mit der Größe der Beschleunigungsspannung schlechter wurden.
-Dies liegt daran, dass die gemessene Auslenkung bei größerer Beschleunigungsspannung insgesamt kleiner war, sodass die Messfehler einen größeren Anteil an den Messwerten hatten.
-Ebenso ist aufgefallen, dass die Messungen in X-Achsenrichtung im Vergleich zu den Messungen in Y-Achsenrichtung
+Während der 6 Messungen mit verschiedenen Ablenkspannungen gab es keine Probleme, wobei auffiel, dass die linearen Fits bei zu großen als auch bei sehr kleinen Beschleunigungsspannungen schlechter wurden.
+Dies liegt einerseits daran, dass die gemessene Auslenkung bei großer Beschleunigungsspannung insgesamt kleiner war, sodass die Messfehler einen größeren Anteil an den Messwerten hatten, und andererseits an dem linearen Zusammenhang zwischen Auslenkung und Ablenkspannung, der nur für kleine Winkel $\theta$ gilt ($L \gg S$).
+Ebenso fällt auf, dass die Messungen in X-Achsenrichtung im Vergleich zu den Messungen in Y-Achsenrichtung besser zu dem Fit einer Geraden passen. Der Unterschied begründet sich einerseits durch die Ausrichtung des Erdmagnetfeldes, als auch dadurch, dass wir bei diesen Messungen mehrmals das Millimeterpapier berührt haben, und sich der Leuchtpunkt leicht verschoben hat.
+An Formel \ref{eqn: Plattenabstand} sieht man leicht, dass das Produkt $U_B \cdot k$ konstant sein sollte, was sich auch aus den Messungen ergab.
+Für den Plattenabstand nach Formel \ref{eqn: Plattenabstand} ergab sich in X-Richtung ein größerer Wert als in Y-Richtung, wobei beide Werte inerhalb der in der Versuchsbeschreibung angegebenen 2-5 mm lagen.\\
+Für den Aufgabenteil (b) mussten wir die Spulenspannung variieren und sie gegen die Auslenkung auftragen und linear fitten.
+Während des Versuches fiel uns auf, dass der Leuchtpunkt sich während der Messungen etwas verschob, wenn man das Millimeterpapier berührte. Der Elektronenstrahl konnte bei dieser Messung auch nur in eine Richtung ausgelenkt werden, sodass sich der Leuchtpunkt auf dem Schirm mit dem Abstand zur Mitte verformte. Deshalb haben wir doppelte Ablesefehler angenommen.
+Es ergaben sich wie erwartet (Formel \ref{eqn: Auslenkung Spulenspannung}) näheungsweise Ursprungsgeraden.
+Für $k_s \cdot sqrt{U_B}$ erwarten wir nach Formel \ref{eqn: Auslenkung Spulenspannung} eine Konstante. Unsere gemessenen Werte für 1100 und 350 V Beschleunigungsspannung liegen im Vergleich zum dritten Wert noch innerhalb des Sigma zwei Intervalls, wobei der Wert für 1180 V deutlich von den anderen abweicht.
+Dies unterstreicht die im Vergleich zu Aufgabenteil (a) angesprochenen Schwierigkeiten bei der Messung, sowie zusätzliche Probleme bei der Fokussierung des Lichtpunktes auf dem Schirm.
+Wie auch bei den Messungen in Aufgabenteil (a) kommt hinzu, dass äußere Felder Einfluß auf unsere Messungen hatten.
+Insgesamt waren die Abstände in Aufgabenteil (b) schwieriger zu bestimmen als in (a).
+
  
  %Werte stimmen mit den Formeln überein/nicht überein
 
