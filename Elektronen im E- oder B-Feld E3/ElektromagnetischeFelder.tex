@@ -42,7 +42,7 @@ Mit Hilfe einer Oszillographenröhre soll die Bewegung von Elektronen unter dem 
 
 \section{Versuchsaufbau}
 Der Versuchsaufbau besteht aus einer Oszillographenröhre, einem Steuerkasten, einer Helmholtz-Spule und einem Auffangschirm.
-Der Steuerkasten wird an die Oszillographenröhre angeschlossen, um die verschiedene Spannungen zu kontrollieren. Dahinter befindet sich die Helmholtz-Spule im Zweiten Aufbau um ein Magnetfeld zu erzeugen, am Ende des Aufbaus befindet sich der Auffangschirm, an welchem die Elektronen detektiert werden.
+Der Steuerkasten wird an die Oszillographenröhre angeschlossen, um verschiedene Spannungen zu kontrollieren. Dahinter befindet sich die Helmholtz-Spule um im zweiten Aufbau ein Magnetfeld zu erzeugen. Am Ende des Aufbaus befindet sich der Auffangschirm, an welchem die Elektronen detektiert werden.
 
 \begin{figure}[htbp] 
   \centering
@@ -180,17 +180,19 @@ Der Mittelwert ist:
 M = \frac{(U_{\text{B}}k)_1+
 (U_{\text{B}}k)_2+
 (U_{\text{B}}k)_3}{3}
+\label{eqn:mittel}
 \end{align}
 Der Fehler auf den Mittelwert ist:
 \begin{align}
 \sigma_M =\sqrt{
 \left(\frac{\sigma_{(U_{\text{B}}k)_1}}{3}\right)^2+ \left(\frac{\sigma_{(U_{\text{B}}k)_2}}{3}\right)^2+
 \left(\frac{\sigma_{(U_{\text{B}}k)_3}}{3}\right)^2}
+\label{eqn:mittel_sigma}
 \end{align}
 Der Plattenabstand d berechnet sich nach der Formel:
 \begin{align}
 d= \frac{L l}{2 U_\text{B} k}
-\label{eqn: Plattenabstand}
+\label{eqn:Plattenabstand}
 \end{align}
 (wobei $\tan(\theta) \simeq \frac{S}{L}$ nur für $L \gg S$ gilt.)\\
 Mit dem Fehler:
@@ -199,6 +201,7 @@ Mit dem Fehler:
 \left(\frac{l}{2 U_\text{B} k}\sigma_{L}\right)^2+
 \left(\frac{L}{2 U_\text{B} k}\sigma_l\right)^2+
 \left(\frac{L l}{2 (U_\text{B} k)^2}\sigma_{U_\text{B} k}\right)^2}
+\label{eqn:Plattenabstand_sigma}
 \end{align}
 \item[8.]
 Berechung der Werte analog zu 7.
@@ -206,7 +209,7 @@ Berechung der Werte analog zu 7.
 Da die magnetische Flussdichte proportional zur Spulenspannung U$_S$ und k die Steigung der Geraden vom Plot von U$_S$ gegen S$_S$ ist, erwarten wir, dass das Produkt $k\cdot\sqrt{U_B}$ nach folgender Formel konstant ist:
 \begin{align}
 S_S = \frac{leB}{\sqrt{2em U_B}}(L+\frac{1}{2}l)
-\label{eqn: Auslenkung Spulenspannung}
+\label{eqn:AuslenkungSpulenspannung}
 \end{align}
 Diese Formel gilt jedoch nur für kleine Auslenkwinkel $\theta$
 Der Fehler von $\sqrt{U_\text{B}} \cdot k$ ist:
@@ -214,11 +217,13 @@ Der Fehler von $\sqrt{U_\text{B}} \cdot k$ ist:
 \sigma_{\sqrt{U_\text{B}}k} = \sqrt{
 \left(\frac{k}{2\sqrt{U_\text{B}}}\sigma_{U_\text{B}}\right)^2+
 \left(\sqrt{U_\text{B}}\sigma{k}\right)^2}
+\label{eqn:AuslenkungSpulenspannung_sigma}
 \end{align}
 \item[15.]
 Die Formel zur Berechnung des B-Feldes ist:
 \begin{align}
 B = \frac{2 S_\text{S}\sqrt{2 m_e U_\text{B}}}{l^2 \sqrt{e}}
+\label{eqn:bfeld}
 \end{align}
 Mit einem Fehler von:
 \begin{align}
@@ -227,6 +232,7 @@ Mit einem Fehler von:
 \left(\frac{S_\text{S}\sqrt{2 m_e}}{l^2 \sqrt{e U_\text{B}}}\sigma{U_\text{B}}\right)^2+
 \left(\frac{4 S_\text{S}\sqrt{2 m_e U_\text{B}}}{l^3 \sqrt{e}}\sigma_l\right)^2
 }
+\label{eqn:bfeld_sigma}
 \end{align}
 \end{itemize}
 
@@ -519,8 +525,8 @@ Für eine Beschleunigungsspannung von 1325V ergab sich die Regressionsgerade mit
   \label{fig:x_1}
 \end{figure}
 
-Für U$_\text{B} \cdot \text{k}$ ergab sich der Mittelwert 335 $(\pm 11)$ mm für die X-Achsenauslenkung und ein Wert von 872	$(\pm 21)$ mm Y-Achsenauslenkung.
-Daraus ergeben sich für die Abstände der Platten jeweils 3,9 $(\pm 0,3)$ mm und 2,3	$(\pm 0,2)$, der gemessene Wert liegt zwischen 2-5 mm, aufgrund der Biegung der Plättchen.
+Für U$_\text{B} \cdot \text{k}$ ergab sich der Mittelwert 335 $(\pm 11)$ mm für die X-Achsenauslenkung und ein Wert von 872	$(\pm 21)$ mm Y-Achsenauslenkung (siehe Gleichung \ref{eqn:mittel} und Gleichung \ref{eqn:mittel_sigma} für den Fehler).
+Daraus ergeben sich mit Gleichung \ref{eqn:Plattenabstand} und Gleichung \ref{eqn:Plattenabstand_sigma} für den Fehler die Abstände der Platten jeweils mit 3,9 $(\pm 0,3)$ mm und 2,3	$(\pm 0,2)$, der gemessene Wert liegt zwischen 2-5 mm, aufgrund der Biegung der Plättchen.
 
 Die Messung wurde durch mehrere Faktoren beeinflusst. Dazu gehören das Erdmagnetfeld, unsere eigenen EM-Felder, die EM-Felder, die von den Geräten (Computer, Netzgeräte,...) ausgesendet wurden, als auch statische Aufladungen.
 \newpage
@@ -556,11 +562,11 @@ Für eine Beschleunigungsspannung von 350V ergab sich die Regressionsgerade mit 
   \label{fig:x_1}
 \end{figure}
 
-Für $k_\text{s} \cdot \sqrt{U_\text{B}}$ ergab sich bei einer Spannung von 1100V ein Wert von 223 $(\pm 6)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$, bei 1180V ein Wert von 189 $(\pm 7)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$ und ein Wert von 236 $(\pm 12)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$ für eine Spannung von 350V. Der erste und der letzte Wert liegen innerhalb des Sigma zwei Intervalls der zweite Wert jedoch liegt sehr weit weg von den anderen beiden. Erwartet wurde, dass die drei Werte im Idealfall gleich sind.
+Für $k_\text{s} \cdot \sqrt{U_\text{B}}$ (vgl. Gleichung \ref{eqn:AuslenkungSpulenspannung} und Gleichung \ref{eqn:AuslenkungSpulenspannung_sigma} für den Fehler)  ergab sich bei einer Spannung von 1100V ein Wert von 223 $(\pm 6)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$, bei 1180V ein Wert von 189 $(\pm 7)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$ und ein Wert von 236 $(\pm 12)$ $\frac{\text{mm}}{\sqrt{\text{V}}}$ für eine Spannung von 350V. Der erste und der letzte Wert liegen innerhalb des Sigma zwei Intervalls der zweite Wert jedoch liegt sehr weit weg von den anderen beiden. Erwartet wurde, dass die drei Werte im Idealfall gleich sind.
 Die Messung wurde durch mehrere Faktoren beeinflusst. Dazu gehören das Erdmagnetfeld, unsere eigenen EM-Felder, die EM-Felder, die von den Geräten (Computer, Netzgeräte,...) ausgesendet wurden, als auch statische Aufladungen.
 
 \subsection{Erdmagnetfeld}
-Bei der Bestimmung des Erdmagnetfeldes ergab sich ein Wert von 7,4E-005 $(\pm 7E-006)$ T, der Literaturwert liegt bei 4,8E-005 T.
+Bei der Bestimmung des Erdmagnetfeldes nach Gleichung \ref{eqn:bfeld} und der Fehler nach Gleichung \ref{eqn:bfeld_sigma} ergab sich ein Wert von 7,4E-005 $(\pm 1E-005)$ T, der Literaturwert liegt bei 4,8E-005 T.
 
 \newpage
 \section{Diskussion}
@@ -570,12 +576,12 @@ war es schwierig die Abstände der Ablenkplatten 1 und 2 sowie der Ablenkplatten
 Während der 6 Messungen mit verschiedenen Ablenkspannungen gab es keine Probleme, wobei auffiel, dass die linearen Fits bei zu großen als auch bei sehr kleinen Beschleunigungsspannungen schlechter wurden.
 Dies liegt einerseits daran, dass die gemessene Auslenkung bei großer Beschleunigungsspannung insgesamt kleiner war, sodass die Messfehler einen größeren Anteil an den Messwerten hatten, und andererseits an dem linearen Zusammenhang zwischen Auslenkung und Ablenkspannung, der nur für kleine Winkel $\theta$ gilt ($L \gg S$).
 Ebenso fällt auf, dass die Messungen in X-Achsenrichtung im Vergleich zu den Messungen in Y-Achsenrichtung besser zu dem Fit einer Geraden passen. Der Unterschied begründet sich einerseits durch die Ausrichtung des Erdmagnetfeldes, als auch dadurch, dass wir bei diesen Messungen mehrmals das Millimeterpapier berührt haben, und sich der Leuchtpunkt leicht verschoben hat.
-An Formel \ref{eqn: Plattenabstand} sieht man leicht, dass das Produkt $U_B \cdot k$ konstant sein sollte, was sich auch aus den Messungen ergab.
-Für den Plattenabstand nach Formel \ref{eqn: Plattenabstand} ergab sich in X-Richtung ein größerer Wert als in Y-Richtung, wobei beide Werte inerhalb der in der Versuchsbeschreibung angegebenen 2-5 mm lagen.\\
+An Formel \ref{eqn:Plattenabstand} sieht man leicht, dass das Produkt $U_B \cdot k$ konstant sein sollte, was sich auch aus den Messungen ergab.
+Für den Plattenabstand nach Formel \ref{eqn:Plattenabstand} ergab sich in X-Richtung ein größerer Wert als in Y-Richtung, wobei beide Werte inerhalb der in der Versuchsbeschreibung angegebenen 2-5 mm lagen.\\
 Für den Aufgabenteil (b) mussten wir die Spulenspannung variieren und sie gegen die Auslenkung auftragen und linear fitten.
 Während des Versuches fiel uns auf, dass der Leuchtpunkt sich während der Messungen etwas verschob, wenn man das Millimeterpapier berührte. Der Elektronenstrahl konnte bei dieser Messung auch nur in eine Richtung ausgelenkt werden, sodass sich der Leuchtpunkt auf dem Schirm mit dem Abstand zur Mitte verformte. Deshalb haben wir doppelte Ablesefehler angenommen.
-Es ergaben sich wie erwartet (Formel \ref{eqn: Auslenkung Spulenspannung}) näheungsweise Ursprungsgeraden.
-Für $k_s \cdot sqrt{U_B}$ erwarten wir nach Formel \ref{eqn: Auslenkung Spulenspannung} eine Konstante. Unsere gemessenen Werte für 1100 und 350 V Beschleunigungsspannung liegen im Vergleich zum dritten Wert noch innerhalb des Sigma zwei Intervalls, wobei der Wert für 1180 V deutlich von den anderen abweicht.
+Es ergaben sich wie erwartet (Formel \ref{eqn:AuslenkungSpulenspannung}) näheungsweise Ursprungsgeraden.
+Für $k_s \cdot sqrt{U_B}$ erwarten wir nach Formel \ref{eqn:AuslenkungSpulenspannung} eine Konstante. Unsere gemessenen Werte für 1100 und 350 V Beschleunigungsspannung liegen im Vergleich zum dritten Wert noch innerhalb des Sigma zwei Intervalls, wobei der Wert für 1180 V deutlich von den anderen abweicht.
 Dies unterstreicht die im Vergleich zu Aufgabenteil (a) angesprochenen Schwierigkeiten bei der Messung, sowie zusätzliche Probleme bei der Fokussierung des Lichtpunktes auf dem Schirm.
 Wie auch bei den Messungen in Aufgabenteil (a) kommt hinzu, dass äußere Felder Einfluß auf unsere Messungen hatten.
 Insgesamt waren die Abstände in Aufgabenteil (b) schwieriger zu bestimmen als in (a).\\
