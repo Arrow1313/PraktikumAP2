@@ -39,9 +39,8 @@
 
 In diesem Versuch sollen die Eigenschaften einfacher elektrischer Stromkreise, die aus ”passiven“ Elementen wie
 Widerständen, Kondensatoren und Spulen aufgebaut sind, untersucht werden. Weiterhin soll das RC-Glied und das
-RL-Glied als Filter für Frequenzen benutzt werden. Je nach Schaltung entsteht ein Hoch– bzw. Tiefpass. Schließlich sollen die gedämpfte elektrische Schwingung bei einem RCL-Kreis und die erzwungenen Schwingung
-in einem LC-Schwingkreis mit Hilfe des Oszillographen untersucht werden. Bei den Untersuchungen werden kommerzielle elektrische Geräte wie Funktionsgenerator, Digitalmultimeter und ein Oszillograph eingesetzt, so dass am Ende der Versuche eine gewisse Vertrautheit mit der Bedienung der Geräte
-erwartet wird. Die Versuche werden mit dem Leybold-Stecksystem aufgebaut. Im Einzelnen gliedern sich die Experimente in folgende Teile:
+RL-Glied als Filter für Frequenzen benutzt werden. Je nach Schaltung entsteht ein Hoch– bzw. Tiefpass. Schließlich sollen die gedämpfte elektrische Schwingung bei einem RCL-Kreis und die erzwungene Schwingung
+in einem LC-Schwingkreis mit Hilfe des Oszillographen untersucht werden. Bei den Untersuchungen werden kommerzielle elektrische Geräte wie Funktionsgenerator, Digitalmultimeter und ein Oszillograph eingesetzt, so dass am Ende der Versuche eine gewisse Vertrautheit mit der Bedienung der Geräte erwartet wird. Die Versuche werden mit dem Leybold-Stecksystem aufgebaut. Im Einzelnen gliedern sich die Experimente in folgende Teile:
 \newline
 1)
 Messungen an Spannungsteilern
@@ -63,8 +62,115 @@ Untersuchung der ungedämpften und der gedämpften elektrischen Schwingung bei e
 
 
 \subsection{Praktische Durchführung}
-
-
+\subsubsection{Kennenlernen der Geräte} 
+(Wenn Sie sich mit den Geräten bereits gut auskennen, können Sie diese ersten Versuchsteile überspringen.)
+\begin{enumerate}
+\item
+Verbinden Sie das Netzteil mit dem Digitalmultimeter, stellen Sie verschiedene Spannungen ein und messen Sie diese nach. Vergleichen Sie die Anzeigen am Netzteil und am Multimeter. Bauen Sie sich ein symmetrisches Netzteil aus den beiden Ausgängen des Netzgerätes. Messen Sie bezogen auf die mittlere Buchse (GND) die Spannungen zur linken bzw. rechten Buchse. Messen Sie die Gesamtspannung Schließen Sie einen Widerstand (100 $\Omega$, 2 Watt) an das Netzteil an und messen Sie mit dem Multimeter den Strom. Vergleichen Sie die Anzeigen am Netzteil und am Multimeter. Um den Widerstand nicht zu überlasten, stellen Sie die Spannung niemals größer als 14 V ein!
+\item
+Messen Sie verschiedene Widerstände (100$\Omega$, 10 k$\Omega$, 1 M$\Omega$) mit dem Multimeter nach. Nehmen Sie einen
+einstellbaren Widerstand (Potentiometer, 100 k
+$\Omega$) und messen Sie in verschiedenen Stellungen den Widerstand.
+\item
+Verbinden Sie den Funktionsgenerator über ein BNC-Kabel mit den Oszilloskop. Stellen Sie
+den Funktionsgenerator auf eine Frequenz von 1 kHz und eine Amplitude von ca. 1 V. Beobachten Sie die Darstellung am Oszilloskop. Sollten Sie Schwierigkeiten haben, ein vernünftiges Bild zu bekomen, hilft Ihnen bei unseren Digitaloszilloskopen die Taste ”Autoset“ weiter. Stellen Sie verschiedene Funktionen ein (Sinus, Dreieck, Rechteck). Beobachten Sie die Wirkung der Einstellung ”Offset“ (Verschiebung um eine konstante Gleichspannung) oder ”duty cycle“ (Impuls-Pausen-Verhältnis). Ändern Sie die Frequenz am Generator und passen Sie die Einstellung am Oszilloskop (x-Achse, Time) von
+Hand an (die Autoset-Taste sollte nur in Ausnahmefällen betätigt werden. Der erfahrene Benutzer bekommt von Hand oft sinnvollere Darstellungen). Ändern Sie die Amplitude am Generator und passen Sie die Einstellung am Oszilloskop (y-Achse, Ch1) von Hand an. Machen Sie sich mit den Funktionen Measure und Cursor
+vertraut, die Ihnen ein schnelles und einfaches Messen wichtiger Größen ermöglichen.
+\item
+Für den folgenden Versuchsteil müssen Sie sich mit Ihrer Nachbargruppe zusammentun, weil zwei Funktionsgenaratoren benötigt werden. Schließen Sie den einen an Kanal 1 und den anderen an Kanal 2 eines Oszilloskops an. Stellen Sie das Oszilloskop in den ”x-y-Modus“. Auf Kanal 1 geben Sie eine Sinusspannung mit einer Frequenz von genau 50 Hz, auf Kanal 2 das gleiche mit genau 100 Hz. Beobachten Sie die Darstellung, wenn Sie die Frequenzen minimal ändern. Aus den sogenannten
+LISSAJOUS-Ellipsen können Sie den Phasenwinkel zwischen den beiden Schwingungen genau bestimmen. Beobachten Sie, was bei anderen einfachen Frequenzverhältnissen $\frac{f_1}{f_2}$ passiert.
+\item
+Stellen Sie den Funktionsgenerator auf Sinus, 50 Hz, Amplitude einige Volt. Messen Sie die Amplitude am Oszilloskop. Schließen Sie ein Digitalvoltmeter (Bereich AC V) an und vergleichen Sie den Anzeigewert mit dem des Oszilloskops. Wiederholen Sie die Messungen bei 500 Hz, 5kHz und 50 kHz. Was fällt auf?
+\end{enumerate}
+\subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren} 
+\begin{enumerate}
+\item
+Bauen Sie sich mit zwei Widerständen einen Spannungsteiler (s. Schaltplan). Messen Sie mit dem DMM die Knotenspannung U2 und vergleichen Sie mit dem Theoriewert. Verwenden Sie zunächst zwei Widerstände aus dem k$\Omega$-Bereich und später zwei von 1 M$\Omega$. Was fällt auf? Erklären Sie die Abweichungen vom Theoriewert. Beachten Sie den Innenwiderstand des DMM (typ. 10 M
+$\Omega$)
+%Abbildung 17:Schaltplan Spannungsteiler
+\item
+Verbinden Sie den Funktionsgenerator (Rechteck, 100 Hz) über einen Widerstand (10 k
+$\Omega$) mit einem Kondensator (100 nF). Messen Sie die Spannung $U_a$ Über dem Kondensator mit dem Oszilloskop. Bestimmen
+Sie die Halbwertszeit; dabei hilft Ihnen die Cursor-Funktion des Oszilloskops. Vergleichen Sie mit dem Theoriewert $\ln(2)RC$.
+%Abbildung 18: Schaltplan zur Entladekurve (Oszilloskopmesung)
+\item
+Bauen Sie sich mit 1 k$\Omega$ und 1
+$\mu$F ein Tiefpassfilter. Messen Sie den Frequenzgang. Dazu messen Sie für
+verschiedene Frequenzen das Verhältnis von Ausgangsspannung (über dem Kondensator) zur Eingangsspannung (vom Generator). Stellen Sie dieses Verhältnis und die Phasenverschiebung zwischen den Spannungen graphisch als Funktion der Frequenz dar. Die Phasenverschiebung können Sie entweder aus der Zeitverschiebung ($\frac{\Delta t}{T}$) zwischen den Spannungen oder aus der LISSAJOUS-Ellipse bestimmen. Wo liegt Ihre Grenzfrequenz? Vergleichen Sie mit dem Theoriewert.
+%Abbildung 19: Schaltplan Tiefpassfilter, R=1 k$\Omega$, C=1$\mu$F
+\item
+Bauen Sie mit denselben Bauteilen ein Hochpassfilter. Messen Sie stichprobenhaft an einigen Stellen den Frequenzgang (Tipp: Die Messungen dieser und der folgenden 3 Aufgaben (Filterschaltungen) gehen am schnellsten, wenn Sie alle 4 Filterschaltungen
+gleichzeitig aufbauen, gleichzeitig vom Sinusgenerator versorgen und für jede Frequenz nacheinander die 4 Ausgangsspannungen messen.
+Dabei hilft Ihnen auch die Funktion “measure“ des Digitaloszilloskops.). Wo liegt Ihre Grenzfrequenz? Vergleichen Sie mit dem Theoriewert.
+%Abbildung 20: Schaltplan Hochpassfilter, R=1 k$\Omega$, C=1$\mu$F
+\item
+Bauen Sie sich mit weiteren Bauelementen einen Bandpaßfilter und untersuchen Sie an einigen Stellen den Frequenzgang (Graphen!). Wo liegen die Grenzfrequenzen? Vergleichen Sie mit dem Theoriewert.
+%Abbildung 21: Schaltplan Bandpassfilter, R1=1 k$\Omega$, C1=1$\mu$F, R2=10 k$\Omega$, C2=1nF
+\item
+Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (stichprobenhaft an einigen Stellen) den Frequenzgang. Wo liegt Ihre Grenzfrequenz? Vergleichen Sie mit dem Theoriewert.
+%Abbildung 22: Schaltplan Hochpassfilter mit R und L, R=1 k$\Omega$, L=150$\mu$H
+\end{enumerate}
+\subsubsection{LC-Kreis}
+\paragraph{Resonanzkurve} 
+Nun nehmen wir eine Resonanzkurve auf, also $U_C$ als Funktion der Frequenz. Stellen Sie den Funktionsgenerator wieder auf SINUSsignal. Wir nehmen zunächst einen LC-Parallelresonanzkreis (Bei einem Serien-Resonanzkreis wie in 4. wird der Widerstand (genauer: die Impedanz) im Resonanzfall sehr klein. Dadurch bricht die Ausgangsspannung des Funktionsgenerators (Innenwiderstand 50
+$\Omega$) zusammen und die Resonanzerhöhung der Spannung über L oder C ist
+nur schlecht zu erkennen. Beim Parallelresonanzkreis wird der Widerstand (die Impedanz) im Resonanzfall sehr groß und man sieht einen deutlichen Resonanzpeak).
+%Abbildung 23: Schaltplan LC-Kreis; L=150$\mu$H, C=1$\mu$F, R = 0 oder (für geringe Güte) 10$\Omega$
+Damit Sie den Effekt sofort sehen und nicht jedesmal die Resonanzkurve durch langwierige Messungen von Hand
+ermittelt werden muß, verwenden Sie einige technische Hilfsmittel:
+\begin{itemize}
+\item
+Mit der SWEEPFUNKTION durchfährt der Funktionsgenerator immer wieder einen vorgegebenen Frequenzbereich. Über eine Hilfsschaltung (fertig in einer Box) wird die Frequenz in eine linearproportionale
+Gleichspannung $U_f$ = $k \cdot f$, $k$ = const. umgesetzt.
+\item
+Mit der GLEICHRICHTERFUNKTION wird die Wechselspannung an $U_C$ in eine zur Amplitude linearproportionale Gleichspannung $U_G = k \cdot \hat{U_C}$ , $k$ = const. umgesetzt.
+\item
+Wenn Sie Ihr Oszilloskop im xy-Modus betreiben, $U_f$ als $U_x$
+auf die x-Achse geben und $U_G$ als $U_y$ auf die y-Achse, sehen Sie sofort die Resonanzkurve.
+\end{itemize}
+Der gesamte Schaltplan incl. der Box mit der Hilfsschaltung sieht wie folgt aus:
+%Abbildung 24: Schaltplan LC-Kreis mit Hilfsschaltung (Umsetzersbox) und Oszilloskop
+Die Box hat BNC-Anschlüsse. Damit Sie den LC-Kreis über Bananenkabel anschließen können, verwenden Sie auch an der Box Bananebuchsen-BNC-Adapter. Beachten Sie: Der schwarze Anschluß ist GND (gemeinsame
+Masseleitung)! Wichtig: Stellen Sie am Funktionsgenerator eine Abschwächung von - 20 dB ein (eine der beiden Abschwächertasten drücken), sonst wird die Hilfsschaltung übersteuert! Welche Resonanzfrequenz erwarten Sie für die obengenannten Werte
+$L$ = 150$\mu$H und $C$ = 1$\mu$F? Welchen Frequenzbereich (Sweepbereich) sollten Sie also am Funktionsgenerator einstellen?
+Beobachten Sie zunächst mit R = 0
+$\Omega$. Was sehen Sie? Wie verändert sich die Kurve, wenn R auf 10$\Omega$ vergrößert wird? Warum? Sie können für R auch ein Potentiometer einsetzen (am besten den kleinsten Wert, also 1 k$\Omega$) und dort im Bereich vom 0 bis 20$\Omega$(!), also bei sehr kleinen Werten, die Resonanzkurve beobachten.
+\paragraph{Resonanzfrequenz}
+Um die Resonanzfrequenz zu bestimmen, können Sie die Sweepfunktion wieder abschalten und den Funktionsgenerator von Hand auf die Frequenz mit der maximalen Ausgangsspannung
+U
+C
+(=
+U
+y
+)stellen. Am Display lesen
+Sie dann die Frequenz ab. Vergleichen Sie mit dem theoretischen Wert
+$f = \frac{1}{2 \Pi \sqrt{LC}}$.
+\subsubsection{RCL-Kreise}
+\paragraph{Schwingfall, Kriechfall, aperiodischer Grenzfall}
+Was passiert, wenn Sie eine Spule und einen Kondensator gemeinsam in einem Stromkreis verwenden? Um dies zu
+untersuchen, bauen Sie die folgende Schaltung auf, bei der auch noch ein einstellbarer Widerstand (Potentiometer
+R) vorhanden ist. Diesmal ist ein Serien-Resonanzkreis sinnvoll.
+Abbildung 25:
+Schaltplan RCL-Kreis. Empfehlung: P=1 k
+$\Omega$
+, L=150
+$\mu$
+H, C=1 oder 10 nF
+Wir wollen untersuchen, wie das Verhalten des RCL-Kreises von der Groöße des Widerstandes abhängt.
+Der Funktionsgenerator wird dabei in der Einstellung RECHTECKsignal verwendet. Stellen Sie eine Frequenz
+von 10 kHz ein. Als Ausgangsspannung messen Sie
+U
+C
+über dem Kondensator. Beobachten Sie, wie sich
+U
+C
+als
+Funktion des Widerstandes
+R
+ändert. Wann tritt ein Schwingfall auf, wann ein Kriechfall? Stellen Sie auch den
+aperiodischen Grenzfall ein.
+Um den Schwingfall besser sehen zu können, stellen Sie die Zeitablenkung am Oszilloskop so ein, daß die Flanke
+des Rechtecksignals besonders groß dargestellt wird.
 \subsection{Theoretische Durchführung}
 
 
