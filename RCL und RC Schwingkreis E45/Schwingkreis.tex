@@ -58,9 +58,7 @@ Untersuchung der ungedämpften und der gedämpften elektrischen Schwingung bei e
 \section{Versuchsaufbau}
 
 
-\section{Versuchsdurchführung}
-
-
+\section{Aufgabe 1}
 \subsection{Praktische Durchführung}
 \subsubsection{Kennenlernen der Geräte} 
 (Wenn Sie sich mit den Geräten bereits gut auskennen, können Sie diese ersten Versuchsteile überspringen.)
@@ -82,6 +80,10 @@ LISSAJOUS-Ellipsen können Sie den Phasenwinkel zwischen den beiden Schwingungen
 \item
 Stellen Sie den Funktionsgenerator auf Sinus, 50 Hz, Amplitude einige Volt. Messen Sie die Amplitude am Oszilloskop. Schließen Sie ein Digitalvoltmeter (Bereich AC V) an und vergleichen Sie den Anzeigewert mit dem des Oszilloskops. Wiederholen Sie die Messungen bei 500 Hz, 5kHz und 50 kHz. Was fällt auf?
 \end{enumerate}
+\subsection{Diskussion}
+In dieser Aufgabe haben wir uns mit den Geräten vertraut gemacht, da wir mit diesen zum Teil nicht vertraut waren.
+\section{Aufgabe 2}
+\subsection{Praktische Durchführung}
 \subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren} 
 \begin{enumerate}
 \item
@@ -158,6 +160,69 @@ Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (sti
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 19 am 22.08.2014}
 
 \end{enumerate}
+\subsection{Theoretische Durchführung}
+\subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren}
+\begin{enumerate}
+\item
+Reduzierter Widerstand:
+\begin{align}
+R_L = \frac{R_i R_2}{R_i + R_2}
+\end{align}
+$R_i$ der Innenwiderstand des Messgerätes,
+$R_1$ und $R_2$ die beiden in Reihe geschalteten Widerstände.
+Fehler $R_L$:
+\begin{align}
+\sigma_{R_L} = \sqrt{
+\left(\frac{R_i(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_2}\right)+
+\left(\frac{R_2(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_i}\right)}
+\end{align}
+Spannungsteiler:
+\begin{align}
+U_a = U_e \frac{R_L}{R_L + R_1}
+\end{align}
+Fehler Spannungsteiler:
+\begin{align}
+\sigma_{U_a} = \sqrt{
+\left(\frac{R_L}{R_L + R_1}\sigma_{U_e}\right)^2+
+\left(U_e \frac{R_1}{(R_L + R_1)^2}\sigma_{R_L}\right)^2+
+\left(U_e \frac{R_L}{(R_L + R_1)^2}\sigma_{R_1}\right)^2}
+\end{align}
+\item
+Die Formel für die Halbwertszeit ist:
+\begin{align}
+T_{\frac{1}{2}} = \ln(2)RC
+\end{align}
+Fehler:
+\begin{align}
+\sigma_{T_{\frac{1}{2}}} = \sqrt{
+\left(\ln(2)R\sigma_{C}\right)^2+
+\left(\ln(2)C\sigma_{R}\right)^2}
+\end{align}
+\item
+Die Grenzfrequenz/en in Aufgabe 3,4 und 5 sind:
+\begin{align}
+\omega_{Gr} = \frac{1}{RC}
+\end{align}
+Fehler:
+\begin{align}
+\sigma_{\omega_{Gr}} = \sqrt{
+\left(\frac{1}{R^2C}\sigma_R\right)^2+
+\left(\frac{1}{RC^2}\sigma_C\right)^2}
+\end{align}
+\item
+Die Grenzfrequenz in Aufgabe 6 ist:
+\begin{align}
+\omega_{Gr} = \frac{R}{L}
+\end{align}
+Fehler:
+\begin{align}
+\sigma_{\omega_{Gr}} = \sqrt{\left(\frac{1}{L}\sigma_R\right)^2+\left(\frac{R}{L^2}\sigma_L\right)^2}
+\end{align}
+
+\end{enumerate}
+\subsection{Diskussion}
+\section{Aufgabe 3}
+\subsection{Praktische Durchführung}
 \subsubsection{LC-Kreis}
 \paragraph{Resonanzkurve} 
 Nun nehmen wir eine Resonanzkurve auf, also $U_C$ als Funktion der Frequenz. Stellen Sie den Funktionsgenerator wieder auf SINUSsignal. Wir nehmen zunächst einen LC-Parallelresonanzkreis (Bei einem Serien-Resonanzkreis wie in 4. wird der Widerstand (genauer: die Impedanz) im Resonanzfall sehr klein. Dadurch bricht die Ausgangsspannung des Funktionsgenerators (Innenwiderstand 50
@@ -204,6 +269,30 @@ $\Omega$. Was sehen Sie? Wie verändert sich die Kurve, wenn R auf 10$\Omega$ ve
 Um die Resonanzfrequenz zu bestimmen, können Sie die Sweepfunktion wieder abschalten und den Funktionsgenerator von Hand auf die Frequenz mit der maximalen Ausgangsspannung
 $U_C$ (= U$_y$) stellen. Am Display lesen Sie dann die Frequenz ab. Vergleichen Sie mit dem theoretischen Wert
 $f = \frac{1}{2 \Pi \sqrt{LC}}$.
+\subsection{Theoretische Durchführung}
+\subsubsection{LC-Kreis}
+\paragraph{Resonanzfrequenz:\newline}
+Die erwartete Resonanz(kreis)frequenz $\omega_R$ ist:
+\begin{align}
+\omega_R = \frac{1}{\sqrt{LC}}
+\end{align}
+Fehler:
+\begin{align}
+\sigma_{\omega_R} = \sqrt{
+\left(\frac{1}{2\sqrt[3]{L^2}\sqrt{C}}\sigma_L\right)^2+
+\left(\frac{1}{2\sqrt[3]{C^2}\sqrt{L}}\sigma_C\right)^2}
+\end{align}
+Bzw. die erwartete Frequenz $f_R$ ist:
+\begin{align}
+f_R = \frac{\omega_R}{2\pi}
+\end{align}
+Fehler:
+\begin{align}
+\sigma_{f_R} = \frac{\sigma_{\omega_R}}{2 \pi}
+\end{align}
+\subsection{Diskussion}
+\section{Aufgabe 4}
+\subsection{Praktische Durchführung}
 \subsubsection{RCL-Kreise}
 \paragraph{Schwingfall, Kriechfall, aperiodischer Grenzfall}
 Was passiert, wenn Sie eine Spule und einen Kondensator gemeinsam in einem Stromkreis verwenden? Um dies zu untersuchen, bauen Sie die folgende Schaltung auf, bei der auch noch ein einstellbarer Widerstand (Potentiometer R) vorhanden ist. Diesmal ist ein Serien-Resonanzkreis sinnvoll.
@@ -220,44 +309,16 @@ $U_C$ über dem Kondensator. Beobachten Sie, wie sich $U_C$
 als Funktion des Widerstandes
 R ändert. Wann tritt ein Schwingfall auf, wann ein Kriechfall? Stellen Sie auch den
 aperiodischen Grenzfall ein. Um den Schwingfall besser sehen zu können, stellen Sie die Zeitablenkung am Oszilloskop so ein, daß die Flanke des Rechtecksignals besonders groß dargestellt wird.
-\subsection{Theoretische Durchführung}
-\subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren}
-Reduzierter Widerstand:
-\begin{align}
-R_L = \frac{R_i R_2}{R_i + R_2}
-\end{align}
-$R_i$ der Innenwiderstand des Messgerätes,
-$R_1$ und $R_2$ die beiden in Reihe geschalteten Widerstände.
-Fehler $R_L$:
-\begin{align}
-\sigma_{R_L} = \sqrt{
-\left(\frac{R_i(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_2}\right)+
-\left(\frac{R_2(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_i}\right)}
-\end{align}
-Spannungsteiler:
-\begin{align}
-U_a = U_e \frac{R_L}{R_L + R_1}
-\end{align}
-Fehler Spannungsteiler:
-\begin{align}
-\sigma_{U_a} = \sqrt{
-\left(\frac{R_L}{R_L + R_1}\sigma_{U_e}\right)^2+
-\left(U_e \frac{R_1}{(R_L + R_1)^2}\sigma_{R_L}\right)^2+
-\left(U_e \frac{R_L}{(R_L + R_1)^2}\sigma_{R_1}\right)^2}
-\end{align}
-\subsubsection{LC-Kreis}
-\paragraph{Resonanzkurve}
-\paragraph{Resonanzfrequenz}
-\subsubsection{RCL-Kreise}
-\paragraph{Schwingfall, Kriechfall, aperiodischer Grenzfall}
+\subsection{Diskussion}
+
 \section{Messergebnisse}
 
 
 
 \section{Auswertung}
 
+\section{Fazit}
 
-\section{Diskussion}
 
 
  %Werte stimmen mit den Formeln überein/nicht überein
