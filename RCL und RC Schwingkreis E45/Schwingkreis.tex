@@ -59,9 +59,8 @@ Untersuchung der ungedämpften und der gedämpften elektrischen Schwingung bei e
 \section{Versuchsaufbau}
 
 
-\section{Aufgabe 1}
-\subsection{Praktische Durchführung}
-\subsubsection{Kennenlernen der Geräte} 
+\section{Aufgabe 1: Kennenlernen der Geräte}
+\subsection{Praktische Durchführung} 
 (Wenn Sie sich mit den Geräten bereits gut auskennen, können Sie diese ersten Versuchsteile überspringen.)
 \begin{enumerate}
 \item
@@ -83,9 +82,8 @@ Stellen Sie den Funktionsgenerator auf Sinus, 50 Hz, Amplitude einige Volt. Mess
 \end{enumerate}
 \subsection{Diskussion}
 In dieser Aufgabe haben wir uns mit den Geräten vertraut gemacht, da wir diese zum Teil nicht kannten.
-\section{Aufgabe 2}
-\subsection{Praktische Durchführung}
-\subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren} 
+\section{Aufgabe 2: Einfache Schaltungen mit Widerständen und Kondensatoren}
+\subsection{Praktische Durchführung} 
 \begin{enumerate}
 \item
 Bauen Sie sich mit zwei Widerständen einen Spannungsteiler (s. Schaltplan). Messen Sie mit dem DMM die Knotenspannung U2 und vergleichen Sie mit dem Theoriewert. Verwenden Sie zunächst zwei Widerstände aus dem k$\Omega$-Bereich und später zwei von 1 M$\Omega$. Was fällt auf? Erklären Sie die Abweichungen vom Theoriewert. Beachten Sie den Innenwiderstand des DMM (typ. 10 M
@@ -97,7 +95,6 @@ $\Omega$)
   	\caption[Skizze der Schaltung für einen Spannungsteiler]{Skizze der Schaltung für einen Spannungsteiler\footnotemark}
   \label{fig:spannungsteiler}
 \end{figure}
-\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 17 am 22.08.2014}
 
 \item
@@ -162,7 +159,6 @@ Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (sti
 
 \end{enumerate}
 \subsection{Theoretische Durchführung}
-\subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren}
 \begin{enumerate}
 \item
 Reduzierter Widerstand:
@@ -222,12 +218,13 @@ Fehler:
 
 \end{enumerate}
 \subsection{Diskussion}
-Im ersten Teil dieser Aufgabe sollte die Knotenspannung an einem Spannungsteiler ausgemessen und mit dem Theoriewert verglichen werden. Im zweiten Teil sollte die Halbwertszeit der Entladung des Tiefpasses bestimmt und mit dem Theoriewert verglichen werden. Im dritten bis sechsten Teil sollten die Grenzfrequenzen von Hoch-, Tief- und Bandpass bestimmt werden und mit den Theoriewerten verglichen werden.
-Dabei wurde für den Hochpass eine RC und zusätzlich eine RL Schaltung untersucht.
-\section{Aufgabe 3}
+Im ersten Teil dieser Aufgabe sollte die Knotenspannung an einem Spannungsteiler ausgemessen und mit dem Theoriewert verglichen werden.
+Im zweiten Teil sollte die Halbwertszeit der Entladung eines RC Tiefpasses bestimmt und mit dem Theoriewert verglichen werden. Die gemessenen Werte lagen beide erst im zweiten Sigmaintervall des jeweils anderen. Das kann daran liegen, dass wir einerseits den Fehler auf den Widerstand sowie auf den Kondensator nicht kannten (also schätzen mussten) und andererseits den Fehler, der durch den Innenwiderstand des Spannungsmessgerätes bei abfallender Spannung entsteht nicht berücksichtigt haben.
+Im dritten bis sechsten Teil sollten die Grenzfrequenzen von Hoch-, Tief- und Bandpass bestimmt und mit den Theoriewerten verglichen werden. Dabei wurde der Hochpass einerseits aus einem RC-Glied sowie andererseits aus einem RL-Glied geschaltet. Band- und Tiefpass wurden ausschließlich aus RC-Gliedern geschaltet.
+
+\section{Aufgabe 3: LC-Kreis}
 \subsection{Praktische Durchführung}
-\subsubsection{LC-Kreis}
-\paragraph{Resonanzkurve} 
+\subsubsection{Resonanzkurve} 
 Nun nehmen wir eine Resonanzkurve auf, also $U_C$ als Funktion der Frequenz. Stellen Sie den Funktionsgenerator wieder auf SINUSsignal. Wir nehmen zunächst einen LC-Parallelresonanzkreis (Bei einem Serien-Resonanzkreis wie in 4. wird der Widerstand (genauer: die Impedanz) im Resonanzfall sehr klein. Dadurch bricht die Ausgangsspannung des Funktionsgenerators (Innenwiderstand 50
 $\Omega$) zusammen und die Resonanzerhöhung der Spannung über L oder C ist
 nur schlecht zu erkennen. Beim Parallelresonanzkreis wird der Widerstand (die Impedanz) im Resonanzfall sehr groß und man sieht einen deutlichen Resonanzpeak).
@@ -238,7 +235,6 @@ nur schlecht zu erkennen. Beim Parallelresonanzkreis wird der Widerstand (die Im
   	\caption[Skizze der Schaltung für einen LC-Kreis]{Skizze der Schaltung für einen LC-Kreis\footnotemark}
   \label{fig:LC-Kreis}
 \end{figure}
-\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 20 am 22.08.2014}
 
 Damit Sie den Effekt sofort sehen und nicht jedesmal die Resonanzkurve durch langwierige Messungen von Hand
@@ -268,13 +264,12 @@ Masseleitung)! Wichtig: Stellen Sie am Funktionsgenerator eine Abschwächung von
 $L$ = 150$\mu$H und $C$ = 1$\mu$F? Welchen Frequenzbereich (Sweepbereich) sollten Sie also am Funktionsgenerator einstellen?
 Beobachten Sie zunächst mit R = 0
 $\Omega$. Was sehen Sie? Wie verändert sich die Kurve, wenn R auf 10$\Omega$ vergrößert wird? Warum? Sie können für R auch ein Potentiometer einsetzen (am besten den kleinsten Wert, also 1 k$\Omega$) und dort im Bereich vom 0 bis 20$\Omega$(!), also bei sehr kleinen Werten, die Resonanzkurve beobachten.
-\paragraph{Resonanzfrequenz}
+\subsubsection{Resonanzfrequenz}
 Um die Resonanzfrequenz zu bestimmen, können Sie die Sweepfunktion wieder abschalten und den Funktionsgenerator von Hand auf die Frequenz mit der maximalen Ausgangsspannung
 $U_C$ (= U$_y$) stellen. Am Display lesen Sie dann die Frequenz ab. Vergleichen Sie mit dem theoretischen Wert
 $f = \frac{1}{2 \Pi \sqrt{LC}}$.
 \subsection{Theoretische Durchführung}
-\subsubsection{LC-Kreis}
-\paragraph{Resonanzfrequenz:\newline}
+\subsubsection{Resonanzfrequenz}
 Die erwartete Resonanz(kreis)frequenz $\omega_R$ ist:
 \begin{align}
 \omega_R = \frac{1}{\sqrt{LC}}
@@ -294,10 +289,10 @@ Fehler:
 \sigma_{f_R} = \frac{\sigma_{\omega_R}}{2 \pi}
 \end{align}
 \subsection{Diskussion}
-\section{Aufgabe 4}
+In dieser Aufgabe sollte die Resonanzkurve eines LC-Kreises aufgenommen werden und die Resonanzfrequenz am Display des Funktionsgenerators abgelesen werden. Da er Punkt, den man am Display sehen konnte, sehr groß war, mussten wir den Fehler dieser Messung relativ groß wählen.Trotzdem weicht unser Messergebnis weniger als 10\% vom theoretisch bestimmten Wert ab.
+\section{Aufgabe 4: RCL-Kreise}
 \subsection{Praktische Durchführung}
-\subsubsection{RCL-Kreise}
-\paragraph{Schwingfall, Kriechfall, aperiodischer Grenzfall}
+\subsubsection{Schwingfall, Kriechfall, aperiodischer Grenzfall}
 Was passiert, wenn Sie eine Spule und einen Kondensator gemeinsam in einem Stromkreis verwenden? Um dies zu untersuchen, bauen Sie die folgende Schaltung auf, bei der auch noch ein einstellbarer Widerstand (Potentiometer R) vorhanden ist. Diesmal ist ein Serien-Resonanzkreis sinnvoll.
 %Abbildung 25: Schaltplan RCL-Kreis. Empfehlung: P=1 k$\Omega$, L=150 $\mu$H, C=1 oder 10 nF
 \begin{figure}[htbp] 
@@ -321,10 +316,13 @@ aperiodischen Grenzfall ein. Um den Schwingfall besser sehen zu können, stellen
 \section{Auswertung}
 
 \section{Fazit}
-
-
-
- %Werte stimmen mit den Formeln überein/nicht überein
+Aufgabe 2 war mit Abstand die längste Aufgabe dieses Versuches und es wurde ca. 80\% der verfügbaren Zeit dafür verwendet, was unter anderem daran lag, dass der Anschluss an unseren Funktionsgenerator einen Wackelkontakt hatte, sodass einige Male garnichts angezeigt wurde, obwohl die richtige Schaltung angeschlossen war. Vor allem kann dies ein Grund dafür sein, dass wir bei unserem LC-Hochpass die Messergebnisse eines Tiefpasses festgestellt haben, wobei die Schaltung definitiv ordnungsgemäß zusammengesteckt war. Im dritten Teil mussten die Messwerte der Nachbargruppe verwendet werden, da wir dort lediglich die Phasenverschiebung ausgemessen haben.
+Insgesamt gab es bei der Durchführung der zweiten Aufgabe also einige Probleme, die auf ungewöhnlich schlechte Messergebnisse unseres Funktionengenerators, als auch z.B. auf Zeitmangel für ausreichend viele Messwerte
+für die Grenzfrequenzen des Bandpasses zurückzuführen sind.\\
+Aufgabe 3 verlief dagegen nicht so problematisch, da wir diese an einem anderen Funktionsgenerator durchführen konnten. Bis auf die relativ große Messungenauigkeit beim Ablesen der Resonanzfrequenz am Display ist unser Ergebnis für die Resonanzfrequenz recht nahe am Theoriewert.\\
+Aufgabe 4 veranschaulichte das Verhalten eines RCL Kreises abhängig von der Größe des Widerstandes. Wir haben den Spannungsverlauf am Display eines anderen Frequenzgenerators in allen drei Fällen abfotographiert, wobei uns die Messung des Widerstandes fehlt. Deshalb haben wir die Messerte unserer Nachbargruppe verwendet.\\
+Zusammenfassend mussten bei diesem Versuch an einigen Stellen Abstriche gemacht werden. Wir konnten an den meisten Stellen nicht genau genug messen, um qualitative Aussagen zu treffen.
+%Werte stimmen mit den Formeln überein/nicht überein
 
 \end{document}
 
