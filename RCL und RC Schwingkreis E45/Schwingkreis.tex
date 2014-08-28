@@ -94,6 +94,7 @@ $\Omega$)
   	\caption[Skizze der Schaltung für einen Spannungsteiler]{Skizze der Schaltung für einen Spannungsteiler\footnotemark}
   \label{fig:spannungsteiler}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 17 am 22.08.2014}
 
 \item
@@ -120,6 +121,7 @@ verschiedene Frequenzen das Verhältnis von Ausgangsspannung (über dem Kondensa
   	\caption[Skizze der Schaltung für einen Tiefpass]{Skizze der Schaltung für einen Tiefpass\footnotemark}
   \label{fig:Tiefpass_2}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 18 am 22.08.2014}
 \item
 Bauen Sie mit denselben Bauteilen ein Hochpassfilter. Messen Sie stichprobenhaft an einigen Stellen den Frequenzgang (Tipp: Die Messungen dieser und der folgenden 3 Aufgaben (Filterschaltungen) gehen am schnellsten, wenn Sie alle 4 Filterschaltungen
@@ -142,6 +144,7 @@ Bauen Sie sich mit weiteren Bauelementen einen Bandpaßfilter und untersuchen Si
   	\caption[Skizze der Schaltung für einen Bandpass]{Skizze der Schaltung für einen Bandpass\footnotemark}
   \label{fig:Bandpass}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 19 am 22.08.2014}
 \item
 Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (stichprobenhaft an einigen Stellen) den Frequenzgang. Wo liegt Ihre Grenzfrequenz? Vergleichen Sie mit dem Theoriewert.
@@ -167,6 +170,7 @@ nur schlecht zu erkennen. Beim Parallelresonanzkreis wird der Widerstand (die Im
   	\caption[Skizze der Schaltung für einen LC-Kreis]{Skizze der Schaltung für einen LC-Kreis\footnotemark}
   \label{fig:LC-Kreis}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 20 am 22.08.2014}
 
 Damit Sie den Effekt sofort sehen und nicht jedesmal die Resonanzkurve durch langwierige Messungen von Hand
@@ -217,8 +221,30 @@ als Funktion des Widerstandes
 R ändert. Wann tritt ein Schwingfall auf, wann ein Kriechfall? Stellen Sie auch den
 aperiodischen Grenzfall ein. Um den Schwingfall besser sehen zu können, stellen Sie die Zeitablenkung am Oszilloskop so ein, daß die Flanke des Rechtecksignals besonders groß dargestellt wird.
 \subsection{Theoretische Durchführung}
-\subsubsection{Kennenlernen der Geräte}
 \subsubsection{Einfache Schaltungen mit Widerständen und Kondensatoren}
+Reduzierter Widerstand:
+\begin{align}
+R_L = \frac{R_i R_2}{R_i + R_2}
+\end{align}
+$R_i$ der Innenwiderstand des Messgerätes,
+$R_1$ und $R_2$ die beiden in Reihe geschalteten Widerstände.
+Fehler $R_L$:
+\begin{align}
+\sigma_{R_L} = \sqrt{
+\left(\frac{R_i(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_2}\right)+
+\left(\frac{R_2(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_i}\right)}
+\end{align}
+Spannungsteiler:
+\begin{align}
+U_a = U_e \frac{R_L}{R_L + R_1}
+\end{align}
+Fehler Spannungsteiler:
+\begin{align}
+\sigma_{U_a} = \sqrt{
+\left(\frac{R_L}{R_L + R_1}\sigma_{U_e}\right)^2+
+\left(U_e \frac{R_1}{(R_L + R_1)^2}\sigma_{R_L}\right)^2+
+\left(U_e \frac{R_L}{(R_L + R_1)^2}\sigma_{R_1}\right)^2}
+\end{align}
 \subsubsection{LC-Kreis}
 \paragraph{Resonanzkurve}
 \paragraph{Resonanzfrequenz}
