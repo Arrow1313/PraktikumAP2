@@ -1,0 +1,54 @@
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0,1]{schwingfall.JPG}
+  	\caption[Foto des Schwingfalls, visualisiert auf dem Oszillographen]{Foto des Schwingfalls, visualisiert auf dem Oszillographen}
+  \label{fig:schwingfall}
+\end{figure}
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0,1]{aperiodischergrenzfall.JPG}
+  	\caption[Foto des aperiodischen Grenzfalls, visualisiert auf dem Oszillographen]{Foto des aperiodischen Grenzfalls, visualisiert auf dem Oszillographen}
+  \label{fig:aperiodischergrenzfall}
+\end{figure}
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0,1]{kriechfall.JPG}
+  	\caption[Foto des Kriechfalls, visualisiert auf dem Oszillographen]{Foto des Kriechfalls, visualisiert auf dem Oszillographen}
+  \label{fig:aperiodischergrenzfall}
+\end{figure}
+
+
+
+
+
+
+\begin{table}[htbp]
+\caption{Messdaten für die Phasenverschiebung in Abhängigkeit der Frequenz}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+20 (\pm 10) & 50 (\pm 10) & 100 (\pm 10) & 125 (\pm 10) & 150 (\pm 10) & 175 (\pm 10) \\ \hline
+Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms \\ \hline
+0,96  (\pm 0,01) & 0,96  (\pm 0,01) & 0,87  (\pm 0,01) & 0,85  (\pm 0,01) & 0,78  (\pm 0,01) & 0,74  (\pm 0,01) \\ \hline
+Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms \\ \hline
+50 (\pm 0,5) & 20 (\pm 0,5) & 10 (\pm 0,5) & 8 (\pm 0,5) & 6,7 (\pm 0,5) & 5,7 (\pm 0,5) \\ \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+200 (\pm 10) & 300 (\pm 10) & 400 (\pm 10) & 500 (\pm 10) & 600 (\pm 10) & 700 (\pm 10) \\ \hline
+Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms \\ \hline
+0,7  (\pm 0,01) & 0,57  (\pm 0,01) & 0,47  (\pm 0,01) & 0,47  (\pm 0,01) & 0,36  (\pm 0,01) & 0,32  (\pm 0,01) \\ \hline
+Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms \\ \hline
+5 (\pm 0,5) & 3,3 (\pm 0,5) & 2,5 (\pm 0,5) & 2 (\pm 0,5) & 1,7 (\pm 0,5) & 1,4 (\pm 0,5) \\ \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz &  \\ \hline
+800 (\pm 10) & 900 (\pm 10) & 1000 (\pm 10) & 75 (\pm 10) & 250 (\pm 10) &  \\ \hline
+Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms & Zeitversatz/ms &  \\ \hline
+0,3  (\pm 0,01) & 0,27  (\pm 0,01) & 0,24  (\pm 0,01) & 0,94  (\pm 0,01) & 0,62  (\pm 0,01) &  \\ \hline
+Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms & Periodendauer/ms &  \\ \hline
+1,25 (\pm 0,5) & 1,1 (\pm 0,5) & 1 (\pm 0,5) & 13,3 (\pm 0,5) & 4 (\pm 0,5) &  \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.3.2}
+\end{table}
+
