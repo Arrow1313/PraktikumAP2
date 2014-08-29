@@ -57,7 +57,18 @@ Untersuchung der ungedämpften und der gedämpften elektrischen Schwingung bei e
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
+Der Versuchsaufbau besteht aus einem Steckbrett und verschiedenen Bauteilen, Widerstände, Kondensatoren und Spulen.
+Hier ein Foto der Aufbauten für Aufgabe 2 Teil 4-6.
 
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.1]{aufbau.JPG}
+  	\caption[Foto des Versuchsaufbaus]{Foto des Versuchsaufbaus}
+  \label{fig:teil_6}
+\end{figure}
+
+Die einzelnen Schaltpläne sind in dein praktischen Durchführungen der einzelnen Aufgaben zu finden.
+\newpage
 
 \section{Aufgabe 1: Kennenlernen der Geräte}
 \subsection{Praktische Durchführung} 
@@ -118,7 +129,7 @@ verschiedene Frequenzen das Verhältnis von Ausgangsspannung (über dem Kondensa
 \begin{figure}[htbp] 
   \centering
     \includegraphics[trim = 1mm 225mm 1mm 37mm, clip, scale = 1]{tiefpass.pdf}
-  	\caption[Skizze der Schaltung für einen Tiefpass]{Skizze der Schaltung für einen Tiefpass\footnotemark}
+  	\caption[Skizze der Schaltung für einen Tiefpass, mit R=1 k$\Omega$, C=1$\mu$F]{Skizze der Schaltung für einen Tiefpass, mit R=1 k$\Omega$, C=1$\mu$F\footnotemark}
   \label{fig:Tiefpass_2}
 \end{figure}
 \newpage
@@ -131,7 +142,7 @@ Dabei hilft Ihnen auch die Funktion “measure“ des Digitaloszilloskops.). Wo 
 \begin{figure}[htbp] 
   \centering
     \includegraphics[trim = 20mm 60mm 1mm 190mm, clip, scale = 1]{tiefpass.pdf}
-  	\caption[Skizze der Schaltung für einen Hockpass]{Skizze der Schaltung für einen Hochpass\footnotemark}
+  	\caption[Skizze der Schaltung für einen Hockpass, mit R=1 k$\Omega$, C=1$\mu$F]{Skizze der Schaltung für einen Hochpass, mit R=1 k$\Omega$, C=1$\mu$F\footnotemark}
   \label{fig:Hochpass}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 18 am 22.08.2014}
@@ -141,7 +152,7 @@ Bauen Sie sich mit weiteren Bauelementen einen Bandpaßfilter und untersuchen Si
 \begin{figure}[htbp] 
   \centering
     \includegraphics[trim = 20mm 220mm 1mm 30mm, clip, scale = 1]{bandpass_hochpass.pdf}
-  	\caption[Skizze der Schaltung für einen Bandpass]{Skizze der Schaltung für einen Bandpass\footnotemark}
+  	\caption[Skizze der Schaltung für einen Bandpass, mit R1=1 k$\Omega$, C1=1$\mu$F, R2=10 k$\Omega$, C2=1nF]{Skizze der Schaltung für einen Bandpass, mit R1=1 k$\Omega$, C1=1$\mu$F, R2=10 k$\Omega$, C2=1nF\footnotemark}
   \label{fig:Bandpass}
 \end{figure}
 \newpage
@@ -152,7 +163,7 @@ Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (sti
 \begin{figure}[htbp] 
   \centering
     \includegraphics[trim = 20mm 155mm 1mm 105mm, clip, scale = 1]{bandpass_hochpass.pdf}
-  	\caption[Skizze der Schaltung für einen Hochpass, mit einer Spule]{Skizze der Schaltung für einen Hochpass, mit einer Spule\footnotemark}
+  	\caption[Skizze der Schaltung für einen Hochpass, mit einer Spule, mit R=1 k$\Omega$, L=150$\mu$H]{Skizze der Schaltung für einen Hochpass, mit einer Spule, mit R=1 k$\Omega$, L=150$\mu$H\footnotemark}
   \label{fig:Hochpass_spule}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 19 am 22.08.2014}
@@ -164,6 +175,7 @@ Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (sti
 Reduzierter Widerstand:
 \begin{align}
 R_L = \frac{R_i R_2}{R_i + R_2}
+\label{eqn:para}
 \end{align}
 $R_i$ der Innenwiderstand des Messgerätes,
 $R_1$ und $R_2$ die beiden in Reihe geschalteten Widerstände.
@@ -172,10 +184,12 @@ Fehler $R_L$:
 \sigma_{R_L} = \sqrt{
 \left(\frac{R_i(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_2}\right)+
 \left(\frac{R_2(R_i+R_2)-R_i R_2}{(R_i + R_2)^2}\sigma_{R_i}\right)}
+\label{eqn:para_sigma}
 \end{align}
 Spannungsteiler:
 \begin{align}
 U_a = U_e \frac{R_L}{R_L + R_1}
+\label{eqn:spannungsteiler}
 \end{align}
 Fehler Spannungsteiler:
 \begin{align}
@@ -183,17 +197,20 @@ Fehler Spannungsteiler:
 \left(\frac{R_L}{R_L + R_1}\sigma_{U_e}\right)^2+
 \left(U_e \frac{R_1}{(R_L + R_1)^2}\sigma_{R_L}\right)^2+
 \left(U_e \frac{R_L}{(R_L + R_1)^2}\sigma_{R_1}\right)^2}
+\label{eqn:spannungsteiler_sigma}
 \end{align}
 \item
 Die Formel für die Halbwertszeit ist:
 \begin{align}
 T_{\frac{1}{2}} = \ln(2)RC
+\label{eqn:halbzeit}
 \end{align}
 Fehler:
 \begin{align}
 \sigma_{T_{\frac{1}{2}}} = \sqrt{
 \left(\ln(2)R\sigma_{C}\right)^2+
 \left(\ln(2)C\sigma_{R}\right)^2}
+\label{eqn:halbzeit_sigma}
 \end{align}
 \item
 Im folgenden gilt immer:
@@ -207,12 +224,14 @@ Fehler:
 Die Grenzfrequenz/en in Aufgabe 3,4 und 5 sind:
 \begin{align}
 \omega_{Gr} = \frac{1}{RC}
+\label{eqn:omega_g}
 \end{align}
 Fehler:
 \begin{align}
 \sigma_{\omega_{Gr}} = \sqrt{
 \left(\frac{1}{R^2C}\sigma_R\right)^2+
 \left(\frac{1}{RC^2}\sigma_C\right)^2}
+\label{eqn:omega_g_sigma}
 \end{align}
 \item
 Die Grenzfrequenz in Aufgabe 6 ist:
@@ -229,9 +248,10 @@ Fehler:
 Im ersten Teil dieser Aufgabe sollte die Knotenspannung an einem Spannungsteiler ausgemessen und mit dem Theoriewert verglichen werden. Der erste gemessene Wert liegt im ersten Sigmaintervall des Theoriewertes, der zweite gemessene Wert liegt knapp außerhalb des ersten, aber innerhalb des zweiten Sigmaintervalls des Theoriewertes (das gleiche gilt umgekehrt für die beiden Theoriewerte bezogen auf die Fehler der Messwerte). 
 Im zweiten Teil sollte die Halbwertszeit der Entladung des Kondensators in einem RC Tiefpasses bestimmt und mit dem Theoriewert verglichen werden. Der gemessene Wert lag erst im zweiten Sigmaintervall des Theoriewertes (sowie der Theoriewert erst im zweiten Sigmaintervall des Messwertes). Das liegt einerseits daran, dass wir den Fehler auf Widerstand und Kondensator nicht kannten (schätzen mussten) und andererseits den Fehler, der durch den Innenwiderstand des Spannungsmessgerätes bei abfallender Spannung entsteht, nicht berücksichtigt haben.
 Im dritten bis sechsten Teil sollten die Grenzfrequenzen von Hoch-, Tief- und Bandpass bestimmt und mit den Theoriewerten verglichen werden. Dabei wurde der Hochpass einerseits aus einem RC-Glied sowie andererseits aus einem RL-Glied geschaltet. Band- und Tiefpass wurden ausschließlich aus RC-Gliedern geschaltet. Im Aufgabenteil drei ergibt sich mit den Messwerten der Nachbargruppe eine Grenzfrequenz, die innerhalb des ersten Sigmaintervalls des Theoriewertes liegt.
-Im Aufgabenteil 4 bis 6 haben wir leider den falschen Frequenbereich ausgemessen, da wir $\omega_Gr$ nicht in das am Funktionsgenerator angezegte f umgerechnet haben.
+Im Aufgabenteil 4 bis 6 haben wir leider den falschen Frequenbereich ausgemessen, da wir $\omega_Gr$ nicht in das am Funktionsgenerator angezeigte f umgerechnet haben.
 Dies sieht man sehr gut an den Plots
 %(\ref plots)
+\ref{fig:teil_4} und \ref{fig:teil_6}
 für Aufgabenteil 4 und 6, wodurch diese nicht für den Vergleich mit den Theoriewerten zu gebrauchen sind.
 Plot 5 ist zwar sehr ungenau, es lässt sich aber eine der beiden Grenzfrequenzen über einen manuellen Fit ablesen, welche auch relativ nahe an dem Theoriewert liegt, jedoch können wir wegen der großen Ungenauigkeit durch den manuellen Fit keine weiteren Aussagen zur Fehlerbetrachtung in diesem Versuchsteil angeben.
 \section{Aufgabe 3: LC-Kreis}
@@ -244,7 +264,7 @@ nur schlecht zu erkennen. Beim Parallelresonanzkreis wird der Widerstand (die Im
 \begin{figure}[htbp] 
   \centering
     \includegraphics[trim = 20mm 200mm 1mm 50mm, clip, scale = 1]{LC_kreis.pdf}
-  	\caption[Skizze der Schaltung für einen LC-Kreis]{Skizze der Schaltung für einen LC-Kreis\footnotemark}
+  	\caption[Skizze der Schaltung für einen LC-Kreis, mit L=150$\mu$H, C=1$\mu$F]{Skizze der Schaltung für einen LC-Kreis, mit L=150$\mu$H, C=1$\mu$F\footnotemark}
   \label{fig:LC-Kreis}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 20 am 22.08.2014}
@@ -285,20 +305,24 @@ $f = \frac{1}{2 \pi \sqrt{LC}}$.
 Die erwartete Resonanz(kreis)frequenz $\omega_R$ ist:
 \begin{align}
 \omega_R = \frac{1}{\sqrt{LC}}
+\label{eqn:reso_kreis}
 \end{align}
 Fehler:
 \begin{align}
 \sigma_{\omega_R} = \sqrt{
 \left(\frac{1}{2\sqrt[3]{L^2}\sqrt{C}}\sigma_L\right)^2+
 \left(\frac{1}{2\sqrt[3]{C^2}\sqrt{L}}\sigma_C\right)^2}
+\label{eqn:reso_kreis_sigma}
 \end{align}
 Bzw. die erwartete Frequenz $f_R$ ist:
 \begin{align}
 f_R = \frac{\omega_R}{2\pi}
+\label{eqn:reso}
 \end{align}
 Fehler:
 \begin{align}
 \sigma_{f_R} = \frac{\sigma_{\omega_R}}{2 \pi}
+\label{eqn:reso_sigma}
 \end{align}
 \subsection{Diskussion}
 In dieser Aufgabe sollte die Resonanzkurve eines LC-Kreises aufgenommen werden und die Resonanzfrequenz am Display des Funktionsgenerators abgelesen werden. Da er Punkt, den man am Display sehen konnte, sehr groß war, mussten wir den Fehler dieser Messung relativ groß wählen.Trotzdem weicht unser Messergebnis weniger als 10\% vom theoretisch bestimmten Wert ab.
@@ -306,11 +330,11 @@ In dieser Aufgabe sollte die Resonanzkurve eines LC-Kreises aufgenommen werden u
 \subsection{Praktische Durchführung}
 \subsubsection{Schwingfall, Kriechfall, aperiodischer Grenzfall}
 Was passiert, wenn Sie eine Spule und einen Kondensator gemeinsam in einem Stromkreis verwenden? Um dies zu untersuchen, bauen Sie die folgende Schaltung auf, bei der auch noch ein einstellbarer Widerstand (Potentiometer R) vorhanden ist. Diesmal ist ein Serien-Resonanzkreis sinnvoll.
-%Abbildung 25: Schaltplan RCL-Kreis. Empfehlung: P=1 k$\Omega$, L=150 $\mu$H, C=1 oder 10 nF
+%Abbildung 25: Schaltplan RCL-Kreis. Empfehlung: R=1 k$\Omega$, L=150 $\mu$H, C=1 oder 10 nF
 \begin{figure}[htbp] 
   \centering
     \includegraphics[trim = 20mm 165mm 1mm 95mm, clip, scale = 1]{RCL_kreis.pdf}
-  	\caption[Skizze der Schaltung für einen RCL-Kreis, mit Hilfsschaltung]{Skizze der Schaltung für einen RCL-Kreis, mit Hilfsschaltung\footnotemark}
+  	\caption[Skizze der Schaltung für einen RCL-Kreis, mit Hilfsschaltung, mit R=1 k$\Omega$, L=150 $\mu$H, C=1 oder 10 nF]{Skizze der Schaltung für einen RCL-Kreis, mit Hilfsschaltung, mit R=1 k$\Omega$, L=150 $\mu$H, C=1 oder 10 nF\footnotemark}
   \label{fig:LC-Kreis_hilfe}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 21 am 22.08.2014}
@@ -378,7 +402,7 @@ Konsensator/F \\ \hline
 
 
 \begin{table}[htbp]
-\caption{Werte für Aufgabe 2.3, für den Frequenzgang}
+\caption{Werte für Aufgabe 2.3, für den Frequenzgang. Die Messergebnisse sind von der Gruppe Philipp Pagel und Jens Rogel. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F verwendet.}
 \begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
@@ -422,7 +446,7 @@ U$_\text{aus}$/V & U$_\text{aus}$/V &  \\ \hline
 \end{table}
 
 \begin{table}[htbp]
-\caption{Werte für Aufgabe 2.4, zur Bestimmung des Frequenzgangs}
+\caption{Werte für Aufgabe 2.4, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F verwendet.}
 \begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
@@ -451,7 +475,7 @@ U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
 
 
 \begin{table}[htbp]
-\caption{Werte für Aufgabe 2.5, zur Bestimmung des Frequenzgangs}
+\caption{Werte für Aufgabe 2.5, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F für den erste Teil und ein Widerstand von 10k$\Omega$ und ein Kondensator mit 1nF verwendet.}
 \begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
@@ -486,7 +510,7 @@ U$_\text{ein}$/V &  &  \\ \hline
 
 
 \begin{table}[htbp]
-\caption{Werte für Aufgabe 2.6, zur Bestimmung des Frequenzgangs}
+\caption{Werte für Aufgabe 2.6, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und ein Spule mit 150$\mu$H verwendet.}
 \begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
@@ -513,6 +537,8 @@ U$_\text{ein}$/V & U$_\text{ein}$/V &  \\ \hline
 \label{tab:2.6}
 \end{table}
 
+\subsection{Aufgabe 3}
+
 \begin{table}[htbp]
 \caption{Werte für Aufgabe 3, Materialeigenschaften der Spule und des Kondensators}
 \begin{center}
@@ -524,11 +550,86 @@ Spule/H \\ \hline
 0,00015 $(\pm 0,00008)$ \\ \hline
 \end{tabular}
 \end{center}
-\label{tab:2.6}
+\label{tab:3}
 \end{table}
 
 
+
+
 \section{Auswertung}
+
+\subsection{Aufgabe 2}
+
+\subsubsection{Teil 1}
+Es sollte die Ausgangsspannung für 1k$\Omega$ und für 1M$\Omega$ bestimmt werden, dabei ergab sich für den 1k$\Omega$ ein experimenteller Wert von 0,503 $(\pm 0,006)$ Volt und theoretisch (für die Spannung \ref{eqn:spannungsteiler}, für den Fehler \ref{eqn:spannungsteiler_sigma}) ergab sich ein Wert von 0,49975 $(\pm 0,00005)$ Volt, der Widerstand R$_\text{2,L}$ ergibt sich nach Formel \ref{eqn:para} mit Fehler nach Gleichung \ref{eqn:spannungsteiler_sigma}. Für die 1M$\Omega$ Widerstände ergab ich durch Messung ein Wert von 0,483 $(\pm 0,006)$ Volt und theoretisch (für die Spannung \ref{eqn:spannungsteiler}, für den Fehler \ref{eqn:spannungsteiler_sigma}) ein Wert von 0,476 $(\pm 0,004)$ Volt der Widerstand R$_\text{2,L}$ ergibt sich nach Formel \ref{eqn:para} mit Fehler nach Gleichung \ref{eqn:spannungsteiler_sigma}.
+
+\subsubsection{Teil 2}
+Im zweiten Teil sollte die Halbwertszeit durch Messung und durch Materialeigenschaften bestimmt werden, für die theoretische Bestimmung wurde Gleichung \ref{eqn:halbzeit} und Gleichung \ref{eqn:halbzeit_sigma} für den Fehler verwendet, dabei ergab sich ein Wert von 0,069	$(\pm 0,004)$ s. Bei der Messung ergab sich ein Wert von 0,075 $(\pm 0,005)$ s.
+
+\subsubsection{Teil 3}
+Es sollte die Grenzfrequenz eines RC-Tiefpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet.
+In diesem Teil werden die Messwerte der Gruppe von Philipp Pagel und Jens Rogel verwendet.
+Theoretisch ergab sich ein Wert von 159 $(\pm 8)$Hz, durch die Messung ergab sich ein Wert von 162,5 $(\pm 20)$Hz 
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5, angle = 90]{teil_3.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Tiefpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Tiefpass}
+  \label{fig:Hochpass}
+\end{figure}
+
+\newpage
+
+\subsubsection{Teil 4}
+Es sollte die Grenzfrequenz eines RC-Hochpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet.
+Aus der theoretischen Bestimmung ergab sich ein Wert von 159 $(\pm 8)$Hz, experimentell ergab sich kein Wert, da der falsche Frequenzbereich ausgemessen wurde, für eine genauere Erörterung siehe Diskussion. Graphisch ergab sich bei dem von uns Ausgemessenem Bereich der folgende Plot.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1]{teil_4.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Hochpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Hochpass}
+  \label{fig:teil_4}
+\end{figure}
+
+\newpage
+
+\subsubsection{Teil 5}
+Es sollte die Grenzfrequenz eines Bandpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet, dabei werden zwei Grenzfrequenzen erwartet, für den Hochpass und für den Tiefpass. Dabei ergab sich die folgenden Werte 159 $(\pm 8)$Hz und 15915 $(\pm 796)$Hz. Durch die Messung ergab sich ein Wert von 17000 $(\pm 1000)$Hz. Es wurde nicht der Gesamte Frequenzbereich ausgemessen, der nötig gewesen wäre, Erörterung in der Diskussion.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5, angle=90]{teil_5.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den Bandpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den Bandpass}
+  \label{fig:teil_5}
+\end{figure}
+
+\newpage
+
+\subsubsection{Teil 6}
+Es sollte die Grenzfrequenz eines LC-Hochpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet. Für die theoretische Bestimmung ergab sich ein Wert von 1061032 $(\pm 54112)$Hz. Da wieder der Falsche Frequenzbereich ausgemessen wurde liegt hier leider ein experimentelles Ergebnis von, für eine Erörterung siehe Diskussion. Die gemessenen Werte ergeben den folgenden Plot.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1]{teil_6.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den LC-Hochpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenzfür den LC-Hochpass}
+  \label{fig:teil_6}
+\end{figure}
+
+\newpage
+
+\subsection{Aufgabe 3}
+
+In Aufgabe 3 sollte ein LC-Kreis untersucht werden. Dabei sollte die Resonanzfrequenz bestimmt werden theoretisch wurde der Wert mit Gleichung \ref{eqn:reso_kreis} und \ref{eqn:reso} bestimmt die Fehler wurden mit Gleichung \ref{eqn:reso_kreis_sigma} und \ref{eqn:reso_sigma} bestimmt.
+Dabei ergab sich ein Wert von 12995 $(\pm 459)$Hz bei der Messung ergab sich ein Wert von 14170 $(\pm 1000)$Hz. Bei ein Widerstand von 0 $\Omega$ sieht man die maximale Auslenkung, wenn man den widerstand erhöht, so erhöht sich die Dämpfung und die maximale Auslenkung nimmt ab.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.2]{aufgabe3_2.JPG}
+  	\caption[Foto des Oszillographen bei unendlichem Nachleuchten]{Foto des Oszillographen bei unendlichem Nachleuchten}
+  \label{fig:teil_6}
+\end{figure}
+
+
 
 \section{Fazit}
 Aufgabe 2 war mit Abstand die längste Aufgabe dieses Versuches und es wurde ein Großteil der verfügbaren Zeit dafür verwendet, was unter anderem daran lag, dass der Anschluss an unseren Funktionsgenerator einen Wackelkontakt hatte, sodass einige Male garnichts angezeigt wurde, obwohl die richtige Schaltung angeschlossen war. Im dritten Aufgabenteil mussten die Messwerte der Nachbargruppe verwendet werden, da wir dort lediglich die Phasenverschiebung ausgemessen haben. Ein großes Problem war auch, dass wir unsere Grenzfrequenzen $\omega_{Gr}$ nicht in die Frequenz f, die am Funktionsgenerator angezeigt wurde, umgerechnet haben. Bei den beiden Hochpässen, sowie beim Bandpass haben wir dadurch den falschen Frequenzbereich ausgemessen, welcher um den Faktor 2$\pi$ größer war, als der eigentlich interessante Frequenzbereich. Insgesamt gab es bei der Durchführung der zweiten Aufgabe also einige Probleme, welche nicht nur auf den semidefekten Anschluss unseres Funktionengenerators zurückzuführen sind, sondern auch auf unseren Fehler bei der Umrechnung von $\omega$ in f\\
