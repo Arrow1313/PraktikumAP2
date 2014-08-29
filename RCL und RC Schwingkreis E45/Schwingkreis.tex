@@ -2,6 +2,8 @@
 
  
 
+\usepackage{float}
+
 \usepackage[utf8]{inputenc}
 
 \usepackage[T1]{fontenc}
@@ -67,7 +69,7 @@ Hier ein Foto der Aufbauten für Aufgabe 2 Teil 4-6.
   \label{fig:teil_6}
 \end{figure}
 
-Die einzelnen Schaltpläne sind in dein praktischen Durchführungen der einzelnen Aufgaben zu finden.
+Die einzelnen Schaltpläne sind in den praktischen Durchführungen der einzelnen Aufgaben zu finden.
 \newpage
 
 \section{Aufgabe 1: Kennenlernen der Geräte}
@@ -119,6 +121,7 @@ Sie die Halbwertszeit; dabei hilft Ihnen die Cursor-Funktion des Oszilloskops. V
   	\caption[Skizze der Schaltung für einen Tiefpass]{Skizze der Schaltung für einen Tiefpass\footnotemark}
   \label{fig:Tiefpass_2}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 18 am 22.08.2014}
 
 \item
@@ -132,7 +135,6 @@ verschiedene Frequenzen das Verhältnis von Ausgangsspannung (über dem Kondensa
   	\caption[Skizze der Schaltung für einen Tiefpass, mit R=1 k$\Omega$, C=1$\mu$F]{Skizze der Schaltung für einen Tiefpass, mit R=1 k$\Omega$, C=1$\mu$F\footnotemark}
   \label{fig:Tiefpass_2}
 \end{figure}
-\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 18 am 22.08.2014}
 \item
 Bauen Sie mit denselben Bauteilen ein Hochpassfilter. Messen Sie stichprobenhaft an einigen Stellen den Frequenzgang (Tipp: Die Messungen dieser und der folgenden 3 Aufgaben (Filterschaltungen) gehen am schnellsten, wenn Sie alle 4 Filterschaltungen
@@ -145,6 +147,7 @@ Dabei hilft Ihnen auch die Funktion “measure“ des Digitaloszilloskops.). Wo 
   	\caption[Skizze der Schaltung für einen Hockpass, mit R=1 k$\Omega$, C=1$\mu$F]{Skizze der Schaltung für einen Hochpass, mit R=1 k$\Omega$, C=1$\mu$F\footnotemark}
   \label{fig:Hochpass}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 18 am 22.08.2014}
 \item
 Bauen Sie sich mit weiteren Bauelementen einen Bandpaßfilter und untersuchen Sie an einigen Stellen den Frequenzgang (Graphen!). Wo liegen die Grenzfrequenzen? Vergleichen Sie mit dem Theoriewert.
@@ -155,7 +158,6 @@ Bauen Sie sich mit weiteren Bauelementen einen Bandpaßfilter und untersuchen Si
   	\caption[Skizze der Schaltung für einen Bandpass, mit R1=1 k$\Omega$, C1=1$\mu$F, R2=10 k$\Omega$, C2=1nF]{Skizze der Schaltung für einen Bandpass, mit R1=1 k$\Omega$, C1=1$\mu$F, R2=10 k$\Omega$, C2=1nF\footnotemark}
   \label{fig:Bandpass}
 \end{figure}
-\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 19 am 22.08.2014}
 \item
 Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (stichprobenhaft an einigen Stellen) den Frequenzgang. Wo liegt Ihre Grenzfrequenz? Vergleichen Sie mit dem Theoriewert.
@@ -166,6 +168,7 @@ Bauen Sie mit dem Widerstand und einer Spule ein Hochpassfilter. Messen Sie (sti
   	\caption[Skizze der Schaltung für einen Hochpass, mit einer Spule, mit R=1 k$\Omega$, L=150$\mu$H]{Skizze der Schaltung für einen Hochpass, mit einer Spule, mit R=1 k$\Omega$, L=150$\mu$H\footnotemark}
   \label{fig:Hochpass_spule}
 \end{figure}
+\newpage
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/E45neu0910.pdf Seite 19 am 22.08.2014}
 
 \end{enumerate}
@@ -244,6 +247,246 @@ Fehler:
 \end{align}
 
 \end{enumerate}
+\subsection{Messergebnisse}
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.1.1}
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+Widerstand/Ohm \\ \hline
+\multicolumn{1}{|r|}{10000 $\pm 500$} \\ \hline
+Innenwiderstand/Ohm \\ \hline
+\multicolumn{1}{|r|}{10000000} \\ \hline
+U$_\text{ein}$/V  \\ \hline
+\multicolumn{1}{|r|}{1,0 $(\pm 1)$} \\ \hline
+R$_\text{2,L}$/Ohm \\ \hline
+\multicolumn{1}{|r|}{9990$(\pm 500)$} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.2.1}
+\end{table}
+
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.1.2}
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+Widerstand/Ohm \\ \hline
+\multicolumn{1}{|r|}{1000000$(\pm 50000)$} \\ \hline
+Innenwiderstand/Ohm  \\ \hline
+\multicolumn{1}{|r|}{10000000} \\ \hline
+U$_\text{ein}$/V  \\ \hline
+\multicolumn{1}{|r|}{1,0 $(\pm 1)$}  \\ \hline
+R\_2,L/Ohm \\ \hline
+\multicolumn{1}{|r|}{909090 $(\pm 4545)$} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.1.2}
+\end{table}
+
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.2}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Widerstand/Ohm  \\ \hline
+\multicolumn{1}{|r|}{1000000 $(\pm 10)$} \\ \hline
+Konsensator/F \\ \hline
+\multicolumn{1}{|r|}{0,00000010 $(\pm 5)$}\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.2}
+\end{table}
+
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.3, für den Frequenzgang. Die Messergebnisse sind von der Gruppe Philipp Pagel und Jens Rogel. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F verwendet.}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+20 $(\pm 10)$ & 50 $(\pm 10)$ & 100 $(\pm 10)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+4,96 $(\pm 0,05)$ & 4,72 $(\pm 0,05)$ & 4,16 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+4,96 $(\pm 0,05)$ & 4,92 $(\pm 0,05)$ & 4,84 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+125 $(\pm 10)$ & 150 $(\pm 10)$ & 175 $(\pm 10)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+3,84 $(\pm 0,05)$ & 3,56 $(\pm 0,05)$ & 3,28 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+4,84 $(\pm 0,05)$ & 4,84 $(\pm 0,05)$ & 4,84 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline 
+200 $(\pm 10)$ & 300 $(\pm 10)$ & 400 $(\pm 10)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+3,04 $(\pm 0,05)$ & 2,28 $(\pm 0,05)$ & 1,8 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+4,8 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+500 $(\pm 10)$ & 600 $(\pm 10)$ & 700 $(\pm 10)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+1,5 $(\pm 0,05)$ & 1,24 $(\pm 0,05)$ & 1,08 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+4,76 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+800 $(\pm 10)$ & 900 $(\pm 10)$ & 1000 $(\pm 10)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+1 $(\pm 0,05)$ & 0,92 $(\pm 0,05)$ & 0,84 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+4,76 $(\pm 0,05)$ & 4,72 $(\pm 0,05)$ & 4,72 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz &  \\ \hline
+75 $(\pm 10)$ & 250 $(\pm 10)$ &  \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V &  \\ \hline
+4,44 $(\pm 0,05)$ & 2,6 $(\pm 0,05)$ &  \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.3}
+\end{table}
+
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.4, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F verwendet.}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+850 $(\pm 10)$ & 900 $(\pm 10)$ & 1000 $(\pm 10)$ \\ \hline
+U$_aus$/V & U$_aus$/V & U$_aus$/V \\ \hline
+3,28 $(\pm 0,05)$ & 3,6 $(\pm 0,05)$ & 4 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+6,96 $(\pm 0,05)$ & 7 $(\pm 0,05)$ & 7 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+1050 $(\pm 10)$ & 1400 $(\pm 10)$ & 500 $(\pm 10)$ \\ \hline
+U$_aus$/V & U$_aus$/V & U$_aus$/V \\ \hline
+3,76 $(\pm 0,05)$ & 4,44 $(\pm 0,05)$ & 2,08 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+6,88 $(\pm 0,05)$ & 6,8 $(\pm 0,05)$ & 6,96 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+650 $(\pm 10)$ & 1700 $(\pm 10)$ & 2000 $(\pm 10)$ \\ \hline
+U$_aus$/V & U$_aus$/V & U$_aus$/V \\ \hline
+2,6 $(\pm 0,05)$ & 4,7 $(\pm 0,05)$ & 5,3 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+6,96 $(\pm 0,05)$ & 6,96 $(\pm 0,05)$ & 6,96 $(\pm 0,05)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.4}
+\end{table}
+
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.5, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F für den erste Teil und ein Widerstand von 10k$\Omega$ und ein Kondensator mit 1nF verwendet.}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+700  $(\pm 10)$ & 900 $(\pm 10)$ & 1000 $(\pm 10)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+5,08 $(\pm 0,05)$ & 5,16 $(\pm 0,05)$ & 5,2 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+5,36 $(\pm 0,05)$ & 5,36 $(\pm 0,05)$ & 5,32 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+1200 $(\pm 10)$ & 30000 $(\pm 100)$ & 75000 $(\pm 100)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+5,2 $(\pm 0,05)$ & 2,36 $(\pm 0,05)$ & 1,08 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+5,32 $(\pm 0,05)$ & 5,24 $(\pm 0,05)$ & 5,4 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+90000 $(\pm 100)$ & 100000 $(\pm 100)$ & 110000 $(\pm 100)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+0,928  $(\pm 0,05)$ & 0,840 $(\pm 0,05)$ & 0,776 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+5,4 $(\pm 0,05)$ & 5,4 $(\pm 0,05)$ & 5,4 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz &  &  \\ \hline
+12000 $(\pm 100)$ &  &  \\ \hline
+U$_\text{aus}$/V &  &  \\ \hline
+0,712  $(\pm 0,05)$ &  &  \\ \hline
+U$_\text{ein}$/V &  &  \\ \hline
+5,4  $(\pm 0,05)$ &  &  \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.5}
+\end{table}
+
+\begin{table}[H]
+\caption{Werte für Aufgabe 2.6, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und ein Spule mit 150$\mu$H verwendet.}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+1400000 $(\pm 10000)$ & 2000000 $(\pm 10000)$ & 3500000 $(\pm 10000)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+0,980 $(\pm 0,05)$ & 1,36  $(\pm 0,05)$ & 1,76 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+1,58 $(\pm 0,05)$ & 2,16 $(\pm 0,05)$ & 3,34 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
+4500000 $(\pm 10000)$ & 5000000 $(\pm 10000)$ & 6500000 $(\pm 10000)$ \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
+1,78 $(\pm 0,05)$ & 1,7 $(\pm 0,05)$ & 1,68 $(\pm 0,05)$ \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
+4,00  $(\pm 0,05)$ & 4,22 $(\pm 0,05)$ & 4,44 $(\pm 0,05)$ \\ \hline \hline
+Eingangasfrequenz/Hz & Eingangasfrequenz/Hz &  \\ \hline
+7500000 $(\pm 10000)$ & 8500000 $(\pm 10000)$ &  \\ \hline
+U$_\text{aus}$/V & U$_\text{aus}$/V &  \\ \hline
+1,56 $(\pm 0,05)$ & 1,4 $(\pm 0,05)$ &  \\ \hline
+U$_\text{ein}$/V & U$_\text{ein}$/V &  \\ \hline
+4,58 $(\pm 0,05)$ & 4,58 $(\pm 0,05)$ &  \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:2.6}
+\end{table}
+
+\subsection{Auswertung}
+\subsubsection{Teil 1}
+Es sollte die Ausgangsspannung für 1k$\Omega$ und für 1M$\Omega$ bestimmt werden, dabei ergab sich für den 1k$\Omega$ ein experimenteller Wert von 0,503 $(\pm 0,006)$ Volt und theoretisch (für die Spannung \ref{eqn:spannungsteiler}, für den Fehler \ref{eqn:spannungsteiler_sigma}) ergab sich ein Wert von 0,49975 $(\pm 0,00005)$ Volt, der Widerstand R$_\text{2,L}$ ergibt sich nach Formel \ref{eqn:para} mit Fehler nach Gleichung \ref{eqn:spannungsteiler_sigma}. Für die 1M$\Omega$ Widerstände ergab ich durch Messung ein Wert von 0,483 $(\pm 0,006)$ Volt und theoretisch (für die Spannung \ref{eqn:spannungsteiler}, für den Fehler \ref{eqn:spannungsteiler_sigma}) ein Wert von 0,476 $(\pm 0,004)$ Volt der Widerstand R$_\text{2,L}$ ergibt sich nach Formel \ref{eqn:para} mit Fehler nach Gleichung \ref{eqn:spannungsteiler_sigma}.
+
+\subsubsection{Teil 2}
+Im zweiten Teil sollte die Halbwertszeit durch Messung und durch Materialeigenschaften bestimmt werden, für die theoretische Bestimmung wurde Gleichung \ref{eqn:halbzeit} und Gleichung \ref{eqn:halbzeit_sigma} für den Fehler verwendet, dabei ergab sich ein Wert von 0,069	$(\pm 0,004)$ s. Bei der Messung ergab sich ein Wert von 0,075 $(\pm 0,005)$ s.
+
+\subsubsection{Teil 3}
+Es sollte die Grenzfrequenz eines RC-Tiefpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet.
+In diesem Teil werden die Messwerte der Gruppe von Philipp Pagel und Jens Rogel verwendet.
+Theoretisch ergab sich ein Wert von 159 $(\pm 8)$Hz, durch die Messung ergab sich ein Wert von 162,5 $(\pm 20)$Hz 
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5, angle = 90]{teil_3.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Tiefpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Tiefpass}
+  \label{fig:Hochpass}
+\end{figure}
+
+\newpage
+
+\subsubsection{Teil 4}
+Es sollte die Grenzfrequenz eines RC-Hochpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet.
+Aus der theoretischen Bestimmung ergab sich ein Wert von 159 $(\pm 8)$Hz, experimentell ergab sich kein Wert, da der falsche Frequenzbereich ausgemessen wurde, für eine genauere Erörterung siehe Diskussion. Graphisch ergab sich bei dem von uns Ausgemessenem Bereich der folgende Plot.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1]{teil_4.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Hochpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Hochpass}
+  \label{fig:teil_4}
+\end{figure}
+
+\newpage
+
+\subsubsection{Teil 5}
+Es sollte die Grenzfrequenz eines Bandpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet, dabei werden zwei Grenzfrequenzen erwartet, für den Hochpass und für den Tiefpass. Dabei ergab sich die folgenden Werte 159 $(\pm 8)$Hz und 15915 $(\pm 796)$Hz. Durch die Messung ergab sich ein Wert von 17000 $(\pm 1000)$Hz. Es wurde nicht der Gesamte Frequenzbereich ausgemessen, der nötig gewesen wäre, Erörterung in der Diskussion.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5, angle=90]{teil_5.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den Bandpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den Bandpass}
+  \label{fig:teil_5}
+\end{figure}
+
+\newpage
+
+\subsubsection{Teil 6}
+Es sollte die Grenzfrequenz eines LC-Hochpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet. Für die theoretische Bestimmung ergab sich ein Wert von 1061032 $(\pm 54112)$Hz. Da wieder der Falsche Frequenzbereich ausgemessen wurde liegt hier leider ein experimentelles Ergebnis von, für eine Erörterung siehe Diskussion. Die gemessenen Werte ergeben den folgenden Plot.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 1]{teil_6.pdf}
+  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den LC-Hochpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenzfür den LC-Hochpass}
+  \label{fig:teil_6}
+\end{figure}
 \subsection{Diskussion}
 Im ersten Teil dieser Aufgabe sollte die Knotenspannung an einem Spannungsteiler ausgemessen und mit dem Theoriewert verglichen werden. Der erste gemessene Wert liegt im ersten Sigmaintervall des Theoriewertes, der zweite gemessene Wert liegt knapp außerhalb des ersten, aber innerhalb des zweiten Sigmaintervalls des Theoriewertes (das gleiche gilt umgekehrt für die beiden Theoriewerte bezogen auf die Fehler der Messwerte). 
 Im zweiten Teil sollte die Halbwertszeit der Entladung des Kondensators in einem RC Tiefpasses bestimmt und mit dem Theoriewert verglichen werden. Der gemessene Wert lag erst im zweiten Sigmaintervall des Theoriewertes (sowie der Theoriewert erst im zweiten Sigmaintervall des Messwertes). Das liegt einerseits daran, dass wir den Fehler auf Widerstand und Kondensator nicht kannten (schätzen mussten) und andererseits den Fehler, der durch den Innenwiderstand des Spannungsmessgerätes bei abfallender Spannung entsteht, nicht berücksichtigt haben.
@@ -324,6 +567,32 @@ Fehler:
 \sigma_{f_R} = \frac{\sigma_{\omega_R}}{2 \pi}
 \label{eqn:reso_sigma}
 \end{align}
+\subsection{Messergebnisse}
+
+\begin{table}[htbp]
+\caption{Werte für Aufgabe 3, Materialeigenschaften der Spule und des Kondensators}
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+Kondensator/F \\ \hline
+0,000001 $(\pm  0,000001)$ \\ \hline
+Spule/H \\ \hline
+0,00015 $(\pm 0,00008)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:3}
+\end{table}
+\subsection{Auswertung}
+
+In Aufgabe 3 sollte ein LC-Kreis untersucht werden. Dabei sollte die Resonanzfrequenz bestimmt werden theoretisch wurde der Wert mit Gleichung \ref{eqn:reso_kreis} und \ref{eqn:reso} bestimmt die Fehler wurden mit Gleichung \ref{eqn:reso_kreis_sigma} und \ref{eqn:reso_sigma} bestimmt.
+Dabei ergab sich ein Wert von 12995 $(\pm 459)$Hz bei der Messung ergab sich ein Wert von 14170 $(\pm 1000)$Hz. Bei ein Widerstand von 0 $\Omega$ sieht man die maximale Auslenkung, wenn man den widerstand erhöht, so erhöht sich die Dämpfung und die maximale Auslenkung nimmt ab.
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.2]{aufgabe3_2.JPG}
+  	\caption[Foto des Oszillographen bei unendlichem Nachleuchten]{Foto des Oszillographen bei unendlichem Nachleuchten}
+  \label{fig:teil_6}
+\end{figure}
 \subsection{Diskussion}
 In dieser Aufgabe sollte die Resonanzkurve eines LC-Kreises aufgenommen werden und die Resonanzfrequenz am Display des Funktionsgenerators abgelesen werden. Da er Punkt, den man am Display sehen konnte, sehr groß war, mussten wir den Fehler dieser Messung relativ groß wählen.Trotzdem weicht unser Messergebnis weniger als 10\% vom theoretisch bestimmten Wert ab.
 \section{Aufgabe 4: RCL-Kreise}
@@ -343,294 +612,9 @@ $U_C$ über dem Kondensator. Beobachten Sie, wie sich $U_C$
 als Funktion des Widerstandes
 R ändert. Wann tritt ein Schwingfall auf, wann ein Kriechfall? Stellen Sie auch den
 aperiodischen Grenzfall ein. Um den Schwingfall besser sehen zu können, stellen Sie die Zeitablenkung am Oszilloskop so ein, daß die Flanke des Rechtecksignals besonders groß dargestellt wird.
+\subsection{Messergebnisse}
+\subsection{Auswertung}
 \subsection{Diskussion}
- 
-\section{Messergebnisse}
-
-\subsection{Aufgabe 2}
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.1.1}
-\begin{center}
-\begin{tabular}{|l|}
-\hline
-Widerstand/Ohm \\ \hline
-\multicolumn{1}{|r|}{10000 $\pm 500$} \\ \hline
-Innenwiderstand/Ohm \\ \hline
-\multicolumn{1}{|r|}{10000000} \\ \hline
-U$_\text{ein}$/V  \\ \hline
-\multicolumn{1}{|r|}{1,0 $(\pm 1)$} \\ \hline
-R$_\text{2,L}$/Ohm \\ \hline
-\multicolumn{1}{|r|}{9990$(\pm 500)$} \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.2.1}
-\end{table}
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.1.2}
-\begin{center}
-\begin{tabular}{|l|}
-\hline
-Widerstand/Ohm \\ \hline
-\multicolumn{1}{|r|}{1000000$(\pm 50000)$} \\ \hline
-Innenwiderstand/Ohm  \\ \hline
-\multicolumn{1}{|r|}{10000000} \\ \hline
-U$_\text{ein}$/V  \\ \hline
-\multicolumn{1}{|r|}{1,0 $(\pm 1)$}  \\ \hline
-R\_2,L/Ohm \\ \hline
-\multicolumn{1}{|r|}{909090 $(\pm 4545)$} \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.1.2}
-\end{table}
-
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.2}
-\begin{center}
-\begin{tabular}{|l|l|}
-\hline
-Widerstand/Ohm  \\ \hline
-\multicolumn{1}{|r|}{1000000 $(\pm 10)$} \\ \hline
-Konsensator/F \\ \hline
-\multicolumn{1}{|r|}{0,00000010 $(\pm 5)$}\\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.2}
-\end{table}
-
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.3, für den Frequenzgang. Die Messergebnisse sind von der Gruppe Philipp Pagel und Jens Rogel. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F verwendet.}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-20 $(\pm 10)$ & 50 $(\pm 10)$ & 100 $(\pm 10)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-4,96 $(\pm 0,05)$ & 4,72 $(\pm 0,05)$ & 4,16 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-4,96 $(\pm 0,05)$ & 4,92 $(\pm 0,05)$ & 4,84 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-125 $(\pm 10)$ & 150 $(\pm 10)$ & 175 $(\pm 10)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-3,84 $(\pm 0,05)$ & 3,56 $(\pm 0,05)$ & 3,28 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-4,84 $(\pm 0,05)$ & 4,84 $(\pm 0,05)$ & 4,84 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline 
-200 $(\pm 10)$ & 300 $(\pm 10)$ & 400 $(\pm 10)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-3,04 $(\pm 0,05)$ & 2,28 $(\pm 0,05)$ & 1,8 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-4,8 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-500 $(\pm 10)$ & 600 $(\pm 10)$ & 700 $(\pm 10)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-1,5 $(\pm 0,05)$ & 1,24 $(\pm 0,05)$ & 1,08 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-4,76 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ & 4,76 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-800 $(\pm 10)$ & 900 $(\pm 10)$ & 1000 $(\pm 10)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-1 $(\pm 0,05)$ & 0,92 $(\pm 0,05)$ & 0,84 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-4,76 $(\pm 0,05)$ & 4,72 $(\pm 0,05)$ & 4,72 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz &  \\ \hline
-75 $(\pm 10)$ & 250 $(\pm 10)$ &  \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V &  \\ \hline
-4,44 $(\pm 0,05)$ & 2,6 $(\pm 0,05)$ &  \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.3}
-\end{table}
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.4, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F verwendet.}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-850 $(\pm 10)$ & 900 $(\pm 10)$ & 1000 $(\pm 10)$ \\ \hline
-U$_aus$/V & U$_aus$/V & U$_aus$/V \\ \hline
-3,28 $(\pm 0,05)$ & 3,6 $(\pm 0,05)$ & 4 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-6,96 $(\pm 0,05)$ & 7 $(\pm 0,05)$ & 7 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-1050 $(\pm 10)$ & 1400 $(\pm 10)$ & 500 $(\pm 10)$ \\ \hline
-U$_aus$/V & U$_aus$/V & U$_aus$/V \\ \hline
-3,76 $(\pm 0,05)$ & 4,44 $(\pm 0,05)$ & 2,08 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-6,88 $(\pm 0,05)$ & 6,8 $(\pm 0,05)$ & 6,96 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-650 $(\pm 10)$ & 1700 $(\pm 10)$ & 2000 $(\pm 10)$ \\ \hline
-U$_aus$/V & U$_aus$/V & U$_aus$/V \\ \hline
-2,6 $(\pm 0,05)$ & 4,7 $(\pm 0,05)$ & 5,3 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-6,96 $(\pm 0,05)$ & 6,96 $(\pm 0,05)$ & 6,96 $(\pm 0,05)$ \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.4}
-\end{table}
-
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.5, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und einem Kondensator von 1$\mu$F für den erste Teil und ein Widerstand von 10k$\Omega$ und ein Kondensator mit 1nF verwendet.}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-700  $(\pm 10)$ & 900 $(\pm 10)$ & 1000 $(\pm 10)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-5,08 $(\pm 0,05)$ & 5,16 $(\pm 0,05)$ & 5,2 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-5,36 $(\pm 0,05)$ & 5,36 $(\pm 0,05)$ & 5,32 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-1200 $(\pm 10)$ & 30000 $(\pm 100)$ & 75000 $(\pm 100)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-5,2 $(\pm 0,05)$ & 2,36 $(\pm 0,05)$ & 1,08 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-5,32 $(\pm 0,05)$ & 5,24 $(\pm 0,05)$ & 5,4 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-90000 $(\pm 100)$ & 100000 $(\pm 100)$ & 110000 $(\pm 100)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-0,928  $(\pm 0,05)$ & 0,840 $(\pm 0,05)$ & 0,776 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-5,4 $(\pm 0,05)$ & 5,4 $(\pm 0,05)$ & 5,4 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz &  &  \\ \hline
-12000 $(\pm 100)$ &  &  \\ \hline
-U$_\text{aus}$/V &  &  \\ \hline
-0,712  $(\pm 0,05)$ &  &  \\ \hline
-U$_\text{ein}$/V &  &  \\ \hline
-5,4  $(\pm 0,05)$ &  &  \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.5}
-\end{table}
-
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 2.6, zur Bestimmung des Frequenzgangs. Es wurden ein Widerstand von 1k$\Omega$ und ein Spule mit 150$\mu$H verwendet.}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-1400000 $(\pm 10000)$ & 2000000 $(\pm 10000)$ & 3500000 $(\pm 10000)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-0,980 $(\pm 0,05)$ & 1,36  $(\pm 0,05)$ & 1,76 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-1,58 $(\pm 0,05)$ & 2,16 $(\pm 0,05)$ & 3,34 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz & Eingangasfrequenz/Hz \\ \hline
-4500000 $(\pm 10000)$ & 5000000 $(\pm 10000)$ & 6500000 $(\pm 10000)$ \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V & U$_\text{aus}$/V \\ \hline
-1,78 $(\pm 0,05)$ & 1,7 $(\pm 0,05)$ & 1,68 $(\pm 0,05)$ \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V & U$_\text{ein}$/V \\ \hline
-4,00  $(\pm 0,05)$ & 4,22 $(\pm 0,05)$ & 4,44 $(\pm 0,05)$ \\ \hline \hline
-Eingangasfrequenz/Hz & Eingangasfrequenz/Hz &  \\ \hline
-7500000 $(\pm 10000)$ & 8500000 $(\pm 10000)$ &  \\ \hline
-U$_\text{aus}$/V & U$_\text{aus}$/V &  \\ \hline
-1,56 $(\pm 0,05)$ & 1,4 $(\pm 0,05)$ &  \\ \hline
-U$_\text{ein}$/V & U$_\text{ein}$/V &  \\ \hline
-4,58 $(\pm 0,05)$ & 4,58 $(\pm 0,05)$ &  \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:2.6}
-\end{table}
-
-\subsection{Aufgabe 3}
-
-\begin{table}[htbp]
-\caption{Werte für Aufgabe 3, Materialeigenschaften der Spule und des Kondensators}
-\begin{center}
-\begin{tabular}{|l|}
-\hline
-Kondensator/F \\ \hline
-0,000001 $(\pm  0,000001)$ \\ \hline
-Spule/H \\ \hline
-0,00015 $(\pm 0,00008)$ \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:3}
-\end{table}
-
-
-
-
-\section{Auswertung}
-
-\subsection{Aufgabe 2}
-
-\subsubsection{Teil 1}
-Es sollte die Ausgangsspannung für 1k$\Omega$ und für 1M$\Omega$ bestimmt werden, dabei ergab sich für den 1k$\Omega$ ein experimenteller Wert von 0,503 $(\pm 0,006)$ Volt und theoretisch (für die Spannung \ref{eqn:spannungsteiler}, für den Fehler \ref{eqn:spannungsteiler_sigma}) ergab sich ein Wert von 0,49975 $(\pm 0,00005)$ Volt, der Widerstand R$_\text{2,L}$ ergibt sich nach Formel \ref{eqn:para} mit Fehler nach Gleichung \ref{eqn:spannungsteiler_sigma}. Für die 1M$\Omega$ Widerstände ergab ich durch Messung ein Wert von 0,483 $(\pm 0,006)$ Volt und theoretisch (für die Spannung \ref{eqn:spannungsteiler}, für den Fehler \ref{eqn:spannungsteiler_sigma}) ein Wert von 0,476 $(\pm 0,004)$ Volt der Widerstand R$_\text{2,L}$ ergibt sich nach Formel \ref{eqn:para} mit Fehler nach Gleichung \ref{eqn:spannungsteiler_sigma}.
-
-\subsubsection{Teil 2}
-Im zweiten Teil sollte die Halbwertszeit durch Messung und durch Materialeigenschaften bestimmt werden, für die theoretische Bestimmung wurde Gleichung \ref{eqn:halbzeit} und Gleichung \ref{eqn:halbzeit_sigma} für den Fehler verwendet, dabei ergab sich ein Wert von 0,069	$(\pm 0,004)$ s. Bei der Messung ergab sich ein Wert von 0,075 $(\pm 0,005)$ s.
-
-\subsubsection{Teil 3}
-Es sollte die Grenzfrequenz eines RC-Tiefpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet.
-In diesem Teil werden die Messwerte der Gruppe von Philipp Pagel und Jens Rogel verwendet.
-Theoretisch ergab sich ein Wert von 159 $(\pm 8)$Hz, durch die Messung ergab sich ein Wert von 162,5 $(\pm 20)$Hz 
-
-\begin{figure}[htbp] 
-  \centering
-    \includegraphics[scale = 0.5, angle = 90]{teil_3.pdf}
-  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Tiefpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Tiefpass}
-  \label{fig:Hochpass}
-\end{figure}
-
-\newpage
-
-\subsubsection{Teil 4}
-Es sollte die Grenzfrequenz eines RC-Hochpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet.
-Aus der theoretischen Bestimmung ergab sich ein Wert von 159 $(\pm 8)$Hz, experimentell ergab sich kein Wert, da der falsche Frequenzbereich ausgemessen wurde, für eine genauere Erörterung siehe Diskussion. Graphisch ergab sich bei dem von uns Ausgemessenem Bereich der folgende Plot.
-
-\begin{figure}[htbp] 
-  \centering
-    \includegraphics[scale = 1]{teil_4.pdf}
-  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Hochpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den RC-Hochpass}
-  \label{fig:teil_4}
-\end{figure}
-
-\newpage
-
-\subsubsection{Teil 5}
-Es sollte die Grenzfrequenz eines Bandpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet, dabei werden zwei Grenzfrequenzen erwartet, für den Hochpass und für den Tiefpass. Dabei ergab sich die folgenden Werte 159 $(\pm 8)$Hz und 15915 $(\pm 796)$Hz. Durch die Messung ergab sich ein Wert von 17000 $(\pm 1000)$Hz. Es wurde nicht der Gesamte Frequenzbereich ausgemessen, der nötig gewesen wäre, Erörterung in der Diskussion.
-
-\begin{figure}[htbp] 
-  \centering
-    \includegraphics[scale = 0.5, angle=90]{teil_5.pdf}
-  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den Bandpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenz für den Bandpass}
-  \label{fig:teil_5}
-\end{figure}
-
-\newpage
-
-\subsubsection{Teil 6}
-Es sollte die Grenzfrequenz eines LC-Hochpasses bestimmt werden, einmal aus den Materialeigenschaften und einmal aus der Messung. Für die theoretische Bestimmung wurde Gleichung \ref{eqn:omega_g} und Gleichung \ref{eqn:omega_g_sigma} für den Fehler verwendet. Für die theoretische Bestimmung ergab sich ein Wert von 1061032 $(\pm 54112)$Hz. Da wieder der Falsche Frequenzbereich ausgemessen wurde liegt hier leider ein experimentelles Ergebnis von, für eine Erörterung siehe Diskussion. Die gemessenen Werte ergeben den folgenden Plot.
-
-\begin{figure}[htbp] 
-  \centering
-    \includegraphics[scale = 1]{teil_6.pdf}
-  	\caption[Graphische Auswertung zur Bestimmung der Grenzfrequenz für den LC-Hochpass]{Graphische Auswertung zur Bestimmung der Grenzfrequenzfür den LC-Hochpass}
-  \label{fig:teil_6}
-\end{figure}
-
-\newpage
-
-\subsection{Aufgabe 3}
-
-In Aufgabe 3 sollte ein LC-Kreis untersucht werden. Dabei sollte die Resonanzfrequenz bestimmt werden theoretisch wurde der Wert mit Gleichung \ref{eqn:reso_kreis} und \ref{eqn:reso} bestimmt die Fehler wurden mit Gleichung \ref{eqn:reso_kreis_sigma} und \ref{eqn:reso_sigma} bestimmt.
-Dabei ergab sich ein Wert von 12995 $(\pm 459)$Hz bei der Messung ergab sich ein Wert von 14170 $(\pm 1000)$Hz. Bei ein Widerstand von 0 $\Omega$ sieht man die maximale Auslenkung, wenn man den widerstand erhöht, so erhöht sich die Dämpfung und die maximale Auslenkung nimmt ab.
-
-\begin{figure}[htbp] 
-  \centering
-    \includegraphics[scale = 0.2]{aufgabe3_2.JPG}
-  	\caption[Foto des Oszillographen bei unendlichem Nachleuchten]{Foto des Oszillographen bei unendlichem Nachleuchten}
-  \label{fig:teil_6}
-\end{figure}
-
-
-
 \section{Fazit}
 Aufgabe 2 war mit Abstand die längste Aufgabe dieses Versuches und es wurde ein Großteil der verfügbaren Zeit dafür verwendet, was unter anderem daran lag, dass der Anschluss an unseren Funktionsgenerator einen Wackelkontakt hatte, sodass einige Male garnichts angezeigt wurde, obwohl die richtige Schaltung angeschlossen war. Im dritten Aufgabenteil mussten die Messwerte der Nachbargruppe verwendet werden, da wir dort lediglich die Phasenverschiebung ausgemessen haben. Ein großes Problem war auch, dass wir unsere Grenzfrequenzen $\omega_{Gr}$ nicht in die Frequenz f, die am Funktionsgenerator angezeigt wurde, umgerechnet haben. Bei den beiden Hochpässen, sowie beim Bandpass haben wir dadurch den falschen Frequenzbereich ausgemessen, welcher um den Faktor 2$\pi$ größer war, als der eigentlich interessante Frequenzbereich. Insgesamt gab es bei der Durchführung der zweiten Aufgabe also einige Probleme, welche nicht nur auf den semidefekten Anschluss unseres Funktionengenerators zurückzuführen sind, sondern auch auf unseren Fehler bei der Umrechnung von $\omega$ in f\\
 Aufgabe 3 verlief dagegen nicht so problematisch, da wir diese an einem anderen Funktionsgenerator durchführen konnten. Bis auf die relativ große Messungenauigkeit beim Ablesen der Resonanzfrequenz am Display liegt unser Ergebnis recht nahe am Theoriewert.\\
