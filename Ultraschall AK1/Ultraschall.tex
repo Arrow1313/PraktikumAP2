@@ -45,13 +45,9 @@ Außerdem sollen noch die elektrischen Eigenschaften des Piezosenders (Impedanz)
 
 \section{Versuchsaufbau}
 
-
-\section{Versuchsdurchführung}
-
-
-\subsection{Praktische Durchführung}
-
-\subsubsection{Impedanzmessung}
+\section{Aufgabe 1 Impedanzmessung}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
 \begin{itemize}
 \item[(a)]
 Um die elektrischen Eigenschaften eines Barium-Titanat-Ultraschallgenerators zu untersuchen, wird eine Schaltung gemäß Abb. \ref{fig:impedanz}
@@ -72,7 +68,9 @@ aus. Erwarten Sie im Resonanzfall den maximalen oder minimalen Strom durch den 1
 Finden Sie eine zweite Resonanz. Dies ist die zweite Harmonische. Je nach Wandlertyp kann das z.B. bei etwa der vierfachen Frequenz der ersten Resonanz sein. Suchen Sie bei Ihrem Wandler noch möglichst viele weitere höhere
 Resonanzen.
 \end{itemize}
-\subsubsection{Schallgeschwindigkeit}
+\section{Aufgabe 2 Schallgeschwindigkeit}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
 \begin{itemize}
 \item[(a)]
 Messen Sie die Schallgeschwindigkeit mit Hilfe der Phasenmethode. Montieren Sie dazu den Sender mit und den Empfänger mit einem Reiter auf der optischen Bank. Sender und Empfänger dürfen nicht verwechselt werden. Sie sind mit S und E auf der Rückseite der Halterung gekennzeichnet. Die Bank hat eine Millimeterskala, die Reiter haben
@@ -89,7 +87,63 @@ l durch. Die Schallgeschwindigkeit ergibt sich aus $v = \frac{\Delta l}{\Delta t
 \item[(c)]
 Bei Kenntnis der Schallgeschwindigkeit kann die Anordnung nach (b) auch zur Entfernungsmessung benutzt werden (Echolotprinzip). Montieren Sie dazu Sender und Empfänger (beide mit aufgesetztem Horn) so, daß das zur Zimmerdecke und dort refektierte Signal vom Empfänger wieder empfangen wird. Wie hoch ist die Zimmerdecke über dem Fußboden?
 \end{itemize}
-\subsubsection{Interferenz am Doppelspalt}
+\subsubsection{Theoretische Durchführung}
+\begin{enumerate}
+\item[(a)]
+Die Formel für die Wellenlänge $\lambda$ ist:
+\begin{align}
+\lambda = \frac{\Delta l}{\Delta \Phi} 2\pi
+= \frac{\Delta l}{n}
+\end{align}
+$n$ die Anzahl der überstrichenen "Wellenberge", $\Delta \Phi$ der Überstrichene Winkel.\\
+Fehler:
+\begin{align}
+\sigma_{\lambda} = \frac{\sigma_{\Delta l}}{n}
+\end{align}
+Die Phasengeschwindigkeit $v_{\text{Ph}}$ des Schalls berechnet sich durch:
+\begin{align}
+v_{\text{Ph}} = \lambda f
+\end{align}
+$f$ die Frequenz des Sinusgenerators, $\lambda$ die Wellenlänge.\\
+Fehler:
+\begin{align}
+\sigma_{v_{\text{Ph}}} = \sqrt{
+\left(\lambda \sigma_f\right)^2+
+\left(f \sigma_{\lambda}\right)^2}
+\end{align}
+\item[(b)]
+Die Formel für die Gruppengeschwindigkeit $v_{\text{Gr}}$ ist:
+\begin{align}
+v_{\text{Gr}} = \frac{l1-l2}{\Delta t1 - \Delta t2}
+\end{align}
+$l$ die Abstände zum Sender und $\Delta t$ die benötigte Zeit.\\
+Fehler:
+\begin{equation}
+\begin{split}
+\sigma_{v_{\text{Gr}}} = \sqrt{
+\left(\frac{\sigma_{l1}}{\Delta t1 - \Delta t2}\right)^2+
+\left(\frac{\sigma_{l2}}{\Delta t1 - \Delta t2}\right)^2+}\\
+\overline{\left(\frac{l1-l2}{(\Delta t1 - \Delta t2)^2}\sigma_{\Delta t1}
+\right)^2+
+\left(\frac{l1-l2}{(\Delta t1 - \Delta t2)^2}\sigma_{\Delta t2}\right)^2}
+\end{split}
+\end{equation}
+\item[(c)]
+Die Formel für den Abstand ($d_{\text{Decke}}$) des Senders zur Decke ist:
+\begin{align}
+d_{\text{Decke}} = \frac{v \cdot \Delta t}{2}
+\end{align}
+$v$ die Schallgeschwindigkeit und $\Delta t$ die verstrichene Zeit.\\
+Fehler:
+\begin{align}
+\sigma_{d_{\text{Decke}}} = \sqrt{
+\left(\frac{v \sigma_{\Delta t}}{2}\right)^2+
+\left(\frac{\Delta t \sigma_v}{2}\right)^2}
+\end{align}
+\end{enumerate}
+\section{Aufgabe 3 Interferenz am Doppelspalt}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
 \begin{itemize}
 \item[(a)]
 Messen Sie das Beugungbild eines Doppelspaltes. Aus aufbautechnischen Gründen wird hierbei der Doppelsender um seine Symmetrieachse gedreht und der Empfänger fest am Ort belassen. Der Doppelsender ist auf einem Drehtisch montiert. (Zubehör zur optischen Bank). Den Empfänger montieren Sie
@@ -99,46 +153,37 @@ Messen Sie die Empfangamplitude für verschiedene Richtungswinkel des Doppelsend
 \begin{align}
 \frac{\lambda}{2} = l\sin(\Phi)
 \end{align}
-mit l: Abstand der Schallquellen.
+mit l: Abstand der Schallquellen.\\
 Errechnen Sie hieraus mit Hilfe der vorher berechneten Schallgeschwindigkeit $c$ die Frequenz ($f = \frac{c}{\lambda}$) und vergleichen Sie diesen Wert mit dem Ihrer Messung mit dem Oszilloskop.
 \end{itemize}
-\subsection{Theoretische Durchführung}
-\begin{enumerate}
-\item[2.]
+\subsubsection{Theoretische Durchführung}
 \begin{enumerate}
 \item[(a)]
-Die Formel für die Wellenlänge $\lambda$ ist:
-\begin{align}
-\lambda = \frac{\Delta l}{\Delta \Phi} 2\pi
-= \frac{\Delta l}{n}
-\end{align}
-$n$ die Anzahl der überstrichenen "Wellenberge", $\Delta \Phi$ der Überstrichene Winkel.
-\begin{align}
-v_{\text{Ph}} = \lambda f
-\end{align}
-$v_{\text{Ph}}$ die Phasengeschwindigkeit des Schalls und $f$ die Frequenz des Sinusgenerators.
-\item[(b)]
-Die Formel für die Gruppengeschwindigkeit $v_{\text{Gr}}$ ist:
-\begin{align}
-v_{\text{Gr}} = \frac{l1-l2}{\Delta t1 - \Delta t2}
-\end{align}
-$l$ die Abstände zum Sender und $\Delta t$ die benötigte Zeit.
-\item[(c)]
-Die Formel für den Abstand ($d_{\text{Decke}}$) des Senders zur Decke ist:
-\begin{align}
-d_{\text{Decke}} = \frac{v \cdot \Delta t}{2}
-\end{align}
-$v$ die Schallgeschwindigkeit und $\Delta t$ die verstrichene Zeit.
-\end{enumerate}
-
-\item[3.]
 Die Formel für die erwarteten Minima ist:
 \begin{align}
 (2n-1)\frac{\lambda}{2} = l \sin(\Phi)
 \end{align}
-Für $n = 1,2,3...$, $\Phi$ der Auslenkwinkel aus dem Maximum und $\lambda$ die Wellenlänge.
-
+Für $n = 1,2,3...$, $\Phi$ der Auslenkwinkel aus dem Maximum und $\lambda$ die Wellenlänge.\\
+\begin{align}
+\sigma_{(2n-1)\frac{\lambda}{2}} = \sqrt{
+\left(\sin(\Phi)\sigma_l\right)^2+
+\left(l \cos(\Phi)\sigma_{\Phi}\right)^2}
+\end{align}
+Die Frequenz berechnet sich mit:
+\begin{align}
+f = \frac{c}{\lambda} 
+\end{align}
+$c$ die errechnete Schallgeschwindigkeit.\\
+Fehler:
+\begin{align}
+\sigma_f = \sqrt{
+\left(\frac{\sigma_{c}}{\lambda}\right)^2+
+\left(\frac{c}{(\lambda)^2}\sigma_{\lambda}\right)^2}
+\end{align}
 \end{enumerate}
+
+
+
 
 \section{Messergebnisse}
 
