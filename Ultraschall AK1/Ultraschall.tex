@@ -1,7 +1,7 @@
 \documentclass[12pt]{scrartcl}
 
  
-
+\usepackage{float}
 \usepackage[utf8]{inputenc}
 
 \usepackage[T1]{fontenc}
@@ -69,7 +69,28 @@ aus. Erwarten Sie im Resonanzfall den maximalen oder minimalen Strom durch den 1
 Finden Sie eine zweite Resonanz. Dies ist die zweite Harmonische. Je nach Wandlertyp kann das z.B. bei etwa der vierfachen Frequenz der ersten Resonanz sein. Suchen Sie bei Ihrem Wandler noch möglichst viele weitere höhere
 Resonanzen.
 \end{itemize}
+\subsection{Messergebnisse}
+\begin{table}[H]
+\caption{Die gemessenen Resonanzfrequenzen}
+\begin{center}
+\begin{tabular}{|r|}
+\hline
+Resonanzfrequenz/Hz \\ \hline
+41750$(\pm 500)$ \\ \hline
+53660$(\pm 500)$ \\ \hline
+162900$(\pm 1000)$ \\ \hline
+249700$(\pm 1000)$ \\ \hline
+604000$(\pm 1000)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe1}
+\end{table}
+\subsection{Auswertung}
+Im ersten Teil von Aufgabe 1 sollte die erste Resonanzfrequenz bestimmt und ausgemessen werden. Dabei ergab sich ein Wert von 41750$(\pm 500)$Hz. Danach sollten weitere Resonanzfrequenzen bestimmt werden, wobei sich die folgenden Frequenzen  aus den Messdaten (Tabelle \ref{tab:aufgabe1}) ergaben, 53660$(\pm 500)$Hz, 162900$(\pm 1000)$Hz, 249700$(\pm 1000)$Hz und 604000$(\pm 1000)$Hz.
 \subsection{Diskussion}
+Die gemessenen Resonanzfrequenzen waren zum Teil sehr schwierig zu messen, da das Minimum oft nicht eindeutig bestimmt werden konnte.
+Wir mussten bei höheren Frequenzen, bedingt durch die größere Ableseungenauigkeit am Frequenzgenerator und nur noch schwach ausgeprägten Minima, größe Fehler annehmen.
+Bei 53660 Hz wurde gegen die Erwartungen ein Minimum gemessen, was wir uns nicht direkt erklären konnten. Vermutlich hatten anderen Materialien, die für unseren Aufbau verwendet wurden bzw. im Sender befestigt waren einfluss auf unsere Messung. 
 \section{Aufgabe 2 Schallgeschwindigkeit}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
@@ -151,7 +172,68 @@ Fehler:
 \label{eqn:decke_sigma}
 \end{align}
 \end{enumerate}
+\subsection{Messergebnisse}
+\subsubsection{a)}
+
+\begin{table}[H]
+\caption{Messdaten zur Phasenmethode}
+\begin{center}
+\begin{tabular}{|r|r|r|}
+\hline
+L$_1$/m & $L_2$/m & n \\ \hline
+0,150$(\pm 0,001)$ & 0,453$(\pm 0,001)$ & 0 \\ \hline
+0,15$(\pm 0,001)$ & 0,496$(\pm 0,001)$ & 5 \\ \hline
+0,15$(\pm 0,001)$ & 0,539$(\pm 0,001)$ & 10 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe2_a}
+\end{table}
+
+\subsubsection{b)}
+
+\begin{table}[H]
+\caption{Messdaten zur Laufzeitmethode}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+L$_1$/m & T$_1$/s \\ \hline
+0,298$(\pm 0,001)$ & 0,0008$(\pm 0,00005)$ \\ \hline
+L$_2$/m & T$_2$/s \\ \hline
+0,517$(\pm 0,001)$ & 0,0014$(\pm 0,00005)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe2_b}
+\end{table}
+
+\subsubsection{c)}
+
+\begin{table}[H]
+\caption{Messdaten für die Entfernung zur Pappwand}
+\begin{center}
+\begin{tabular}{|r|}
+\hline
+Abstand/m \\ \hline
+0,3$(\pm 0,03)$ \\ \hline
+Laufzeit/s \\ \hline
+0,0018$(\pm 0,0001)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe2_c}
+\end{table}
+\subsection{Auswertung}
+\subsubsection{a)}
+Im ersten Teil der zweiten Aufgabe sollte die Schallgeschwindigkeit mit der Phasenmethode bestimmt werden. Dafür wurde die Anzahl der Maxima(bzw. die überstrichene Wellenanzahl $n$) und die Differenz $\Delta l$ zwischen den beiden Positionen des Empfängers gemessen. Zur Berechnung der Wellenlänge wurde Gleichung \ref{eqn:lamda_1} sowie für den Fehler Gleichung \ref{eqn:lamda_1_sigma} verwendet. Daraus wurde mit Gleichung \ref{eqn:v} die Schallgeschwindigkeit bestimmt. Der Fehler berechnet sich nach Gleichung \ref{eqn:v_sigam}.Zur Berechnung wurden die Daten aus Tabelle \ref{tab:aufgabe2_a} verwendet, dabei wurden Messwerte für $n$ = 5 und für $n$ = 10 genommen. Für die Schallgeschwindigkeit ergab sich eine Geschwindigkeit von 349$(\pm 12) \frac{\text{m}}{\text{s}}$  und 349$(\pm 6) \frac{\text{m}}{\text{s}}$.
+
+\subsubsection{b)}
+Im zweitem Teil sollte die Schallgeschwindigkeit mit der Laufzeitmethode bestimmt werden. Für zwei Empfängerpositionen wurden einerseits die Laufzeiten und andererseits die Abstände zwischen Sender und Empfänger gemessen. Mit Gleichung \ref{eqn:v_gr} wurde die Wellenlänge bestimmt, während sich der Fehler nach Gleichung \ref{eqn:v_gr_sigma} ergibt. Mit der Wellenlänge berechnet sich nun die Schallgeschwindigkeit nach Gleichung \ref{eqn:v} und der Fehler nach Gleichung \ref{eqn:v_sigam} (Daten aus Tabelle \ref{tab:aufgabe2_b}). Die gemessene Schallgeschwindigkeit ist 365$\frac{\text{m}}{\text{s}}$.
+
+\subsubsection{c)}
+Im letztem Teil von Aufgabe 2 sollte der Abstand zwischen der Decke und dem Boden des Versuchsraumes ausgemessen werden. Da das Signal nicht stark genug war haben wir ein Stück Pappe verwendet und die Strecke zum Vergleich mit einem Lineal nachgemessen. Bei der Messung mit dem Lineal ergab sich ein Abstand von 0,30$(\pm 0,03)$m. Für die Berechnung des Abstandes per Echolot (Ultraschallsender und Empfänger) wurde Gleichung \ref{eqn:decke} und für den Fehler Gleichung \ref{eqn:decke_sigma} verwendet.
+Die Schallgeschwindigkeit (344 $\frac{\text{m}}{\text{s}}$) aus der Praktikumsanleitung wurde als fehlerlos angenommen. Als Abstand ergab sich ein Wert von 0,31$(\pm 0,02)$m.(Daten aus Tabelle \ref{tab:aufgabe2_c})
 \subsection{Diskussion}
+Für die Messung der Schallgeschwindigkeit mit der Phasenmethode ergab sich nach 10 Wellenlängen ein relativ genauer Wert für die Schallgeschwindigkeit. Diese lag innerhalb des ersten Sigmaintervalls des Fehlers, der einen Anteil von weniger als 2\% am Messwert hatte.
+Bei der Messung der Schallgeschwindigkeit mit Hilfe der Laufzeitmethode ergab sich dagegen ein etwas ungenauerer Wert sowie eine größerer Fehler. Der Fehler hat dementsprechend einen größeren Anteil -- fast 12\% -- am Messwert. Trotzdem liegt die auf der Versuchsanleitung angegebene Schallgeschwindigkeit innerhalb des ersten Sigmaintervalls des Messwertes.
+Für den Abstand der Pappplatte zum Sender ergab sich ein akzeptabler Wert, da der gemessene Abstand innerhalb des ersten Sigmaintervalls des Messwertes lag.
 \section{Aufgabe 3 Interferenz am Doppelspalt}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
@@ -196,84 +278,9 @@ Fehler:
 \label{eqn:freq_sigma}
 \end{align}
 \end{enumerate}
-\subsection{Diskussion}
-
-
-
-
-\section{Messergebnisse}
-
-\subsection{Aufgabe 1}
-\begin{table}[htbp]
-\caption{Die gemessenen Resonanzfrequenzen}
-\begin{center}
-\begin{tabular}{|r|}
-\hline
-Resonanzfrequenz/Hz \\ \hline
-41750$(\pm 500)$ \\ \hline
-53660$(\pm 500)$ \\ \hline
-162900$(\pm 1000)$ \\ \hline
-249700$(\pm 1000)$ \\ \hline
-604000$(\pm 1000)$ \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:aufgabe1}
-\end{table}
-
-\subsection{Aufgabe 2}
-
-\subsubsection{a)}
-
-\begin{table}[htbp]
-\caption{Messdaten zur Phasenmethode}
-\begin{center}
-\begin{tabular}{|r|r|r|}
-\hline
-L$_1$/m & $L_2$/m & n \\ \hline
-0,150$(\pm 0,001)$ & 0,453$(\pm 0,001)$ & 0 \\ \hline
-0,15$(\pm 0,001)$ & 0,496$(\pm 0,001)$ & 5 \\ \hline
-0,15$(\pm 0,001)$ & 0,539$(\pm 0,001)$ & 10 \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:aufgabe2_a}
-\end{table}
-
-\subsubsection{b)}
-
-\begin{table}[htbp]
-\caption{Messdaten zur Laufzeitmethode}
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline
-L$_1$/m & T$_1$/s \\ \hline
-0,298$(\pm 0,001)$ & 0,0008$(\pm 0,00005)$ \\ \hline
-L$_2$/m & T$_2$/s \\ \hline
-0,517$(\pm 0,001)$ & 0,0014$(\pm 0,00005)$ \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:aufgabe2_b}
-\end{table}
-
-\subsubsection{c)}
-
-\begin{table}[htbp]
-\caption{Messdaten zur Entfernung der Pappwand}
-\begin{center}
-\begin{tabular}{|r|}
-\hline
-Abstand \\ \hline
-0,3$(\pm 0,03)$ \\ \hline
-Laufzeit/s \\ \hline
-0,0018$(\pm 0,0001)$ \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:aufgabe2_c}
-\end{table}
-
-\subsection{Aufgabe 3}
-
-\begin{table}[htbp]
-\caption{Messdaten zur Bestimmung der Frequenz in Aufgabe 3 1/2}
+\subsection{Messergebnisse}
+\begin{table}[H]
+\caption{Messdaten zur Bestimmung der Frequenz in Aufgabe 3$_{(1/2)}$}
 \begin{center}
 \begin{tabular}{|r|r|}
 \hline
@@ -308,8 +315,8 @@ Auslenkung/$^\circ$ & Amplitude/mV \\ \hline
 \label{tab:aufgabe3_1}
 \end{table}
 
-\begin{table}[htbp]
-\caption{Messdaten zur Bestimmung der Frequenz in Aufgabe 3 1/2}
+\begin{table}[H]
+\caption{Messdaten zur Bestimmung der Frequenz in Aufgabe 3$_{(2/2)}$}
 \begin{center}
 \begin{tabular}{|r|r|}
 \hline
@@ -344,39 +351,26 @@ Auslenkung/$^\circ$ & Amplitude/mV \\ \hline
 \end{center}
 \label{tab:aufgabe3_2}
 \end{table}
+\subsection{Auswertung}
+In der dritten Aufgabe sollte die Frequenz des Frequenzgenerators über die Interferenz am "Doppelspalt" nachgemessen werden, wobei stellvertretend für den Doppelspalt ein Doppelsender herhalten musste. In Abhängigkeit des Winkels zum Empfänger wurden dazu die Amplituden gemessen, die Wellenlänge nach Gleichung \ref{eqn:lambda_3} bestimmt und der Fehler nach Gleichung \ref{eqn:lambda_3_sigma} berechnet. Dabei wurden die Messdaten für $\Phi$ aus Tabelle \ref{tab:aufgabe3_1} und Tabelle \ref{tab:aufgabe3_2} entnommen. Die Frequenz wurde mit Gleichung \ref{eqn:freq} bestimmt und der Fehler mit Gleichung \ref{eqn:freq_sigma} bestimmt. Beim Plot fiel aus Symmetriegründen auf, dass die Nulllage um ca. ein Grad verrutscht war. Für die Minima ergaben sich Winkel von 7 Grad und -9 Grad, sowie nach Gleichung \ref{eqn:lambda_3} Wellenlängen von 0,009$(\pm 0,001)$m und 0,011$(\pm 0,001)$m. Mit der Schallgeschwindigkeit aus Aufgabe 2 a) (349 $\frac{\text{m}}{\text{s}}$) ergeben sich Frequenzen von 40929$(\pm 5119)$Hz und 31886$(\pm 7323)$Hz. Mit der Schallgeschwindigkeit aus Aufgabe 2 b) ergeben sich dagegen Werte von 42786$(\pm 3754)$Hz und 33332$(\pm 5529)$Hz. Die eingestellte Frequenz betrug 40300$(\pm100)$Hz.
 
 
-
-\section{Auswertung}
-\subsection{Aufgabe 1}
-Es sollte im ersten Teil von Aufgabe 1 die erste Resonanzfrequenz bestimmt ausgemessen werden, dabei ergab sich ein Wert von 41750$(\pm 500)$Hz. Im zweitem Teil der ersten Aufgabe sollten weitere Resonanzfrequenzen bestimmt werde, dabei ergaben sich noch die folgenden Frequenzen, 53660$(\pm 500)$Hz, 162900$(\pm 1000)$Hz, 249700$(\pm 1000)$Hz und 604000$(\pm 1000)$Hz. Die Messdaten finden sich in Tabelle \ref{tab:aufgabe1}.
-
-\subsection{Aufgabe 2}
-\subsubsection{a)}
-Im ersten Teil der zweiten Aufgabe sollte die Schallgeschwindigkeit mit der Phasenmethode bestimmt werden, dafür wurde die Anzahl der Maxima und die Differenz zwischen den beiden Positionen des Empfängers gemessen. Zur Berechnung der Wellenlänge wurde Gleichung \ref{eqn:lamda_1} sowie Gleichung \ref{eqn:lamda_1_sigma} für den Fehler wendet, daraus wurde mit Gleichung \ref{eqn:v} die Schallgeschwindigkeit verwendet, der Fehler berechnet sich nach Gleichung \ref{eqn:v_sigam}.Zur Berechnung wurde die Daten aus Tabelle \ref{tab:aufgabe2_a} verwendet. Es wurden Messungen für 5 und für 10 Maxima genommen, dabei ergab sich ein Schallgeschwindigkeit von 349$(\pm 12) \frac{m}{s}$  und 349$(\pm 6) \frac{m}{s}$.
-
-\subsubsection{b)}
-Im zweitem Teil sollte die Schallgeschwindigkeit mit der Laufzeitmethode bestimmt werden, dafür wurde in zwei Positionen die Laufzeiten des Signals und die Abstände von Sender und Empfänger gemessen. Mit Gleichung \ref{eqn:v_gr} wurde die Wellenlänge bestimmt, der Fehler ergibt sich nach Gleichung \ref{eqn:v_gr_sigma}. Damit wurde die Schallgeschwindigkeit nach Gleichung \ref{eqn:v} und der Fehler nach Gleichung \ref{eqn:v_sigam} berechnet, dafür wurde die Daten aus Tabelle \ref{tab:aufgabe2_b} verwendet. Dabei ergab sich ein Wert von 365$(\pm 43) \frac{m}{s}$.
-
-\subsubsection{c)}
-Im letztem Teil von Aufgabe 2 sollte die der Abstand zwischen der Decke und dem Boden im Versuchsraum ausgemessen werde, da das Signal nicht stark genug war haben wir ein Stück Pappe verwendet und mit einem Lineal die Strecke zum Vergleich nachgemessen. Bei der Messung mit dem Lineal ergab sich ein Abstand von 0,30$(\pm 0,03)$m. Für die Berechnung des Abstandes mit den Ultraschallsensor wurde Gleichung \ref{eqn:decke} und Gleichung \ref{eqn:decke_sigma} für den Fehler verwendet, dabei wurde die Schallgeschwindigkeit mit 344 $\frac{m}{s}$ aus der Praktikumsanleitung als fehlerlos angenommen. Dabei ergab sich ein Wert von 0,31$(\pm 0,02)$. Die Daten zur Berechnung wurden die Daten aus Tabelle \ref{tab:aufgabe2_c} verwendet.
-
-\subsection{Aufgabe 3}
-In der dritten Aufgabe sollte Frequenz mit Hilfe von Interferenz am Doppelspalt bestimmt werden. Dafür wurden die Amplituden in Abhängigkeit des Winkels zum Empfänger gemessen und aus Gleichung \ref{eqn:lambda_3} die Wellenlänge mit dem Fehler aus Gleichung \ref{eqn:lambda_3_sigma} berechnet. Dabei wurde $\Phi$ aus den Plot \ref{fig:plot} entnommen, der Plot wurde aus den Daten von Tabelle \ref{tab:aufgabe3_1} und Tabelle \ref{tab:aufgabe3_2} verwendet. Die Frequenz wurde dann mit Gleichung \ref{eqn:freq} bestimmt und der Fehler mit Gleichung \ref{eqn:freq_sigma}. Beim Plot fällt auf, dass die Nulllage um ca. eine Einheit nach links verschoben werden muss. Dadurch ergeben sich ein Winkel von 7 Grad und -9 Grad, damit ergebe sich Wellenlängen von 0,009$(\pm 0,001)$m und 0,011$(\pm 0,001)$m. Dadurch ergibt sich mit der Schallgeschwindigkeit aus Aufgabe 2 a) (349 $\frac{m}{s}$) eine Frequenz von 40929$(\pm 5119)$Hz und 31886$(\pm 7323)$Hz. Mit der Geschwindigkeit aus AUfgabe 2 b) ergeben sich Werte von 42786$(\pm 3754)$Hz und 33332$(\pm 5529)$Hz. Die eingestellte Frequenz betrug 40300$(\pm100)$Hz.
-
-
-\begin{figure}[htbp] 
+\begin{figure}[H] 
   \centering
     \includegraphics[scale = 0.5, angle = -91]{aufgabe_3_b.pdf}
   	\caption[Plot der Daten aus der Messung zu Aufgabe 3]{Plot der Daten aus der Messung zu Aufgabe 3}
   \label{fig:plot}
 \end{figure}
-
-
-
+\subsection{Diskussion}
+Bei der Messung des Beugungsbildes des Doppelspaltes bzw. Doppelsenders mussten wir feststellen, dass unsere Amplituden während der Messung sehr stark variierten. Dies ist durch andere Ultraschallquellen im Raum erklärbar, da wir unsere Messung parallel zu 3 anderen Gruppen durchgeführt haben. Die Nullage des Aufbaus war nicht feststellbar und verschob sich während wir den Winkel einstellten um etwa 1 Grad, was wir in der Berechnung der Wellenlängen berücksichtigt haben. Insgesamt konnten wir bei dieser Messung deshalb keine guten Messergebnisse erwarten. Mit den beiden in der zweiten Aufgabe berechneten Schallgeschwindigkeiten, und den beiden vom größten Maximum aus gesehenen nächsten Minima, ergeben sich Frequenzen, für die die am Frequenzgenerator eingestellte Frequenz in den ersten zwei Fällen innerhalb des ersten Sigmaintervalls \footnote{mit der Phasengeschwindigkeit $v_{Ph}$} und in den anderen beiden Fällen erst innerhalb des zweiten Sigmaintervalls \footnote{mit der Gruppengeschindigkeit $v_{Gr}$} liegt.
 
 \section{Fazit}
-
+In Aufgabe 1 haben wir bis auf einen Ausreißer die erwarteten Frequenzen gemessen, wobei wir das Minimum bei ca. 320000 Hz nicht finden konnten.\\
+Die Schallgeschwindigkeit wurde in Aufgabe zwei mit beiden Methoden recht gut bestimmt, wobei wir mit der Phasenmethode einen genaueren Wert mit einem kleineren Fehler gemessen haben.\\
+Ebenso können wir mit der Abstandsmessung per Echolot zufrieden sein, da der genaue Abstand zum Piezoelement nicht genau bekannt war und deshalb abgeschätzt werden musste.
+\footnote{An dieser Stelle hätte uns ein systematischer Fehler einen Strich durch die Rechnung machen können.}\\
+Die Messung zur Interferenz in Aufgabe 3 war mit Abstand die ungenaueste, da unsere Messwerte sehr stark durch äußere Einflüsse verfälscht wurden. Das Interferenzmuster kann man trotz der starken Schwankungen der Amplitude gut erkennen.\\
+Zusammenfassend konnten trotz äußerer Störfaktoren alle drei Messungen so durchgeführt werden, dass unsere Vergleichswerte in den meisten Fällen innerhalb des ersten Sigmaintervalls des Messwertes lagen. 
 
  %Werte stimmen mit den Formeln überein/nicht überein
 
