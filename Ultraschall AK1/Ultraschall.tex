@@ -96,15 +96,18 @@ Die Formel für die Wellenlänge $\lambda$ ist:
 \begin{align}
 \lambda = \frac{\Delta l}{\Delta \Phi} 2\pi
 = \frac{\Delta l}{n}
+\label{eqn:lamda_1}
 \end{align}
 $n$ die Anzahl der überstrichenen "Wellenberge", $\Delta \Phi$ der Überstrichene Winkel.\\
 Fehler:
 \begin{align}
 \sigma_{\lambda} = \frac{\sigma_{\Delta l}}{n}
+\label{eqn:lamda_1_sigma}
 \end{align}
 Die Phasengeschwindigkeit $v_{\text{Ph}}$ des Schalls berechnet sich durch:
 \begin{align}
 v_{\text{Ph}} = \lambda f
+\label{eqn:v}
 \end{align}
 $f$ die Frequenz des Sinusgenerators, $\lambda$ die Wellenlänge.\\
 Fehler:
@@ -112,11 +115,13 @@ Fehler:
 \sigma_{v_{\text{Ph}}} = \sqrt{
 \left(\lambda \sigma_f\right)^2+
 \left(f \sigma_{\lambda}\right)^2}
+\label{eqn:v_sigam}
 \end{align}
 \item[(b)]
 Die Formel für die Gruppengeschwindigkeit $v_{\text{Gr}}$ ist:
 \begin{align}
 v_{\text{Gr}} = \frac{l1-l2}{\Delta t1 - \Delta t2}
+\label{eqn:v_gr}
 \end{align}
 $l$ die Abstände zum Sender und $\Delta t$ die benötigte Zeit.\\
 Fehler:
@@ -129,11 +134,13 @@ Fehler:
 \right)^2+
 \left(\frac{l1-l2}{(\Delta t1 - \Delta t2)^2}\sigma_{\Delta t2}\right)^2}
 \end{split}
+\label{eqn:v_gr_sigma}
 \end{equation}
 \item[(c)]
 Die Formel für den Abstand ($d_{\text{Decke}}$) des Senders zur Decke ist:
 \begin{align}
 d_{\text{Decke}} = \frac{v \cdot \Delta t}{2}
+\label{eqn:decke}
 \end{align}
 $v$ die Schallgeschwindigkeit und $\Delta t$ die verstrichene Zeit.\\
 Fehler:
@@ -141,6 +148,7 @@ Fehler:
 \sigma_{d_{\text{Decke}}} = \sqrt{
 \left(\frac{v \sigma_{\Delta t}}{2}\right)^2+
 \left(\frac{\Delta t \sigma_v}{2}\right)^2}
+\label{eqn:decke_sigma}
 \end{align}
 \end{enumerate}
 \subsection{Diskussion}
@@ -165,16 +173,19 @@ Errechnen Sie hieraus mit Hilfe der vorher berechneten Schallgeschwindigkeit $c$
 Die Formel für die erwarteten Minima ist:
 \begin{align}
 (2n-1)\frac{\lambda}{2} = l \sin(\Phi)
+\label{eqn:lambda_3}
 \end{align}
 Für $n = 1,2,3...$, $\Phi$ der Auslenkwinkel aus dem Maximum und $\lambda$ die Wellenlänge.\\
 \begin{align}
 \sigma_{(2n-1)\frac{\lambda}{2}} = \sqrt{
 \left(\sin(\Phi)\sigma_l\right)^2+
 \left(l \cos(\Phi)\sigma_{\Phi}\right)^2}
+\label{eqn:lambda_3_sigma}
 \end{align}
 Die Frequenz berechnet sich mit:
 \begin{align}
 f = \frac{c}{\lambda} 
+\label{eqn:freq}
 \end{align}
 $c$ die errechnete Schallgeschwindigkeit.\\
 Fehler:
@@ -182,6 +193,7 @@ Fehler:
 \sigma_f = \sqrt{
 \left(\frac{\sigma_{c}}{\lambda}\right)^2+
 \left(\frac{c}{(\lambda)^2}\sigma_{\lambda}\right)^2}
+\label{eqn:freq_sigma}
 \end{align}
 \end{enumerate}
 \subsection{Diskussion}
@@ -191,9 +203,176 @@ Fehler:
 
 \section{Messergebnisse}
 
+\subsection{Aufgabe 1}
+\begin{table}[htbp]
+\caption{Die gemessenen Resonanzfrequenzen}
+\begin{center}
+\begin{tabular}{|r|}
+\hline
+Resonanzfrequenz/Hz \\ \hline
+41750$(\pm 500)$ \\ \hline
+53660$(\pm 500)$ \\ \hline
+162900$(\pm 1000)$ \\ \hline
+249700$(\pm 1000)$ \\ \hline
+604000$(\pm 1000)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe1}
+\end{table}
+
+\subsection{Aufgabe 2}
+
+\subsubsection{a)}
+
+\begin{table}[htbp]
+\caption{Messdaten zur Phasenmethode}
+\begin{center}
+\begin{tabular}{|r|r|r|}
+\hline
+L$_1$/m & $L_2$/m & n \\ \hline
+0,150$(\pm 0,001)$ & 0,453$(\pm 0,001)$ & 0 \\ \hline
+0,15$(\pm 0,001)$ & 0,496$(\pm 0,001)$ & 5 \\ \hline
+0,15$(\pm 0,001)$ & 0,539$(\pm 0,001)$ & 10 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe2_a}
+\end{table}
+
+\subsubsection{b)}
+
+\begin{table}[htbp]
+\caption{Messdaten zur Laufzeitmethode}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+L$_1$/m & T$_1$/s \\ \hline
+0,298$(\pm 0,001)$ & 0,0008$(\pm 0,00005)$ \\ \hline
+L$_2$/m & T$_2$/s \\ \hline
+0,517$(\pm 0,001)$ & 0,0014$(\pm 0,00005)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe2_b}
+\end{table}
+
+\subsubsection{c)}
+
+\begin{table}[htbp]
+\caption{Messdaten zur Entfernung der Pappwand}
+\begin{center}
+\begin{tabular}{|r|}
+\hline
+Abstand \\ \hline
+0,3$(\pm 0,03)$ \\ \hline
+Laufzeit/s \\ \hline
+0,0018$(\pm 0,0001)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe2_c}
+\end{table}
+
+\subsection{Aufgabe 3}
+
+\begin{table}[htbp]
+\caption{Messdaten zur Bestimmung der Frequenz in Aufgabe 3 1/2}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+Auslenkung/$^\circ$ & Amplitude/mV \\ \hline
+-50$(\pm 0,5)$ & 10$(\pm 2)$ \\ \hline
+-48$(\pm 0,5)$ & 11$(\pm 2)$ \\ \hline
+-46$(\pm 0,5)$ & 11,6$(\pm 2)$ \\ \hline
+-44$(\pm 0,5)$ & 11$(\pm 2)$ \\ \hline
+-42$(\pm 0,5)$ & 11,8$(\pm 2)$ \\ \hline
+-40$(\pm 0,5)$ & 12,6$(\pm 2)$ \\ \hline
+-38$(\pm 0,5)$ & 13$(\pm 2)$ \\ \hline
+-36$(\pm 0,5)$ & 13,8$(\pm 2)$ \\ \hline
+-34$(\pm 0,5)$ & 14,2$(\pm 2)$ \\ \hline
+-32$(\pm 0,5)$ & 13$(\pm 2)$ \\ \hline
+-30$(\pm 0,5)$ & 11,8$(\pm 2)$ \\ \hline
+-28$(\pm 0,5)$ & 11$(\pm 2)$ \\ \hline
+-26$(\pm 0,5)$ & 14$(\pm 2)$ \\ \hline
+-24$(\pm 0,5)$ & 17$(\pm 2)$ \\ \hline
+-22$(\pm 0,5)$ & 21,6$(\pm 2)$ \\ \hline
+-20$(\pm 0,5)$ & 24$(\pm 2)$ \\ \hline
+-18$(\pm 0,5)$ & 23$(\pm 2)$ \\ \hline
+-16$(\pm 0,5)$ & 20$(\pm 2)$ \\ \hline
+-14$(\pm 0,5)$ & 16,6$(\pm 2)$ \\ \hline
+-12$(\pm 0,5)$ & 8$(\pm 2)$ \\ \hline
+-10$(\pm 0,5)$ & 6,4$(\pm 2)$ \\ \hline
+-8$(\pm 0,5)$ & 16$(\pm 2)$ \\ \hline
+-6$(\pm 0,5)$ & 22,4$(\pm 2)$ \\ \hline
+-4$(\pm 0,5)$ & 28$(\pm 2)$ \\ \hline
+-2$(\pm 0,5)$ & 30$(\pm 2)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe3_1}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Messdaten zur Bestimmung der Frequenz in Aufgabe 3 1/2}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+Auslenkung/$^\circ$ & Amplitude/mV \\ \hline
+0$(\pm 0,5)$ & 34$(\pm 2)$ \\ \hline
+2$(\pm 0,5)$ & 27,2$(\pm 2)$ \\ \hline
+4$(\pm 0,5)$ & 16,8$(\pm 2)$ \\ \hline
+6$(\pm 0,5)$ & 6$(\pm 2)$ \\ \hline
+8$(\pm 0,5)$ & 10$(\pm 2)$ \\ \hline
+10$(\pm 0,5)$ & 17$(\pm 2)$ \\ \hline
+12$(\pm 0,5)$ & 24$(\pm 2)$ \\ \hline
+14$(\pm 0,5)$ & 30$(\pm 2)$ \\ \hline
+16$(\pm 0,5)$ & 27$(\pm 2)$ \\ \hline
+18$(\pm 0,5)$ & 25$(\pm 2)$ \\ \hline
+20$(\pm 0,5)$ & 18$(\pm 2)$ \\ \hline
+22$(\pm 0,5)$ & 12$(\pm 2)$ \\ \hline
+24$(\pm 0,5)$ & 7$(\pm 2)$ \\ \hline
+26$(\pm 0,5)$ & 10$(\pm 2)$ \\ \hline
+28$(\pm 0,5)$ & 12,6$(\pm 2)$ \\ \hline
+30$(\pm 0,5)$ & 16$(\pm 2)$ \\ \hline
+32$(\pm 0,5)$ & 18$(\pm 2)$ \\ \hline
+34$(\pm 0,5)$ & 16,6$(\pm 2)$ \\ \hline
+36$(\pm 0,5)$ & 14,4$(\pm 2)$ \\ \hline
+38$(\pm 0,5)$ & 11,4$(\pm 2)$ \\ \hline
+40$(\pm 0,5)$ & 8$(\pm 2)$ \\ \hline
+42$(\pm 0,5)$ & 6,2$(\pm 2)$ \\ \hline
+44$(\pm 0,5)$ & 4$(\pm 2)$ \\ \hline
+46$(\pm 0,5)$ & 5$(\pm 2)$ \\ \hline
+48$(\pm 0,5)$ & 6$(\pm 2)$ \\ \hline
+50$(\pm 0,5)$ & 7$(\pm 2)$ \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:aufgabe3_2}
+\end{table}
+
 
 
 \section{Auswertung}
+\subsection{Aufgabe 1}
+Es sollte im ersten Teil von Aufgabe 1 die erste Resonanzfrequenz bestimmt ausgemessen werden, dabei ergab sich ein Wert von 41750$(\pm 500)$Hz. Im zweitem Teil der ersten Aufgabe sollten weitere Resonanzfrequenzen bestimmt werde, dabei ergaben sich noch die folgenden Frequenzen, 53660$(\pm 500)$Hz, 162900$(\pm 1000)$Hz, 249700$(\pm 1000)$Hz und 604000$(\pm 1000)$Hz. Die Messdaten finden sich in Tabelle \ref{tab:aufgabe1}.
+
+\subsection{Aufgabe 2}
+\subsubsection{a)}
+Im ersten Teil der zweiten Aufgabe sollte die Schallgeschwindigkeit mit der Phasenmethode bestimmt werden, dafür wurde die Anzahl der Maxima und die Differenz zwischen den beiden Positionen des Empfängers gemessen. Zur Berechnung der Wellenlänge wurde Gleichung \ref{eqn:lamda_1} sowie Gleichung \ref{eqn:lamda_1_sigma} für den Fehler wendet, daraus wurde mit Gleichung \ref{eqn:v} die Schallgeschwindigkeit verwendet, der Fehler berechnet sich nach Gleichung \ref{eqn:v_sigam}.Zur Berechnung wurde die Daten aus Tabelle \ref{tab:aufgabe2_a} verwendet. Es wurden Messungen für 5 und für 10 Maxima genommen, dabei ergab sich ein Schallgeschwindigkeit von 349$(\pm 12) \frac{m}{s}$  und 349$(\pm 6) \frac{m}{s}$.
+
+\subsubsection{b)}
+Im zweitem Teil sollte die Schallgeschwindigkeit mit der Laufzeitmethode bestimmt werden, dafür wurde in zwei Positionen die Laufzeiten des Signals und die Abstände von Sender und Empfänger gemessen. Mit Gleichung \ref{eqn:v_gr} wurde die Wellenlänge bestimmt, der Fehler ergibt sich nach Gleichung \ref{eqn:v_gr_sigma}. Damit wurde die Schallgeschwindigkeit nach Gleichung \ref{eqn:v} und der Fehler nach Gleichung \ref{eqn:v_sigam} berechnet, dafür wurde die Daten aus Tabelle \ref{tab:aufgabe2_b} verwendet. Dabei ergab sich ein Wert von 365$(\pm 43) \frac{m}{s}$.
+
+\subsubsection{c)}
+Im letztem Teil von Aufgabe 2 sollte die der Abstand zwischen der Decke und dem Boden im Versuchsraum ausgemessen werde, da das Signal nicht stark genug war haben wir ein Stück Pappe verwendet und mit einem Lineal die Strecke zum Vergleich nachgemessen. Bei der Messung mit dem Lineal ergab sich ein Abstand von 0,30$(\pm 0,03)$m. Für die Berechnung des Abstandes mit den Ultraschallsensor wurde Gleichung \ref{eqn:decke} und Gleichung \ref{eqn:decke_sigma} für den Fehler verwendet, dabei wurde die Schallgeschwindigkeit mit 344 $\frac{m}{s}$ aus der Praktikumsanleitung als fehlerlos angenommen. Dabei ergab sich ein Wert von 0,31$(\pm 0,02)$. Die Daten zur Berechnung wurden die Daten aus Tabelle \ref{tab:aufgabe2_c} verwendet.
+
+\subsection{Aufgabe 3}
+In der dritten Aufgabe sollte Frequenz mit Hilfe von Interferenz am Doppelspalt bestimmt werden. Dafür wurden die Amplituden in Abhängigkeit des Winkels zum Empfänger gemessen und aus Gleichung \ref{eqn:lambda_3} die Wellenlänge mit dem Fehler aus Gleichung \ref{eqn:lambda_3_sigma} berechnet. Dabei wurde $\Phi$ aus den Plot \ref{fig:plot} entnommen, der Plot wurde aus den Daten von Tabelle \ref{tab:aufgabe3_1} und Tabelle \ref{tab:aufgabe3_2} verwendet. Die Frequenz wurde dann mit Gleichung \ref{eqn:freq} bestimmt und der Fehler mit Gleichung \ref{eqn:freq_sigma}. Beim Plot fällt auf, dass die Nulllage um ca. eine Einheit nach links verschoben werden muss. Dadurch ergeben sich ein Winkel von 7 Grad und -9 Grad, damit ergebe sich Wellenlängen von 0,009$(\pm 0,001)$m und 0,011$(\pm 0,001)$m. Dadurch ergibt sich mit der Schallgeschwindigkeit aus Aufgabe 2 a) (349 $\frac{m}{s}$) eine Frequenz von 40929$(\pm 5119)$Hz und 31886$(\pm 7323)$Hz. Mit der Geschwindigkeit aus AUfgabe 2 b) ergeben sich Werte von 42786$(\pm 3754)$Hz und 33332$(\pm 5529)$Hz. Die eingestellte Frequenz betrug 40300$(\pm100)$Hz.
+
+
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[scale = 0.5, angle = -91]{aufgabe_3_b.pdf}
+  	\caption[Plot der Daten aus der Messung zu Aufgabe 3]{Plot der Daten aus der Messung zu Aufgabe 3}
+  \label{fig:plot}
+\end{figure}
+
+
 
 
 \section{Fazit}
