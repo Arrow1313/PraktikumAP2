@@ -106,15 +106,14 @@ Bei 53660 Hz wurde gegen die Erwartungen ein Minimum gemessen, was wir uns nicht
 \begin{itemize}
 \item[(a)]
 Messen Sie die Schallgeschwindigkeit mit Hilfe der Phasenmethode. Montieren Sie dazu den Sender mit und den Empfänger mit einem Reiter auf der optischen Bank. Sender und Empfänger dürfen nicht verwechselt werden. Sie sind mit S und E auf der Rückseite der Halterung gekennzeichnet. Die Bank hat eine Millimeterskala, die Reiter haben
-jeweils eine zugehörige Markierung zum Ablesen der Millimeterskala. Das Sende- und Empfangssignal wird auf Kanal 1 bzw. Kanal 2 des Oszilloskops dargestellt, Triggerung auf intern mit Sendesignal oder extern
-\footnote{Der Funktionsgenerator liefert ein Triggersignal (zur Frequenz synchrones Rechtecksignal), das am Modul an der BNC-Buchse TRIG.OUTP. zur Verfügung steht.}. Betreiben Sie den Ultraschallwandler im Grundmode und bestimmen Sie durch Abzählen möglichst vieler Maxima am Oszilloskop die Wellenlänge $\lambda$
+jeweils eine zugehörige Markierung zum Ablesen der Millimeterskala. Das Sende- und Empfangssignal wird auf Kanal 1 bzw. Kanal 2 des Oszilloskops dargestellt, Triggerung auf intern mit Sendesignal oder extern\footnote{Der Funktionsgenerator liefert ein Triggersignal (zur Frequenz synchrones Rechtecksignal), das am Modul an der BNC-Buchse TRIG.OUTP. zur Verfügung steht.}. Betreiben Sie den Ultraschallwandler im Grundmode und bestimmen Sie durch Abzählen möglichst vieler Maxima am Oszilloskop die Wellenlänge $\lambda$
 %(nach Formel \ref{}, n möglichst groß) 
 und nach Formel
 %\ref{}
 die Phasengeschwindigkeit.
 Zur Frequenzmessung stehen Frequenzzähler zur Verfügung. Bei der Phasenmethode einen evtl. Frequenzdrift beachten!
 \item[(b)]
-Messen Sie nun die Schallgeschwindigkeit mit Hilfe der Laufzeitmethode. Der mechanische Aufbau ist wie unter (a) beschrieben. In die Zuleitung zum Sender schalten Sie den elektronischen Unterbrecher \footnote{Wenn die Unterbrecher nicht mit 5 V arbeiten, mit 6 bis 9 V probieren. Die Unterbrecher arbeiten mit Reed-Relais, die nur ein sehr leises Ticken oder Summen verursachen. Bei einigen Unterbrecherkästen ist eine neue Schaltung eingebaut, hier sind die Leuchtdiode und der Taster an der Seite ohne Funktion. Die alten Unterbrecherschaltungen hingegen müssen erst durch Tasterdruck gestartet werden.}. Triggern Sie das Oszilloskop extern mit dem Triggerpuls des Unterbrechers. Zur besseren Strahlenbündelung setzen Sie auf den Sender und den Empfänger die Strahlhörner auf. Führen Sie die Messung für zwei verschiedene Abstände
+Messen Sie nun die Schallgeschwindigkeit mit Hilfe der Laufzeitmethode. Der mechanische Aufbau ist wie unter (a) beschrieben. In die Zuleitung zum Sender schalten Sie den elektronischen Unterbrecher\footnote{Wenn die Unterbrecher nicht mit 5 V arbeiten, mit 6 bis 9 V probieren. Die Unterbrecher arbeiten mit Reed-Relais, die nur ein sehr leises Ticken oder Summen verursachen. Bei einigen Unterbrecherkästen ist eine neue Schaltung eingebaut, hier sind die Leuchtdiode und der Taster an der Seite ohne Funktion. Die alten Unterbrecherschaltungen hingegen müssen erst durch Tasterdruck gestartet werden.}. Triggern Sie das Oszilloskop extern mit dem Triggerpuls des Unterbrechers. Zur besseren Strahlenbündelung setzen Sie auf den Sender und den Empfänger die Strahlhörner auf. Führen Sie die Messung für zwei verschiedene Abstände
 l durch. Die Schallgeschwindigkeit ergibt sich aus $v = \frac{\Delta l}{\Delta t}$. Vergleichen Sie das Ergebnis mit Ihrer Messung aus (a).
 \item[(c)]
 Bei Kenntnis der Schallgeschwindigkeit kann die Anordnung nach (b) auch zur Entfernungsmessung benutzt werden (Echolotprinzip). Montieren Sie dazu Sender und Empfänger (beide mit aufgesetztem Horn) so, daß das zur Zimmerdecke und dort refektierte Signal vom Empfänger wieder empfangen wird. Wie hoch ist die Zimmerdecke über dem Fußboden?
@@ -182,7 +181,7 @@ Fehler:
 \end{align}
 \end{enumerate}
 \subsection{Messergebnisse}
-\subsubsection{a)}
+\subsubsection{(a)}
 
 \begin{table}[H]
 \caption{Messdaten zur Phasenmethode}
@@ -198,7 +197,7 @@ L$_1$/m & $L_2$/m & n \\ \hline
 \label{tab:aufgabe2_a}
 \end{table}
 
-\subsubsection{b)}
+\subsubsection{(b)}
 
 \begin{table}[H]
 \caption{Messdaten zur Laufzeitmethode}
@@ -214,7 +213,7 @@ L$_2$/m & T$_2$/s \\ \hline
 \label{tab:aufgabe2_b}
 \end{table}
 
-\subsubsection{c)}
+\subsubsection{(c)}
 
 \begin{table}[H]
 \caption{Messdaten für die Entfernung zur Pappwand}
@@ -230,13 +229,13 @@ Laufzeit/s \\ \hline
 \label{tab:aufgabe2_c}
 \end{table}
 \subsection{Auswertung}
-\subsubsection{a)}
+\subsubsection{(a)}
 Im ersten Teil der zweiten Aufgabe sollte die Schallgeschwindigkeit mit der Phasenmethode bestimmt werden. Dafür wurde die Anzahl der Maxima(bzw. die überstrichene Wellenanzahl $n$) und die Differenz $\Delta l$ zwischen den beiden Positionen des Empfängers gemessen. Zur Berechnung der Wellenlänge wurde Gleichung \ref{eqn:lamda_1} sowie für den Fehler Gleichung \ref{eqn:lamda_1_sigma} verwendet. Daraus wurde mit Gleichung \ref{eqn:v} die Schallgeschwindigkeit bestimmt. Der Fehler berechnet sich nach Gleichung \ref{eqn:v_sigam}.Zur Berechnung wurden die Daten aus Tabelle \ref{tab:aufgabe2_a} verwendet, dabei wurden Messwerte für $n$ = 5 und für $n$ = 10 genommen. Für die Schallgeschwindigkeit ergab sich eine Geschwindigkeit von 349$(\pm 12) \frac{\text{m}}{\text{s}}$  und 349$(\pm 6) \frac{\text{m}}{\text{s}}$.
 
-\subsubsection{b)}
+\subsubsection{(b)}
 Im zweitem Teil sollte die Schallgeschwindigkeit mit der Laufzeitmethode bestimmt werden. Für zwei Empfängerpositionen wurden einerseits die Laufzeiten und andererseits die Abstände zwischen Sender und Empfänger gemessen. Mit Gleichung \ref{eqn:v_gr} wurde die Wellenlänge bestimmt, während sich der Fehler nach Gleichung \ref{eqn:v_gr_sigma} ergibt. Mit der Wellenlänge berechnet sich nun die Schallgeschwindigkeit nach Gleichung \ref{eqn:v} und der Fehler nach Gleichung \ref{eqn:v_sigam} (Daten aus Tabelle \ref{tab:aufgabe2_b}). Die gemessene Schallgeschwindigkeit ist 365$\frac{\text{m}}{\text{s}}$.
 
-\subsubsection{c)}
+\subsubsection{(c)}
 Im letztem Teil von Aufgabe 2 sollte der Abstand zwischen der Decke und dem Boden des Versuchsraumes ausgemessen werden. Da das Signal nicht stark genug war haben wir ein Stück Pappe verwendet und die Strecke zum Vergleich mit einem Lineal nachgemessen. Bei der Messung mit dem Lineal ergab sich ein Abstand von 0,30$(\pm 0,03)$m. Für die Berechnung des Abstandes per Echolot (Ultraschallsender und Empfänger) wurde Gleichung \ref{eqn:decke} und für den Fehler Gleichung \ref{eqn:decke_sigma} verwendet.
 Die Schallgeschwindigkeit (344 $\frac{\text{m}}{\text{s}}$) aus der Praktikumsanleitung wurde als fehlerlos angenommen. Als Abstand ergab sich ein Wert von 0,31$(\pm 0,02)$m.(Daten aus Tabelle \ref{tab:aufgabe2_c})
 \subsection{Diskussion}
@@ -361,7 +360,7 @@ Auslenkung/$^\circ$ & Amplitude/mV \\ \hline
 \label{tab:aufgabe3_2}
 \end{table}
 \subsection{Auswertung}
-In der dritten Aufgabe sollte die Frequenz des Frequenzgenerators über die Interferenz am "Doppelspalt" nachgemessen werden, wobei stellvertretend für den Doppelspalt ein Doppelsender herhalten musste. In Abhängigkeit des Winkels zum Empfänger wurden dazu die Amplituden gemessen, die Wellenlänge nach Gleichung \ref{eqn:lambda_3} bestimmt und der Fehler nach Gleichung \ref{eqn:lambda_3_sigma} berechnet. Dabei wurden die Messdaten für $\Phi$ aus Tabelle \ref{tab:aufgabe3_1} und Tabelle \ref{tab:aufgabe3_2} entnommen. Die Frequenz wurde mit Gleichung \ref{eqn:freq} bestimmt und der Fehler mit Gleichung \ref{eqn:freq_sigma} bestimmt. Beim Plot fiel aus Symmetriegründen auf, dass die Nulllage um ca. ein Grad verrutscht war. Für die Minima ergaben sich Winkel von 7 Grad und -9 Grad, sowie nach Gleichung \ref{eqn:lambda_3} Wellenlängen von 0,009$(\pm 0,001)$m und 0,011$(\pm 0,001)$m. Mit der Schallgeschwindigkeit aus Aufgabe 2 a) (349 $\frac{\text{m}}{\text{s}}$) ergeben sich Frequenzen von 40929$(\pm 5119)$Hz und 31886$(\pm 7323)$Hz. Mit der Schallgeschwindigkeit aus Aufgabe 2 b) ergeben sich dagegen Werte von 42786$(\pm 3754)$Hz und 33332$(\pm 5529)$Hz. Die eingestellte Frequenz betrug 40300$(\pm100)$Hz.
+In der dritten Aufgabe sollte die Frequenz des Frequenzgenerators über die Interferenz am "Doppelspalt" nachgemessen werden, wobei stellvertretend für den Doppelspalt ein Doppelsender herhalten musste. In Abhängigkeit des Winkels zum Empfänger wurden dazu die Amplituden gemessen, die Wellenlänge nach Gleichung \ref{eqn:lambda_3} bestimmt und der Fehler nach Gleichung \ref{eqn:lambda_3_sigma} berechnet. Dabei wurden die Messdaten für $\Phi$ aus Tabelle \ref{tab:aufgabe3_1} und Tabelle \ref{tab:aufgabe3_2} entnommen. Die Frequenz wurde mit Gleichung \ref{eqn:freq} bestimmt und der Fehler mit Gleichung \ref{eqn:freq_sigma} bestimmt. Beim Plot fiel aus Symmetriegründen auf, dass die Nulllage um ca. ein Grad verrutscht war. Für die Minima ergaben sich Winkel von 7 Grad und -9 Grad, sowie nach Gleichung \ref{eqn:lambda_3} Wellenlängen von 0,009$(\pm 0,001)$m und 0,011$(\pm 0,001)$m. Mit der Schallgeschwindigkeit aus Aufgabe 2 (a) (349 $\frac{\text{m}}{\text{s}}$) ergeben sich Frequenzen von 40929$(\pm 5119)$Hz und 31886$(\pm 7323)$Hz. Mit der Schallgeschwindigkeit aus Aufgabe 2 (b) ergeben sich dagegen Werte von 42786$(\pm 3754)$Hz und 33332$(\pm 5529)$Hz. Die eingestellte Frequenz betrug 40300$(\pm100)$Hz.
 
 
 \begin{figure}[H] 
@@ -371,13 +370,12 @@ In der dritten Aufgabe sollte die Frequenz des Frequenzgenerators über die Inte
   \label{fig:plot}
 \end{figure}
 \subsection{Diskussion}
-Bei der Messung des Beugungsbildes des Doppelspaltes bzw. Doppelsenders mussten wir feststellen, dass unsere Amplituden während der Messung sehr stark variierten. Dies ist durch andere Ultraschallquellen im Raum erklärbar, da wir unsere Messung parallel zu 3 anderen Gruppen durchgeführt haben. Die Nullage des Aufbaus war nicht feststellbar und verschob sich während wir den Winkel einstellten um etwa 1 Grad, was wir in der Berechnung der Wellenlängen berücksichtigt haben. Insgesamt konnten wir bei dieser Messung deshalb keine guten Messergebnisse erwarten. Mit den beiden in der zweiten Aufgabe berechneten Schallgeschwindigkeiten, und den beiden vom größten Maximum aus gesehenen nächsten Minima, ergeben sich Frequenzen, für die die am Frequenzgenerator eingestellte Frequenz in den ersten zwei Fällen innerhalb des ersten Sigmaintervalls \footnote{mit der Phasengeschwindigkeit $v_{Ph}$} und in den anderen beiden Fällen erst innerhalb des zweiten Sigmaintervalls \footnote{mit der Gruppengeschindigkeit $v_{Gr}$} liegt.
+Bei der Messung des Beugungsbildes des Doppelspaltes bzw. Doppelsenders mussten wir feststellen, dass unsere Amplituden während der Messung sehr stark variierten. Dies ist durch andere Ultraschallquellen im Raum erklärbar, da wir unsere Messung parallel zu 3 anderen Gruppen durchgeführt haben. Die Nullage des Aufbaus war nicht feststellbar und verschob sich während wir den Winkel einstellten um etwa 1 Grad, was wir in der Berechnung der Wellenlängen berücksichtigt haben. Insgesamt konnten wir bei dieser Messung deshalb keine guten Messergebnisse erwarten. Mit den beiden in der zweiten Aufgabe berechneten Schallgeschwindigkeiten, und den beiden vom größten Maximum aus gesehenen nächsten Minima, ergeben sich Frequenzen, für die die am Frequenzgenerator eingestellte Frequenz in den ersten zwei Fällen innerhalb des ersten Sigmaintervalls\footnote{mit der Phasengeschwindigkeit $v_{Ph}$} und in den anderen beiden Fällen erst innerhalb des zweiten Sigmaintervalls\footnote{mit der Gruppengeschindigkeit $v_{Gr}$} liegt.
 
 \section{Fazit}
 In Aufgabe 1 haben wir bis auf einen Ausreißer die erwarteten Frequenzen gemessen, wobei wir das Minimum bei ca. 320000 Hz nicht finden konnten.\\
 Die Schallgeschwindigkeit wurde in Aufgabe zwei mit beiden Methoden recht gut bestimmt, wobei wir mit der Phasenmethode einen genaueren Wert mit einem kleineren Fehler gemessen haben.\\
-Ebenso können wir mit der Abstandsmessung per Echolot zufrieden sein, da der genaue Abstand zum Piezoelement nicht genau bekannt war und deshalb abgeschätzt werden musste.
-\footnote{An dieser Stelle hätte uns ein systematischer Fehler einen Strich durch die Rechnung machen können.}\\
+Ebenso können wir mit der Abstandsmessung per Echolot zufrieden sein, da der genaue Abstand zum Piezoelement nicht genau bekannt war und deshalb abgeschätzt werden musste.\footnote{An dieser Stelle hätte uns ein systematischer Fehler einen Strich durch die Rechnung machen können.}\\
 Die Messung zur Interferenz in Aufgabe 3 war mit Abstand die ungenaueste, da unsere Messwerte sehr stark durch äußere Einflüsse verfälscht wurden. Das Interferenzmuster kann man trotz der starken Schwankungen der Amplitude gut erkennen.\\
 Zusammenfassend konnten trotz äußerer Störfaktoren alle drei Messungen so durchgeführt werden, dass unsere Vergleichswerte in den meisten Fällen innerhalb des ersten Sigmaintervalls des Messwertes lagen. 
 
