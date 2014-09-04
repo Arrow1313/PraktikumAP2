@@ -1,13 +1,18 @@
-#set xrange[-50:1100]
-#set yrange[0:0.04]
+#set xrange[-60:60]
+#set yrange[0:40]
 
-set xtics 1 format " "
+set sample 10000
+set xtics 10
 set grid
 
-set xlabel "Auslenkung/^o"
+set xlabel "Auslenkung/Grad"
 set ylabel "Intensitaet"
 
-plot "aufgabe_3.dat" with xyerrorbars title "Messdaten"
+b=0.03; c=25; d=0.2; e=-1; f=8
+
+f(x) = exp(-(b*(x-e))**2)*c*(cos(d*(x-e)))**2+f
+fit f(x) "aufgabe_3.dat" using 1:2:4 via b,c,d,e,f
+plot f(x), "aufgabe_3.dat" with xyerrorbars title "Messdaten"
 
 set terminal postscript eps enhanced color font 'Helvetica,10'
 set output "aufgabe_3.eps"
