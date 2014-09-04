@@ -4,7 +4,7 @@
 set xlabel "Position/cm"
 set ylabel "Intensitaet/A"
 
-plot "a_2_m.dat" with xyerrorbars title "Messdaten", f(x) title "Regression"
+plot "a_2_m.dat" with xyerrorbars title "Messdaten"
 
 set terminal postscript eps enhanced color font 'Helvetica,10'
 set output "a_2_m.eps"
