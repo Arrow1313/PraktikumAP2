@@ -4,13 +4,13 @@
 set xlabel "Winkel/^o"
 set ylabel "Intensitaet/A"
 
-f(x)=(cos(x*b)*m)**2+d
+f(x)=(cos(x*b)*m)+d
 
 m = 96
 b = 0.03
 d = 92
 
-fit f(x) "a_4.dat" using 1:2 via m,b,d
+fit f(x) "a_4.dat" using 1:2:3 via m,b,d
 
 plot "a_4.dat" with xyerrorbars title "Messdaten", f(x) title "Regression"
 
