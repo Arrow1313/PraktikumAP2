@@ -61,7 +61,7 @@ Für diesen Versuch werden ein Oszilloskop, ein Funktionsgenerator, eine optisch
 \begin{itemize}
 \item[(a)]
 Um die elektrischen Eigenschaften eines Barium-Titanat-Ultraschallgenerators zu untersuchen, wird eine Schaltung gemäß Abb. \ref{fig:impedanz}
-aufgebaut. Stellen Sie am Funktionsgenerator ein Sinussignal mit einer Amplitude von etwa 5 V ein.
+aufgebaut. Dazu stellen wir am Funktionsgenerator ein Sinussignal mit einer Amplitude von etwa 9 V ein.
 %bitte Abb.7 aus der Versuchsanleitung einfügen, welche grade referenziert werden sollte "Aufbau zur Impedanzmessung"
 \begin{figure}[htbp] 
   \centering
@@ -70,13 +70,12 @@ aufgebaut. Stellen Sie am Funktionsgenerator ein Sinussignal mit einer Amplitude
   \label{fig:impedanz}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/AK1.pdf Seite 6 am 30.08.2014}
-Der Spannungsabfall über dem 1-k$\Omega$-Widerstand ist proportional zum Strom durch den Ultraschallwandler, der seinerseits umgekehrt proportional zu dessen Impedanz ist (wenn man davon ausgeht, das die Gesamtimpedanz groß gegen 1 k$\Omega$ ist).
-Variieren Sie die Frequenz des Funktionsgenerators und messen Sie die niedrigste Resonanzfrequenz (etwa 40 kHz)
-aus. Erwarten Sie im Resonanzfall den maximalen oder minimalen Strom durch den 1-k$\Omega$-Widerstand? 
+Wir verändern dann die Frequenz des Funktionsgenerators und messen die niedrigste Resonanzfrequenz (etwa 40 kHz)
+aus. Im Resonanzfall erwarten wir maximalen Strom durch den 1-k$\Omega$-Widerstand. 
 %(Lesen Sie auf Seite 3 nach, was unter Formel 2 für das Verhalten bei der Resonanzfrequenz beschrieben ist.)
 \item[(b)]
-Finden Sie eine zweite Resonanz. Dies ist die zweite Harmonische. Je nach Wandlertyp kann das z.B. bei etwa der vierfachen Frequenz der ersten Resonanz sein. Suchen Sie bei Ihrem Wandler noch möglichst viele weitere höhere
-Resonanzen.
+In diesem Teil soll eine zweite Resonanz gefunden werden. Je nach Wandlertyp kann das bei etwa der vierfachen Frequenz der ersten Resonanz sein. Danach suchen weitere höhere
+Resonanzfrequenzen.
 \end{itemize}
 \subsection{Messergebnisse}
 \begin{table}[H]
@@ -105,18 +104,15 @@ Bei 53660 Hz wurde gegen die Erwartungen ein Minimum gemessen, was wir uns nicht
 \subsubsection{Praktische Durchführung}
 \begin{itemize}
 \item[(a)]
-Messen Sie die Schallgeschwindigkeit mit Hilfe der Phasenmethode. Montieren Sie dazu den Sender mit und den Empfänger mit einem Reiter auf der optischen Bank. Sender und Empfänger dürfen nicht verwechselt werden. Sie sind mit S und E auf der Rückseite der Halterung gekennzeichnet. Die Bank hat eine Millimeterskala, die Reiter haben
-jeweils eine zugehörige Markierung zum Ablesen der Millimeterskala. Das Sende- und Empfangssignal wird auf Kanal 1 bzw. Kanal 2 des Oszilloskops dargestellt, Triggerung auf intern mit Sendesignal oder extern\footnote{Der Funktionsgenerator liefert ein Triggersignal (zur Frequenz synchrones Rechtecksignal), das am Modul an der BNC-Buchse TRIG.OUTP. zur Verfügung steht.}. Betreiben Sie den Ultraschallwandler im Grundmode und bestimmen Sie durch Abzählen möglichst vieler Maxima am Oszilloskop die Wellenlänge $\lambda$
-%(nach Formel \ref{}, n möglichst groß) 
+Mit Hilfe der Phasenmethode soll nun die Schallgeschwindigkeit gemessen werden. Dazu montieren wir den Sender und den Empfänger mit einem Reiter auf der optischen Bank. An der Millimeterskala können die Abstände der Reiter, die jeweils eine zugehörige Markierung haben, abgelesen werden. Wir bestimmen durch Abzählen möglichst vieler Maxima am Oszilloskop die Wellenlänge $\lambda$
+(nach Formel \ref{eqn:lamda_1}, n möglichst groß) 
 und nach Formel
-%\ref{}
+\ref{eqn:v}
 die Phasengeschwindigkeit.
-Zur Frequenzmessung stehen Frequenzzähler zur Verfügung. Bei der Phasenmethode einen evtl. Frequenzdrift beachten!
 \item[(b)]
-Messen Sie nun die Schallgeschwindigkeit mit Hilfe der Laufzeitmethode. Der mechanische Aufbau ist wie unter (a) beschrieben. In die Zuleitung zum Sender schalten Sie den elektronischen Unterbrecher\footnote{Wenn die Unterbrecher nicht mit 5 V arbeiten, mit 6 bis 9 V probieren. Die Unterbrecher arbeiten mit Reed-Relais, die nur ein sehr leises Ticken oder Summen verursachen. Bei einigen Unterbrecherkästen ist eine neue Schaltung eingebaut, hier sind die Leuchtdiode und der Taster an der Seite ohne Funktion. Die alten Unterbrecherschaltungen hingegen müssen erst durch Tasterdruck gestartet werden.}. Triggern Sie das Oszilloskop extern mit dem Triggerpuls des Unterbrechers. Zur besseren Strahlenbündelung setzen Sie auf den Sender und den Empfänger die Strahlhörner auf. Führen Sie die Messung für zwei verschiedene Abstände
-l durch. Die Schallgeschwindigkeit ergibt sich aus $v = \frac{\Delta l}{\Delta t}$. Vergleichen Sie das Ergebnis mit Ihrer Messung aus (a).
+In diesem Teil messen wir die Schallgeschwindigkeit mit der Laufzeitmethode. Der mechanische Aufbau ist wie unter (a) beschrieben. In die Zuleitung zum Sender schalten wir den elektronischen Unterbrecher mit 6 bis 9 V. Wir führen die Messung für zwei verschiedene Abstände l durch. Die Schallgeschwindigkeit ergibt sich aus $v = \frac{\Delta l}{\Delta t}$. Anschließend vergleichen wir unser Ergebnis mit dem aus Messung (a).
 \item[(c)]
-Bei Kenntnis der Schallgeschwindigkeit kann die Anordnung nach (b) auch zur Entfernungsmessung benutzt werden (Echolotprinzip). Montieren Sie dazu Sender und Empfänger (beide mit aufgesetztem Horn) so, daß das zur Zimmerdecke und dort refektierte Signal vom Empfänger wieder empfangen wird. Wie hoch ist die Zimmerdecke über dem Fußboden?
+Bei Kenntnis der Schallgeschwindigkeit kann die Anordnung nach (b) auch zur Entfernungsmessung benutzt werden (Echolotprinzip). Wir stellen dazu Sender und Empfänger so, dass das am Objekt refektierte Signal vom Empfänger wieder empfangen wird. Dadurch bestimmen wir die Entfernung des Senders zum Objekt.
 \end{itemize}
 \subsubsection{Theoretische Durchführung}
 \begin{enumerate}
@@ -247,15 +243,13 @@ Für den Abstand der Pappplatte zum Sender ergab sich ein akzeptabler Wert, da d
 \subsubsection{Praktische Durchführung}
 \begin{itemize}
 \item[(a)]
-Messen Sie das Beugungbild eines Doppelspaltes. Aus aufbautechnischen Gründen wird hierbei der Doppelsender um seine Symmetrieachse gedreht und der Empfänger fest am Ort belassen. Der Doppelsender ist auf einem Drehtisch montiert. (Zubehör zur optischen Bank). Den Empfänger montieren Sie
-in ca. 1 m Abstand auf einen festen Reiter (achten Sie auf gleiche Höhe zwischen Sender und Empfänger). Da die Transducer des Doppelsenders aus einer anderen Bauserie stammen können als die Einzelsender, müssen Sie die Betriebsfrequenz neu einstellen und am Oszilloskop erneut bestimmen bzw. am Frequenzzähler ablesen. Die optimale Frequenz steht evtl. auf der Platine mit dem Doppelsender. Sinnvoll ist, die Frequenz so zu wählen, daß die Minima des Interferenzmusters
-besonders ausgeprägt sind. Überlegen Sie: Was muß für die Amplituden der beiden Sender gelten? Sie können sich die Einzelamplituden am Oszilloskop ansehen, wenn Sie jeweils einen der beiden Sender mit dem Finger abdecken.
-Messen Sie die Empfangamplitude für verschiedene Richtungswinkel des Doppelsenders zur Empfängerrichung (alle 2$^{\circ}$ im Bereich $\pm 50^{\circ}$). Tragen Sie die Empfangsamplitude gegen den Richtungswinkel auf. Bestimmen Sie aus dem Abstand des Minimums die Wellenlänge gemäß
+Wir messen das Beugungbild eines Doppelspaltes. Aus aufbautechnischen Gründen wird hierbei der Doppelsender um seine Symmetrieachse gedreht und der Empfänger fest am Ort belassen. Der Doppelsender ist auf einem Drehtisch montiert. Den Empfänger montieren wir in ca. 1 m Abstand auf einen festen Reiter. Die optimale Frequenz steht evtl. auf der Platine mit dem Doppelsender. Die Frequenz soll so gewählt wählen, dass die Minima des Interferenzmusters besonders ausgeprägt sind.
+Wir messen die Empfangamplitude für verschiedene Richtungswinkel des Doppelsenders zur Empfängerrichung (alle 2$^{\circ}$ im Bereich $\pm 50^{\circ}$). Dann tragen wir die Empfangsamplitude gegen den Richtungswinkel auf und bestimmen aus dem Abstand des Minimums die Wellenlänge gemäß
 \begin{align}
 \frac{\lambda}{2} = l\sin(\Phi)
 \end{align}
 mit l: Abstand der Schallquellen.\\
-Errechnen Sie hieraus mit Hilfe der vorher berechneten Schallgeschwindigkeit $c$ die Frequenz ($f = \frac{c}{\lambda}$) und vergleichen Sie diesen Wert mit dem Ihrer Messung mit dem Oszilloskop.
+Wir errechnen hieraus mit Hilfe der vorher berechneten Schallgeschwindigkeit $c$ die Frequenz ($f = \frac{c}{\lambda}$) und vergleichen diesen Wert mit dem unserer Messung am Oszilloskop.
 \end{itemize}
 \subsubsection{Theoretische Durchführung}
 \begin{enumerate}
