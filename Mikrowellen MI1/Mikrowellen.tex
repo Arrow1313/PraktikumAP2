@@ -47,6 +47,13 @@ Wachs-Schicht und die Drehung der Polarisationsebene durch
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
+Der Versuchsaufbau besteht aus einem Mikrowellen Sender und Empfänger, einer Wachslinse, einem Wachsquader, zwei Wachsprismen, ein Gitter und ein Netzgerät. Zum messen der Intensität waren ein DMM und ein Amperemessgerät mit integriertem Strahlenempfänger vorhanden.Sender und Empfänger sind in zwei Halterungen angebracht, welche mit einer Winkelskala versehen sind.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale= 0.1]{versuchaufbau.JPG}
+	\label{fig:versuchsaufbau}
+\end{figure}
 
 %wenn du tabellen einfügst dann schreib bitte anstatt [htpb] [H]. zusammen mit \usepackage{float} verrutscht dann garnichts mehr
 Die Mikrowellensender werden mit einer Gleichspannung von ca. 10 bis 12 V versorgt.
@@ -58,6 +65,7 @@ Zunächst stellen wir den Sender und eine Metallplatte im Abstand von ca. 30 - 4
 Die Wellenlänge wird bestimmt nach Formel:
 \begin{align}
 n*\lambda = p_1 - p_2
+\label{eqn:a_1}
 \end{align}
 n ist dabei die Anzahl der Minima zwischen den Positionen $p_1$ und $p_2$.\\
 Mit einem Fehler von:
@@ -65,6 +73,7 @@ Mit einem Fehler von:
 \sigma_{\lambda} = \sqrt{
 \left(\frac{\sigma_{p_1}}{n}\right)^2+
 \left(\frac{\sigma_{p_2}}{n}\right)^2}
+\label{eqn:a_1_sigma}
 \end{align}
 \subsection{Messergebnisse}
 \begin{table}[H]
@@ -80,7 +89,7 @@ Mit einem Fehler von:
 \label{tab:a_1}
 \end{table}
 \subsection{Auswertung}
-In der ersten Aufgabe sollte die Wellenlänge des Senders bestimmt werden. Dabei wurden drei verschiedene Positionen gemessen (siehe Tabelle \ref{tab:a_1}). Es ergab sich ein Mittelwert von:
+In der ersten Aufgabe sollte die Wellenlänge des Senders bestimmt werden. Dabei wurden drei verschiedene Positionen gemessen (siehe Tabelle \ref{tab:a_1}). Die Wellenlänge wurde mit Gleichung \ref{eqn:a_1} und der Fehler mit Gleichung \ref{eqn:a_1_sigma} bestimmt. Es ergab sich ein Mittelwert von:
 
 \begin{align*}
 2,7 (\pm 0,2) cm
@@ -91,6 +100,12 @@ Auf dem Sender war ein Wert von 2,8 cm für die Wellenlänge angegeben.
 Die auf dem Sender angegebene Wellenlänge liegt im ersten Sigmaintervall der gemessenen Wellenlänge, wobei der Fehler weniger als 8\% des Messwertes einnimmt. Auf diese Weise konnte die Wellenlänge also relativ genau bestimmt werden.
 \section{Aufgabe2}
 \subsection{Versuchsdurchführung}
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.1]{a_2.JPG}
+  	\caption[Aufbau des zweiten Versuchs]{Aufbau des zweiten Versuchs}
+  \label{fig:a_2}
+\end{figure}
 \subsubsection{Praktische Durchführung}
 Wir messen die Intensitätsverteilung senkrecht zur Strahlrichtung mit dem Hornempfänger, wobei uns eine Wachslinse zur Verfügung stand:
 \begin{enumerate}
@@ -160,9 +175,15 @@ Bei der Messung mit Sammellinse ergab sich der folgende Plot (Messwerte aus Tabe
   \label{fig:a_2_m}
 \end{figure}
 \subsection{Diskussion}
-Obwohl unsere Linse einige Bruchstellen hatte und unser DMM mehr oder weniger defekt war, da es bei umschalten der Zehnerpotenzen aufeinmal ganz andere Ströme anzeigte,(wir haben die Einstellung benutzt, bei der die Ergebnisse vergleichbar mit denen der Nachbargruppe waren,) kann man trotzdem an dem Plot erkennen, dass der Lichtstrahl durch die Linse fokussiert wurde und die Steigung, also die Abnahme der Intensität mit zunehmendem Abstand zum Mittelpunkt mit Linse stärker war als ohne.
+Obwohl unsere Linse einige Bruchstellen hatte und unser DMM mehr oder weniger defekt war, da es bei umschalten der Zehnerpotenzen ganz andere Ströme anzeigte,(wir haben die Einstellung benutzt, bei der die Ergebnisse vergleichbar mit denen der Nachbargruppe waren,) kann man trotzdem an dem Plot erkennen, dass der Lichtstrahl durch die Linse fokussiert wurde und die Steigung, also die Abnahme der Intensität mit zunehmendem Abstand zum Mittelpunkt mit Linse stärker war als ohne.
 \section{Aufgabe3}
 \subsection{Versuchsdurchführung}
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.1]{a_3.JPG}
+  	\caption[Aufbau des dritten Versuchs]{Aufbau des dritten Versuchs}
+  \label{fig:a_3}
+\end{figure}
 \subsubsection{Praktische Durchführung}
 Die Totalreflexion der Mikrowellen soll anhand des folgenden Versuchs untersucht werden:
 
@@ -173,7 +194,7 @@ Die Totalreflexion der Mikrowellen soll anhand des folgenden Versuchs untersucht
   	\caption[Abbildung der beiden Schaltungen, für die Bestimmung des Wiederstandes]{Abbildung der beiden Schaltungen, für die Bestimmung des Wiederstandes\footnotemark}
   \label{fig:abb_versuch_3}
 \end{figure}
-\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/MI1.pdf Seite 18 am 16.08.2014}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/MI1.pdf Seite 18 am 03.09.2014}
 
 Die Wachsprismen werden ( n = 1,5 ) wie in Abbildung (c) gezeichnet im Abstand a gegenüber gestellt. Wir messen nun die Intensität des Empfängers in Abhängigkeit des Abstandes a.
 %Versuchen Sie, die Erscheinung zu erklären.
@@ -349,6 +370,12 @@ In der fünften Aufgabe sollte zwischen die um 90 Grad gegeneinander verdrehten 
 Für einen idealen Polarisationsfilter wäre bei dieser Aufgabe nach dem Gesetz von Malus genau 50\% des Stromes nach beiden Filtervorgängen über. Die Abweichung unseres Messwertes von ca. 5\% erklärt sich einerseits durch die nicht idealen Filter, sowie andererseits durch unsere Empfangsdiode, die bei zu kleinen Amplituden Ströme proportional zu $E^2$ durchlässt. Es war zusätzlich ein leichter Offset von einem $\mu$A messbar. Äußere Einflüsse durch Metallische Gegenstände oder elektrische Geräte spielen hier eine recht große Rolle.
 \section{Aufgabe6}
 \subsection{Versuchsdurchführung}
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.1]{a_6.JPG}
+  	\caption[Aufbau des sechsten Versuchs]{Aufbau des sechsten Versuchs}
+  \label{fig:a_3}
+\end{figure}
 \subsubsection{Praktische Durchführung}
 Abhängig vom Einfallswinkel messen wir die Intensität der von einer Wachsplatte reflektierten Wellen, die parallel zur Einfallsebene polarisiert sind. Daraus bestimmen wir den Brechungsindex.
 \subsubsection{Theoretische Durchführung}
@@ -398,6 +425,12 @@ Nach Formel \ref{eqn: Brewsterwinkel} ergibt sich ein möglicher Brechungsindex 
 Da Wachs bekannterweise einen Brechungsindex von ca. 1,5 hat, was bei unserem gemessenen Maximum bei ca. 55-60 $^{\circ}$ liegt, vermuten wir, dass unsere Welle parallel zur x-y-Ebene polarisiert war, sodass wir beim Brewsterwinkel eine Maximale Reflektion gemessen haben. Dies würde unsere unerwarteten Messwerte erklären und das Phänomen des Brewsterwinkels besser erklären.
 \section{Aufgabe7}
 \subsection{Versuchsdurchführung}
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.1]{a_7.JPG}
+  	\caption[Aufbau des siebten Versuchs]{Aufbau des siebten Versuchs}
+  \label{fig:a_3}
+\end{figure}
 \subsubsection{Praktische Durchführung}
 Wir wollen die Drehung der Polarisationsebene durch ”optisch aktive“ Substanzen untersuchen. Es gibt dazu optisch aktive mit Rechtsschraubenfedern besetzte Styroporplatten. Die Platten sind durch eine Markierung (R) an der Seite der Styroporplatten gekennzeichnet.
 \subsection{Messergebnisse}
@@ -424,10 +457,12 @@ Strom/$\mu$A & Fehler/$\mu$A & Winkel/grad & Fehler/grad \\ \hline
 \label{tab:a_7_m}
 \end{table}
 \subsection{Auswertung}
-In der siebten Aufgabe sollte der Effekt optisch aktiver Substanzen nachgewiesen werden. Dafür wurden Sender und Empfänger um 90 $(\pm 1)$ Grad zueinander verdreht und die Intensität gemessen. Dabei ergab sich ein Wert von 0,81 $(\pm 0,05) \mu$A.  Dann wurde die optisch aktive Substanz (Styropor mit Stahlfedern) zwischen Sender und Empfänger gehalten und der Sender solange gedreht,bis sich der zuvor bestimmte Wert einstellte. Es ergab sich ein Winkel von 97 $(\pm 1)$ Grad.
+In der siebten Aufgabe sollte der Effekt optisch aktiver Substanzen nachgewiesen werden. Dafür wurden Sender und Empfänger um 90 $(\pm 1)$ Grad zueinander verdreht und die Intensität gemessen. Dabei ergab sich ein Wert von 0,81 $(\pm 0,05) \mu$A.  Dann wurde die optisch aktive Substanz (Styropor mit Stahlfedern) zwischen Sender und Empfänger gehalten und der Sender solange nach links gedreht,bis sich der zuvor bestimmte Wert einstellte. Es ergab sich ein Winkel von 97 $(\pm 1)$ Grad.
 \subsection{Diskussion}
-
+Da es keine Materialangaben zum Styropor mit Stahlfedern gab können wir unser Ergebnis nicht direkt vergleichen. Andere Gruppen hatten jedoch ähnliche Werte gemessen, was dafür spricht, dass der Messwert in Ordnung ist.
 \section{Fazit}
+Abschließend betrachtet sind fast alle Messungen zufriedenstellend verlaufen, lediglich bei Aufgabe 6 ist das Ergebnis stark vom Erwartetem Wert abweichend. Dies liegt wahrscheinlich daran, dass die Mikrowellen parallel zur x-y-Ebene  polarisiert waren, wie schon in der Diskussion erwähnt.
+Die restlichen Messungen haben soweit alle optischen Effekte bestätigt, die wir erwartet haben.
 
  %Werte stimmen mit den Formeln überein/nicht überein
 
