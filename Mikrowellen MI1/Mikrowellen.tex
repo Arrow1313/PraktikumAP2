@@ -49,47 +49,12 @@ Wachs-Schicht und die Drehung der Polarisationsebene durch
 \section{Versuchsaufbau}
 
 %wenn du tabellen einfügst dann schreib bitte anstatt [htpb] [H]. zusammen mit \usepackage{float} verrutscht dann garnichts mehr
-\section{Versuchsdurchführung}
-
-
-\subsection{Praktische Durchführung}
-\textbf{Allgemeine Hinweise:}\\
 Die Mikrowellensender werden mit einer Gleichspannung von ca. 10 bis 12 V versorgt.
-\begin{enumerate}
-\item Zunächst stellen wir den Sender und eine Metallplatte im Abstand von ca. 30 - 40 cm gegenüber auf und zwischen beide die Diode. Dadurch bildet sich eine stehende Welle, sodass wir durch Verschieben der Metallplatte die Wellenlänge messen können.
-\item
-Wir messen die Intensitätsverteilung senkrecht zur Strahlrichtung mit dem Hornempfänger, wobei uns eine Wachslinse zur Verfügung stand:
-\begin{enumerate}
-\item ohne Linse (Abstand Sender-Empfänger ca. 1,5 m)
-\item mit Linse (Abstand Sender-Linse 0,5 m, Linse-Empfänger 1 m)
-\end{enumerate}
-
-\item Die Totalreflexion der Mikrowellen soll anhand des folgenden Versuchs untersucht werden:
-
-%hier die Abbildung aus der Versuchsanleitung einfügen, footnote muss noch geschrieben werden.
-\begin{figure}[htbp] 
-  \centering
-    \includegraphics[trim = 0mm 15mm 0mm 132mm, clip, scale = 1]{totalreflexion.pdf}
-  	\caption[Abbildung der beiden Schaltungen, für die Bestimmung des Wiederstandes]{Abbildung der beiden Schaltungen, für die Bestimmung des Wiederstandes\footnotemark}
-  \label{fig:abb_versuch_3}
-\end{figure}
-\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/MI1.pdf Seite 18 am 16.08.2014}
-
-Die Wachsprismen werden ( n = 1,5 ) wie in Abbildung (c) gezeichnet im Abstand a gegenüber gestellt. Wir messen nun die Intensität des Empfängers in Abhängigkeit des Abstandes a.
-%Versuchen Sie, die Erscheinung zu erklären.
-\item In dieser Aufgabe stellen wir Sender und Empfänger  so gegenüber, dass die Polarisationsrichtungen (Richtungen, in denen der E-Vektor schwingt) der beiden parallel sind. Im Folgenden drehen wir den Empfänger um die Verbindungslinie von Sender und Empfänger und messen die Intensität in Abhängigkeit des Drehwinkels.
-
-\item Sender und Empfänger nun um 90$^{\circ}$ gedreht gegenüber gestellt. Ein Gitter wird so zwischen Sender und Empfänger gehalten, dass die Stäbe mit dem E-Vektor einen Winkel von 45$^{\circ}$ bilden. Wir messen dazu die Intensität mit und ohne Gitter.
-
-\item Abhängig vom Einfallswinkel messen wir die Intensität der von einer Wachsplatte reflektierten Wellen, die parallel zur Einfallsebene polarisiert sind. Daraus bestimmen wir den Brechungsindex.
-
-\item Wir wollen die Drehung der Polarisationsebene durch ”optisch aktive“ Substanzen untersuchen. Es gibt dazu optisch aktive mit Rechtsschraubenfedern besetzte Styroporplatten. Die Platten sind durch eine Markierung (R) an der Seite der Styroporplatten gekennzeichnet.
-\end{enumerate}
-
-\subsection{Theoretische Durchführung}
-
-\begin{enumerate}
-\item[1.]
+\section{Aufgabe1}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+Zunächst stellen wir den Sender und eine Metallplatte im Abstand von ca. 30 - 40 cm gegenüber auf und zwischen beide die Diode. Dadurch bildet sich eine stehende Welle, sodass wir durch Verschieben der Metallplatte die Wellenlänge messen können.
+\subsubsection{Theoretische Durchführung}
 Die Wellenlänge wird bestimmt nach Formel:
 \begin{align}
 n*\lambda = p_1 - p_2
@@ -101,36 +66,7 @@ Mit einem Fehler von:
 \left(\frac{\sigma_{p_1}}{n}\right)^2+
 \left(\frac{\sigma_{p_2}}{n}\right)^2}
 \end{align}
-\item[3.]
-Aufgrund der zufälligen Streuung der Welle an der Grenzschicht ist bei Empfänger A eine exponentielle Abnahme der Intensität des Lichtes mit der Vergrößerung des Abstandes der Prismen zu erwarten. Da die restliche Intensität im idealen Fall bei Empfänger B ankommt, erwarten wir erwarten wir hier eine vergleichbare Funktion mit negativem Vorzeichen und einem Versatz um eine Konstante C, welche der Anfangsintensität bei einem Abstand der Prismen von 0 cm entspricht.
-\item[4.]
-Zwischen Strom und dem Winkel, um den der Empfanger verdreht ist ist folgender Zusammenhang zu erwarten:
-\begin{align}
-I_s \propto \cos(\phi)
-\end{align}
-wobei $I_s$ der gemessene Strom ist.
-Zwischen Strom und Intensität gilt dabei der Zusammenhang:
-\begin{align}
-I_s^2 \propto I_l
-\end{align}
-Dabei ist $I_s$ die gemessene Stromstärke und $I_l$ die Intensität des Lichtes.
-\item[5.]
-Da der Lichtstrahl einmal durch den Polarisationsfilter und einmal durch den Empfänger abgeschwächt wird, ist der Zusammenhang
-\begin{align}
-I_s \propto \cos^2(\phi)
-\end{align}
-zu erwarten. (Der E-Feld-Vektor wird durch den Filter, sowie durch den Empfänger um $\cos(\phi)$ abgeschwächt. Der Winkel $\phi$ ist dabei immer der Winkel relativ zur momentanen Polarisationsrichtung des Lichtes, der in diesem Aufbau zweimal der selbe ist!)
-\item[6.]
-Für den Brewsterwinkel gilt die Beziehung:
-\begin{align}
-\tan(\phi) = \frac{n_2}{n_1}
-\end{align}
-Wobei $n_1 \cong 1$ der Brechungsindex von Luft ist. Daher wird zur Berechnung des Brechungsindex von Wachs der Nenner auf 1 gesetzt.
-\end{enumerate}
-
-\section{Messergebnisse}
-
-\subsection{Aufgabe 1}
+\subsection{Messergebnisse}
 \begin{table}[H]
 \caption{Abstandsmessungen der ersten Aufgabe, der Fehler beträgt bei allen Werten $(\pm 0,005)$}
 \centering
@@ -143,8 +79,25 @@ Wobei $n_1 \cong 1$ der Brechungsindex von Luft ist. Daher wird zur Berechnung d
 \end{tabular}
 \label{tab:a_1}
 \end{table}
+\subsection{Auswertung}
+In der ersten Aufgabe sollte die Wellenlänge des Senders bestimmt werden. Dabei wurden drei verschiedene Positionen gemessen (siehe Tabelle \ref{tab:a_1}). Es ergab sich ein Mittelwert von:
 
-\subsection{Aufgabe 2}
+\begin{align*}
+2,7 (\pm 0,2) cm
+\end{align*}
+
+Auf dem Sender war ein Wert von 2,8 cm für die Wellenlänge angegeben.
+\subsection{Diskussion}
+
+\section{Aufgabe2}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+Wir messen die Intensitätsverteilung senkrecht zur Strahlrichtung mit dem Hornempfänger, wobei uns eine Wachslinse zur Verfügung stand:
+\begin{enumerate}
+\item ohne Linse (Abstand Sender-Empfänger ca. 1,5 m)
+\item mit Linse (Abstand Sender-Linse 0,5 m, Linse-Empfänger 1 m)
+\end{enumerate}
+\subsection{Messergebnisse}
 \begin{table}[H]
 \caption{Daten der Messung ohne Linse. Für den Fehler des Stromes wurde ein Wert von $(\pm 1)$ A und für die Positon wurde ein Fehler von $(\pm 0,1)$ cm angenommen.}
 \centering
@@ -186,9 +139,47 @@ Wobei $n_1 \cong 1$ der Brechungsindex von Luft ist. Daher wird zur Berechnung d
 \end{tabular}
 \label{tab:a_2_m}
 \end{table}
+\subsection{Auswertung}
+In der zweiten Aufgabe sollte der Effekt einer Sammellinse überprüft werden.
+Dafür wurden Sender und Empfänger in einem Abstand von 1,5 Metern zueinander aufgestellt und die Intensität entlang der Orthogonalen vermessen. Dies geschah einmal mit der Sammellinse dazwischen und einmal ohne. Für die Messung ohne Sammellinse ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_2_o}).
 
-\subsection{Aufgabe 3}
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_2_o.pdf}
+  	\caption[Plot der Messung ohne Sammellinse]{Plot der Messung ohne Sammellinse}
+  \label{fig:a_2_o}
+\end{figure}
 
+Bei der Messung mit Sammellinse ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_2_m}).
+
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_2_m.pdf}
+  	\caption[Plot der Messung mit Sammellinse]{Plot der Messung mit Sammellinse}
+  \label{fig:a_2_m}
+\end{figure}
+\subsection{Diskussion}
+
+\section{Aufgabe3}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+Die Totalreflexion der Mikrowellen soll anhand des folgenden Versuchs untersucht werden:
+
+%hier die Abbildung aus der Versuchsanleitung einfügen, footnote muss noch geschrieben werden.
+\begin{figure}[htbp] 
+  \centering
+    \includegraphics[trim = 0mm 15mm 0mm 132mm, clip, scale = 1]{totalreflexion.pdf}
+  	\caption[Abbildung der beiden Schaltungen, für die Bestimmung des Wiederstandes]{Abbildung der beiden Schaltungen, für die Bestimmung des Wiederstandes\footnotemark}
+  \label{fig:abb_versuch_3}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/MI1.pdf Seite 18 am 16.08.2014}
+
+Die Wachsprismen werden ( n = 1,5 ) wie in Abbildung (c) gezeichnet im Abstand a gegenüber gestellt. Wir messen nun die Intensität des Empfängers in Abhängigkeit des Abstandes a.
+%Versuchen Sie, die Erscheinung zu erklären.
+\subsubsection{Theoretische Durchführung}
+Aufgrund der zufälligen Streuung der Welle an der Grenzschicht ist bei Empfänger A eine exponentielle Abnahme der Intensität des Lichtes mit der Vergrößerung des Abstandes der Prismen zu erwarten. Da die restliche Intensität im idealen Fall bei Empfänger B ankommt, erwarten wir erwarten wir hier eine vergleichbare Funktion mit negativem Vorzeichen und einem Versatz um eine Konstante C, welche der Anfangsintensität bei einem Abstand der Prismen von 0 cm entspricht.
+\subsection{Messergebnisse}
 \begin{table}[htbp]
 \caption{Daten der Messung mit nur einem Block.}
 \centering
@@ -225,9 +216,56 @@ Strom\_a/$\mu$A & Strom\_b/$\mu$A \\ \hline
 \end{tabular}
 \label{tab:a_3_m}
 \end{table}
+\subsection{Auswertung}
+In der dritten Aufgabe sollte die Totalreflexion mit Wachsprismen bestimmt werden.
+Dabei ergab sich bei der Intensitätsmessung mit nur einem Prisma  für Empfänger B ein Wert von 4 $(\pm 1) \mu$A und für Empfänger A ein Wert von 140 $(\pm 5) \mu$A.
 
-\subsection{Aufgabe 4}
+Bei der Messung ohne Abstand zwischen den Prismen ergab sich für Empfänger B ein Wert von 0,4 $(\pm 1) \mu$A und für Empfänger A ein Wert von 81 $(\pm 1) \mu$A.
 
+Bei der Vermessung der Intensität in Abhängigkeit des Abstandes der beiden Platten ergab sich für Empfänger A der folgende Plot (Messwerte aus Tabelle \ref{tab:a_3_m}).
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_3_A.pdf}
+  	\caption[Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand]{Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand}
+  \label{fig:a_3_A}
+\end{figure}
+$f(x)= a*\exp(b*x) +c
+a=-86,3 \pm 1,8; b=-2,03 \pm 0,04; c=17,72 \pm 0,18$
+Für Empfänger B ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_3_m} ).
+Dies ergibt ein reduziertes Chiquadrat von 0,042.
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_3_B.pdf}
+  	\caption[Plot der Intensität an Empfänger B, in Abhängigkeit vom Abstand]{Plot der Intensität an Empfänger B, in Abhängigkeit vom Abstand}
+  \label{fig:a_3_B}
+\end{figure}
+Hier musste manuell eine Exponentialfunktion gefittet werden, da Gnuplot beim Fitten der Funktion an die Messwerte nur Blödsinn ausspuckt:
+$f(x)= a*\exp(b*(x-c)) +d
+a=-100; b=-0.9; c=0.7; d=176$
+Dies ergibt ein reduziertes Chiquadrat von ca.
+2.25 (es wurde mit gerundeten Werten gerechnet)
+%Der Fit ist mit einem reduzierten Chiquadrat von ca. 2,25  trotz der 4 freien Parameter nicht besonders gut geworden, was an einer falschen theoretischen Annahme, zu klein gewählten Fehlern oder systematische Fehlern bei der Messung liegen kann.
+
+Dieser Effekt erklärt sich durch Streuung an der Grenzschicht begünstigt durch in Schwingung versetzte Atome und zusätzlich durch Materialinhomogenitäten.
+\subsection{Diskussion}
+
+\section{Aufgabe4}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+In dieser Aufgabe stellen wir Sender und Empfänger  so gegenüber, dass die Polarisationsrichtungen (Richtungen, in denen der E-Vektor schwingt) der beiden parallel sind. Im Folgenden drehen wir den Empfänger um die Verbindungslinie von Sender und Empfänger und messen die Intensität in Abhängigkeit des Drehwinkels.
+\subsubsection{Theoretische Durchführung}
+Zwischen Strom und dem Winkel, um den der Empfanger verdreht ist ist folgender Zusammenhang zu erwarten:
+\begin{align}
+I_s \propto \cos(\phi)
+\end{align}
+wobei $I_s$ der gemessene Strom ist.
+Zwischen Strom und Intensität gilt dabei der Zusammenhang:
+\begin{align}
+I_s^2 \propto I_l
+\end{align}
+Dabei ist $I_s$ die gemessene Stromstärke und $I_l$ die Intensität des Lichtes.
+\subsection{Messergebnisse}
 \begin{table}[H]
 \caption{Daten der Messung für das auseinander Schieben der Blöcke. Der Fehler für a wurde mit $(\pm 0,1)$ cm und für Strom\_a mit $(\pm 1)$ A angenommen.}
 \centering
@@ -256,10 +294,31 @@ Strom\_a/$\mu$A & Strom\_b/$\mu$A \\ \hline
 \end{tabular}
 \label{tab:a_4}
 \end{table}
+\subsection{Auswertung}
+In der vierten Aufgabe sollte die Intensität in Abhängigkeit des Winkels zwischen Sender und Empfänger bestimmt werden. Dabei ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_4}).
 
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_4.pdf}
+  	\caption[Plot der Intensität in Abhängigkeit des Winkels zwischen Sender und Empfänger]{Plot der Intensität in Abhängigkeit des Winkels zwischen Sender und Empfänger}
+  \label{fig:a_4}
+\end{figure}
 
-\subsection{Aufgabe 5}
+Die Messdaten wurden mit der der Funktion $ f(x) = m \cdot cos(x \cdot n) + b$ gefittet, dabei ergaben sich für die Fitparameter die folgenden Werte, m = 98 $(\pm 1)$, n = 0,0315 $(\pm 0,0005)$ und b = 92 $(\pm 2)$. Das reduzierte Chiquadrat ergab sich mit 1,52196.
+\subsection{Diskussion}
 
+\section{Aufgabe5}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+Sender und Empfänger nun um 90$^{\circ}$ gedreht gegenüber gestellt. Ein Gitter wird so zwischen Sender und Empfänger gehalten, dass die Stäbe mit dem E-Vektor einen Winkel von 45$^{\circ}$ bilden. Wir messen dazu die Intensität mit und ohne Gitter.
+\subsubsection{Theoretische Durchführung}
+Da der Lichtstrahl einmal durch den Polarisationsfilter und einmal durch den Empfänger abgeschwächt wird, ist der Zusammenhang
+\begin{align}
+I_s \propto \cos^2(\phi)
+\label{eqn: Polarisationsgitter}
+\end{align}
+zu erwarten. (Der E-Feld-Vektor wird durch den Filter, sowie durch den Empfänger um $\cos(\phi)$ abgeschwächt. Der Winkel $\phi$ ist dabei immer der Winkel relativ zur momentanen Polarisationsrichtung des Lichtes, der in diesem Aufbau zweimal der selbe ist!)
+\subsection{Messergebnisse}
 \begin{table}[H]
 \caption{Messdaten ohne Gitter.}
 \centering
@@ -281,9 +340,21 @@ Strom/A & Fehler/A \\ \hline
 \end{tabular}
 \label{tab:a_5_m}
 \end{table}
+\subsection{Auswertung}
+In der fünften Aufgabe sollte zwischen die um 90 Grad gegeneinander verdrehten Sender und Empfänger ein Gitter im 45 Grad Winkel zur Polarisationsrichtung gesetzt werden. Dabei ergab sich ein Wert von 1 $(\pm 1) \mu$A ohne Gitter und ein Wert von 86 $(\pm 1) \mu$A mit Gitter. Ohne verdrehen des Senders und ohne Gitter ist aus Aufgabe 4 zu der Wert 191 $\pm$ 2 A zu entnehmen. Wie erwartet (nach Formel \ref{eqn: Polarisationsgitter} $\phi$ = 45$^{\circ}$) hat der Strom im Vergleich zum Strom ohne Verdrehung des Senders und ohne Gitter auf ungefähr die Hälfte abgenommen (45\%).
+\subsection{Diskussion}
 
-\subsection{Aufgabe 6}
-
+\section{Aufgabe6}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+Abhängig vom Einfallswinkel messen wir die Intensität der von einer Wachsplatte reflektierten Wellen, die parallel zur Einfallsebene polarisiert sind. Daraus bestimmen wir den Brechungsindex.
+\subsubsection{Theoretische Durchführung}
+Für den Brewsterwinkel gilt die Beziehung:
+\begin{align}
+\tan(\phi) = \frac{n_2}{n_1}
+\end{align}
+Wobei $n_1 \cong 1$ der Brechungsindex von Luft ist. Daher wird zur Berechnung des Brechungsindex von Wachs der Nenner auf 1 gesetzt.
+\subsection{Messergebnisse}
 \begin{table}[H]
 \caption{Messdaten für die Bestimmung des Brewsterwinkels. Der Fehler für den Winkel wurde mit $(\pm 2)^{\circ}$ und der Strom mit $(\pm 0,05)$ A angenommen.}
 \centering
@@ -308,9 +379,22 @@ Strom/A & Fehler/A \\ \hline
 \end{tabular}
 \label{tab:a_6}
 \end{table}
+\subsection{Auswertung}
+In der sechsten Aufgabe sollte der Brechungsindex eines Wachsblocks bestimmt werden, welcher über den Brewsterwinkel bestimmt wird. Dafür wurde die Intensität in Abhängigkeit vom Winkel gemessen und nach dem Winkel gesucht, für den die Intensität minimal ist. Graphisch ergab sich folgender Plot (Messwerte aus Tabelle \ref{tab:a_6}).
 
-\subsection{Aufgabe 7}
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_6.pdf}
+  	\caption[Plot der Intensität in Abhängigkeit des Winkels]{Plot der Intensität in Abhängigkeit des Winkels}
+  \label{fig:a_6}
+\end{figure}
+\subsection{Diskussion}
 
+\section{Aufgabe7}
+\subsection{Versuchsdurchführung}
+\subsubsection{Praktische Durchführung}
+Wir wollen die Drehung der Polarisationsebene durch ”optisch aktive“ Substanzen untersuchen. Es gibt dazu optisch aktive mit Rechtsschraubenfedern besetzte Styroporplatten. Die Platten sind durch eine Markierung (R) an der Seite der Styroporplatten gekennzeichnet.
+\subsection{Messergebnisse}
 \begin{table}[H]
 \caption{Daten der Messung ohne Styropor (mit Rechtsschraubenfedern versehen).}
 \centering
@@ -333,100 +417,11 @@ Strom/$\mu$A & Fehler/$\mu$A & Winkel/grad & Fehler/grad \\ \hline
 \end{tabular}
 \label{tab:a_7_m}
 \end{table}
-
-
-
-
-
-\section{Auswertung}
-\subsection{Aufgabe 1}
-In der ersten Aufgabe sollte die Wellenlänge des Senders bestimmt werden. Dabei wurden drei verschiedene Positionen gemessen (siehe Tabelle \ref{tab:a_1}). Es ergab sich ein Mittelwert von:
-
-\begin{align*}
-2,7 (\pm 0,2) cm
-\end{align*}
-
-Auf dem Sender war ein Wert von 2,8 cm für die Wellenlänge angegeben.
-
-\subsection{Aufgabe 2}
-In der zweiten Aufgabe sollte der Effekt einer Sammellinse überprüft werden.
-Dafür wurden Sender und Empfänger in einem Abstand von 1,5 Metern zueinander aufgestellt und die Intensität entlang der Orthogonalen vermessen. Dies geschah einmal mit der Sammellinse dazwischen und einmal ohne. Für die Messung ohne Sammellinse ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_2_o}).
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_2_o.pdf}
-  	\caption[Plot der Messung ohne Sammellinse]{Plot der Messung ohne Sammellinse}
-  \label{fig:a_2_o}
-\end{figure}
-
-Bei der Messung mit Sammellinse ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_2_m}).
-
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_2_m.pdf}
-  	\caption[Plot der Messung mit Sammellinse]{Plot der Messung mit Sammellinse}
-  \label{fig:a_2_m}
-\end{figure}
-
-
-
-\subsection{Aufgabe 3}
-In der dritten Aufgabe sollte die Totalreflexion mit Wachsprismen bestimmt werden.
-Dabei ergab sich bei der Intensitätsmessung mit nur einem Prisma  für Empfänger B ein Wert von 4 $(\pm 1) \mu$A und für Empfänger A ein Wert von 140 $(\pm 5) \mu$A.
-
-Bei der Messung ohne Abstand zwischen den Prismen ergab sich für Empfänger B ein Wert von 0,4 $(\pm 1) \mu$A und für Empfänger A ein Wert von 81 $(\pm 1) \mu$A.
-
-Bei der Vermessung der Intensität in Abhängigkeit des Abstandes der beiden Platten ergab sich für Empfänger A der folgende Plot (Messwerte aus Tabelle \ref{tab:a_3_m}).
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_3_A.pdf}
-  	\caption[Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand]{Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand}
-  \label{fig:a_3_A}
-\end{figure}
-
-Für Empfänger B ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_3_m} ).
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_3_B.pdf}
-  	\caption[Plot der Intensität an Empfänger B, in Abhängigkeit vom Abstand]{Plot der Intensität an Empfänger B, in Abhängigkeit vom Abstand}
-  \label{fig:a_3_B}
-\end{figure}
-
-Dieser Effekt erklärt sich durch Streuung an der Grenzschicht begünstigt durch in Schwingung versetzte Atome und zusätzlich durch Materialinhomogenitäten.
-
-\subsection{Aufgabe 4}
-In der vierten Aufgabe sollte die Intensität in Abhängigkeit des Winkels zwischen Sender und Empfänger bestimmt werden. Dabei ergab sich der folgende Plot (Messwerte aus Tabelle \ref{tab:a_4}).
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_4.pdf}
-  	\caption[Plot der Intensität in Abhängigkeit des Winkels zwischen Sender und Empfänger]{Plot der Intensität in Abhängigkeit des Winkels zwischen Sender und Empfänger}
-  \label{fig:a_4}
-\end{figure}
-
-Die Messdaten wurden mit der der Funktion $ f(x) = m \cdot cos(x \cdot n) + b$ gefittet, dabei ergaben sich für die Fitparameter die folgenden Werte, m = 98 $(\pm 1)$, n = 0,0315 $(\pm 0,0005)$ und b = 92 $(\pm 2)$. Das reduzierte Chiquadrat ergab sich mit 1,52196.
-
-\subsection{Aufgabe 5}
-In der fünften Aufgabe sollte zwischen die um 90 Grad gegeneinander verdrehten Sender und Empfänger ein Gitter im 45 Grad Winkel zur Polarisationsrichtung gesetzt werden. Dabei ergab sich ein Wert von 1 $(\pm 1) \mu$A ohne Gitter und ein Wert von 86 $(\pm 1) \mu$A mit Gitte
-\subsection{Aufgabe 6}
-In der sechsten Aufgabe sollt der Brechungsindex eines Wachsblocks bestimmt werden. Dieser wurde über den Brewsterwinkel bestimmt, dafür wurde die Intensität in Abhängigkeit vom Winkel gemessen und nach dem Winkel gesucht, für den die Intensität minimal ist gesucht. Graphisch ergab sich folgender Plot (Messwerte aus Tabelle \ref{tab:a_6}).
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_6.pdf}
-  	\caption[Plot der Intensität in Abhängigkeit des Winkels]{Plot der Intensität in Abhängigkeit des Winkels}
-  \label{fig:a_6}
-\end{figure}
-
-\subsection{Aufgabe 7}
-In der siebten Aufgabe sollte der Effekt optisch aktiver Substanzen nachgewiesen werden, dafür wurden Sender und Empfänger um 90 $(\pm 1)$ Grad zueinander verdreht und die Intensität gemessen, dabei ergab sich ein Wert von 0,81 $(\pm 0,05) \mu$A.  Dann wurde die optisch aktive Substand zwischen Sender und Empfänger gehalten und der Sender solange gedreht,bis sich der zuvor bestimmte Wert einstellte, dabei ergab sich ein Winkel von 97 $(\pm 1)$ Grad.
+\subsection{Auswertung}
+In der siebten Aufgabe sollte der Effekt optisch aktiver Substanzen nachgewiesen werden. Dafür wurden Sender und Empfänger um 90 $(\pm 1)$ Grad zueinander verdreht und die Intensität gemessen. Dabei ergab sich ein Wert von 0,81 $(\pm 0,05) \mu$A.  Dann wurde die optisch aktive Substanz (Styropor mit Stahlfedern) zwischen Sender und Empfänger gehalten und der Sender solange gedreht,bis sich der zuvor bestimmte Wert einstellte. Es ergab sich ein Winkel von 97 $(\pm 1)$ Grad.
+\subsection{Diskussion}
 
 \section{Fazit}
-
-
 
  %Werte stimmen mit den Formeln überein/nicht überein
 
