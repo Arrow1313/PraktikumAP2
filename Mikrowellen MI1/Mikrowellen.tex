@@ -88,7 +88,7 @@ In der ersten Aufgabe sollte die Wellenlänge des Senders bestimmt werden. Dabei
 
 Auf dem Sender war ein Wert von 2,8 cm für die Wellenlänge angegeben.
 \subsection{Diskussion}
-
+Die auf dem Sender angegebene Wellenlänge liegt im ersten Sigmaintervall der gemessenen Wellenlänge, wobei der Fehler weniger als 8\% des Messwertes einnimmt. Auf diese Weise konnte die Wellenlänge also relativ genau bestimmt werden.
 \section{Aufgabe2}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
@@ -160,7 +160,7 @@ Bei der Messung mit Sammellinse ergab sich der folgende Plot (Messwerte aus Tabe
   \label{fig:a_2_m}
 \end{figure}
 \subsection{Diskussion}
-
+Obwohl unsere Linse einige Bruchstellen hatte und unser DMM mehr oder weniger defekt war, da es bei umschalten der Zehnerpotenzen aufeinmal ganz andere Ströme anzeigte,(wir haben die Einstellung benutzt, bei der die Ergebnisse vergleichbar mit denen der Nachbargruppe waren,) kann man trotzdem an dem Plot erkennen, dass der Lichtstrahl durch die Linse fokussiert wurde und die Steigung, also die Abnahme der Intensität mit zunehmendem Abstand zum Mittelpunkt mit Linse stärker war als ohne.
 \section{Aufgabe3}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
@@ -249,6 +249,7 @@ Dies ergibt ein reduziertes Chiquadrat von ca.
 
 Dieser Effekt erklärt sich durch Streuung an der Grenzschicht begünstigt durch in Schwingung versetzte Atome und zusätzlich durch Materialinhomogenitäten.
 \subsection{Diskussion}
+In diesem Aufgabenteil haben wir die Totalreflektion an einem bzw. zwei Wachsprismen  gemessen. Dabei konnte man gut feststellen, dass bei kleinem Abstand der Prismen zueinander ein Teil der Welle nicht reflektiert wurde. An unsere Messdaten haben wir versucht jeweils eine Exponentialfunktion anzufitten, was im ersten Plot besser funktionierte als im zweiten. Dies resultiert aus der Vermutng, dass die Intensität des "tunnelnden" Lichtes exponentiell mit dem Abstand der Prismen zusammenhängt. Damit würde der restliche Teil des Lichtes bei idealen Materialeigenschaften vollständig reflektiert, was den ebenfalls exponentiellen Fit in unserem zweiten Plot erklärt. Es gab wieder Probleme mit unserem DMM, was bei Positionsänderung stark schwankende Ströme anzeigte und auch während der Messung schwankte, was durch Einflüsse des Senders der Nachbargruppe zu erklären ist.
 
 \section{Aufgabe4}
 \subsection{Versuchsdurchführung}
@@ -258,6 +259,7 @@ In dieser Aufgabe stellen wir Sender und Empfänger  so gegenüber, dass die Pol
 Zwischen Strom und dem Winkel, um den der Empfanger verdreht ist ist folgender Zusammenhang zu erwarten:
 \begin{align}
 I_s \propto \cos(\phi)
+\label{eqn: Aufgabe4_cos(phi)}
 \end{align}
 wobei $I_s$ der gemessene Strom ist.
 Zwischen Strom und Intensität gilt dabei der Zusammenhang:
@@ -306,7 +308,8 @@ In der vierten Aufgabe sollte die Intensität in Abhängigkeit des Winkels zwisc
 
 Die Messdaten wurden mit der der Funktion $ f(x) = m \cdot cos(x \cdot n) + b$ gefittet, dabei ergaben sich für die Fitparameter die folgenden Werte, m = 98 $(\pm 1)$, n = 0,0315 $(\pm 0,0005)$ und b = 92 $(\pm 2)$. Das reduzierte Chiquadrat ergab sich mit 1,52196.
 \subsection{Diskussion}
-
+In dieser Aufgabe konnte der erwartete Zusammenhang nach Formel \ref{eqn: Aufgabe4_cos(phi)} relativ gut mit den gemessenen Werten widergegeben werden.
+Dies kann man gut an Abbildung \ref{fig:a_4} erkennen, wobei sich ein reduziertes Chiquadrat von ca. 1,5 ergab.
 \section{Aufgabe5}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
@@ -343,7 +346,7 @@ Strom/A & Fehler/A \\ \hline
 \subsection{Auswertung}
 In der fünften Aufgabe sollte zwischen die um 90 Grad gegeneinander verdrehten Sender und Empfänger ein Gitter im 45 Grad Winkel zur Polarisationsrichtung gesetzt werden. Dabei ergab sich ein Wert von 1 $(\pm 1) \mu$A ohne Gitter und ein Wert von 86 $(\pm 1) \mu$A mit Gitter. Ohne verdrehen des Senders und ohne Gitter ist aus Aufgabe 4 zu der Wert 191 $\pm$ 2 A zu entnehmen. Wie erwartet (nach Formel \ref{eqn: Polarisationsgitter} $\phi$ = 45$^{\circ}$) hat der Strom im Vergleich zum Strom ohne Verdrehung des Senders und ohne Gitter auf ungefähr die Hälfte abgenommen (45\%).
 \subsection{Diskussion}
-
+Für einen idealen Polarisationsfilter wäre bei dieser Aufgabe nach dem Gesetz von Malus genau 50\% des Stromes nach beiden Filtervorgängen über. Die Abweichung unseres Messwertes von ca. 5\% erklärt sich einerseits durch die nicht idealen Filter, sowie andererseits durch unsere Empfangsdiode, die bei zu kleinen Amplituden Ströme proportional zu $E^2$ durchlässt. Es war zusätzlich ein leichter Offset von einem $\mu$A messbar. Äußere Einflüsse durch Metallische Gegenstände oder elektrische Geräte spielen hier eine recht große Rolle.
 \section{Aufgabe6}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
@@ -352,6 +355,7 @@ Abhängig vom Einfallswinkel messen wir die Intensität der von einer Wachsplatt
 Für den Brewsterwinkel gilt die Beziehung:
 \begin{align}
 \tan(\phi) = \frac{n_2}{n_1}
+\label{eqn: Brewsterwinkel}
 \end{align}
 Wobei $n_1 \cong 1$ der Brechungsindex von Luft ist. Daher wird zur Berechnung des Brechungsindex von Wachs der Nenner auf 1 gesetzt.
 \subsection{Messergebnisse}
@@ -388,8 +392,10 @@ In der sechsten Aufgabe sollte der Brechungsindex eines Wachsblocks bestimmt wer
   	\caption[Plot der Intensität in Abhängigkeit des Winkels]{Plot der Intensität in Abhängigkeit des Winkels}
   \label{fig:a_6}
 \end{figure}
+Damit kommen zwei mögliche Brewsterwinkel bei ca. 25 und 70 Grad infrage.
+Nach Formel \ref{eqn: Brewsterwinkel} ergibt sich ein möglicher Brechungsindex von 0.466 (25$^{\circ}$ Brewsterwinkel) sowie ein Brechungsindex von 2,747 (70$^{\circ}$ Brewsterwinkel.) 
 \subsection{Diskussion}
-
+Da Wachs bekannterweise einen Brechungsindex von ca. 1,5 hat, was bei unserem gemessenen Maximum bei ca. 55-60 $^{\circ}$ liegt, vermuten wir, dass unsere Welle parallel zur x-y-Ebene polarisiert war, sodass wir beim Brewsterwinkel eine Maximale Reflektion gemessen haben. Dies würde unsere unerwarteten Messwerte erklären und das Phänomen des Brewsterwinkels besser erklären.
 \section{Aufgabe7}
 \subsection{Versuchsdurchführung}
 \subsubsection{Praktische Durchführung}
