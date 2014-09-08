@@ -45,8 +45,47 @@ Danach werden die Eigenschaften von zirkular oder elliptisch polarisierten Licht
 
 \section{Versuchsaufbau}
 
-\section{Versuch WO1.1: Verifizierung des Malusschen Gesetzes}
-\section{Versuch WO1.2: Beobachtung der Polarisation von Licht durch Einfachstreuung}
+%\section{Versuch WO1.1: Verifizierung des Malusschen Gesetzes}
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+%\section{Versuch WO1.2: Beobachtung der Polarisation von Licht durch Einfachstreuung}
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+%\section{Versuch WO1.3:
+%Messung der Richtungscharakteristik der Strahlung einer schwingenden Ladung}
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+%\section{Versuch WO1.4:
+%Das Brewstersche Gesetz}
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+%\section{Versuch WO2.1:
+%Doppelbrechung von Cellophan}
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+%\section{Versuch WO2.2:
+%Bestimmung der spezifischen Drehung einer Zuckerlösung}\\
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+%\section{Versuch WO2.3:
+%Reflexion von linear polarisiertem Licht an einer Metalloberfläche}
+%\subsection{Versuchsdurchführung}
+%\subsubsection{Praktische Durchführung}
+%\subsubsection{Theoretische Durchführung}
+%\subsection{Diskussion}
+
 \section{Versuchsdurchführung}
 
 
@@ -148,15 +187,79 @@ Eine plausible Erklärung für diese Beobachtungen finden Sie im Berkeley Kurs B
 \end{enumerate}
 
 \subsection{Theoretische Durchführung}
-
-
+\begin{enumerate}
+\item
+Nach dem Malusschen Gesetz ist der folgende Zusammenhang zu erwarten:
+\begin{align}
+I_A \propto <S> = \frac{1}{2} \varepsilon_0 c E'^2
+\end{align}
+$I_A$ der Anodenstrom, $S$ die Energieflussdichte und $E'$ die Amplitude der Lichtwelle hinter dem Polarisator.
+Für $E'$ gilt:
+\begin{align}
+E' = E_0 \cos{\theta}
+\end{align}
+$E_0$ die Anfangsamplitude des Lichtes.\\
+Schließlich Folgt:
+\begin{align}
+I_A \propto \cos^2{\theta}
+\end{align}
+\item[4.]
+Für den Brewsterwinkel gilt die Beziehung:
+\begin{align}
+\tan{\theta} = n_G
+\end{align}
+$n_G$ ist der Brechungsindex von Plexiglas.\\
+Der Fehler für den Brewsterwinkel ist:
+\begin{align}
+\sigma_\theta = (1+\tan^2{n_G})\sigma_{n_G}
+\end{align}
+\item[5.]
+\begin{enumerate}
+\item
+Die optischen Achsen sind die Winkel, bei denen kein Licht durch den Aufbau gelangt, da das Licht einerseits nicht durch das PVP polarisiert wird und andererseits die beiden Polarisator um 90$^\circ$ zueinander verdreht sind.
+\item
+Wir erwarten für eine Farbe zirkular polarisiertes Licht.
+Die Phasenverschiebung $\phi$ lässt sich berechnen durch:
+\begin{align}
+\phi = cos^{-1}\left(\frac{I_{max}-I_{min}}{I_{max}+I_{min}}\right)
+\end{align}
+Dabei können anstelle von $I$ auch zu $I$ proportionale Größen wie Strom oder Spannung verwendet werden.
+Der Fehler ist:
+\begin{align}
+\sigma_{\phi} = \sqrt{
+\left(\frac{\frac{2I_{max}}{(I_{max}+I_{min})^2}}{\sqrt{1-\left(\frac{I_{max}-I_{min}}{I_{max}+
+I_{min}}\right)^2}}\sigma_{I_{min}}\right)^2+
+\left(\frac{\frac{2I_{min}}{(I_{max}+I_{min})^2}}{\sqrt{1-\left(\frac{I_{max}-I_{min}}{I_{max}+
+I_{min}}\right)^2}}\sigma_{I_{max}}\right)^2}
+\end{align}
+\item
+Wir erwarten, dass sich die Polarisationsrichtung der Ellipse ändert, wobei die Lage der Ellipse gleich bleibt.
+\item
+Da wir beide ZP ($\frac{\lambda}{4}$-Plättchen um 90$^\circ$ verschoben) hintereinander geschaltet haben erwarten wir linear polarisiertes Licht.
+\end{enumerate}
+\item[6.]
+\begin{enumerate}
+\item Für die spezifische Drehung [$\alpha$] gilt die Beziehung:
+\begin{align}
+\alpha = [\alpha] q d
+\end{align}
+$\alpha$ der Winkel der Polarisation des austretenden Lichtes, q die Konzentration und d die Dicke der Zuckerlösung.
+Mit dem Fehler:
+\begin{align}
+\sigma_{[\alpha]} = \sqrt{
+\left(\frac{1}{q d}\sigma_{\alpha}\right)^2+
+\left(\frac{\alpha}{q^2 d}\sigma_q\right)^2+
+\left(\frac{\alpha}{q d^2}\sigma_d\right)^2}
+\end{align}
+\end{enumerate}
+\end{enumerate}
 \section{Messergebnisse}
 
 
 \section{Auswertung}
 
 
-\section{Diskussion}
+\section{Fazit}
 
 
  %Werte stimmen mit den Formeln überein/nicht überein
