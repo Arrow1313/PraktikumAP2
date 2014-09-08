@@ -23,7 +23,7 @@ set label 6 "135" at 7*cos(1.25*180)-0.025,7*sin(1.25*180) font "Arial,10"
 set label 7 "180" at 7*cos(1.5*180)-0.025,7*sin(1.5*180) font "Arial,10"  
 set label 8 "225" at 7*cos(1.75*180)-0.025,7*sin(1.75*180) font "Arial,10"  
 
-set size 0.75,1
+set size 0.53,1
 
 #set xlabel "Winkel/Grad"
 #set ylabel "Spannung/mV"
