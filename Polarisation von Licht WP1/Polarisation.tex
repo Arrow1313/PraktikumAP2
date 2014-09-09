@@ -53,6 +53,9 @@ Der Versuchsaufbau besteht aus einer optischen Bank, einem Intensitätsmessgerä
   \label{fig:a_1}
 \end{figure}
 
+
+
+
 \section{Versuch WO1.1: Verifizierung des Malusschen Gesetzes}
 \subsection{Versuchsdurchführung}
 
@@ -108,7 +111,52 @@ Schließlich Folgt:
 \begin{align}
 I_A \propto \cos^2{\theta}
 \end{align}
+\subsection{Messergebnisse}
+\begin{table}[H]
+\caption{Messdaten zur Verifikation des Mallusschen Gesetzes, wobei der Fehler des Winkels bei $(\pm 1)$ Grad  und der Fehler der Spannung bei $(\pm 0,1)$ V liegt. Der Widerstand hatte einen Wert von 1MOhm $(\pm 5$\%)}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+\multicolumn{1}{|l|}{Winkel/Grad} & \multicolumn{1}{l|}{Spannung/V} \\ \hline
+0 & 0,99 \\ \hline
+5 & 0,98 \\ \hline
+10 & 0,95 \\ \hline
+15 & 0,92 \\ \hline
+20 & 0,85 \\ \hline
+25 & 0,78 \\ \hline
+30 & 0,71 \\ \hline
+35 & 0,63 \\ \hline
+40 & 0,54 \\ \hline
+45 & 0,45 \\ \hline
+50 & 0,36 \\ \hline
+55 & 0,27 \\ \hline
+60 & 0,19 \\ \hline
+65 & 0,13 \\ \hline
+70 & 0,07 \\ \hline
+75 & 0,04 \\ \hline
+80 & 0,02 \\ \hline
+85 & 0,01 \\ \hline
+90 & 0,01 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_1}
+\end{table}
+\subsection{Auswertung}
+In der ersten Aufgabe sollte das Mallussche Gesetz verifiziert werden. Dazu wurde der Photostrom in Abhängigkeit vom Winkel des zweiten Polarisators in Bezug zum ersten gemessen. Es ergab sich der folgende Plot (Werte aus Tabelle ??).
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_1.pdf}
+  	\caption[Plot der Intensität in Abhängigkeit des Winkels]{Plot der Intensität in Abhängigkeit des Winkels}
+  \label{fig:a_1}
+\end{figure}
+
+Die Messdaten wurden dabei mit I($\phi$) = -9.83414e-07 $(\pm 5.092e-09) \cdot$ cos$^2(\phi \cdot$ 0.0184 $(\pm 0.0002)$ + 1.580 $(\pm 0.009) )$ + 9.89381e-07 $(\pm 4.11e-09)$ gefittet.   
+
+Dann sollte ein dritter Polarisator zwischen die ersten beiden gestellt, und überprüft werden, wann die Intensität maximal wird. Dabei ergab sich ein Wert von 45 $\pm 2)$Grad. Bei einem Winkel von $\pm$90 Grad ist keine Intensität mehr zu messen.
 \subsection{Diskussion}
+Das Ergebnis der ersten Aufgabe ist gut an der Regression (Abbildung \ref{fig:a_1}) zu erkennen, welche auf nahezu allen Messpunkten aufliegt.
+
 
 \section{Versuch WO1.2: Beobachtung der Polarisation von Licht durch Einfachstreuung}
 \subsection{Versuchsdurchführung}
@@ -137,8 +185,11 @@ Als Lichtquelle dient eine Glühlampe mit Kondensor. Das von dieser Lichtquelle 
 Wir sehen uns das unter
 90$^\circ$ gestreute Licht durch einen Polarisationsfilter (= Analysator) an. 
 %Was beobachten Sie bei Drehung des Analysators? Ist das Streulicht polarisiert? Wenn ja, in welche Richtung? Ist die Polarisation vollständig?
-\subsubsection{Theoretische Durchführung}
+\subsection{Auswertung}
+In der zweiten Aufgabe sollte der bei einer Styrofanlösung senkrecht abgestrahlte Teil des Lichts mit einem Polarisator untersucht werden. Bei der Drehung des Polarisators war eine Intensitätsab- bzw. zunahme, so wie eine Verschiebung des Lichtspektrums zu beobachten. Die minimale Intensität erhielten wir bei einer Drehung von 90 Grad, die maximale Intensität haben wir bei 0 Grad gemessen. Aus den Beobachtungen lässt sich schließen, dass das Licht zum Teil polarisiert war, da bei minimaler Intensität weiterhin ein Teil des Lichtes durchgelassen wurde.
 \subsection{Diskussion}
+In der zweiten Aufgabe war zwar eine Abschwächung der Intensität zu beobachten, sowie eine Verschiebung des Farbspektrums, jedoch konnte keine vollständige Polarisation des Lichtes bestätigt werden. Dies liegt warscheinlich daran, dass die Verdünnung unserer Styrofanlösung einerseits nicht hoch genug war, sodass neben dem Polarisationseffekt z.B. Streueffekte eine große Rolle spielten, und andererseits die Ausbreitungsrichtung des Lichtes schon durch die Glühlampe stark variierte und wir dadurch nicht senkrecht zu den Aubreitungsrichtungen aller "Lichtstrahlen" beobachten konnten. 
+
 
 \section{Versuch WO1.3:
 Messung der Richtungscharakteristik der Strahlung einer schwingenden Ladung}
@@ -164,8 +215,10 @@ Wir verwenden den Versuchsaufbau zu Versuch WO1.2, um den in der folgenden Abbil
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/~kind/wp1.pdf Seite 20 am 07.09.2014}
 
 Wir drehen den Polarisationsfilter anschließend und beobachten den Intensitätsunterschied.
-\subsubsection{Theoretische Durchführung}
+\subsection{Auswertung}
+In der dritten Aufgabe sollte der selbe Aufbau wie zuvor verwendet werden. Dabei sollte jedoch ein Polarisator zwischen Styrofanlösung und Strahler gestellt werden. Dabei ergaben sich bei 0 Grad die selben Ergebnisse wie in Aufgabe 2. Bei Drehung des Polarisators um 90 Grad blieb die Intensität des beobachteten Lichtes nahezu gleich (sie war bei 0 Grad sogar etwas größer, als bei 90 Grad).
 \subsection{Diskussion}
+Bei dem Ergebnis des dritten Aufgabe verhält es sich wie bei der zweiten Aufgabe, da wir die selbe Lösung wie vorher verwendet haben sowie die selbe Lampe zur Beleuchtung. Trotzdem konnte der erwartete Effekt bestätigt werden (,das austretende Licht war stärker für Polarisation des eingestrahlten Lichtes senkrecht zur Beobachtungs- und Ausbreitungsrichtung).
 
 \section{Versuch WO1.4:
 Das Brewstersche Gesetz}
@@ -200,7 +253,22 @@ Der Fehler für den Brewsterwinkel ist:
 \begin{align}
 \sigma_\theta = (1+\tan^2{n_G})\sigma_{n_G}
 \end{align}
+\subsection{Messergebnisse}
+\begin{table}[htbp]
+\caption{Messdaten zur bestimmung des Brechungsindex, mit den Brewstonschen Winkel.}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Winkel/Grad & Fehler/Grad \\ \hline
+\multicolumn{1}{|r|}{56} & \multicolumn{1}{r|}{2} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_4}
+\end{table}
+\subsection{Auswertung}
+In der vierten Aufgabe sollte mit Hilfe des Brewsterwinkels der Brechungsindex von Plexiglas bestimmt werden. Wir haben einen Winkel von 56 $(\pm 2)$ Grad gemessen. Damit wurde nach Gleichung ?? ein Brechungsindex  von 1,48 $(\pm3,58)$ errechnet.
 \subsection{Diskussion}
+Der bestimmte Brechungsindex von 1,48 ist bei einem Literaturwert von 1,46 akzeptabel, da dieser innerhalb des Fehlerbalkens des gemessenen Wertes liegt, welcher ein prozentualen Anteil von etwas mehr als 7,5 \% am Messwert hat.
 
 \section{Versuch WO2.1:
 Doppelbrechung von Cellophan}
@@ -211,6 +279,13 @@ Doppelbrechung von Cellophan}
     \includegraphics[scale = 0.1]{aufgabe_5_1.JPG}
   	\caption[Foto des Versuchsaufbaus der fünften Aufgabe mit PVP]{Foto des Versuchsaufbaus der fünften Aufgabe mit PVP}
   \label{fig:aufgabe_5_1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.1]{aufgabe_5_2.JPG}
+  	\caption[Foto des Versuchsaufbaus der fünften Aufgabe, mit einem $\frac{\lambda}{4}$-Plättchen]{Foto des Versuchsaufbaus der fünften Aufgabe, mit einem $\frac{\lambda}{4}$-Plättchen}
+  \label{fig:aufgabe_2}
 \end{figure}
 
 \subsubsection{Praktische Durchführung}
@@ -256,133 +331,9 @@ Wir erwarten, dass sich die Polarisationsrichtung der Ellipse ändert, wobei die
 \item[d)]
 Da wir beide ZP ($\frac{\lambda}{4}$-Plättchen um 90$^\circ$ verschoben) hintereinander geschaltet haben erwarten wir linear polarisiertes Licht.
 \end{enumerate}
-\subsection{Diskussion}
-
-\section{Versuch WO2.2:
-Bestimmung der spezifischen Drehung einer Zuckerlösung}
-\subsection{Versuchsdurchführung}
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 0.1]{aufgabe_5_2.JPG}
-  	\caption[Foto des Versuchsaufbaus für die fünfte Aufgabe, mit einem $\frac{\lambda}{4}$-Plättchen]{Foto des Versuchsaufbaus für die fünfte Aufgabe, mit einem $\frac{\lambda}{4}$-Plättchen}
-  \label{fig:aufgabe_2}
-\end{figure}
-
-\subsubsection{Praktische Durchführung}
+\subsection{Messergebnisse}
 \begin{enumerate}
-\item[a)] Wir stellen eine Zuckerlösung bekannter Konzentration q (in [$\frac{\text{g}}{\text{cm}^3}]$)
-her (bis zu etwa q = 0,5$\frac{\text{g}}{\text{cm}^3}$
-sind je nach Zuckersorte und Temperatur möglich).
-Diese Lösung wird in einer Glasküvette zwischen zwei Polaroidfilter gestellt und die spezifische Drehung [$\alpha$]
-als Funktion der Wellenlänge des Lichts bestimmt.
-\item[b)] Anschließend stellen wir eine weitere Zuckerlösung mit einer anderen Konzentration als
-in a) her. Mithilfe der in a) gemessenen Werte für
-[$\alpha$] bestimmen wir die Konzentration dieser zweiten Zuckerlösung und vergleichen Sie mit der aus Zucker- und
-Wassergewicht errechneten.
-\end{enumerate}
-\subsubsection{Theoretische Durchführung}
-\begin{enumerate}
-\item[a)] Für die spezifische Drehung [$\alpha$] gilt die Beziehung:
-\begin{align}
-\alpha = [\alpha] q d
-\end{align}
-$\alpha$ der Winkel der Polarisation des austretenden Lichtes, q die Konzentration und d die Dicke der Zuckerlösung.
-Mit dem Fehler:
-\begin{align}
-\sigma_{[\alpha]} = \sqrt{
-\left(\frac{1}{q d}\sigma_{\alpha}\right)^2+
-\left(\frac{\alpha}{q^2 d}\sigma_q\right)^2+
-\left(\frac{\alpha}{q d^2}\sigma_d\right)^2}
-\end{align}
 \item[b)]
-Die Konzentration der Zuckerlösung kann aus der spezifischen Drehung [$\alpha$], der Dicke $d$ und dem Drehwinkel $\alpha$ nach folgender Formel bestimmt werden:
-\begin{align}
-q = \frac{\alpha}{d [\alpha]}
-\end{align}
-Mit dem Fehler:
-\begin{align}
-\sigma_q = \sqrt{
-\left(\frac{1}{d [\alpha]}\sigma_\alpha \right)^2+
-\left(\frac{\alpha}{d^2 [\alpha]}\sigma_d \right)^2+
-\left(\frac{\alpha}{d [\alpha]^2}\sigma_{[\alpha]}\right)^2}
-\end{align}
-\end{enumerate}
-\subsection{Diskussion}
-
-\section{Versuch WO2.3:
-Reflexion von linear polarisiertem Licht an einer Metalloberfläche}
-\subsection{Versuchsdurchführung}
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 0.1]{aufgabe_6.JPG}
-  	\caption[Foto des Versuchsaufbaus der sechsten Aufgabe]{Foto des Versuchsaufbaus der sechsten Aufgabe}
-  \label{fig:aufgabe_2}
-\end{figure}
-
-\subsubsection{Praktische Durchführung}
-Wir haben in allen bisherigen Versuchen im Praktikum immer nur die Wechselwirkung
-von Lichtwellen mit Isolatoren (Glas, Plexiglas, Kunststoff, Zuckerlösung etc.) betrach-
-tet. Mit der Vorstellung von Atomen als schwingungsfähige elektrische Dipole und mithilfe der Maxwellschen Theorie waren wir in der Lage, die beobachteten Phänomene zu erklären. Diese Vorstellungen versagen jedoch, wenn wir elektromagnetische Wellen mit Wellenlängen kleiner als 10 $\mu$m und ihre Wechselwirkung mit Metallen, also Leitern, untersuchen wollen. Wollen wir also die Reflexion von Lichtwellen an Metalloberflächen untersuchen, so versagen unsere bislang erworbenen Kenntnisse. Ein gutes Verständnis der Theorie der Leitfähigkeit von Metallen im Rahmen der Festkörperphysik, die sich wiederum auf die Quantenphysik stützt, ist hierfür notwendig. Dies soll uns jedoch nicht hindern, einige experimentelle Beobachtungen über die Reflexion von linear polarisiertem Licht an einer Metalloberfläche (Oberflächenspiegel) zu machen. Wir benötigen für die Versuche neben Lichtquelle und Oberflächenspiegel ein
-$\frac{\lambda}{4}$-Plättchen und zwei Polaroidfilter und
-führen damit folgende Experimente aus:
-Beobachtung 1: Licht, das parallel oder senkrecht zur Einfallsebene linear polarisiert ist, ändert bei der Reflexion an einem Metallspiegel seine Polarisation nicht.
-Beobachtung 2: Licht, das in einem Winkel von 45$^\circ$ zur Einfallsebene linear polarisiert ist, wird durch die Reflexion in elliptisch polarisiertes Licht umgewandelt.
-Beobachtung 3: Es gibt einen Einfallswinkel, bei dem
-”unter 45$^\circ$
-linear polarisiertes
-Licht“ als nahezu zirkular polarisiert reflektiert wird.
-Eine plausible Erklärung für diese Beobachtungen finden Sie im Berkeley Kurs Band 3, Kap. 8.6, Heimversuch 26.
-
-\section{Messergebnisse}
-\subsection{Aufgabe 1}
-\begin{table}[H]
-\caption{Messdaten zur Verifikation des Mallusschen Gesetzes, wobei der Fehler des Winkels bei $(\pm 1)$ Grad  und der Fehler der Spannung bei $(\pm 0,1)$ V liegt. Der Widerstand hatte einen Wert von 1MOhm $(\pm 5$\%)}
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline
-\multicolumn{1}{|l|}{Winkel/Grad} & \multicolumn{1}{l|}{Spannung/V} \\ \hline
-0 & 0,99 \\ \hline
-5 & 0,98 \\ \hline
-10 & 0,95 \\ \hline
-15 & 0,92 \\ \hline
-20 & 0,85 \\ \hline
-25 & 0,78 \\ \hline
-30 & 0,71 \\ \hline
-35 & 0,63 \\ \hline
-40 & 0,54 \\ \hline
-45 & 0,45 \\ \hline
-50 & 0,36 \\ \hline
-55 & 0,27 \\ \hline
-60 & 0,19 \\ \hline
-65 & 0,13 \\ \hline
-70 & 0,07 \\ \hline
-75 & 0,04 \\ \hline
-80 & 0,02 \\ \hline
-85 & 0,01 \\ \hline
-90 & 0,01 \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:a_1}
-\end{table}
-
-\subsection{Aufgabe 4}
-\begin{table}[htbp]
-\caption{Messdaten zur bestimmung des Brechungsindex, mit den Brewstonschen Winkel.}
-\begin{center}
-\begin{tabular}{|l|l|}
-\hline
-Winkel/Grad & Fehler/Grad \\ \hline
-\multicolumn{1}{|r|}{56} & \multicolumn{1}{r|}{2} \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:a_4}
-\end{table}
-
-\subsection{Aufgabe 5}
-
-\subsubsection{b)}
 
 \begin{table}[htbp]
 \caption{Messdaten für weißes Licht. Der Fehler des Winkel wurde mit $(\pm 1)$Grad und der Fehler der Spannung mit $(\pm 0,1)$mV angenommen.}
@@ -511,7 +462,7 @@ Winkel/Grad & Fehler/Grad \\ \hline
 \label{tab:a_5_b_gg}
 \end{table}
 
-\subsubsection{c)}
+\item[c)]
 
 \begin{table}[htbp]
 \caption{Messdaten für blaugrünes Licht bei einer 90 Grad Verdrehung des $\frac{\lambda}{4}$-Plättchen. Der Fehler des Winkel wurde mit $(\pm 1)$ und der Fehler der Spannung mit $(\pm 0,1)$ mV angenommen.}
@@ -534,7 +485,7 @@ Winkel/Grad & Fehler/Grad \\ \hline
 \label{tab:a_5_c_bg}
 \end{table}
 
-\subsubsection{d)}
+\item[d)]
 
 \begin{table}[htbp]
 \caption{Messdaten für gelbes Licht bei zirkularer Polarisation. Der Fehler des Winkel wurde mit $(\pm 1)$ und der Fehler der Spannung mit $(\pm 0,1)$ mV angenommen.}
@@ -556,75 +507,15 @@ Winkel/Grad & Fehler/Grad \\ \hline
 \end{center}
 \label{tab:a_5_s_g}
 \end{table}
+\end{enumerate}
 
-\subsection{Aufgabe 6}
-
-\begin{table}[htbp]
-\caption{Messdaten für die Bestimmung des spezifischen Winkels.}
-\begin{center}
-\begin{tabular}{|l|l|}
-\hline
-Schichtdicke/cm & Fehler/cm \\ \hline
-\multicolumn{1}{|r|}{9} & \multicolumn{1}{r|}{0,1} \\ \hline
-masse wasser/cm$^3$ & Fehler/m$^3$ \\ \hline
-\multicolumn{1}{|r|}{65} & \multicolumn{1}{r|}{0,5} \\ \hline
-masse Zucker/g & Fehler/g \\ \hline
-\multicolumn{1}{|r|}{33} & \multicolumn{1}{r|}{0,5} \\ \hline
-q/(g/m$^3$) & Fehler/(g/m$^3$) \\ \hline
-\multicolumn{1}{|r|}{0,5076923077} & \multicolumn{1}{r|}{0,0086268861} \\ \hline
-weiß &  \\ \hline
-min ohne Lösung /Grad & Fehler/Grad \\ \hline
-\multicolumn{1}{|r|}{90} & \multicolumn{1}{r|}{2} \\ \hline
-min mit Lösung/Grad & Fehler/Grad \\ \hline
-\multicolumn{1}{|r|}{7,5} & \multicolumn{1}{r|}{2} \\ \hline
-blaugrün &  \\ \hline
-min mit Lösung/Grad & Fehler/Grad \\ \hline
-\multicolumn{1}{|r|}{7,5} & \multicolumn{1}{r|}{2} \\ \hline
-rot &  \\ \hline
-min mit Lösung/Grad & Fehler/Grad \\ \hline
-\multicolumn{1}{|r|}{7} & \multicolumn{1}{r|}{2} \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:a_6}
-\end{table}
-
-
-
-
-\section{Auswertung}
-
-\subsection{Aufgabe 1}
-In der ersten Aufgabe sollte das Mallussche Gesetz verifiziert werden. Dazu wurde der Photostrom in Abhängigkeit vom Winkel des zweiten Polarisators in Bezug zum ersten gemessen. Es ergab sich der folgende Plot (Werte aus Tabelle ??).
-
-\begin{figure}[H]
-\centering
-    \includegraphics[scale = 1]{a_1.pdf}
-  	\caption[Plot der Intensität in Abhängigkeit des Winkels]{Plot der Intensität in Abhängigkeit des Winkels}
-  \label{fig:a_1}
-\end{figure}
-
-Die Messdaten wurden dabei mit I($\phi$) = -9.83414e-07 $(\pm 5.092e-09) \cdot$ cos$^2(\phi \cdot$ 0.0184 $(\pm 0.0002)$ + 1.580 $(\pm 0.009) )$ + 9.89381e-07 $(\pm 4.11e-09)$ gefittet.   
-
-Dann sollte ein dritter Polarisator zwischen die ersten beiden gestellt, und überprüft werden, wann die Intensität maximal wird. Dabei ergab sich ein Wert von 45 $\pm 2)$Grad. Bei einem Winkel von $\pm$90 Grad ist keine Intensität mehr zu messen.
-
-
-\subsection{Aufgabe 2}
-In der zweiten Aufgabe sollte der bei einer Styrofanlösung senkrecht abgestrahlte Teil des Lichts mit einem Polarisator untersucht werden. Bei der Drehung des Polarisators war eine Intensitätsab- bzw. zunahme, so wie eine Verschiebung des Lichtspektrums zu beobachten. Die minimale Intensität erhielten wir bei einer Drehung von 90 Grad, die maximale Intensität haben wir bei 0 Grad gemessen. Aus den Beobachtungen lässt sich schließen, dass das Licht zum Teil polarisiert war, da bei minimaler Intensität weiterhin ein Teil des Lichtes durchgelassen wurde.
-
-\subsection{Aufgabe 3}
-In der dritten Aufgabe sollte der selbe Aufbau wie zuvor verwendet werden. Dabei sollte jedoch ein Polarisator zwischen Styrofanlösung und Strahler gestellt werden. Dabei ergaben sich bei 0 Grad die selben Ergebnisse wie in Aufgabe 2. Bei Drehung des Polarisators um 90 Grad blieb die Intensität des beobachteten Lichtes nahezu gleich (sie war bei 0 Grad sogar etwas größer, als bei 90 Grad).
-
-
-\subsection{Aufgabe 4}
-In der vierten Aufgabe sollte mit Hilfe des Brewsterwinkels der Brechungsindex von Plexiglas bestimmt werden. Wir haben einen Winkel von 56 $(\pm 2)$ Grad gemessen. Damit wurde nach Gleichung ?? ein Brechungsindex  von 1,48 $(\pm3,58)$ errechnet.
-
-\subsection{Aufgabe 5}
-
-\subsubsection{a)}
+\subsection{Auswertung}
+\begin{enumerate}
+\item[a)]
 Im ersten Teil der fünften Aufgabe sollten die optischen Achsen des PVP's bestimmt werden.
 Dabei ergab sich ein Wert von 74 $(\pm 2)$ Grad für die erste Achse und ein Winkel von 163 $(\pm 2)$ Grad für die zweite optische Achse.
 
-\subsubsection{b)}
+\item[b)]
 Im zweitem Teil sollten die Eigenschaften eines $\frac{\lambda}{4}$-Plättchens mit verschiedenen Farbfiltern untersucht werden, wobei die Bezeichnung "$\frac{\lambda}{4}$-Plättchen" nur für einen der Farbfilter annähernd ideal zutrifft. Dieser Farbfilter sollte bestimmt werden.
 
 
@@ -687,7 +578,7 @@ Es ergab sich ein Phasenwinkel von 1,568 $(\pm 0,001)$Grad.\\
 
 Die Idealen Eingenschaften eines $\frac{\lambda}{4}$-Plättchens stellen sich bei gelbem Licht ein.
 
-\subsubsection{c)}
+\item[c)]
 Im dritten Teil der fünften Aufgabe sollte untersucht werden, was sich bei Drehung des $\frac{\lambda}{4}$-Plättchens um 90 Grad ändert. Danach sollte das Ergebnis mit der theoretischen Vorhersage verglichen werden. Für die Messung wurde der blaugrüne Filter verwendet. In den folgenden Plots wurden die Gemessenen Werte am Ursprung gespiegelt. Dabei sind die Werte oberhalb der x-Achse die "gemessenen" Werte und die unterhalb der x-Achse die "gespiegelten" Werte.(Werte aus Tabelle ??)
 
 \begin{figure}[H]
@@ -708,7 +599,7 @@ Im dritten Teil der fünften Aufgabe sollte untersucht werden, was sich bei Dreh
 Erwartet wurde, dass sich die Polarisationsrichtung dreht, aber die beiden Kurven nicht gegeneinander verschoben sind. 
 
 
-\subsubsection{d)}
+\item[d)]
 Im letztem Teil der fünften Aufgabe sollte Zirkular polarisiertes Licht mit $\frac{\lambda}{4}$-Plättchen hergestellt und die Intensität bei Hintereinanderschaltung zweier Plättchen in Abhängigkeit des Winkels gemessen werden. Folgender Plot ergibt sich (Werte aus Tabelle ??).
 
 \begin{figure}[H]
@@ -717,50 +608,133 @@ Im letztem Teil der fünften Aufgabe sollte Zirkular polarisiertes Licht mit $\f
   	\caption[Plot der Intensität in Abhängigkeit des Winkels in Polarkoordinaten, bei gelbem Licht]{Plot der Intensität in Abhängigkeit des Winkels in Polarkoordinaten, bei gelbem Licht}
   \label{fig:a_5_d}
 \end{figure}
-
-
-\subsection{Aufgabe 6}
-
-\subsubsection{a)}
-Im ersten Teil der sechsten Aufgabe sollte die spezifische Drehung einer Zuckerlösung für verschiedene Wellenlängen bestimmt werden. Zur Berechnung wurde Gleichung ?? und für den Fehler Gleichung ?? verwendet. Für weißes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g), für blaugrünes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g) und für dunkelrotes Licht ergab sich ein spezifischer Winkel von 0,36 $(\pm 0,02)$(cm$^2$/g).
-
-\subsubsection{b)}
-Diesen Versuchsteil haben wir aus Zeitgründen nicht geschafft.
-
-\subsection{Aufgabe 7}
-Diesen Versuchsteil haben wir aus Zeitgründen nicht geschafft.
-
-
-
-\section{Fazit}
-
+\end{enumerate}
+\subsection{Diskussion}
 \begin{enumerate}
-\item	Das Ergebnis der ersten Aufgabe ist sehr gut, dies ist an der Regression, diese liegt auf nahezu allen Messpunkten auf.
+\item[a)] Die bestimmten optischen Achsen liegen 49 Grad auseinander bei einem Fehler von 2 Grad, erwartet wurden 50 Grad. Somit stell der von uns bestimmte Wert ein gutes Ergebnis dar.
 
-\item	In der zweiten Aufgabe war zwar eine Abschwächung der Intensität zu beobachten, sowie eine Verschiebung des Farbspektrums, jedoch konnte keine vollständige Polarisation des Lichtes bestätigt werde. Der Umstand, dass das Licht nicht vollständig polarisiert wurde, liegt wahrscheinlich daran, dass die Verdünnung des Styrofan nicht hoch genug war.
+\item[b)] Es sollte die Phasenwinkel des $\frac{\lambda}{4}$-Plättchen bestimmt werden dabei liegen alle Phasenwinkel im $\sigma_1$-Intervall der jeweils anderen. ????
 
-\item Bei dem Ergebnis des dritten Aufgabe verhält es sich wie bei der zweiten Aufgabe, da wir die selbe Lösung wie vorher verwendet haben.
+\item[c)] In Aufgabenteil c) sollte das $\frac{\lambda}{4}$-Plättchen um 90 Grad verschoben werden und die Intensität vermessen werden. Dabei wurde erwartet, dass sich die Ellipse nicht verschiebt sondern sich nur die Drehrichtung der Welle ändert. Das sich die Ellipse nicht verschiebt bei der 90 Grad Drehung sieht man sehr gut in Abbildung \ref{fig:a_5_c_2}, somit wurden die theoretischen Erwartungen durch das Experiment bestätigt.
 
-\item Der bestimmte Brechungsindex von 1,48 ist bei einem Literaturwert von 1,46, einen sehr guten Wert. Der Fehler ist mit einem Wert von 3,58 sehr groß, dies kommt von der Ableitung des Tangens in der Fehlerfortpflanzung.
-
-\item
-\begin{enumerate}
-\item Die bestimmten optischen Achsen liegen 49 Grad auseinander bei einem Fehler von 2 Grad, erwartet wurden 50 Grad. Somit stell der von uns bestimmte Wert ein gutes Ergebnis dar.
-
-\item Es sollte die Phasenwinkel des $\frac{\lambda}{4}$-Plättchen bestimmt werden dabei liegen alle Phasenwinkel im $\sigma_1$-Intervall der jeweils anderen. ????
-
-\item In Aufgabenteil c) sollte das $\frac{\lambda}{4}$-Plättchen um 90 Grad verschoben werden und die Intensität vermessen werden. Dabei wurde erwartet, dass sich die Ellipse nicht verschiebt sondern sich nur die Drehrichtung der Welle ändert. Das sich die Ellipse nicht verschiebt bei der 90 Grad Drehung sieht man sehr gut in Abbildung \ref{fig:a_5_c_2}, somit wurden die theoretischen Erwartungen durch das Experiment bestätigt.
-
-\item Im letzten Aufgabenteil sollte zirkularpolarisiertes Licht hergestellt werden und die Intensität in Abhängigkeit der Verdrehung des zweiten Polarisators bestimmt werden. Der Plot stellt die erwartete Verteilung dar und wird gut durch den Fit approximiert.
+\item[d)] Im letzten Aufgabenteil sollte zirkularpolarisiertes Licht hergestellt werden und die Intensität in Abhängigkeit der Verdrehung des zweiten Polarisators bestimmt werden. Der Plot stellt die erwartete Verteilung dar und wird gut durch den Fit approximiert.
  
 \end{enumerate}
 
-\item Es sollte die spezifische Drehung der Zuckerlösung bestimmt werden, dieser Wert wäre mit dem Ergebnis von Aufgabenteil b) zu überprüfen gewesen. Da die Zeit nicht reichte um die Messungen für Teil b) durchzuführen, ist ein Vergleich nicht möglich. Jedoch liegt unser Wert nah bei dem Bestimmten Wert der Nachbargruppe, was dafür spricht, dass das Ergebnis in Ordnung ist.
 
+\section{Versuch WO2.2:
+Bestimmung der spezifischen Drehung einer Zuckerlösung}
+\subsection{Versuchsdurchführung}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.1]{aufgabe_6.JPG}
+  	\caption[Foto des Versuchsaufbaus der sechsten Aufgabe]{Foto des Versuchsaufbaus der sechsten Aufgabe}
+  \label{fig:aufgabe_2}
+\end{figure}
+
+\subsubsection{Praktische Durchführung}
+\begin{enumerate}
+\item[a)] Wir stellen eine Zuckerlösung bekannter Konzentration q (in [$\frac{\text{g}}{\text{cm}^3}]$)
+her (bis zu etwa q = 0,5$\frac{\text{g}}{\text{cm}^3}$
+sind je nach Zuckersorte und Temperatur möglich).
+Diese Lösung wird in einer Glasküvette zwischen zwei Polaroidfilter gestellt und die spezifische Drehung [$\alpha$]
+als Funktion der Wellenlänge des Lichts bestimmt.
+\item[b)] Anschließend stellen wir eine weitere Zuckerlösung mit einer anderen Konzentration als
+in a) her. Mithilfe der in a) gemessenen Werte für
+[$\alpha$] bestimmen wir die Konzentration dieser zweiten Zuckerlösung und vergleichen Sie mit der aus Zucker- und
+Wassergewicht errechneten.
+\end{enumerate}
+\subsubsection{Theoretische Durchführung}
+\begin{enumerate}
+\item[a)] Für die spezifische Drehung [$\alpha$] gilt die Beziehung:
+\begin{align}
+\alpha = [\alpha] q d
+\end{align}
+$\alpha$ der Winkel der Polarisation des austretenden Lichtes, q die Konzentration und d die Dicke der Zuckerlösung.
+Mit dem Fehler:
+\begin{align}
+\sigma_{[\alpha]} = \sqrt{
+\left(\frac{1}{q d}\sigma_{\alpha}\right)^2+
+\left(\frac{\alpha}{q^2 d}\sigma_q\right)^2+
+\left(\frac{\alpha}{q d^2}\sigma_d\right)^2}
+\end{align}
+\item[b)]
+Die Konzentration der Zuckerlösung kann aus der spezifischen Drehung [$\alpha$], der Dicke $d$ und dem Drehwinkel $\alpha$ nach folgender Formel bestimmt werden:
+\begin{align}
+q = \frac{\alpha}{d [\alpha]}
+\end{align}
+Mit dem Fehler:
+\begin{align}
+\sigma_q = \sqrt{
+\left(\frac{1}{d [\alpha]}\sigma_\alpha \right)^2+
+\left(\frac{\alpha}{d^2 [\alpha]}\sigma_d \right)^2+
+\left(\frac{\alpha}{d [\alpha]^2}\sigma_{[\alpha]}\right)^2}
+\end{align}
+\end{enumerate}
+\subsection{Messergebnisse}
+\begin{table}[htbp]
+\caption{Messdaten für die Bestimmung des spezifischen Winkels.}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Schichtdicke/cm & Fehler/cm \\ \hline
+\multicolumn{1}{|r|}{9} & \multicolumn{1}{r|}{0,1} \\ \hline
+masse wasser/cm$^3$ & Fehler/m$^3$ \\ \hline
+\multicolumn{1}{|r|}{65} & \multicolumn{1}{r|}{0,5} \\ \hline
+masse Zucker/g & Fehler/g \\ \hline
+\multicolumn{1}{|r|}{33} & \multicolumn{1}{r|}{0,5} \\ \hline
+q/(g/m$^3$) & Fehler/(g/m$^3$) \\ \hline
+\multicolumn{1}{|r|}{0,5076923077} & \multicolumn{1}{r|}{0,0086268861} \\ \hline
+weiß &  \\ \hline
+min ohne Lösung /Grad & Fehler/Grad \\ \hline
+\multicolumn{1}{|r|}{90} & \multicolumn{1}{r|}{2} \\ \hline
+min mit Lösung/Grad & Fehler/Grad \\ \hline
+\multicolumn{1}{|r|}{7,5} & \multicolumn{1}{r|}{2} \\ \hline
+blaugrün &  \\ \hline
+min mit Lösung/Grad & Fehler/Grad \\ \hline
+\multicolumn{1}{|r|}{7,5} & \multicolumn{1}{r|}{2} \\ \hline
+rot &  \\ \hline
+min mit Lösung/Grad & Fehler/Grad \\ \hline
+\multicolumn{1}{|r|}{7} & \multicolumn{1}{r|}{2} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_6}
+\end{table}
+\subsection{Auswertung}
+\begin{enumerate}
+\item[a)]
+Im ersten Teil der sechsten Aufgabe sollte die spezifische Drehung einer Zuckerlösung für verschiedene Wellenlängen bestimmt werden. Zur Berechnung wurde Gleichung ?? und für den Fehler Gleichung ?? verwendet. Für weißes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g), für blaugrünes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g) und für dunkelrotes Licht ergab sich ein spezifischer Winkel von 0,36 $(\pm 0,02)$(cm$^2$/g).
+
+\item[b)]
+Diesen Versuchsteil haben wir aus Zeitgründen nicht geschafft.
 \end{enumerate}
 
+\subsection{Diskussion}
+Es sollte die spezifische Drehung der Zuckerlösung bestimmt werden. In Aufgabenteil b sollte bei einer anderen bekannten Konzentration über die spezifische Drehung umgekehrt die Konzentration berechnet und mit dem bekannten Wert verglichen werden. Da die Zeit nicht reichte um die Messungen für Teil b) durchzuführen, ist ein Vergleich nicht möglich. Unser Wert für die  spezifische Drehung ist mit dem Wert der Nachbargruppe vergleichbar und der Fehler nimmt etwas mehr als 4\% unseres Messwertes ein.
+
+\section{Versuch WO2.3:
+Reflexion von linear polarisiertem Licht an einer Metalloberfläche}
+\subsection{Versuchsdurchführung}
+
+\subsubsection{Praktische Durchführung}
+Wir haben in allen bisherigen Versuchen im Praktikum immer nur die Wechselwirkung
+von Lichtwellen mit Isolatoren (Glas, Plexiglas, Kunststoff, Zuckerlösung etc.) betrach-
+tet. Mit der Vorstellung von Atomen als schwingungsfähige elektrische Dipole und mithilfe der Maxwellschen Theorie waren wir in der Lage, die beobachteten Phänomene zu erklären. Diese Vorstellungen versagen jedoch, wenn wir elektromagnetische Wellen mit Wellenlängen kleiner als 10 $\mu$m und ihre Wechselwirkung mit Metallen, also Leitern, untersuchen wollen. Wollen wir also die Reflexion von Lichtwellen an Metalloberflächen untersuchen, so versagen unsere bislang erworbenen Kenntnisse. Ein gutes Verständnis der Theorie der Leitfähigkeit von Metallen im Rahmen der Festkörperphysik, die sich wiederum auf die Quantenphysik stützt, ist hierfür notwendig. Dies soll uns jedoch nicht hindern, einige experimentelle Beobachtungen über die Reflexion von linear polarisiertem Licht an einer Metalloberfläche (Oberflächenspiegel) zu machen. Wir benötigen für die Versuche neben Lichtquelle und Oberflächenspiegel ein
+$\frac{\lambda}{4}$-Plättchen und zwei Polaroidfilter und
+führen damit folgende Experimente aus:
+Beobachtung 1: Licht, das parallel oder senkrecht zur Einfallsebene linear polarisiert ist, ändert bei der Reflexion an einem Metallspiegel seine Polarisation nicht.
+Beobachtung 2: Licht, das in einem Winkel von 45$^\circ$ zur Einfallsebene linear polarisiert ist, wird durch die Reflexion in elliptisch polarisiertes Licht umgewandelt.
+Beobachtung 3: Es gibt einen Einfallswinkel, bei dem
+”unter 45$^\circ$
+linear polarisiertes
+Licht“ als nahezu zirkular polarisiert reflektiert wird.
+Eine plausible Erklärung für diese Beobachtungen finden Sie im Berkeley Kurs Band 3, Kap. 8.6, Heimversuch 26.
+\subsection{Auswertung}
+Diesen Versuchsteil haben wir aus Zeitgründen nicht geschafft.
 
 
+\section{Fazit}
 
 
  %Werte stimmen mit den Formeln überein/nicht überein
