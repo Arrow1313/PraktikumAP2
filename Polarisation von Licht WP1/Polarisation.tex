@@ -110,6 +110,7 @@ $E_0$ die Anfangsamplitude des Lichtes.\\
 Schließlich Folgt:
 \begin{align}
 I_A \propto \cos^2{\theta}
+\label{eqn:a_1}
 \end{align}
 \subsection{Messergebnisse}
 \begin{table}[H]
@@ -142,7 +143,7 @@ I_A \propto \cos^2{\theta}
 \label{tab:a_1}
 \end{table}
 \subsection{Auswertung}
-In der ersten Aufgabe sollte das Mallussche Gesetz verifiziert werden. Dazu wurde der Photostrom in Abhängigkeit vom Winkel des zweiten Polarisators in Bezug zum ersten gemessen. Es ergab sich der folgende Plot (Werte aus Tabelle ??).
+In der ersten Aufgabe sollte das Mallussche Gesetz verifiziert werden. Dazu wurde der Photostrom in Abhängigkeit vom Winkel des zweiten Polarisators in Bezug zum ersten gemessen. Es ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1}).
 
 \begin{figure}[H]
 \centering
@@ -151,7 +152,7 @@ In der ersten Aufgabe sollte das Mallussche Gesetz verifiziert werden. Dazu wurd
   \label{fig:a_1}
 \end{figure}
 
-Die Messdaten wurden dabei mit I($\phi$) = -9.83414e-07 $(\pm 5.092e-09) \cdot$ cos$^2(\phi \cdot$ 0.0184 $(\pm 0.0002)$ + 1.580 $(\pm 0.009) )$ + 9.89381e-07 $(\pm 4.11e-09)$ gefittet.   
+Die Messdaten wurden dabei nach Gleichung \ref{eqn:a_1} gefittet. Es ergaben sich die folgende Fitparameter I($\phi$) = -9.83414e-07 $(\pm 5.092e-09) \cdot$ cos$^2(\phi \cdot$ 0.0184 $(\pm 0.0002)$ + 1.580 $(\pm 0.009) )$ + 9.89381e-07 $(\pm 4.11e-09)$.
 
 Dann sollte ein dritter Polarisator zwischen die ersten beiden gestellt, und überprüft werden, wann die Intensität maximal wird. Dabei ergab sich ein Wert von 45 $\pm 2)$Grad. Bei einem Winkel von $\pm$90 Grad ist keine Intensität mehr zu messen.
 \subsection{Diskussion}
@@ -247,11 +248,13 @@ der Brechungsindex berechnet.
 Für den Brewsterwinkel gilt die Beziehung:
 \begin{align}
 \tan{\theta} = n_G
+\label{eqn:a_2}
 \end{align}
 $n_G$ ist der Brechungsindex von Plexiglas.\\
 Der Fehler für den Brewsterwinkel ist:
 \begin{align}
 \sigma_\theta = (1+\tan^2{n_G})\sigma_{n_G}
+\label{eqn:a_2_sigma}
 \end{align}
 \subsection{Messergebnisse}
 \begin{table}[htbp]
@@ -266,7 +269,7 @@ Winkel/Grad & Fehler/Grad \\ \hline
 \label{tab:a_4}
 \end{table}
 \subsection{Auswertung}
-In der vierten Aufgabe sollte mit Hilfe des Brewsterwinkels der Brechungsindex von Plexiglas bestimmt werden. Wir haben einen Winkel von 56 $(\pm 2)$ Grad gemessen. Damit wurde nach Gleichung ?? ein Brechungsindex  von 1,48 $(\pm3,58)$ errechnet.
+In der vierten Aufgabe sollte mit Hilfe des Brewsterwinkels der Brechungsindex von Plexiglas bestimmt werden. Wir haben einen Winkel von 56 $(\pm 2)$ Grad gemessen. Damit wurde nach Gleichung \ref{eqn:a_2} ein Brechungsindex und nach Gleichung \ref{eqn:a_2_sigma} der Fehler bestimmt. Es ergab sich ein Wert von 1,48 $(\pm3,58)$.
 \subsection{Diskussion}
 Der bestimmte Brechungsindex von 1,48 ist bei einem Literaturwert von 1,46 akzeptabel, da dieser innerhalb des Fehlerbalkens des gemessenen Wertes liegt, welcher ein prozentualen Anteil von etwas mehr als 7,5 \% am Messwert hat.
 
@@ -316,6 +319,7 @@ Wir erwarten für eine Farbe zirkular polarisiertes Licht.
 Die Phasenverschiebung $\phi$ lässt sich berechnen durch:
 \begin{align}
 \phi = cos^{-1}\left(\frac{I_{max}-I_{min}}{I_{max}+I_{min}}\right)
+\label{eqn:a_5_b}
 \end{align}
 Dabei können anstelle von $I$ auch zu $I$ proportionale Größen wie Strom oder Spannung verwendet werden.
 Der Fehler ist:
@@ -325,6 +329,7 @@ Der Fehler ist:
 I_{min}}\right)^2}}\sigma_{I_{min}}\right)^2+
 \left(\frac{\frac{2I_{min}}{(I_{max}+I_{min})^2}}{\sqrt{1-\left(\frac{I_{max}-I_{min}}{I_{max}+
 I_{min}}\right)^2}}\sigma_{I_{max}}\right)^2}
+\label{eqn:a_5_b_sigma}
 \end{align}
 \item[c)]
 Wir erwarten, dass sich die Polarisationsrichtung der Ellipse ändert, wobei die Lage der Ellipse gleich bleibt.
@@ -438,7 +443,7 @@ Da wir beide ZP ($\frac{\lambda}{4}$-Plättchen um 90$^\circ$ verschoben) hinter
 180 & 55,8 \\ \hline
 \end{tabular}
 \end{center}
-\label{tab:a_5_b_gg}
+\label{tab:a_5_b_bg}
 \end{table}
 
 \begin{table}[htbp]
@@ -459,7 +464,7 @@ Da wir beide ZP ($\frac{\lambda}{4}$-Plättchen um 90$^\circ$ verschoben) hinter
 180 & 8,9 \\ \hline
 \end{tabular}
 \end{center}
-\label{tab:a_5_b_gg}
+\label{tab:a_5_b_v}
 \end{table}
 
 \item[c)]
@@ -505,7 +510,7 @@ Da wir beide ZP ($\frac{\lambda}{4}$-Plättchen um 90$^\circ$ verschoben) hinter
 180 & 1,1 \\ \hline
 \end{tabular}
 \end{center}
-\label{tab:a_5_s_g}
+\label{tab:a_5_d_g}
 \end{table}
 \end{enumerate}
 
@@ -519,7 +524,7 @@ Dabei ergab sich ein Wert von 74 $(\pm 2)$ Grad für die erste Achse und ein Win
 Im zweitem Teil sollten die Eigenschaften eines $\frac{\lambda}{4}$-Plättchens mit verschiedenen Farbfiltern untersucht werden, wobei die Bezeichnung "$\frac{\lambda}{4}$-Plättchen" nur für einen der Farbfilter annähernd ideal zutrifft. Dieser Farbfilter sollte bestimmt werden.
 
 
-Für weißes Licht ergab sich der folgende Plot in Polarkoordinaten (Werte aus Tabelle ??).
+Für weißes Licht ergab sich der folgende Plot in Polarkoordinaten (Werte aus Tabelle \ref{tab:a_5_b_w}).
 
 \begin{figure}[H]
 \centering
@@ -528,9 +533,9 @@ Für weißes Licht ergab sich der folgende Plot in Polarkoordinaten (Werte aus T
   \label{fig:a_5_w}
 \end{figure}
 
-Es ergab sich ein Phasenwinkel von 1,569 $(\pm 0,003)$Grad.\\
+Es ergab sich nach Gleichung \ref{eqn:a_5_b} für den Phasenwinkel und Gleichung \ref{eqn:a_5_b_sigma} für den Fehler ein Wert von 1,569 $(\pm 0,003)$Grad.\\
 
-Für dunkelrotes Licht ergab sich der folgend Plot (Werte aus Tabelle ??).
+Für dunkelrotes Licht ergab sich der folgend Plot (Werte aus Tabelle \ref{fig:a_5_dr}).
 
 \begin{figure}[H]
 \centering
@@ -539,9 +544,9 @@ Für dunkelrotes Licht ergab sich der folgend Plot (Werte aus Tabelle ??).
   \label{fig:a_5_dr}
 \end{figure}
 
-Es ergab sich ein Phasenwinkel von 1,567 $(\pm 0,009)$Grad.\\
+Es ergab sich nach Gleichung \ref{eqn:a_5_b} für den Phasenwinkel und Gleichung \ref{eqn:a_5_b_sigma} für den Fehler ein Wert vonn 1,567 $(\pm 0,009)$Grad.\\
 
-Für gelbes Licht ergab sich der folgen Plot (Werte aus Tabelle ??).
+Für gelbes Licht ergab sich der folgen Plot (Werte aus Tabelle \ref{tab:a_5_b_g}).
 
 \begin{figure}[H]
 \centering
@@ -551,10 +556,10 @@ Für gelbes Licht ergab sich der folgen Plot (Werte aus Tabelle ??).
 \end{figure}
 
 
-Es ergab sich ein Phasenwinkel von 1,57 $(\pm 0,02)$Grad.\\
+Es ergab sich nach Gleichung \ref{eqn:a_5_b} für den Phasenwinkel und Gleichung \ref{eqn:a_5_b_sigma} für den Fehler ein Wert von 1,57 $(\pm 0,02)$Grad.\\
 
 
-Für gelbgrünes Licht ergab sich der folgende Plot (Werte aus Tabelle ??).
+Für gelbgrünes Licht ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_5_b_gg}).
 
 \begin{figure}[H]
 \centering
@@ -563,9 +568,9 @@ Für gelbgrünes Licht ergab sich der folgende Plot (Werte aus Tabelle ??).
   \label{fig:a_5_gg}
 \end{figure}
 
-Es ergab sich ein Phasenwinkel von 1,57 $(\pm 0,01)$Grad.\\
+Es ergab sich nach Gleichung \ref{eqn:a_5_b} für den Phasenwinkel und Gleichung \ref{eqn:a_5_b_sigma} für den Fehler ein Wert von 1,57 $(\pm 0,01)$Grad.\\
 
-Für blaugrünes Licht ergab sich der folgende Plot (Werte aus Tabelle ??).
+Für blaugrünes Licht ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_5_b_v}).
 
 \begin{figure}[H]
 \centering
@@ -574,7 +579,7 @@ Für blaugrünes Licht ergab sich der folgende Plot (Werte aus Tabelle ??).
   \label{fig:a_5_v}
 \end{figure}
 
-Es ergab sich ein Phasenwinkel von 1,568 $(\pm 0,001)$Grad.\\
+Es ergab sich nach Gleichung \ref{eqn:a_5_b} für den Phasenwinkel und Gleichung \ref{eqn:a_5_b_sigma} für den Fehler ein Wert von 1,568 $(\pm 0,001)$Grad.\\
 
 Die Idealen Eingenschaften eines $\frac{\lambda}{4}$-Plättchens stellen sich bei gelbem Licht ein.
 
@@ -663,6 +668,7 @@ Mit dem Fehler:
 Die Konzentration der Zuckerlösung kann aus der spezifischen Drehung [$\alpha$], der Dicke $d$ und dem Drehwinkel $\alpha$ nach folgender Formel bestimmt werden:
 \begin{align}
 q = \frac{\alpha}{d [\alpha]}
+\label{eqn:a_6}
 \end{align}
 Mit dem Fehler:
 \begin{align}
@@ -670,6 +676,7 @@ Mit dem Fehler:
 \left(\frac{1}{d [\alpha]}\sigma_\alpha \right)^2+
 \left(\frac{\alpha}{d^2 [\alpha]}\sigma_d \right)^2+
 \left(\frac{\alpha}{d [\alpha]^2}\sigma_{[\alpha]}\right)^2}
+\label{eqn:a_6_sigma}
 \end{align}
 \end{enumerate}
 \subsection{Messergebnisse}
@@ -704,7 +711,7 @@ min mit Lösung/Grad & Fehler/Grad \\ \hline
 \subsection{Auswertung}
 \begin{enumerate}
 \item[a)]
-Im ersten Teil der sechsten Aufgabe sollte die spezifische Drehung einer Zuckerlösung für verschiedene Wellenlängen bestimmt werden. Zur Berechnung wurde Gleichung ?? und für den Fehler Gleichung ?? verwendet. Für weißes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g), für blaugrünes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g) und für dunkelrotes Licht ergab sich ein spezifischer Winkel von 0,36 $(\pm 0,02)$(cm$^2$/g).
+Im ersten Teil der sechsten Aufgabe sollte die spezifische Drehung einer Zuckerlösung für verschiedene Wellenlängen bestimmt werden. Zur Berechnung wurde Gleichung \ref{eqn:a_6} und für den Fehler Gleichung \ref{eqn:a_6_sigma} verwendet. Für weißes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g), für blaugrünes Licht ergab sich ein Wert von 0,34 $(\pm 0,01)$(cm$^2$/g) und für dunkelrotes Licht ergab sich ein spezifischer Winkel von 0,36 $(\pm 0,02)$(cm$^2$/g).
 
 \item[b)]
 Diesen Versuchsteil haben wir aus Zeitgründen nicht geschafft.
