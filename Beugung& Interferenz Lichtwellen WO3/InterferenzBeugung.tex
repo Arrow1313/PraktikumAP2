@@ -275,7 +275,7 @@ $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lam
 \begin{tabular}{|l|l|l|l|}
 \hline
 Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm \\ \hline
-\multicolumn{1}{|r|}{-1,3} &  & \multicolumn{1}{r|}{0,25} & \multicolumn{1}{r|}{0,05} \\ \hline
+\multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{|r|}{0,1} & \multicolumn{1}{r|}{0,25} & \multicolumn{1}{r|}{0,05} \\ \hline
 Abstand schlitze/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hline
 \multicolumn{1}{|r|}{0,75} & \multicolumn{1}{r|}{0,05} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
 \end{tabular}
@@ -346,7 +346,7 @@ Graphisch ausgewertet ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:
 \centering
     \includegraphics[scale = 1]{a_3.pdf}
   	\caption[Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit theoretischer Vorhersage]{Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit theoretischer Vorhersage}
-  \label{fig:a_1}
+  \label{fig:a_3}
 \end{figure}
 
 
@@ -362,6 +362,7 @@ Bei dem in diesem Versuchsteil verwendeten Gitter liegt die Gitterkonstante im B
 Die Wellenlänge $\lambda$ bestimmen wir durch die Formel:
 \begin{align}
 \lambda = \frac{\sin(\theta) d}{n}
+\label{eqn:lambda_3}
 \end{align}
 $d$ ist die Gitterkonstante, $n$ die Ordnung des Maximums und $\theta$ die Winkeldifferenz zwischen Hauptmaximum und Nebenmaximum.
 Der Fehler berechnet sich durch:
@@ -369,6 +370,7 @@ Der Fehler berechnet sich durch:
 \sigma_\lambda = \sqrt{
 \left(\frac{\cos(\theta) d}{n}\sigma_\theta\right)^2+
 \left(\frac{\sin(\theta)}{n}\sigma_d\right)^2}
+\label{eqn:lambda_3_sigma}
 \end{align}
 Für die Intensitätsverteilung $I_\theta$ erwarten wir folgenden Zusammenhang:
 \begin{align}
@@ -380,70 +382,104 @@ $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lam
 \subsection{Messergebnisse}
 
 \begin{table}[htbp]
-\caption{Messwerte der Messung des Gitters}
+\caption{Materialeigenschaften, aus der Messung des Gitters}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/m & Fehler/m \\ \hline
+\multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{r|}{0,1} & \multicolumn{1}{r|}{80} & \multicolumn{1}{r|}{5} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_4_m}
+\end{table}
+
+
+\begin{table}[htbp]
+\caption{Messwerte der Messung des Gitters (1/2)}
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
 \multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
--1,1366718776 & 0,02 & 0,0003020236 & 0,0001006758 \\ \hline
--1,0912162253 & 0,02 & 0,0003020236 & 0,0001006758 \\ \hline
--1,0457591991 & 0,02 & 0,0013087688 & 0,0001006745 \\ \hline
--1,0003008562 & 0,01 & 0,0214436726 & 0,0001011834 \\ \hline
--0,9548412539 & 0,02 & 0,0315111245 & 0,000101816 \\ \hline
--0,9093804492 & 0,02 & 0,0053357495 & 0,0001006949 \\ \hline
--0,8639184994 & 0,02 & 0,0033222591 & 0,0001006796 \\ \hline
--0,8184554617 & 0,02 & 0,0033222591 & 0,0001006796 \\ \hline
--0,7729913933 & 0,02 & 0,0013087688 & 0,0001006745 \\ \hline
--0,7275263514 & 0,02 & 0,0073492399 & 0,0001007204 \\ \hline
--0,6820603932 & 0,01 & 0,0697674419 & 0,000106409 \\ \hline
--0,636593576 & 0,02 & 0,2862176583 & 0,0001752236 \\ \hline
--0,591125957 & 0,02 & 0,0727876774 & 0,000106911 \\ \hline
--0,5456575934 & 0,02 & 0,0063424947 & 0,0001007064 \\ \hline
--0,5001885426 & 0,02 & 0,0043290043 & 0,000100686 \\ \hline
--0,4547188617 & 0,02 & 0,0023155139 & 0,0001006758 \\ \hline
--0,409248608 & 0,02 & 0,0143964563 & 0,0001008898 \\ \hline
--0,3637778389 & 0,02 & 0,2771569516 & 0,0001715107 \\ \hline
--0,3183066115 & 0,02 & 1 & 0,0005126953 \\ \hline
--0,2728349831 & 0,02 & 0,4785059901 & 0,000260452 \\ \hline
--0,227363011 & 0,02 & 0,0123829659 & 0,0001008287 \\ \hline
--0,1818907525 & 0,02 & 0,0073492399 & 0,0001007204 \\ \hline
--0,1364182649 & 0,01 & 0,0073492399 & 0,0005033818 \\ \hline
--0,0909456054 & 0,02 & 0,018423437 & 0,0005034463 \\ \hline
--0,0454728313 & 0,02 & 0,1724554515 & 0,0005106916 \\ \hline
-0 & 0,02 & 1 & 0,0007114107 \\ \hline
-0,0454728313 & 0,02 & 0,3496426055 & 0,0005330372 \\ \hline
-0,0909456054 & 0,02 & 0,023457163 & 0,00010129 \\ \hline
-0,1364182649 & 0,02 & 0,0023155139 & 0,0001006758 \\ \hline
-0,1818907525 & 0,02 & 0,0083559851 & 0,000100737 \\ \hline
-0,227363011 & 0,02 & 0,0113762207 & 0,000100802 \\ \hline
-0,2728349831 & 0,02 & 0,0717809322 & 0,0001067415 \\ \hline
-0,3183066115 & 0,02 & 0,3687707641 & 0,0002105929 \\ \hline
-0,3637778389 & 0,02 & 0,1241316823 & 0,000118143 \\ \hline
-0,409248608 & 0,02 & 0,0224504178 & 0,0001012354 \\ \hline
-0,4547188617 & 0,02 & 0,0013087688 & 0,0001006745 \\ \hline
-0,5001885426 & 0,02 & 0,0043290043 & 0,000100686 \\ \hline
-0,5456575934 & 0,02 & 0,0053357495 & 0,0001006949 \\ \hline
-0,591125957 & 0,02 & 0,0113762207 & 0,000100802 \\ \hline
-0,636593576 & 0,02 & 0,0133897111 & 0,000100858 \\ \hline
-0,6820603932 & 0,02 & 0,0063424947 & 0,0001007064 \\ \hline
-0,7275263514 & 0,01 & 0,0043290043 & 0,000100686 \\ \hline
-0,7729913933 & 0,02 & 0,0013087688 & 0,0001006745 \\ \hline
-0,8184554617 & 0,02 & 0,0103694755 & 0,0001007778 \\ \hline
-0,8639184994 & 0,02 & 0,0003020236 & 0,0001006758 \\ \hline
-0,9093804492 & 0,02 & 0,0003020236 & 0,0001006758 \\ \hline
-0,9548412539 & 0,02 & 0,0003020236 & 0,0001006758 \\ \hline
+-1,14 & 0,02 & 0,0003 & 0,0001 \\ \hline
+-1,09 & 0,02 & 0,0003 & 0,0001 \\ \hline
+-1,05 & 0,02 & 0,0013 & 0,0001 \\ \hline
+-1,00 & 0,01 & 0,0214 & 0,0001 \\ \hline
+-0,95 & 0,02 & 0,0315 & 0,0001 \\ \hline
+-0,91 & 0,02 & 0,0053 & 0,0001 \\ \hline
+-0,86 & 0,02 & 0,0033 & 0,0001 \\ \hline
+-0,82 & 0,02 & 0,0033 & 0,0001 \\ \hline
+-0,77 & 0,02 & 0,0013 & 0,0001 \\ \hline
+-0,73 & 0,02 & 0,0073 & 0,0001 \\ \hline
+-0,68 & 0,01 & 0,0698 & 0,0001 \\ \hline
+-0,646 & 0,02 & 0,2862 & 0,0002 \\ \hline
+-0,59 & 0,02 & 0,0728 & 0,0001 \\ \hline
+-0,55 & 0,02 & 0,0063 & 0,0001 \\ \hline
+-0,50 & 0,02 & 0,0043 & 0,0001 \\ \hline
+-0,45 & 0,02 & 0,0023 & 0,0001 \\ \hline
+-0,41 & 0,02 & 0,0144 & 0,00018 \\ \hline
+-0,36 & 0,02 & 0,2772 & 0,0002 \\ \hline
+-0,32 & 0,02 & 1 & 0,0005 \\ \hline
+-0,27 & 0,02 & 0,4785 & 0,0003 \\ \hline
+-0,23 & 0,02 & 0,0124 & 0,0001 \\ \hline
+-0,18 & 0,02 & 0,0073 & 0,0001 \\ \hline
+-0,15 & 0,01 & 0,0073 & 0,0005 \\ \hline
+-0,09 & 0,02 & 0,0184 & 0,0005 \\ \hline
+-0,05 & 0,02 & 0,1725 & 0,0005 \\ \hline
+0 & 0,02 & 1 & 0,0007 \\ \hline
 \end{tabular}
 \end{center}
-\label{tab:a_4_e}
+\label{tab:a_4_e_a}
+\end{table}
+
+
+
+\begin{table}[htbp]
+\caption{Messwerte der Messung des Gitters (2/2)}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
+0,05 & 0,02 & 0,3496 & 0,0005 \\ \hline
+0,09 & 0,02 & 0,0235 & 0,0001 \\ \hline
+0,14 & 0,02 & 0,0023 & 0,0001 \\ \hline
+0,18 & 0,02 & 0,0084 & 0,0001 \\ \hline
+0,23 & 0,02 & 0,0114 & 0,0001 \\ \hline
+0,27 & 0,02 & 0,0718 & 0,0001 \\ \hline
+0,32 & 0,02 & 0,3688 & 0,0002 \\ \hline
+0,36 & 0,02 & 0,1241 & 0,0001 \\ \hline
+0,41 & 0,02 & 0,0225 & 0,0001 \\ \hline
+0,45 & 0,02 & 0,0013 & 0,0001 \\ \hline
+0,50 & 0,02 & 0,0043 & 0,0001 \\ \hline
+0,55 & 0,02 & 0,0053 & 0,0001 \\ \hline
+0,59 & 0,02 & 0,0114 & 0,0001 \\ \hline
+0,64 & 0,02 & 0,0134 & 0,0001 \\ \hline
+0,68 & 0,02 & 0,0063 & 0,0001 \\ \hline
+0,73 & 0,01 & 0,0043 & 0,0001 \\ \hline
+0,77 & 0,02 & 0,0013 & 0,0001 \\ \hline
+0,82 & 0,02 & 0,0104 & 0,0001 \\ \hline
+0,86 & 0,02 & 0,0003 & 0,0001 \\ \hline
+0,91 & 0,02 & 0,0003 & 0,0001 \\ \hline
+0,95 & 0,02 & 0,0003 & 0,0001 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_4_e_b}
 \end{table}
 
 
 
 \subsection{Auswertung}
+Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls bestimmt werden. Dafür wurden Gleichung \ref{eqn:lambda_3} und Gleichung \ref{eqn:lambda_3_sigma} für den Fehler verwendet. Es ergab sich ein Wert von 0,69 $(\pm  0,08)\mu$m. Graphisch ausgewertet ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_4_m}).
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_4.pdf}
+  	\caption[Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines]{Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines}
+  \label{fig:a_4}
+\end{figure}
+
+
 \subsection{Diskussion}
-\subsection{Messergebnisse}
-
-
+Der im Versuchsprotokoll angegebene Wert für die Wellenlänge des Laserlichts ist mit 0,63$\mu$m angegeben, dieser Wert liegt im $\sigma_1$ Intervall unseres Messwertes. Es wurde beim Hauptmaximum so wie beim ersten linke Nebenmaximum die Anzeigeskala überschritten. Das erste Nebenmaximum auf der rechten Seite beträgt von der Amplitude nur ein drittel des gemessenen Wertes des anderen ersten Nebenmaximums. Dieser Fehler war reproduzierbar mit dem von uns gewähltem Gitter. Aus zeitlichen Gründen konnten wir jedoch nicht ein anderes Gitter ausprobieren, somit kann nicht genau bestimmt werden, ob der Fehler von Gitter oder vom Laser kommt. Der Laser wurde vor der Messung noch justiert, da die Lage des Interferenzmusters zu niedrig war.
 
 \section{Fazit}
 
