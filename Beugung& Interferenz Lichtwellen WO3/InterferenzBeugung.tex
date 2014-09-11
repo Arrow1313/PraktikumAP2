@@ -118,6 +118,12 @@ Die Wellenlänge $\lambda$ berechnet sich durch:
 \lambda = \frac{2d \sin(\theta)}{2n-1}
 \end{align}
 $n$ ist die Ordung des Minimums, d der Abstand des Doppelspaltes.
+Der Fehler ergibt sich durch:
+\begin{align}
+\sigma_\lambda = \sqrt{
+\left(\frac{2 \sin(\theta)}{2n-1}\sigma_d\right)^2
+\left(\frac{2d \cos(\theta)}{2n-1}\sigma_\theta\right)^2}
+\end{align}
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
@@ -130,9 +136,15 @@ Bei dem in diesem Versuchsteil verwendeten Gitter liegt die Gitterkonstante im B
 \subsubsection{Theoretische Durchführung}
 Die Wellenlänge $\lambda$ bestimmen wir durch die Formel:
 \begin{align}
-n \lambda = \sin(\theta) d
+\lambda = \frac{\sin(\theta) d}{n}
 \end{align}
 $d$ ist die Gitterkonstante, $n$ die Ordnung des Maximums und $\theta$ die Winkeldifferenz zwischen Hauptmaximum und Nebenmaximum.
+Der Fehler berechnet sich durch:
+\begin{align}
+\sigma_\lambda = \sqrt{
+\left(\frac{\cos(\theta) d}{n}\sigma_\theta\right)^2+
+\left(\frac{\sin(\theta)}{n}\sigma_d\right)^2}
+\end{align} 
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
