@@ -121,9 +121,14 @@ $n$ ist die Ordung des Minimums, d der Abstand des Doppelspaltes.
 Der Fehler ergibt sich durch:
 \begin{align}
 \sigma_\lambda = \sqrt{
-\left(\frac{2 \sin(\theta)}{2n-1}\sigma_d\right)^2
+\left(\frac{2 \sin(\theta)}{2n-1}\sigma_d\right)^2+
 \left(\frac{2d \cos(\theta)}{2n-1}\sigma_\theta\right)^2}
 \end{align}
+Für die Intensitätsverteilung $I_\theta$ erwarten wir folgenden Zusammenhang:
+\begin{align}
+I_\theta = I_0\left(\frac{\sin\left(\frac{\pi b \sin(\theta)}{\lambda}\right)}{\frac{\pi b \sin(\theta)}{\lambda}}\cos\left(\frac{\pi d\sin(\theta)}{\lambda}\right)\right)^2
+\end{align}
+$b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lambda$ die Wellenlänge des Lasers.
 \subsection{Messergebnisse}
 \subsection{Auswertung}
 \subsection{Diskussion}
@@ -144,7 +149,8 @@ Der Fehler berechnet sich durch:
 \sigma_\lambda = \sqrt{
 \left(\frac{\cos(\theta) d}{n}\sigma_\theta\right)^2+
 \left(\frac{\sin(\theta)}{n}\sigma_d\right)^2}
-\end{align} 
+\end{align}
+
 \subsection{Messergebnisse}
 \subsection{Auswertung}
 \subsection{Diskussion}
