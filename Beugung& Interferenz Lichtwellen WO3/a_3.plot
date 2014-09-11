@@ -10,9 +10,9 @@ set ylabel "Intensitaetsverhältniss"
 
 #fit f(x) "a_3.dat" using 1:2:3 via m,a,b,c
 
-set xtics 1
+set xtics 0.1
 
-plot "a_3.dat" with xyerrorbars title "Messdaten"#, f(x) title "Regressionskurve"
+plot "a_3.dat" with xyerrorbars title "Messdaten" smooth csplines#, f(x) title "Regressionskurve"
 
 set terminal postscript eps enhanced color font 'Helvetica,10'
 set output "a_3.eps"
