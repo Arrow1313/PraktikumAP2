@@ -38,7 +38,7 @@
 \section{Einleitung}
 
 In der Versuchsreihe WO3 soll die Beugung (Diffraktion) von kohärenten Lichtwellen (Laserlicht) an verschiedenen Öffnungen untersucht werden.
-Die Erscheinungen von Beugung und Interferenz sind grundlegend für die Wirkungsweise wichtiger optischer Instrumente. So bestimmt z.B. die Beugung an in der Regel kreisförmigen Öffnungen (z.B. Linsenfassungen) das räumliche Auflösungsvermögen aller optischer Instrumente vom Mikroskop über das menschliche Auge bis hin zu den großen Radioteleskopen. Wir werden zunächst die Intensitätsverteilung des Beugungsmusters eines Einzelspaltes ausmessen und unsere Messungen mit den entsprechenden Rechnungen, die auf dem Huygensschen Prinzip beruhen, vergleichen. Das gleiche werden wir dann anschließend mit den Beugungsbildern einer Lochblende, eines Doppelspaltes und eines Strichgitters durchfÜhren.
+Die Erscheinungen von Beugung und Interferenz sind grundlegend für die Wirkungsweise wichtiger optischer Instrumente. So bestimmt z.B. die Beugung an in der Regel kreisförmigen Öffnungen (z.B. Linsenfassungen) das räumliche Auflösungsvermögen aller optischer Instrumente vom Mikroskop über das menschliche Auge bis hin zu den großen Radioteleskopen. Wir werden zunächst die Intensitätsverteilung des Beugungsmusters eines Einzelspaltes ausmessen und unsere Messungen mit den entsprechenden Rechnungen, die auf dem Huygensschen Prinzip beruhen, vergleichen. Das gleiche werden wir dann anschließend mit den Beugungsbildern einer Lochblende, eines Doppelspaltes und eines Strichgitters durchführen.
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
@@ -50,13 +50,19 @@ Die Erscheinungen von Beugung und Interferenz sind grundlegend für die Wirkungs
 Wir bauen den in Abbildung 
 %\ref{} Abbilung 17 aus der versuchsbeschreibung oder besser eine eigene zeichnung
 skizzierten Versuchsaufbau mit Elementen der mikrooptischen Bank auf. Als Quelle für kohärente und ebene Wellen verwenden wir einen Neon-Helium-Gaslaser. Die Wellenlänge des Lichtes beträgt $\lambda$ = 0,6328 $\mu$m.
-Wir messen die Intensitätsverteilung des Beugungsmusters in der Ebene des "Schirms" mit einem Intensitätsmessggerät aus. Wir tragen dann $\frac{I_\theta}{I_0}$ graphisch auf und vergleichen die Messwerte mit der theoretischen Verteilung. Aus der Lage der ersten Minima betimmen wir die Wellenlänge $\lambda$.
+Wir messen die Intensitätsverteilung des Beugungsmusters in der Ebene des "Schirms" mit einem Intensitätsmessggerät aus. Wir tragen dann $\frac{I_\theta}{I_0}$ graphisch auf und vergleichen die Messwerte mit der theoretischen Verteilung. Aus der Lage der ersten Minima bestimmen wir die Wellenlänge $\lambda$.
 \subsubsection{Theoretische Durchführung}
 Den Winkel $\theta$ berechnen wir im folgenden \textbf{immer} mit der Formel:
 \begin{align}
 \theta = tan^{-1}(\frac{x}{L})
 \end{align}
-wobei x der Abstand zum Hauptmaximum und L der Abstand des Gitters zum Intensitätsmessgerät ist.
+wobei x der Abstand zum Hauptmaximum und L der Abstand des Gitters zum Intensitätsmessgerät ist.\\
+Der Fehler berechnet sich nach folgender Formel:
+\begin{align}
+\sigma_\theta = \sqrt{
+\left(\frac{1}{L\left(1+\left(\frac{x}{L}\right)^2\right)}\sigma_x\right)^2+
+\left(\frac{x}{L^2\left(1+\left(\frac{x}{L}\right)^2\right)}\sigma_L\right)^2}
+\end{align}
 
 Für die Intensitätsverteilung $I_\theta$ Abhängig vom Winkel $\theta$ erwarten wir folgenden Zusammenhang:
 \begin{align}
@@ -68,7 +74,13 @@ Die Wellenlänge $\lambda$ kann aus der Lage des ersten Minimums bestimmt werden
 \begin{align}
 \lambda = \sin(\theta) b
 \end{align}
-$b$ ist dabei die Breite des Spaltes.
+$b$ ist dabei die Breite des Spaltes.\\
+Der Fehler für die Wellenlänge ist:
+\begin{align}
+\sigma_\lambda = \sqrt{
+\left(\cos(\theta)b \sigma_\theta\right)^2+
+\left(\sin(\theta) \sigma_b\right)^2}
+\end{align}
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
@@ -83,9 +95,14 @@ Der Durchmesser $D$ der Lochblende ist:
 \begin{align}
 D = \frac{3,8317 \lambda}{\sin(\theta)\pi}
 \end{align}
-$\lambda$ ist die Wellenlänge und $\theta$ der Winkel bis zum ersten Minimum.
-
-
+$\lambda$ ist die Wellenlänge und $\theta$ der Winkel bis zum ersten Minimum. Der Vorfaktor 3,8317 kommt aus der Besselfunktion $I_1$.\\
+Der zugehörige Fehler ist:
+\begin{align}
+\sigma_D = \sqrt{
+\left(\frac{3,8317}{\sin(\theta)\pi}\sigma_\lambda \right)^2+
+\left(\frac{3,8317\lambda}{\sin^2(\theta)\pi}\cos(\theta)
+\sigma_\theta \right)^2}
+\end{align}
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
@@ -94,9 +111,13 @@ $\lambda$ ist die Wellenlänge und $\theta$ der Winkel bis zum ersten Minimum.
 \subsection{Versuchsdurchführung}
 
 \subsubsection{Praktische Durchführung}
-Wir messen die Intensität des Doppelspaltes aus und stellen unsere Messergebnisse graphisch dar, sowie vergleichen sie mit der theoretischen Vorhersage.
+Wir messen die Intensität des Doppelspaltes aus und stellen unsere Messergebnisse graphisch dar, sowie vergleichen sie mit der theoretischen Vorhersage. Wir berechnen danach die Wellenlänge.
 \subsubsection{Theoretische Durchführung}
-
+Die Wellenlänge $\lambda$ berechnet sich durch:
+\begin{align}
+\lambda = \frac{2d \sin(\theta)}{2n-1}
+\end{align}
+$n$ ist die Ordung des Minimums, d der Abstand des Doppelspaltes.
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
@@ -105,22 +126,16 @@ Wir messen die Intensität des Doppelspaltes aus und stellen unsere Messergebnis
 \subsection{Versuchsdurchführung}
 
 \subsubsection{Praktische Durchführung}
-Bei dem in diesem Versuchsteil verwendeten Gitter liegt die Gitterkonstante im Bereich von ca. 10$^{-3}$cm. Daher kann das Lisensystem aus den ersten drei Versuchsteilen weggelassen werden. Wir bestimmen aus der Intensitätsverteilung und der Gitterkonstante $d$ die Wellenlänge des Laserlichtes.
+Bei dem in diesem Versuchsteil verwendeten Gitter liegt die Gitterkonstante im Bereich von ca. 10$^{-2}$cm. Wir bestimmen aus der Intensitätsverteilung und der Gitterkonstante $d$ die Wellenlänge des Laserlichtes.
 \subsubsection{Theoretische Durchführung}
-Die Wellenlänge bestimmen wir durch die Formel:
+Die Wellenlänge $\lambda$ bestimmen wir durch die Formel:
 \begin{align}
-\lambda = \sin(\theta) d
+n \lambda = \sin(\theta) d
 \end{align}
-$d$ ist die Gitterkonstante, $N$ die Anzahl der Spalte, $\Delta \theta$ die Winkeldifferenz zwischen zwei Minima und D die Länge des Gitters.
+$d$ ist die Gitterkonstante, $n$ die Ordnung des Maximums und $\theta$ die Winkeldifferenz zwischen Hauptmaximum und Nebenmaximum.
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
-
-\section{Versuch WO3.5: Erzeugung eines Beugungsmusters mit natürlichem Licht}
-\section{Messergebnisse}
-
-
-\section{Auswertung}
 
 
 \section{Fazit}
