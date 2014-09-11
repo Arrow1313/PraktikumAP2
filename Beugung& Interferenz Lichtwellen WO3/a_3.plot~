@@ -7,7 +7,7 @@ set ylabel "Intensitaetsverhältniss"
 #f(x) = m * (cos(x*a+b)**2)+c
 
 #a = 0.0001
-set sample 10000
+set sample 100000
 #fit f(x) "a_3.dat" using 1:2:3 via m,a,b,c
 f(x) = (sin(pi*0.25*sin(pi*x/180)/0.0005235977)*cos(pi*0.75*sin(pi*x/180)/0.0005235977)/(pi*0.25*sin(pi*x/180)/0.0005235977))**2
 
