@@ -48,21 +48,27 @@ Die Erscheinungen von Beugung und Interferenz sind grundlegend für die Wirkungs
 
 \subsubsection{Praktische Durchführung}
 Wir bauen den in Abbildung 
-%\ref{} Abbilung 17 aus der versuchsbeschreibung
+%\ref{} Abbilung 17 aus der versuchsbeschreibung oder besser eine eigene zeichnung
 skizzierten Versuchsaufbau mit Elementen der mikrooptischen Bank auf. Als Quelle für kohärente und ebene Wellen verwenden wir einen Neon-Helium-Gaslaser. Die Wellenlänge des Lichtes beträgt $\lambda$ = 0,6328 $\mu$m.
-Wir messen die Intensitätsverteilung des Beugungsmusters in der Ebene des Schirms mit einer Photozelle aus. Wir tragen dann $\frac{I_\theta}{I_0}$ graphisch auf und vergleichen die Messwerte mit der theoretischen Verteilung. Aus der Lage der ersten Minima betimmen wir die Wellenlänge $\lambda$.
+Wir messen die Intensitätsverteilung des Beugungsmusters in der Ebene des "Schirms" mit einem Intensitätsmessggerät aus. Wir tragen dann $\frac{I_\theta}{I_0}$ graphisch auf und vergleichen die Messwerte mit der theoretischen Verteilung. Aus der Lage der ersten Minima betimmen wir die Wellenlänge $\lambda$.
 \subsubsection{Theoretische Durchführung}
 Den Winkel $\theta$ berechnen wir im folgenden \textbf{immer} mit der Formel:
 \begin{align}
-\theta = X \frac{f_2}{f_1(b-f_2)}
+\theta = tan^{-1}(\frac{x}{L})
 \end{align}
-$X$ ist der Abstand zum Nullpunkt, $f_1$ die Brennweite der ersten Linse, $f_2$ die Brennweite der zweiten Linse und b der Abstand der zweiten Linse zum Schrim.
+wobei x der Abstand zum Hauptmaximum und L der Abstand des Gitters zum Intensitätsmessgerät ist.
+
+Für die Intensitätsverteilung $I_\theta$ Abhängig vom Winkel $\theta$ erwarten wir folgenden Zusammenhang:
 \begin{align}
 I_\theta = I_0 \left(\frac{\sin \left(\frac{\pi b \sin{\theta}}{\lambda}\right)}{\frac{\pi b \sin{\theta}}{\lambda}}\right)^2
 \end{align}
+$I_0$ ist die Intensität bei einer Auslekung von 0$^{\circ}$, $b$ die Breite des Spaltes und $\lambda$ die Wellenlänge des Lasers.
+
+Die Wellenlänge $\lambda$ kann aus der Lage des ersten Minimums bestimmt werden
 \begin{align}
 \lambda = \sin(\theta) b
 \end{align}
+$b$ ist dabei die Breite des Spaltes.
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
@@ -73,9 +79,13 @@ I_\theta = I_0 \left(\frac{\sin \left(\frac{\pi b \sin{\theta}}{\lambda}\right)}
 \subsubsection{Praktische Durchführung}
 Wir verwenden den gleichen Aufbau wie bei Versuch WO3.1. Für diesen Versuch bestimmen wir aus dem Durchmesser der Kreislinie des ersten Minimums den Durchmesser der Lochblende und vergleichen unser Ergebnis mit dem auf der Lochblende angegebenen Wert. Wir bestimmen danch die Winkeldivergenz des Lichtbündels unseres Lasers.
 \subsubsection{Theoretische Durchführung}
+Der Durchmesser $D$ der Lochblende ist:
 \begin{align}
 D = \frac{3,8317 \lambda}{\sin(\theta)\pi}
 \end{align}
+$\lambda$ ist die Wellenlänge und $\theta$ der Winkel bis zum ersten Minimum.
+
+
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
@@ -97,16 +107,11 @@ Wir messen die Intensität des Doppelspaltes aus und stellen unsere Messergebnis
 \subsubsection{Praktische Durchführung}
 Bei dem in diesem Versuchsteil verwendeten Gitter liegt die Gitterkonstante im Bereich von ca. 10$^{-3}$cm. Daher kann das Lisensystem aus den ersten drei Versuchsteilen weggelassen werden. Wir bestimmen aus der Intensitätsverteilung und der Gitterkonstante $d$ die Wellenlänge des Laserlichtes.
 \subsubsection{Theoretische Durchführung}
-$\theta$ berechnen wir mit der Formel:
-\begin{align}
-\theta = tan^{-1}(\frac{x}{L})
-\end{align}
-wobei x der Abstand zum Hauptmaximum und L der Abstand des Gitters zur Photozelle ist.
 Die Wellenlänge bestimmen wir durch die Formel:
 \begin{align}
-\lambda = \Delta\theta N d \cong \Delta \theta D
+\lambda = \sin(\theta) d
 \end{align}
-$d$ ist die Gitterkonstante, $N$ die Anzahl der Spalte, $\Delta \theta$ die Winkeldifferenz zwischen zwei Minima und D die Dicke des Gitters.
+$d$ ist die Gitterkonstante, $N$ die Anzahl der Spalte, $\Delta \theta$ die Winkeldifferenz zwischen zwei Minima und D die Länge des Gitters.
 \subsection{Auswertung}
 \subsection{Messergebnisse}
 \subsection{Diskussion}
