@@ -1,0 +1,139 @@
+
+
+*******************************************************************************
+Thu Sep 11 20:13:45 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [1.00000 : 14.0000]
+BREAK:          No data to fit 
+
+
+
+*******************************************************************************
+Thu Sep 11 20:14:35 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [0.00000 : 14.0000]
+        #datapoints = 14
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 521.044           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 31.9825
+
+initial set of free parameter values
+
+a               = 1
+
+After 19 iterations the fit converged.
+final sum of squares of residuals : 514.009
+rel. change during last iteration : -6.97258e-06
+
+degrees of freedom    (FIT_NDF)                        : 13
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.28802
+variance of residuals (reduced chisquare) = WSSR/ndf   : 39.5391
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.941126         +/- 0.04822      (5.123%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Thu Sep 11 20:16:32 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [0.00000 : 14.0000]
+        #datapoints = 14
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Thu Sep 11 20:16:55 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [0.00000 : 14.0000]
+        #datapoints = 14
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Thu Sep 11 20:17:12 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [0.00000 : 14.0000]
+        #datapoints = 14
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Thu Sep 11 20:17:30 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [1.00000 : 14.0000]
+BREAK:          No data to fit 
+
+
+
+*******************************************************************************
+Thu Sep 11 20:17:50 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [0.00000 : 14.0000]
+        #datapoints = 14
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Thu Sep 11 20:18:14 2014
+
+
+FIT:    data read from "a_1.dat" using 1:2:3
+        format = x:z:s
+	y range restricted to [0.00000 : 14.0000]
+        #datapoints = 14
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+

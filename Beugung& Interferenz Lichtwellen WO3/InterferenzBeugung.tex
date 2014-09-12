@@ -67,6 +67,7 @@ Der Fehler berechnet sich nach folgender Formel:
 Für die Intensitätsverteilung $I_\theta$ Abhängig vom Winkel $\theta$ erwarten wir folgenden Zusammenhang:
 \begin{align}
 I_\theta = I_0 \left(\frac{\sin \left(\frac{\pi b \sin{\theta}}{\lambda}\right)}{\frac{\pi b \sin{\theta}}{\lambda}}\right)^2
+\label{eqn:I_theta_Einzelspalt}
 \end{align}
 $I_0$ ist die Intensität bei einer Auslekung von 0$^{\circ}$, $b$ die Breite des Spaltes und $\lambda$ die Wellenlänge des Lasers.
 
@@ -148,8 +149,9 @@ Nach Gleichung \ref{eqn:lambda_a_1} soll die Wellenlänge des Lasers bestimmt we
 \end{figure}
 
 \subsection{Diskussion}
-Die bestimmte Wellenlänge liegt im $\sigma_2$ Intervall des erwarteten Wertes von 0,63$\mu$m. Die Abweichung kann daher kommen, das der Spalt nicht exakt Parallel zur Messapparatur eingestellt war.
-Die Messwerte liegen auf der linken Seite nah an der Theoriekurve, die Werte auf der rechten Seite Weichen stark ab. Die Abweichung zeigt sich auch in späteren Versuchsteilen. Es ist anzunehmen, dass die Lochblende des Laser auf der rechten Seite beschädigt ist, wodurch die Strahlen eine Streuung zur rechten Seite aufweisen und dort eine stärkere Intensität zu messen ist.
+Die bestimmte Wellenlänge liegt im $\sigma_2$ Intervall des erwarteten Wertes von 0,63$\mu$m. Die Abweichung kann daraus entstanden sein, dass der Spalt nicht exakt parallel zur Messapparatur eingestellt war.
+Die Messwerte liegen auf der linken Seite nah an der Theoriekurve, auf der rechten Seite weichen sie dagegen stark ab, sodass wir nur das linke Minimum zur Berechnung der Wellenlänge verwenden konnten. Die Abweichung zeigt sich auch in späteren Versuchsteilen. Es ist anzunehmen, dass die Lochblende des Lasers auf der rechten Seite beschädigt ist, wodurch die Strahlen eine Streuung zur rechten Seite aufwiesen und dort eine stärkere Intensität zu messen war.
+Die Theoriekurven wurden nach Formel \ref{eqn:I_theta_Doppelspalt} bestimmt und mit der angegebenen sowie der aus den Messwerten bestimmten Wellenlänge in den Plot der Daten eingefügt. Es ist unschwer zu erkennen, dass die über die gemessene Wellenlänge bestimmte Kurve besser zu unseren Messwerten passt, wobei der rechte Teil des Plots wie bereits erwähnt nicht zu beachten ist, da offensichtlich  systematische Fehler Einfluss auf unsere Messergebnisse hatten.
 
 
 \section{Versuch WO3.2: Beugungsmuster einer Kreisblende}
@@ -239,7 +241,8 @@ Es sollte der Durchmesser der Lochblende bestimmt werden, dafür wurde der Absta
 \end{figure}
 
 \subsection{Diskussion}
-Auf der Lochblende war ein Durchmesser von 0,2 mm angegeben, dieser Wert liegt erst im $\sigma_3$ Intervall des gemessenen Wertes. Diese Abweichung kann zum einen daher kommen, dass die Photozelle eine leichte Schrägstellung hat und zum anderen durch den defekt der Lochblende des Lasers, welcher auch in dieser Messung zu beobachten war.
+Auf der Lochblende war ein Durchmesser von 0,2 mm angegeben. Dieser Wert liegt erst im $\sigma_3$ Intervall des gemessenen Wertes, welcher nach Formel \ref{eqn:D} berechnet wurde. Diese Abweichung begründet sich dadurch, dass das Intensitätsmessgerät zum einen leicht um die
+Längsachse verdreht war, sodass zusätzliche Messungenauigkeiten entstanden sind, und zum anderen durch den Defekt der Lochblende des Lasers, welcher auch bei dieser Messung an der Intensitätsverteilung des Hauptmaximums zu beobachten war. Neben diesen Fehlern war bei dem Versuch auch die Streuung des Laserlichtes deutlich zu erkennen.
 
 
 \section{Versuch WO3.3: Beugungsmuster eines Doppelspaltes}
@@ -264,6 +267,7 @@ Der Fehler ergibt sich durch:
 Für die Intensitätsverteilung $I_\theta$ erwarten wir folgenden Zusammenhang:
 \begin{align}
 I_\theta = I_0\left(\frac{\sin\left(\frac{\pi b \sin(\theta)}{\lambda}\right)}{\frac{\pi b \sin(\theta)}{\lambda}}\cos\left(\frac{\pi d\sin(\theta)}{\lambda}\right)\right)^2
+\label{eqn:I_theta_Doppelspalt}
 \end{align}
 $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lambda$ die Wellenlänge des Lasers.
 
@@ -351,7 +355,7 @@ Graphisch ausgewertet ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:
 
 
 \subsection{Diskussion}
-Der erwartete Wert für die Wellenlänge war 0,63$\mu$m, dieser liegt innerhalb des $\sigma_1$ Intervalls, des gemessenen Wertes 0,069 $(\pm 0,008) \mu$m. Die Theoretische Vorhersage weicht stark vom den gemessenen Werten ab, dies betrifft jedoch nur die Amplitude, nicht die Position der Minima und Maxima. Der Fehler kommt daher, dass das Messgerät eine Begrenzung von 992 mV hat, dieser Umstand uns jedoch nicht bekannt war. Dieser Fehler hätte mit einem Intensitätsfilter behoben werden können.
+Der erwartete Wert für die Wellenlänge war 0,63$\mu$m, dieser liegt innerhalb des $\sigma_1$ Intervalls des gemessenen Wertes 0,069 $(\pm 0,008) \mu$m. Die Theoretische Vorhersage weicht stark von den gemessenen Werten ab, dies betrifft jedoch nur die Amplitude, nicht die Position der Minima und Maxima. Der Fehler kommt daher, dass das Messgerät eine Begrenzung bei 9920 mV hat, was wir einerseits während des Versuches nicht wussten und andererseits mit einem Intensitätsfilter hätte behoben werden können. Durch diesen Fehler ist $\frac{I_\theta}{I_0}$ ,wie man in Abbildung \ref{fig:a_3} gut erkennen kann, viel zu klein geraten. Wir haben zusätzliche theoretische Plots nach Formel \ref{eqn:I_theta_Doppelspalt} mit einem Korrekturfaktor von 4,75 in unsere Messdaten eingefügt, da man so viel besser erkennen kann, dass die theoretische Lage der Maxima und Minima wie bereits erwähnt gut zu den Messergebnissen passt. Dies haben wir für die angegebe, als auch für die aus den Messergebnissen berechnete Wellenlänge gemacht, wobei sich herausstellte, dass die gemessene Wellenlänge wie in Aufgabe 1 besser zu unseren Daten passte.
 
 \section{Versuch WO3.4: Beugungsmuster eines Gitters}
 \subsection{Versuchsdurchführung}
@@ -468,7 +472,7 @@ Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/m & Feh
 
 
 \subsection{Auswertung}
-Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls bestimmt werden. Dafür wurden Gleichung \ref{eqn:lambda_3} und Gleichung \ref{eqn:lambda_3_sigma} für den Fehler verwendet. Es ergab sich ein Wert von 0,69 $(\pm  0,08)\mu$m. Graphisch ausgewertet ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_4_m}).
+Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls bestimmt werden. Dafür wurden Gleichung \ref{eqn:lambda_3} und für den Fehler Gleichung \ref{eqn:lambda_3_sigma} verwendet. Es ergab sich ein Wert von 0,69 $(\pm  0,08)\mu$m. Graphisch ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_4_m}).
 
 \begin{figure}[H]
 \centering
@@ -479,12 +483,17 @@ Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls 
 
 
 \subsection{Diskussion}
-Der im Versuchsprotokoll angegebene Wert für die Wellenlänge des Laserlichts ist mit 0,63$\mu$m angegeben, dieser Wert liegt im $\sigma_1$ Intervall unseres Messwertes. Es wurde beim Hauptmaximum so wie beim ersten linke Nebenmaximum die Anzeigeskala überschritten. Das erste Nebenmaximum auf der rechten Seite beträgt von der Amplitude nur ein drittel des gemessenen Wertes des anderen ersten Nebenmaximums. Dieser Fehler war reproduzierbar mit dem von uns gewähltem Gitter. Aus zeitlichen Gründen konnten wir jedoch nicht ein anderes Gitter ausprobieren, somit kann nicht genau bestimmt werden, ob der Fehler von Gitter oder vom Laser kommt. Der Laser wurde vor der Messung noch justiert, da die Lage des Interferenzmusters zu niedrig war.
+Der im Versuchsprotokoll angegebene Wert für die Wellenlänge des Laserlichts ist mit 0,63$\mu$m angegeben, dieser Wert liegt im $\sigma_1$ Intervall unseres Messwertes. Die Lage des Lasers wurde vor der Messung nochmal justiert, da die Lage des Interferenzmusters zu niedrig war. Es wurde beim Hauptmaximum so wie beim ersten linken Nebenmaximum wie in Aufgabe 3 die Anzeigeskala überschritten. Das erste Nebenmaximum auf der rechten Seite beträgt von der Amplitude nur ein drittel des gemessenen Wertes des anderen ersten Nebenmaximums. Dieser Fehler war reproduzierbar mit dem von uns gewähltem Gitter. Neben dem bekannten Fehler unseres Lasers, dessen Einfluss wir nach der Justierung nicht mehr abschätzen konnten, kann nicht genau bestimmt werden, ob zusätzlich ein Fehler von unserem Gitter ausging, da wir keine Zeit für die Messung mit einem weiteren Gitter hatten.
 
 \section{Fazit}
 
 
- %Werte stimmen mit den Formeln überein/nicht überein
+In Aufgabe 1 gab es bei der Messung des Beugungsmusters des Einfachspaltes Probleme beim Einstellen des Lasers, da auf der rechten Seite kein Interferenzmuster zu erkennen war.
+In Abbildung \ref{fig:a_1} kann man diesen deutlichen Fehler gut erkennen, welcher warscheinlich auf eine defekte Lochblende zurückzuführen ist. Ebenso gab es in Aufgabe 4 Probleme bei der Messung der Maxima des Gitterinterferenzmusters, welche vermutlich auf die gleiche Ursache wie in Aufgabe 1 zurückzuführen sind. Der Laser wurde während der Messung gedreht, sodass der so verursachte Fehler das Messergebnis stark beeinträchtigt und der entstandene Fehler nicht aus der ersten Aufgabe abgeleitet werden konnte.
+In Aufgabe 3 und 4 haben wir für einige Maxima die gleiche Intensität gemessen, was daran liegt, dass unser Intensitätsmessgerät keine höheren Werte als 9920mV anzeigen konnte. Dies ist uns zu spät aufgefallen und hat zur Folge, dass wir in Aufgabe 3 und 4 einen zu kleinen Wert für $I_0$ gemessen haben.
+In Aufgabe 3 ist unsere Abweichung zum Vergleichswert ungewöhnlich groß, was auf verschiedene Ursachen wie z.B. die starke Steuung des Laserlichtes oder das nicht ganz runde Interferenzmuster zurückzuführen ist. Insgesamt sind die Resultate in diesem Versuch eher schlecht ausgefallen, da die Messung mit teilweise defekten Geräten durchgeführt werden musste.
+
+%Werte stimmen mit den Formeln überein/nicht überein
 
 \end{document}
 
