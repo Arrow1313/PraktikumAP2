@@ -30,6 +30,7 @@
  %deckblatt erstellen
 
 \maketitle
+\newpage
 \tableofcontents
 \newpage
 
@@ -87,7 +88,7 @@ Der Fehler für die Wellenlänge ist:
 \subsection{Messergebnisse}
 
 \begin{table}[H]
-\caption{Materinaleingschaften der Geräte aus der Messung zum Einzelspalt}
+\caption{Materialeingschaften der Geräte aus der Messung zum Einzelspalt}
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -103,7 +104,7 @@ Offset/mV & Fehler/mV & Spaltbreite/mm & Fehler/mm & Abstand/mm & Fehler/mm \\ \
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
-\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
+\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältnis} & \multicolumn{1}{l|}{Fehler} \\ \hline
 -0,59 & 0,02 & 0,01152 & 1E-006 \\ \hline
 -0,55 & 0,02 & 0,01344 & 2E-006 \\ \hline
 -0,50 & 0,02 & 0,00960 & 0,00002 \\ \hline
@@ -139,7 +140,7 @@ Offset/mV & Fehler/mV & Spaltbreite/mm & Fehler/mm & Abstand/mm & Fehler/mm \\ \
 
 
 \subsection{Auswertung}
-Nach Gleichung \ref{eqn:lambda_a_1} soll die Wellenlänge des Lasers bestimmt werden, der Fehler wird mit Gleichung \ref{eqn:lambda_a_1_sigma} berechnet. Dabei ergab sich ein Wert von 0,52 $(\pm 0,08) \mu$m. Graphisch ausgewertet ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1_e}).
+Nach Gleichung \ref{eqn:lambda_a_1} sollte die Wellenlänge des Lasers bestimmt werden, der Fehler wurde mit Gleichung \ref{eqn:lambda_a_1_sigma} berechnet. Dabei ergab sich ein Wert von 0,52 $(\pm 0,08) \mu$m. Graphisch ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1_e}).
 
 \begin{figure}[H]
 \centering
@@ -158,7 +159,7 @@ Die Theoriekurven wurden nach Formel \ref{eqn:I_theta_Doppelspalt} bestimmt und 
 \subsection{Versuchsdurchführung}
 
 \subsubsection{Praktische Durchführung}
-Wir verwenden den gleichen Aufbau wie bei Versuch WO3.1. Für diesen Versuch bestimmen wir aus dem Durchmesser der Kreislinie des ersten Minimums den Durchmesser der Lochblende und vergleichen unser Ergebnis mit dem auf der Lochblende angegebenen Wert. Wir bestimmen danch die Winkeldivergenz des Lichtbündels unseres Lasers.
+Wir verwenden den gleichen Aufbau wie bei Versuch WO3.1. Für diesen Versuch bestimmen wir aus dem Durchmesser der Kreislinie des ersten Minimums den Durchmesser der Lochblende und vergleichen unser Ergebnis mit dem auf der Lochblende angegebenen Wert. Wir bestimmen danach die Winkeldivergenz des Lichtbündels unseres Lasers.
 \subsubsection{Theoretische Durchführung}
 Der Durchmesser $D$ der Lochblende ist:
 \begin{align}
@@ -175,6 +176,12 @@ Der zugehörige Fehler ist:
 \label{eqn:D_sigma}
 \end{align}
 
+Die Winkeldivergenz $\xi$ berechnet sich durch die Formel:
+\begin{align}
+\xi = \tan^{-1}\left(\frac{\frac{X-x}{2}}{\Delta L}\right)
+\end{align}
+$\Delta L$ ist der Abstand der beiden Messorte voneinander, X der Durchmesser des weiter entfernten Punktes und x der Durchmesser des näher am Laser liegenden Punktes.
+$\xi$ gibt den Öffnungswinkel relativ zur Ausbreitungsrichtung an.
 
 \subsection{Messergebnisse}
 
@@ -231,19 +238,21 @@ Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hl
 
 
 \subsection{Auswertung}
-Es sollte der Durchmesser der Lochblende bestimmt werden, dafür wurde der Abstand zwischen den ersten beiden Minima verwendet und halbiert. Zur Berechnung des Durchmessers wurde Gleichung \ref{eqn:D} und Gleichung \ref{eqn:D_sigma} für den Fehler verwendet. Dabei ergab sich ein Wert von 0,30 $(\pm 0,05)$mm. Graphisch dargestellt ergibt sich die normierte Intensitätsverteilung (Werte aus Tabelle \ref{tab:a_2_m}).
+Es sollte der Durchmesser der Lochblende bestimmt werden, dafür wurde der Abstand zwischen den ersten beiden Minima verwendet und halbiert. Zur Berechnung des Durchmessers wurde Gleichung \ref{eqn:D} und Gleichung \ref{eqn:D_sigma} für den Fehler verwendet. Dabei ergab sich ein Wert von 0,30 $(\pm 0,05)$mm. Graphisch ergibt sich eine durch das Intensitätsmaximum $I_0$ normierte Intensitätsverteilung (Werte aus Tabelle \ref{tab:a_2_m}).
 
 \begin{figure}[H]
 \centering
     \includegraphics[scale = 1]{a_2.pdf}
-  	\caption[Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit theoretischer Vorhersage]{Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines}
+  	\caption[Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines (Punkte verbinden)]{Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines (Punkte verbinden)}
   \label{fig:a_2}
 \end{figure}
+
+%es fehlt noch die auswertung der Winkeldivergenz. was du machen musst habe ich in den Theorieteil eingefügt. in die diskussion hab ich auch schon einen Satz geschrieben.
 
 \subsection{Diskussion}
 Auf der Lochblende war ein Durchmesser von 0,2 mm angegeben. Dieser Wert liegt erst im $\sigma_3$ Intervall des gemessenen Wertes, welcher nach Formel \ref{eqn:D} berechnet wurde. Diese Abweichung begründet sich dadurch, dass das Intensitätsmessgerät zum einen leicht um die
 Längsachse verdreht war, sodass zusätzliche Messungenauigkeiten entstanden sind, und zum anderen durch den Defekt der Lochblende des Lasers, welcher auch bei dieser Messung an der Intensitätsverteilung des Hauptmaximums zu beobachten war. Neben diesen Fehlern war bei dem Versuch auch die Streuung des Laserlichtes deutlich zu erkennen.
-
+Die Winkeldivergenz haben wir an dem Laser der Nachbargruppe ausgemessen, da dieses bereits aus der Halterung gelöst war.
 
 \section{Versuch WO3.3: Beugungsmuster eines Doppelspaltes}
 \subsection{Versuchsdurchführung}
@@ -280,7 +289,7 @@ $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lam
 \hline
 Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm \\ \hline
 \multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{|r|}{0,1} & \multicolumn{1}{r|}{0,25} & \multicolumn{1}{r|}{0,05} \\ \hline
-Abstand schlitze/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hline
+Abstand schlitze/mm & Fehler/mm & Abstand/cm & Fehler/cm \\ \hline
 \multicolumn{1}{|r|}{0,75} & \multicolumn{1}{r|}{0,05} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
 \end{tabular}
 \end{center}
@@ -294,7 +303,7 @@ Abstand schlitze/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hline
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
-\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler/Grad} \\ \hline
+\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
 -0,8639 & 0,0001 & 0,0113762207 & 0,02 \\ \hline
 -0,8184 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
 -0,7729 & 0,0001 & 0,0053357495 & 0,02 \\ \hline
@@ -343,8 +352,8 @@ Abstand schlitze/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hline
 
 
 \subsection{Auswertung}
-In der dritten Aufgabe sollte der Intensitätsverlauf eines Doppelspaltes gemessen werden und nach Gleichung \ref{eqn:lambda_2} und Gleichung \ref{eqn:lambda_2_sigma} für den Fehler die Wellenlänge des Lasers bestimmt werden. Es ergab sich ein Werte von 0,069 $(\pm 0,008) \mu$m.
-Graphisch ausgewertet ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_3_m}).
+In der dritten Aufgabe sollte der Intensitätsverlauf eines Doppelspaltes gemessen werden und nach Gleichung \ref{eqn:lambda_2} (für den Fehler Gleichung \ref{eqn:lambda_2_sigma}) die Wellenlänge des Lasers bestimmt werden. Es ergab sich ein Wert von 0,069 $(\pm 0,008) \mu$m.
+Graphisch ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_3_m}).
 
 \begin{figure}[H]
 \centering
@@ -390,7 +399,7 @@ $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lam
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/m & Fehler/m \\ \hline
+Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/cm & Fehler/cm \\ \hline
 \multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{r|}{0,1} & \multicolumn{1}{r|}{80} & \multicolumn{1}{r|}{5} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
 \end{tabular}
 \end{center}
@@ -403,7 +412,7 @@ Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/m & Feh
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
-\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
+\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältnis} & \multicolumn{1}{l|}{Fehler} \\ \hline
 -1,14 & 0,02 & 0,0003 & 0,0001 \\ \hline
 -1,09 & 0,02 & 0,0003 & 0,0001 \\ \hline
 -1,05 & 0,02 & 0,0013 & 0,0001 \\ \hline
@@ -442,7 +451,7 @@ Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/m & Feh
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
-\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
+\multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältnis} & \multicolumn{1}{l|}{Fehler} \\ \hline
 0,05 & 0,02 & 0,3496 & 0,0005 \\ \hline
 0,09 & 0,02 & 0,0235 & 0,0001 \\ \hline
 0,14 & 0,02 & 0,0023 & 0,0001 \\ \hline
@@ -472,12 +481,12 @@ Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/m & Feh
 
 
 \subsection{Auswertung}
-Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls bestimmt werden. Dafür wurden Gleichung \ref{eqn:lambda_3} und für den Fehler Gleichung \ref{eqn:lambda_3_sigma} verwendet. Es ergab sich ein Wert von 0,69 $(\pm  0,08)\mu$m. Graphisch ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_4_m}).
+Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls bestimmt werden. Dafür wurde Gleichung \ref{eqn:lambda_3} und für den Fehler Gleichung \ref{eqn:lambda_3_sigma} verwendet. Es ergab sich ein Wert von 0,69 $(\pm  0,08)\mu$m. Graphisch ergibt sich der folgende Plot (Werte aus Tabelle \ref{tab:a_4_m}).
 
 \begin{figure}[H]
 \centering
     \includegraphics[scale = 1]{a_4.pdf}
-  	\caption[Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines]{Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines}
+  	\caption[Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines (Punkte verbinden)]{Plot des Intensitätsverhältnisses in Abhängigkeit des Winkels, mit smooth csplines (Punkte verbinden)}
   \label{fig:a_4}
 \end{figure}
 
