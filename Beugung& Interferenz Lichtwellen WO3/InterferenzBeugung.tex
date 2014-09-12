@@ -56,7 +56,7 @@ Der Versuchsaufbau besteht aus einer mikrooptischen Bank, auf der links der Lase
 \subsection{Versuchsdurchführung}
 
 \subsubsection{Praktische Durchführung}
-Wir bauen den in Abbildung 
+Wir bauen den in der folgenden Abbildung 
 %\ref{} Abbilung 17 aus der versuchsbeschreibung oder besser eine eigene zeichnung
 \begin{figure}[H] 
   \centering
@@ -193,11 +193,21 @@ Der zugehörige Fehler ist:
 
 Die Winkeldivergenz $\xi$ berechnet sich durch die Formel:
 \begin{align}
-\xi = \tan^{-1}\left(\frac{\frac{X-x}{2}}{\Delta L}\right)
+\xi = \tan^{-1}\left(\frac{X-x}{2 \Delta L}\right)
 \label{eqn:winkeldivergenz}
 \end{align}
 $\Delta L$ ist der Abstand der beiden Messorte voneinander, X der Durchmesser des weiter entfernten Punktes und x der Durchmesser des näher am Laser liegenden Punktes.
-$\xi$ gibt den Öffnungswinkel relativ zur Ausbreitungsrichtung an.
+$\xi$ gibt den Öffnungswinkel relativ zur Ausbreitungsrichtung an.\\
+Der Fehler berechnet sich nach der folgenden Formel:
+\begin{align}
+\sigma_\xi = \sqrt{
+\left(\frac{\sigma_X}{2 \Delta L\left(1+\left(\frac{X-x}{2 \Delta L}\right)^2\right)}
+\right)^2+
+\left(\frac{\sigma_x}{2 \Delta L\left(1+\left(\frac{X-x}{2 \Delta L}\right)^2\right)}
+\right)^2+
+\left(\frac{X-x}{2 (\Delta L)^2\left(1+\left(\frac{X-x}{2 \Delta L}\right)^2\right)}\sigma_{\Delta L}
+\right)^2}
+\end{align}
 
 \subsection{Messergebnisse}
 
@@ -284,7 +294,7 @@ Für die  Bestimmung der  der Winkeldivergenz wurde Gleichung \ref{eqn:winkeldiv
 \subsection{Diskussion}
 Auf der Lochblende war ein Durchmesser von 0,2 mm angegeben. Dieser Wert liegt erst im $\sigma_3$ Intervall des gemessenen Wertes, welcher nach Formel \ref{eqn:D} berechnet wurde. Diese Abweichung begründet sich dadurch, dass das Intensitätsmessgerät zum einen leicht um die
 Längsachse verdreht war, sodass zusätzliche Messungenauigkeiten entstanden sind, und zum anderen durch den Defekt der Lochblende des Lasers, welcher auch bei dieser Messung an der Intensitätsverteilung des Hauptmaximums zu beobachten war. Neben diesen Fehlern war bei dem Versuch auch die Streuung des Laserlichtes deutlich zu erkennen.
-Die Winkeldivergenz haben wir an dem Laser der Nachbargruppe ausgemessen, da dieses bereits aus der Halterung gelöst war und wir zu wenig Zeit für eine Eigene Messung hatten. Da wir für unseren Eigenen Laser nicht die Winkeldivergenz bestimmen konnten, ist nicht bekannt, ob die Lochblende des Lasers defekt war oder nicht.
+Die Winkeldivergenz haben wir an dem Laser der Nachbargruppe ausgemessen, da dieses bereits aus der Halterung gelöst war und wir zu wenig Zeit für eine Eigene Messung hatten. Da wir die Winkeldivergenz für unseren eigenen Laser nicht bestimmt haben, ist nicht bekannt, in welcher Weise die Lochblende defekt war.
 
 \section{Versuch WO3.3: Beugungsmuster eines Doppelspaltes}
 \subsection{Versuchsdurchführung}
@@ -461,7 +471,7 @@ Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/mm & Fe
 -0,55 & 0,02 & 0,0063 & 0,0001 \\ \hline
 -0,50 & 0,02 & 0,0043 & 0,0001 \\ \hline
 -0,45 & 0,02 & 0,0023 & 0,0001 \\ \hline
--0,41 & 0,02 & 0,0144 & 0,00018 \\ \hline
+-0,41 & 0,02 & 0,0144 & 0,0002 \\ \hline
 -0,36 & 0,02 & 0,2772 & 0,0002 \\ \hline
 -0,32 & 0,02 & 1,0000 & 0,0005 \\ \hline
 -0,27 & 0,02 & 0,4785 & 0,0003 \\ \hline
@@ -524,7 +534,7 @@ Aus der Intensitäsmessung des Gitters sollte die Wellenlänge des Laserstrahls 
 
 
 \subsection{Diskussion}
-Der im Versuchsprotokoll angegebene Wert für die Wellenlänge des Laserlichts ist mit 0,63$\mu$m angegeben, dieser Wert liegt im $\sigma_1$ Intervall unseres Messwertes. Die Lage des Lasers wurde vor der Messung nochmal justiert, da die Lage des Interferenzmusters zu niedrig war. Es wurde beim Hauptmaximum so wie beim ersten linken Nebenmaximum wie in Aufgabe 3 die Anzeigeskala überschritten. Das erste Nebenmaximum auf der rechten Seite beträgt von der Amplitude nur ein drittel des gemessenen Wertes des anderen ersten Nebenmaximums. Dieser Fehler war reproduzierbar mit dem von uns gewähltem Gitter. Neben dem bekannten Fehler unseres Lasers, dessen Einfluss wir nach der Justierung nicht mehr abschätzen konnten, kann nicht genau bestimmt werden, ob zusätzlich ein Fehler von unserem Gitter ausging, da wir keine Zeit für die Messung mit einem weiteren Gitter hatten.
+Der im Versuchsprotokoll angegebene Wert für die Wellenlänge des Laserlichts ist mit 0,63$\mu$m angegeben, dieser Wert liegt im $\sigma_1$ Intervall unseres Messwertes. Die Lage des Lasers wurde vor der Messung nochmal justiert, da die Lage des Interferenzmusters zu niedrig war. Es wurde beim Hauptmaximum so wie beim ersten linken Nebenmaximum wie in Aufgabe 3 die Anzeigeskala überschritten. Das erste Nebenmaximum auf der rechten Seite beträgt von der Amplitude nur ein drittel des gemessenen Wertes des anderen ersten Nebenmaximums. Dieser Fehler war reproduzierbar mit dem von uns gewählten Gitter. Neben dem bekannten Fehler unseres Lasers, dessen Einfluss wir nach der Justierung nicht mehr abschätzen konnten, kann nicht genau bestimmt werden, ob zusätzlich ein Fehler von unserem Gitter ausging, da wir keine Zeit für die Messung mit einem weiteren Gitter hatten.
 
 \section{Fazit}
 
