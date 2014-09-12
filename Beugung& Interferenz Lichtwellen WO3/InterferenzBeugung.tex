@@ -43,6 +43,14 @@ Die Erscheinungen von Beugung und Interferenz sind grundlegend für die Wirkungs
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
+Der Versuchsaufbau besteht aus einer mikrooptischen Bank, auf der links der Laser und rechts das Intensitätsmessgerät angebracht sind. Zwischen Laser und dem Messgerät ist eine Halterung für die Spalte.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.1]{versuchsaufbau.JPG}
+  	\caption[Foto des Versuchsaufbaus]{Foto des Versuchsaufbaus}
+  \label{fig:versuchsaufbau}
+\end{figure}
 
 \section{Versuch WO3.1: Beugungsmuster eines Einfachspaltes}
 \subsection{Versuchsdurchführung}
@@ -50,6 +58,13 @@ Die Erscheinungen von Beugung und Interferenz sind grundlegend für die Wirkungs
 \subsubsection{Praktische Durchführung}
 Wir bauen den in Abbildung 
 %\ref{} Abbilung 17 aus der versuchsbeschreibung oder besser eine eigene zeichnung
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 240mm 0mm 10mm, clip, scale = 1]{abb_17.pdf}
+  	\caption[Skizze des Aufbaus, auf der optische Bank]{Skizze des Aufbaus, auf der optische Bank\footnotemark}
+  \label{fig:abb_17}
+\end{figure}
+
 skizzierten Versuchsaufbau mit Elementen der mikrooptischen Bank auf. Als Quelle für kohärente und ebene Wellen verwenden wir einen Neon-Helium-Gaslaser. Die Wellenlänge des Lichtes beträgt $\lambda$ = 0,6328 $\mu$m.
 Wir messen die Intensitätsverteilung des Beugungsmusters in der Ebene des "Schirms" mit einem Intensitätsmessggerät aus. Wir tragen dann $\frac{I_\theta}{I_0}$ graphisch auf und vergleichen die Messwerte mit der theoretischen Verteilung. Aus der Lage der ersten Minima bestimmen wir die Wellenlänge $\lambda$.
 \subsubsection{Theoretische Durchführung}
@@ -118,7 +133,7 @@ Offset/mV & Fehler/mV & Spaltbreite/mm & Fehler/mm & Abstand/mm & Fehler/mm \\ \
 -0,14 & 0,02 & 0,02687 & 2E-006 \\ \hline
 -0,091 & 0,02 & 0,1440 & 2E-006 \\ \hline
 -0,045 & 0,02 & 0,5489 & 1E-005 \\ \hline
-0 & 0,0199205804 & 0,01000 & 1E-005 \\ \hline
+0 & 0,02 & 0,0100 & 1E-005 \\ \hline
 0,05 & 0,02 & 0,8656 & 2E-005 \\ \hline
 0,09 & 0,02 & 0,7543 & 1E-005 \\ \hline
 0,12 & 0,02 & 0,4511 & 1E-005 \\ \hline
@@ -179,6 +194,7 @@ Der zugehörige Fehler ist:
 Die Winkeldivergenz $\xi$ berechnet sich durch die Formel:
 \begin{align}
 \xi = \tan^{-1}\left(\frac{\frac{X-x}{2}}{\Delta L}\right)
+\label{eqn:winkeldivergenz}
 \end{align}
 $\Delta L$ ist der Abstand der beiden Messorte voneinander, X der Durchmesser des weiter entfernten Punktes und x der Durchmesser des näher am Laser liegenden Punktes.
 $\xi$ gibt den Öffnungswinkel relativ zur Ausbreitungsrichtung an.
@@ -190,7 +206,7 @@ $\xi$ gibt den Öffnungswinkel relativ zur Ausbreitungsrichtung an.
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hline
+Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm & Abstand/mm & Fehler/mm \\ \hline
 \multicolumn{1}{|r|}{-1,3} &  & \multicolumn{1}{r|}{0,25} & \multicolumn{1}{r|}{0,05} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
 \end{tabular}
 \end{center}
@@ -216,7 +232,7 @@ Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hl
 -0,14 & 0,02 & 0,109 & 0,001 \\ \hline
 -0,09 & 0,02 & 0,380 & 0,002 \\ \hline
 -0,045 & 0,02 & 0,768 & 0,006 \\ \hline
-0 & 0,02 & 1 & 0,007 \\ \hline
+0 & 0,02 & 1,000 & 0,007 \\ \hline
 0,045 & 0,02 & 0,932 & 0,007 \\ \hline
 0,09 & 0,02 & 0,642 & 0,006 \\ \hline
 0,14 & 0,02 & 0,245 & 0,005 \\ \hline
@@ -235,6 +251,21 @@ Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm & Abstand/m & Fehler/m \\ \hl
 \label{tab:a_2_m}
 \end{table}
 
+\begin{table}[H]
+\caption{Messdaten zur bestimmung der Winkeldivergenz}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Ausgang/mm & Fehler/mm \\ \hline
+\multicolumn{1}{|r|}{2} & \multicolumn{1}{r|}{2} \\ \hline
+Weitung/mm & Fehler/mm \\ \hline
+\multicolumn{1}{|r|}{12} & \multicolumn{1}{r|}{2} \\ \hline
+Abstand/mm & Fehler/mm \\ \hline
+\multicolumn{1}{|r|}{6100} & \multicolumn{1}{r|}{20} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2_w}
+\end{table}
 
 
 \subsection{Auswertung}
@@ -248,11 +279,12 @@ Es sollte der Durchmesser der Lochblende bestimmt werden, dafür wurde der Absta
 \end{figure}
 
 %es fehlt noch die auswertung der Winkeldivergenz. was du machen musst habe ich in den Theorieteil eingefügt. in die diskussion hab ich auch schon einen Satz geschrieben.
+Für die  Bestimmung der  der Winkeldivergenz wurde Gleichung \ref{eqn:winkeldivergenz}, es ergab sich eine Winkeldivergenz von 0,05 Grad.
 
 \subsection{Diskussion}
 Auf der Lochblende war ein Durchmesser von 0,2 mm angegeben. Dieser Wert liegt erst im $\sigma_3$ Intervall des gemessenen Wertes, welcher nach Formel \ref{eqn:D} berechnet wurde. Diese Abweichung begründet sich dadurch, dass das Intensitätsmessgerät zum einen leicht um die
 Längsachse verdreht war, sodass zusätzliche Messungenauigkeiten entstanden sind, und zum anderen durch den Defekt der Lochblende des Lasers, welcher auch bei dieser Messung an der Intensitätsverteilung des Hauptmaximums zu beobachten war. Neben diesen Fehlern war bei dem Versuch auch die Streuung des Laserlichtes deutlich zu erkennen.
-Die Winkeldivergenz haben wir an dem Laser der Nachbargruppe ausgemessen, da dieses bereits aus der Halterung gelöst war.
+Die Winkeldivergenz haben wir an dem Laser der Nachbargruppe ausgemessen, da dieses bereits aus der Halterung gelöst war und wir zu wenig Zeit für eine Eigene Messung hatten. Da wir für unseren Eigenen Laser nicht die Winkeldivergenz bestimmen konnten, ist nicht bekannt, ob die Lochblende des Lasers defekt war oder nicht.
 
 \section{Versuch WO3.3: Beugungsmuster eines Doppelspaltes}
 \subsection{Versuchsdurchführung}
@@ -289,8 +321,8 @@ $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lam
 \hline
 Offset/mV & Fehler/mV & Durchmesser/mm & Fehler/mm \\ \hline
 \multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{|r|}{0,1} & \multicolumn{1}{r|}{0,25} & \multicolumn{1}{r|}{0,05} \\ \hline
-Abstand schlitze/mm & Fehler/mm & Abstand/cm & Fehler/cm \\ \hline
-\multicolumn{1}{|r|}{0,75} & \multicolumn{1}{r|}{0,05} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
+Abstand schlitze/mm & Fehler/mm & Abstand/mm & Fehler/mm \\ \hline
+\multicolumn{1}{|r|}{0,75} & \multicolumn{1}{r|}{0,05} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{20} \\ \hline
 \end{tabular}
 \end{center}
 \label{tab:a_3_e}
@@ -304,47 +336,47 @@ Abstand schlitze/mm & Fehler/mm & Abstand/cm & Fehler/cm \\ \hline
 \begin{tabular}{|r|r|r|r|}
 \hline
 \multicolumn{1}{|l|}{Auslenkung/Grad} & \multicolumn{1}{l|}{Fehler/Grad} & \multicolumn{1}{l|}{Intensitätsverhältniss} & \multicolumn{1}{l|}{Fehler} \\ \hline
--0,8639 & 0,0001 & 0,0113762207 & 0,02 \\ \hline
--0,8184 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
--0,7729 & 0,0001 & 0,0053357495 & 0,02 \\ \hline
--0,7275 & 0,0001 & 0,0174166918 & 0,02 \\ \hline
--0,6820 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
--0,6365 & 0,0001 & 0,0103694755 & 0,01 \\ \hline
--0,5911 & 0,0001 & 0,0244639082 & 0,02 \\ \hline
--0,5456 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
--0,5001 & 0,0001 & 0,0194301822 & 0,02 \\ \hline
--0,4547 & 0,0001 & 0,0405718313 & 0,02 \\ \hline
--0,4092 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
--0,3637 & 0,0001 & 0,0435920668 & 0,02 \\ \hline
--0,3183 & 0,0001 & 0,0848686198 & 0,02 \\ \hline
--0,2728 & 0,0001 & 0,0033222591 & 0,02 \\ \hline
--0,2273 & 0,0001 & 0,1311788986 & 0,02 \\ \hline
--0,1819 & 0,0002 & 0,242927615 & 0,02 \\ \hline
--0,1364 & 0,0001 & 0,0113762207 & 0,02 \\ \hline
--0,0909 & 0,0007 & 0,9073794423 & 0,02 \\ \hline
--0,0454 & 0,0007 & 1 & 0,01 \\ \hline
-0 & 0,0007 & 1 & 0,02 \\ \hline
-0,0454 & 0,0007 & 1 & 0,02 \\ \hline
-0,0909 & 0,0005 & 1 & 0,01 \\ \hline
-0,1364 & 0,0001 & 0,0214436726 & 0,02 \\ \hline
-0,1819 & 0,0001 & 0,1563475284 & 0,02 \\ \hline
-0,2273 & 0,0001 & 0,1221181919 & 0,02 \\ \hline
-0,2728 & 0,0001 & 0,0043290043 & 0,02 \\ \hline
-0,3183 & 0,0001 & 0,0647337159 & 0,02 \\ \hline
-0,3637 & 0,0001 & 0,0375515957 & 0,02 \\ \hline
-0,4092 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
-0,4547 & 0,0001 & 0,0315111245 & 0,02 \\ \hline
-0,5002 & 0,0001 & 0,0164099466 & 0,02 \\ \hline
-0,5456 & 0,0001 & 0,0013087688 & 0,02 \\ \hline
-0,5911 & 0,0001 & 0,0194301822 & 0,02 \\ \hline
-0,6366 & 0,0001 & 0,0103694755 & 0,02 \\ \hline
-0,6820 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
-0,7275 & 0,0001 & 0,0133897111 & 0,02 \\ \hline
-0,7729 & 0,0001 & 0,0053357495 & 0,02 \\ \hline
-0,8185 & 0,0001 & 0,0013087688 & 0,02 \\ \hline
-0,8639 & 0,0001 & 0,0073492399 & 0,02 \\ \hline
-0,9094 & 0,0001 & 0,0023155139 & 0,02 \\ \hline
-0,9548 & 0,0001 & 0,0013087688 & 0,02 \\ \hline
+-0,8639 & 0,0001 & 0,011 & 0,002 \\ \hline
+-0,8184 & 0,0001 & 0,002 & 0,002 \\ \hline
+-0,7729 & 0,0001 & 0,005 & 0,002 \\ \hline
+-0,7275 & 0,0001 & 0,017 & 0,002 \\ \hline
+-0,6820 & 0,0001 & 0,002 & 0,002 \\ \hline
+-0,6365 & 0,0001 & 0,010 & 0,001 \\ \hline
+-0,5911 & 0,0001 & 0,024 & 0,002 \\ \hline
+-0,5456 & 0,0001 & 0,002 & 0,002 \\ \hline
+-0,5001 & 0,0001 & 0,019 & 0,002 \\ \hline
+-0,4547 & 0,0001 & 0,041 & 0,002 \\ \hline
+-0,4092 & 0,0001 & 0,002 & 0,002 \\ \hline
+-0,3637 & 0,0001 & 0,044 & 0,002 \\ \hline
+-0,3183 & 0,0001 & 0,085 & 0,002 \\ \hline
+-0,2728 & 0,0001 & 0,003 & 0,002 \\ \hline
+-0,2273 & 0,0001 & 0,131 & 0,002 \\ \hline
+-0,1819 & 0,0002 & 0,243 & 0,002 \\ \hline
+-0,1364 & 0,0001 & 0,011 & 0,002 \\ \hline
+-0,0909 & 0,0007 & 0,907 & 0,002 \\ \hline
+-0,0454 & 0,0007 & 1,000 & 0,001 \\ \hline
+0 & 0,0007 & 1,000 & 0,002 \\ \hline
+0,0454 & 0,0007 & 1,000 & 0,002 \\ \hline
+0,0909 & 0,0005 & 1,000 & 0,001 \\ \hline
+0,1364 & 0,0001 & 0,021 & 0,002 \\ \hline
+0,1819 & 0,0001 & 0,156 & 0,002 \\ \hline
+0,2273 & 0,0001 & 0,122 & 0,002 \\ \hline
+0,2728 & 0,0001 & 0,004 & 0,002 \\ \hline
+0,3183 & 0,0001 & 0,065 & 0,002 \\ \hline
+0,3637 & 0,0001 & 0,038 & 0,002 \\ \hline
+0,4092 & 0,0001 & 0,002 & 0,002 \\ \hline
+0,4547 & 0,0001 & 0,032 & 0,002 \\ \hline
+0,5002 & 0,0001 & 0,016 & 0,002 \\ \hline
+0,5456 & 0,0001 & 0,001 & 0,002 \\ \hline
+0,5911 & 0,0001 & 0,019 & 0,002 \\ \hline
+0,6366 & 0,0001 & 0,010 & 0,002 \\ \hline
+0,6820 & 0,0001 & 0,002 & 0,002 \\ \hline
+0,7275 & 0,0001 & 0,013 & 0,002 \\ \hline
+0,7729 & 0,0001 & 0,005 & 0,002 \\ \hline
+0,8185 & 0,0001 & 0,001 & 0,002 \\ \hline
+0,8639 & 0,0001 & 0,007 & 0,002 \\ \hline
+0,9094 & 0,0001 & 0,002 & 0,002 \\ \hline
+0,9548 & 0,0001 & 0,001 & 0,002 \\ \hline
 \end{tabular}
 \end{center}
 \label{tab:a_3_m}
@@ -399,8 +431,8 @@ $b$ ist dabei die Breite der Spalte, $d$ der Abstand der beiden Spalte und $\lam
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/cm & Fehler/cm \\ \hline
-\multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{r|}{0,1} & \multicolumn{1}{r|}{80} & \multicolumn{1}{r|}{5} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{0,02} \\ \hline
+Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/mm & Fehler/mm \\ \hline
+\multicolumn{1}{|r|}{-1,3} & \multicolumn{1}{r|}{0,1} & \multicolumn{1}{r|}{80} & \multicolumn{1}{r|}{5} & \multicolumn{1}{r|}{1260} & \multicolumn{1}{r|}{20} \\ \hline
 \end{tabular}
 \end{center}
 \label{tab:a_4_m}
@@ -431,14 +463,14 @@ Offset/mV & Fehler/mV & Gitterkonstante/(1/cm) & Fehler/(1/cm) & Abstand/cm & Fe
 -0,45 & 0,02 & 0,0023 & 0,0001 \\ \hline
 -0,41 & 0,02 & 0,0144 & 0,00018 \\ \hline
 -0,36 & 0,02 & 0,2772 & 0,0002 \\ \hline
--0,32 & 0,02 & 1 & 0,0005 \\ \hline
+-0,32 & 0,02 & 1,0000 & 0,0005 \\ \hline
 -0,27 & 0,02 & 0,4785 & 0,0003 \\ \hline
 -0,23 & 0,02 & 0,0124 & 0,0001 \\ \hline
 -0,18 & 0,02 & 0,0073 & 0,0001 \\ \hline
 -0,15 & 0,01 & 0,0073 & 0,0005 \\ \hline
 -0,09 & 0,02 & 0,0184 & 0,0005 \\ \hline
 -0,05 & 0,02 & 0,1725 & 0,0005 \\ \hline
-0 & 0,02 & 1 & 0,0007 \\ \hline
+0 & 0,02 & 1,0000 & 0,0007 \\ \hline
 \end{tabular}
 \end{center}
 \label{tab:a_4_e_a}
