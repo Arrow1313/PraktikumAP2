@@ -48,11 +48,71 @@ Ladungseinheit, nämlich die Elementarladung $e$ gibt. Im Jahr 1909 gelang es R.
 
 
 \subsection{Praktische Durchführung}
-
+Mithilfe des Milikangerätes und zwei Stoppuhren bestimmen wir in diesem Versuch die Ladung einiger Öltröpfchen, welche im homogenen E-Feld eines Plattenkondensators zum schweben gebracht werden. Unsere Versuchsergebnisse sollen danach in einem Histogramm visualisiert werden
 
 \subsection{Theoretische Durchführung}
-
-
+Die Ladung $Q$ eines Öltrößfchens bestimmen wir nach folgender Gleichung:
+\begin{align}
+Q = (v_1+v_2)\sqrt{\frac{v_1 \eta^3}{2\rho g}} \frac{18 \pi d}{U}
+\end{align}
+Dabei ist $\eta = 1,81\cdot10^{-5}\frac{Ns}{m^2}$ die Viskosität von Luft, $v_1$ die Fallgeschwindigkeit im Feldfreien Raum mit Stokessscher Reibungskraft, $v_2$ die Steiggeschwindigkeit der Öltröpfchen im homogenen E-Feld, $U$ die Spannung, die am Plattenkondensator anliegt, $\rho = 874 \frac{kg}{m^3}$ die Dichte von Öl abzüglich der Dichte von Luft, $g = 9,81 \frac{m}{s^2}$ die Erdbeschleunigung und $ d = 6\cdot10^{-3} m$ der Plattenabstand.\\
+$v_1$ und $v_2$ bestimmen wir, da sie über die gemessene Strecke durch die Reibungskraft Konstant gehalten werden über die mittlere Änderung:
+\begin{align}
+v = 1,875\frac{\Delta x}{\Delta t}
+\end{align}
+Der Vorfaktor 1,875 resultiert aus der Vergrößerung des Objektivs, wobei $x = n*10^{-4}m$ durch die Anzahl der Überstrichenen Skalenteile $n$ bestimmt werden kann.\\
+Für den Fehler gilt:
+\begin{align}
+\sigma_v = 1,875 \sqrt{
+\left(\frac{\sigma_{\Delta x}}{\Delta t}\right)^2+
+\left(\frac{\Delta x}{(\Delta t)^2}\sigma_{\Delta t}\right)^2}
+\end{align}
+Es ergibt sich folgende Rechnung:
+\begin{align}
+Q = (v_1+v_2)\frac{\sqrt{v_1}}{U}\cdot2\cdot10^{-10} \text{C}
+\end{align}
+Der Fehler berechnet sich durch:
+\begin{align}
+\sigma_Q = \sqrt{
+\left(\left(\frac{3 \sqrt{v_1}}{2 U} + \frac{v_2}{U2\sqrt{v_1}}
+\right)\sigma_{v_1}\right)^2+
+\left(\frac{\sqrt{v_1}}{U}\sigma_{v_2}\right)^2+
+\left((v_1+v_2)\frac{\sqrt{v_1}}{U^2}\sigma_{U}\right)^2}
+\cdot2\cdot10^{-10}\text{C}
+\end{align}
+Da die Stokesreibung für Tröpfchen in der Größenordnung der mittleren freien Weglänge zwischen Luftmolekülen nicht mehr exakt gilt benutzen wir zum Schluss einen Korrekturfaktor für unsere Ladung, der in der Versuchsanleitung angegeben ist.\\
+Wir berechnen unsere korrigierte Ladung $Q_k$ nach folgender Formel:
+\begin{align}
+Q_k = \frac{Q}{\left(1+\frac{b}{rp}\right)^{\frac{3}{2}}}
+\end{align}
+$ b = 6,33 \cdot \text{mbar m}$ ist dabei der Korrekturfaktor, $r$ der Radius des Öltröpfchens und $p$ der gemessene Druck in mbar.\\
+Es ergibt sich damit ein Fehler von:
+\begin{align}
+\sigma_{Q_k} = \sqrt{
+\left(\frac{\sigma_Q}{\left(1+\frac{b}{rp}\right)^{\frac{3}{2}}}\right)^2+
+\left(\frac{3Q}{2\left(1+\frac{b}{rp}\right)^{\frac{5}{2}}}\frac{b}{rp^2}\sigma_p\right)^2+
+\left(\frac{3Q}{2\left(1+\frac{b}{rp}\right)^{\frac{5}{2}}}\frac{b}{r^2p}\sigma_r\right)^2
+}
+\end{align}
+Für diesen Korrekturfaktor muss zusätzlich der Radius des Öltröpfchen bekannt sein, sowie der Druck!
+Den Radius $r$ der Öltröpfchen kann näherungsweise nach folgender Formel bestimmt werden, welche sich aus den Kräften ergibt:
+\begin{align}
+r = \sqrt{\frac{9\eta v_1}{2\rho g}}
+\end{align}
+Da wie bereits erwähnt die Kräfte mit einem Fehler behaftet sind, ist der so bestimmte Radius (gleiche Fehlerquelle wie bei der Ladung) ebenfalls etwas zu groß. Der Korrekturfaktor für die Viskosität ist jedoch vom Radius abhängig, sodass sich eine genauere Formel zur Berechnung des eigentlichen Radius, durch Einsetzen von 
+\begin{align}
+\eta_{\text{neu}} = \frac{\eta_{\text{alt}}}{1+\frac{b}{rp}}
+\end{align} 
+anstelle von $\eta = \eta_{alt}$ in die voherige Formel, ergibt:
+\begin{align}
+r_k = -\frac{b}{2p}+\sqrt{\frac{b^2}{4p^2}+\frac{9\eta v_1}{2\rho g}}
+\end{align}
+Der Fehler für den korrigierten Radius $r_k$ ergibt sich dann mit:
+\begin{align}
+\sigma_{r_k} = \sqrt{
+\left(\frac{b}{2p^2}\left(1+\frac{b}{p\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\right)\sigma_p\right)^2+
+\left(\frac{9\eta}{2\rho g\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\sigma_{v_1}\right)^2}
+\end{align}
 \section{Messergebnisse}
 
 
