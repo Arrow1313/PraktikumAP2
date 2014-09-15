@@ -63,9 +63,9 @@ v = 1,875\frac{\Delta x}{\Delta t}
 Der Vorfaktor 1,875 resultiert aus der Vergrößerung des Objektivs, wobei $x = n*10^{-4}m$ über die Anzahl der überstrichenen Skalenteile $n$ bestimmt wird.\\
 Für den Fehler gilt:
 \begin{align}
-\sigma_v = 1,875 \sqrt{
-\left(\frac{\sigma_{\Delta x}}{\Delta t}\right)^2+
-\left(\frac{\Delta x}{(\Delta t)^2}\sigma_{\Delta t}\right)^2}
+\delta_v = 1,875 \sqrt{
+\left(\frac{\delta_{\Delta x}}{\Delta t}\right)^2+
+\left(\frac{\Delta x}{(\Delta t)^2}\delta_{\Delta t}\right)^2}
 \end{align}
 Es ergibt sich folgende Rechnung:
 \begin{align}
@@ -73,11 +73,11 @@ Q = (v_1+v_2)\frac{\sqrt{v_1}}{U}\cdot2\cdot10^{-10} \text{C}
 \end{align}
 Der Fehler berechnet sich durch:
 \begin{align}
-\sigma_Q = \sqrt{
+\delta_Q = \sqrt{
 \left(\left(\frac{3 \sqrt{v_1}}{2 U} + \frac{v_2}{U2\sqrt{v_1}}
-\right)\sigma_{v_1}\right)^2+
-\left(\frac{\sqrt{v_1}}{U}\sigma_{v_2}\right)^2+
-\left((v_1+v_2)\frac{\sqrt{v_1}}{U^2}\sigma_{U}\right)^2}
+\right)\delta_{v_1}\right)^2+
+\left(\frac{\sqrt{v_1}}{U}\delta_{v_2}\right)^2+
+\left((v_1+v_2)\frac{\sqrt{v_1}}{U^2}\delta_{U}\right)^2}
 \cdot2\cdot10^{-10}\text{C}
 \end{align}
 Da die Stokesreibung für Tröpfchen in der Größenordnung der mittleren freien Weglänge zwischen Luftmolekülen nicht mehr exakt gilt benutzen wir zum Schluss einen Korrekturfaktor für unsere Ladung, der in der Versuchsanleitung angegeben ist.\\
@@ -88,10 +88,10 @@ Q_k = \frac{Q}{\left(1+\frac{b}{rp}\right)^{\frac{3}{2}}}
 $ b = 6,33 \cdot \text{mbar m}$ ist dabei der aus der Versuchsbeschreibung entnommene Korrekturfaktor, $r$ der Radius des Öltröpfchens und $p$ der in mbar gemessene Druck.\\
 Es ergibt sich damit ein Fehler von:
 \begin{align}
-\sigma_{Q_k} = \sqrt{
-\left(\frac{\sigma_Q}{\left(1+\frac{b}{rp}\right)^{\frac{3}{2}}}\right)^2+
-\left(\frac{3Q}{2\left(1+\frac{b}{rp}\right)^{\frac{5}{2}}}\frac{b}{rp^2}\sigma_p\right)^2+
-\left(\frac{3Q}{2\left(1+\frac{b}{rp}\right)^{\frac{5}{2}}}\frac{b}{r^2p}\sigma_r\right)^2
+\delta_{Q_k} = \sqrt{
+\left(\frac{\delta_Q}{\left(1+\frac{b}{rp}\right)^{\frac{3}{2}}}\right)^2+
+\left(\frac{3Q}{2\left(1+\frac{b}{rp}\right)^{\frac{5}{2}}}\frac{b}{rp^2}\delta_p\right)^2+
+\left(\frac{3Q}{2\left(1+\frac{b}{rp}\right)^{\frac{5}{2}}}\frac{b}{r^2p}\delta_r\right)^2
 }
 \end{align}
 Für diesen Korrekturfaktor muss zusätzlich der Radius des Öltröpfchen bekannt sein, sowie der Druck!
@@ -109,9 +109,9 @@ r_k = -\frac{b}{2p}+\sqrt{\frac{b^2}{4p^2}+\frac{9\eta v_1}{2\rho g}}
 \end{align}
 Der Fehler für den korrigierten Radius $r_k$ ergibt sich dann mit:
 \begin{align}
-\sigma_{r_k} = \sqrt{
-\left(\frac{b}{2p^2}\left(1+\frac{b}{p\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\right)\sigma_p\right)^2+
-\left(\frac{9\eta}{2\rho g\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\sigma_{v_1}\right)^2}
+\delta_{r_k} = \sqrt{
+\left(\frac{b}{2p^2}\left(1+\frac{b}{p\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\right)\delta_p\right)^2+
+\left(\frac{9\eta}{2\rho g\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\delta_{v_1}\right)^2}
 \end{align}
 \section{Messergebnisse}
 
