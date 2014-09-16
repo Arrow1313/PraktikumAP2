@@ -100,6 +100,7 @@ Für den Fehler gilt:
 Es ergibt sich folgende Rechnung:
 \begin{align}
 Q = (v_1+v_2)\frac{\sqrt{v_1}}{U}\cdot2\cdot10^{-10} \text{C}
+\label{eqn:q}
 \end{align}
 Der Fehler berechnet sich durch:
 \begin{align}
@@ -109,6 +110,7 @@ Der Fehler berechnet sich durch:
 \left(\frac{\sqrt{v_1}}{U}\delta_{v_2}\right)^2+
 \left((v_1+v_2)\frac{\sqrt{v_1}}{U^2}\delta_{U}\right)^2}
 \cdot2\cdot10^{-10}\text{C}
+\label{eqn:q_sigma}
 \end{align}
 Da die Stokesreibung für Tröpfchen in der Größenordnung der mittleren freien Weglänge zwischen Luftmolekülen nicht mehr exakt gilt benutzen wir zum Schluss einen Korrekturfaktor für unsere Ladung, der in der Versuchsanleitung angegeben ist.\\
 Wir berechnen unsere korrigierte Ladung $Q_k$ nach folgender Formel:
@@ -138,12 +140,14 @@ Da wie bereits erwähnt die Kräfte mit einem Fehler behaftet sind, ist der so b
 anstelle von $\eta = \eta_{alt}$ in die voherige Formel, ergibt:
 \begin{align}
 r_k = -\frac{b}{2p}+\sqrt{\frac{b^2}{4p^2}+\frac{9\eta v_1}{2\rho g}}
+\label{eqn:r_k}
 \end{align}
 Der Fehler für den korrigierten Radius $r_k$ ergibt sich dann mit:
 \begin{align}
 \delta_{r_k} = \sqrt{
 \left(\frac{b}{2p^2}\left(1+\frac{b}{p\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\right)\delta_p\right)^2+
 \left(\frac{9\eta}{2\rho g\sqrt{\frac{b^2}{p^2}+\frac{18\eta v_1}{\rho g}}}\delta_{v_1}\right)^2}
+\label{eqn:r_k_sigma}
 \end{align}
 \section{Messergebnisse}
 
@@ -267,8 +271,9 @@ $\rho_\text{L}$/(kg/m$^3$) & $\rho$/(kg/m$^3$) \\ \hline
 \end{table}
 
 
+
 \begin{table}[H]
-\caption{Ergebnisse die aus den Messwerten bestimmt wurden, der Fehler des Radiuses ergab sich mit 2E-010}
+\caption{Ergebnisse die aus den Messwerten bestimmt wurden, der Fehler des Radiuses ergab sich mit 2E-010. Der Radius wurde mit Gleichung \ref{eqn:r_k} und der Fehler mit Gleichung \ref{eqn:r_k_sigma} bestimmt. Für die Ladung wurden Gleichung \ref{eqn:q} und Gleichung \ref{eqn:q_sigma} für den Fehler verwendet. Die korrigierte Ladung wurde mit Gleichung \ref{eqn:q_r} und der Fehler mit Gleichung \ref{eqn:q_r_sigma} bestimmt.}
 \begin{center}
 \begin{tabular}{|r|r|r|r|r|r|}
 \hline
