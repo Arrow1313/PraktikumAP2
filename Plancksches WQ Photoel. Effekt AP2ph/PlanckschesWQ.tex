@@ -69,7 +69,21 @@ Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne S
 \item Wir benutzen dann die Transmissionsfilter (Graufilter), um die Intensitätsabhängigkeit der Stoppspannung zu messen.
 \end{enumerate}
 \subsection{Verwendete Formeln}
+\textbf{Verwendete Bezeichnungen:}
+\begin{enumerate}
+\item $U_0$ := Stoppspannung\\ (Kann am $\frac{h}{e}$-Gerät abgelesen werden, da dieses sich wie ein Kondensator verhält, sodass ab einer bestimmten Spannung keine weiteren Elektronen von der Anode aufgenommen werden können.)
+\item $h$ := Plancksches Wirkungsquantum\\
+(soll in diesem Versuch bestimmt werden)
+\item $e$ := Elemetarladung
+(Wird in diesem Versuch ohne Fehler angenommen wird, da dieser im Vergleich zu unserer Messung Verschwindend gering ist. $e$= 1,602176...$\cdot10^{-19}C$)
+\item $W_0$ := Auslösearbeit\\
+(Wird benötigt wird, um die Elektronen von der Materialoberfläche zu lösen)
 
+\end{enumerate}
+\textbf{Nach der Einsteinschen Formel ergibt sich für die Stoppspannung die folgende Beziehung:}
+\begin{align}
+U_0 = \frac{h}{e}\nu + \frac{W_0}{e}
+\end{align}
 \subsection{Messergebnisse}
 \subsection{Auswertung}
 %Du musst bei dieser aufgabe beachten, was in der auswertung steht!
@@ -81,6 +95,30 @@ Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne S
 Die Photozelle und der Eingang des Meßverstärkers im h/e-Apparat bilden einen kleinen Kondensator, der durch den Photostrom aufgeladen und durch Leckströme im Meßverstärker entladen wird.
 Wir wollen aus der Halbwertszeit für den Auf- und Entladevorgang, sowie der Stoppspannung $U_0$ die Kondensatorkapazität und den Photostrom abschätzen. Die Entladekurven haben wir mit einem Oszilloskop vermessen, da unsere Leckströme sehr groß waren.
 \subsubsection{Verwendete Formeln}
+\textbf{Verwendete Bezeichnungen:}
+\begin{enumerate}
+\item $I_{ph}$ := Photonenstrom
+\item $U_0$ := Stoppspannung
+\item $R$ := 'Aufladewiderstand'\\
+(Modellhaft wird der Kondensator über einen Widerstand aufgeladen, trivialerweise ergibt sich der verwendete Zusammenhang aus der zugehörigen Differentialgleichung)
+\item $t_{1/2_a}$ := Halbwertszeit des Aufladevorgangs
+\item $C_{\frac{h}{e}}$ := Kapazität des $\frac{h}{e}$-Gerätes
+\item $t_{1/2_e}$ := Halbwertszeit des Entladevorgangs
+\item $R_i$ := Innenwiderstand des $\frac{h}{e}$-Gerätes\\
+(Der Widerstand charakterisiert die auftretenden Leckströme im $\frac{h}{e}$-Gerät. Er wurde in der Versuchsanleitung mit ca. 10$^{13}\omega$ geschätzt. Da wir sehr große Leckströme hatten und unser Gerät sehr alt ist, ist der Widerstand  mittlerweile warscheinlich viel kleiner. Der daraus errechnete Photostrom gibt deshalb nur die Größenordnung, in der wir uns befinden, an.)
+\end{enumerate}
+\textbf{Aus den beiden Halbwertszeiten für den Auf- und Entladevorgang und der Stoppspannung bestimmen wir den Photostrom nach der folgenden Formel:}
+\begin{align}
+I_{ph} = \frac{U_0}{R}
+\end{align}
+Dazu muss einerseits der 'Aufladewiderstand'
+\begin{align}
+R = \frac{t_{1/2_a}}{\ln(2)C_{\frac{h}{e}}}
+\end{align}
+und andererseits die Kapazität unseres $\frac{h}{e}$-Gerätes bestimmt werden.
+\begin{align}
+C_{\frac{h}{e}} = \frac{t_{1/2_e}}{\ln(2)R_i}
+\end{align}
 \subsubsection{Messergebnisse}
 \subsubsection{Auswertung}
 \subsubsection{Diskussion}
