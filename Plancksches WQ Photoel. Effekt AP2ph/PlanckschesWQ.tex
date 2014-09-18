@@ -348,9 +348,30 @@ Der Fehler ergibt nach der Formel:
 \left(\frac{c \cdot h \cdot e}{(U_0\cdot e + W_0)^2}\delta_{U_0}\right)^2+
 \left(\frac{c \cdot h}{(U_0\cdot e + W_0)^2}\delta_{W_0}\right)^2}
 \end{align}
+
+
 \subsubsection{Messergebnisse}
+\begin{table}[htbp]
+\caption{Messung zur Bestimmung der Wellenlängen der Fehler der Stoppspannung wurde mit 0,06V angenommen}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Stopspannung/V} \\ \hline
+Rot & 0,55 \\ \hline
+Gelb & 0,64 \\ \hline
+Grün & 1,06 \\ \hline
+Blau & 1,39 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2.2}
+\end{table}
+
 \subsubsection{Auswertung}
+Es wurden die Wellenlängen für rotes, gelbes, grünes und blaues Licht bestimmt, dafür wurde Gleichung ?? und Gleichung ?? für den Fehler verwendet. Dabei wurde die Lichtgeschwindigkeit mit 299792458/(m/s) angenommen. Für rotes Licht ergab sich eine Wellenlänge von 596 $\pm$71nm, für gelbes Licht 566 $\pm$65m, für grünes Licht 461 $\pm$47nm und für blaues Licht 402 $\pm$38nm.
+
 \subsubsection{Diskussion}
+Erwartet wurde für rotes Licht ein Wert von 645nm unserer Wert weicht um 7,6\% ab. Für gelbes Licht wurde ein Wert von 583nm erwartet, der von uns bestimmte Wert weicht um  2,9\% ab. Bei grünem Licht wurde eine Wellenlänge von 565nm erwartet, unser Wert weicht um 18,4\% ab. Bei blauem Licht wird eine Wellenlänge von 470nm erwartet der von bestimmte Wert weicht um 14,5\% ab. Die großen Abweichungen erklären sich wieder über großen Leckströme, da wir die Daten aus Aufgabe 1 zur Bestimmung verwendet haben.
+
 
 \subsection{3. Quantenausbeute der Photozelle und Lichtleistung}
 Nicht jedes erzeugte Photoelektron gelangt zur Anode, wenn -- wie in unserem Versuchsaufbau -- die
@@ -418,9 +439,88 @@ Mit einem Fehler von:
 \begin{align}
 \delta_{P_{Licht}} = \frac{h\cdot f\cdot \delta_{I_k}}{e}
 \end{align}
+
 \subsubsection{Messergebnisse}
+\begin{table}[H]
+\caption{Messung zur Bestimmung der Quantenausbeute, und der Lichtleistung.}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Strom/$\mu$A} & \multicolumn{1}{l|}{Fehler/$\mu$A} \\ \hline
+Ultraviolett & 0,06 & 0,01 \\ \hline
+Violett & 0,07 & 0,01 \\ \hline
+Blau & 0,09 & 0,01 \\ \hline
+Grün & 0,08 & 0,01 \\ \hline
+Gelb & 0,11 & 0,01 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2.3}
+\end{table}
+
+\begin{table}[H]
+\caption{Aus dem Graphen abgelesene Korrekturwerte}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Zusätzlicher Korrekturfaktor in \%} \\ \hline
+Ultraviolett & 7 \\ \hline
+Violett & 11 \\ \hline
+Blau & 27 \\ \hline
+Grün & 43 \\ \hline
+Gelb & 54 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2_3_k}
+\end{table}
+
+\begin{table}[H]
+\caption{Anzahl der Elektronen pro Zeiteinheit.}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+\multicolumn{1}{|l|}{Anzahl} & \multicolumn{1}{l|}{Fehler} \\ \hline
+4 & 1 \\ \hline
+3,9 & 0,6 \\ \hline
+3,2 & 0,3 \\ \hline
+2,6 & 0,2 \\ \hline
+4,3 & 0,1 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2_3_a}
+\end{table}
+
+
 \subsubsection{Auswertung}
+In der letzten Aufgabe sollte die Quantenausbeute so wie die Lichtleistung bestimmt werden. Dazu wurde der mit der Photodiode gemessene Strom zuerst mit dem Korrekturfaktor $\frac{1}{0,88}$ multipliziert und dann mit den jeweiligen spezifischen Korrekturfaktoren multipliziert (Tabelle \ref{tab:a_2_3_k}. Die dabei bestimmten Quantenausbeuten ergeben das folgende Diagramm.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_2_2.pdf}
+  	\caption[Graphische Darstellung der Quantenausbeute für verschiedenen Wellenlängen]{Graphische Darstellung der Quantenausbeute für verschiedenen Wellenlängen}
+  \label{fig:a_2_3}
+\end{figure}
+
+Dabei wurden die Messwert mit einer Konstanten gefittet, dabei ergab sich ein Wert von 0,66$\cdot 10^{-6}$. Nach Gleichung ?? wurde die Lichtleistung berechnet, es ergeben sich die folgende Werte.
+
+\begin{table}[H]
+\caption{Berechnete Lichtleistungen}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Leistung/W} & \multicolumn{1}{l|}{Fehler/W} \\ \hline
+Ultraviolett & 1,4E-007 & 0,3E-007 \\ \hline
+Violett & 1,8E-007 & 0,3E-007 \\ \hline
+Blau & 3,4E-007 & 0,3E-007 \\ \hline
+Grün & 3,6E-007 & 0,2E-007 \\ \hline
+Gelb & 7,1E-007 & 0,2E-007 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2_3_l}
+\end{table}
+
+
 \subsubsection{Diskussion}
+Da wir Leider keine Referenzwerte erhalten haben, bzw. keine gefunden haben können wir keine Aussage darüber treffe, wie gut unsere Messwerte sind. Es wurde jedoch erwähnt, dass die Messung sehr ungenau ist.
 
 \section{Fazit}
 
