@@ -92,14 +92,14 @@ Konstante $h$}
 
 
 \subsection{Praktische Durchführung}
-Das Quantenmodell des Lichts besagt, dass die maximale Energie $E_{kin,max}$ von Photoelektronen nur von der Frequenz des einfallenden Lichts abhängt und von der Lichtintensität unabhängig ist.
-Dagegen sagt das klassische Wellenmodell des Lichts voraus, dass die maximale Energie $E_{kin,max}$ der Photoelektronen von der Lichtintensität abhängt.
+Das Quantenmodell des Lichts besagt, dass die maximale Energie $E_{kin,max}$ von Photoelektronen nur von der Frequenz des einfallenden Lichtes abhängt und von der Lichtintensität unabhängig ist.
+Dagegen sagt das klassische Wellenmodell des Lichtes voraus, dass die maximale Energie $E_{kin,max}$ der Photoelektronen von der Lichtintensität abhängt.
 Entsprechend dem Quantenmodell des Lichts ist die Energie der Lichtquanten direkt proportional zu ihrer Frequenz: Je höher die Frequenz, desto mehr Energie hat das Quant. Beim Experimentieren wollen wir den Proportionalitätsfaktor, die Plancksche Konstante, bestimmen.
-Wir werden dazu unterschiedliche Spektrallinien der Quecksilberdampflampe verwenden und die Maximalenergie $E_{kin,max}$ der Photoelektronen als Funktion der Wellenlänge und Frequenz untersuchen:
+Wir werden dazu unterschiedliche Spektrallinien der Quecksilberdampflampe verwenden und die Maximalenergie $E_{kin,max}$ der Photoelektronen bzw die Stoppspannung $U_0$ ($U_0\cdot e = E_{kin,max}$) als Funktion der Wellenlänge und Frequenz untersuchen:
 \begin{enumerate}
 \item Im (Gitter-)Spektrum der Quecksilberdampflampe sehen wir 5 Farben in mindestens 2 Ordnungen.
 %Abbildung 5 aus der versuchsbeschreibung mit den ordnungen einfügen
-Wir stellen nun den h/e-Apparat so ein, daß nur eine Farbe aus dem Spektrum erster Ordung (die zweithellste Ordnung) in die Öffnung der Photozelle fällt.
+Wir stellen nun den h/e-Apparat so ein, dass nur eine Farbe aus dem Spektrum erster Ordung in die Öffnung der Photozelle fällt.
 \item Wir messen für jede Farbe der ersten Ordnung die Stoppspannung mit dem Digitalvoltmeter und setzen den
 Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne Spektrallinie vermessen.
 \item Danach wiederholen wir die Messung für die fünf Farben zweiter Ordnung.
@@ -108,13 +108,15 @@ Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne S
 \subsection{Verwendete Formeln}
 \textbf{Verwendete Bezeichnungen:}
 \begin{enumerate}
-\item $U_0$ := Stoppspannung\\ (Kann am $\frac{h}{e}$-Gerät abgelesen werden, da dieses sich wie ein Kondensator verhält, sodass ab einer bestimmten Spannung keine weiteren Elektronen von der Anode aufgenommen werden können.)
+\item $U_0$ := Stoppspannung\\ (Kann über ein DMM am $\frac{h}{e}$-Gerät abgelesen werden, da dieses sich wie ein Kondensator verhält, sodass ab einer bestimmten Spannung keine weiteren Elektronen von der Anode aufgenommen werden können.)
 \item $h$ := Plancksches Wirkungsquantum\\
 (soll in diesem Versuch bestimmt werden)
 \item $e$ := Elemetarladung
-(Wird in diesem Versuch ohne Fehler angenommen wird, da dieser im Vergleich zu unserer Messung Verschwindend gering ist. $e$= 1,602176...$\cdot10^{-19}C$)
+(Wird in diesem Versuch ohne Fehler angenommen wird, da dieser im Vergleich zu unserer Messung verschwindend gering ist. $e$= 1,602176...$\cdot10^{-19}C$)
 \item $W_0$ := Auslösearbeit\\
 (Wird benötigt wird, um die Elektronen von der Materialoberfläche zu lösen)
+\item $Y_0$ := Y-Achsenabschnitt
+\item
 
 \end{enumerate}
 \textbf{Nach der Einsteinschen Formel ergibt sich für die Stoppspannung die folgende Beziehung:}
@@ -122,7 +124,21 @@ Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne S
 U_0 = \frac{h}{e}\nu + \frac{W_0}{e}
 \label{enq:stop}
 \end{align}
-
+Es ergibt sich:
+\begin{align}
+W_0 = Y_0\cdot e
+\end{align}
+und
+\begin{align}
+h = m\cdot e
+\end{align}
+sowie die Fehler:
+\begin{align}
+\delta_{W_0} = \delta_{Y_0\cdot e}
+\end{align}
+\begin{align}
+\delta_h = \delta_m\cdot e
+\end{align}
 \subsection{Messergebnisse}
 \begin{table}[htbp]
 \caption{Frequenz der verschiedenen Farben.}
@@ -175,7 +191,7 @@ Gelb & 0,60 \\ \hline
 \end{table}
 
 \begin{table}[H]
-\caption{Messung der Stoppspannung in Abhängigkeit der Intänsität für grünes Licht, der Fehler für die Stoppspannung wurde mit 0,06V angenommen}
+\caption{Messung der Stoppspannung in Abhängigkeit der Intensität für grünes Licht, der Fehler für die Stoppspannung wurde mit 0,06V angenommen}
 \begin{center}
 \begin{tabular}{|r|r|}
 \hline
@@ -198,11 +214,11 @@ In der ersten Aufgabe sollte die Stoppspannung in Abhängigkeit der Frequenz gra
 \begin{figure}[H]
 \centering
     \includegraphics[scale = 1]{a_1_1.pdf}
-  	\caption[Plot der Stoppspannung, in Abhängigkeit der Frequenz]{Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand}
+  	\caption[Plot der Stoppspannung, in Abhängigkeit der Frequenz]{Plot der Stoppspannung, in Abhängigkeit der Frequenz}
   \label{fig:a_3_A}
 \end{figure}
 
-Die Regressionsgerade ergab mit U($\nu$)=3,46E-015 $\pm 2,35E-016 \nu$-1,19 $\pm 0,1583$, das reduzierte $\chi^2$ ergab sich mit 1,00175.
+Die Regressionsgerade ergab U($\nu$)=3,46E-015 $\pm 2,35E-016 \nu$-1,19 $\pm 0,1583$, das reduzierte $\chi^2$ ergab sich mit 1,00175.
 
 \newpage
 Für die 2. Ordnung ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1_2}).
@@ -210,7 +226,7 @@ Für die 2. Ordnung ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1
 \begin{figure}[H]
 \centering
     \includegraphics[scale = 1]{a_1_2.pdf}
-  	\caption[Plot der Stoppspannung, in Abhängigkeit der Frequenz]{Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand}
+  	\caption[Plot der Stoppspannung, in Abhängigkeit der Frequenz]{Plot der Stoppspannung, in Abhängigkeit der Frequenz}
   \label{fig:a_3_A}
 \end{figure}
 
@@ -218,7 +234,7 @@ Die Regressionsgerade ergab mit U($\nu$)=3,33E-015 $\pm 2,19E-016 \nu$-1,2 $\pm 
 
 Aus der Steigung und dem y-Achsenabschnitt der Regressionsgerade sollten das Plancksche Wirkungsquantum und die Austrittsarbeit bestimmt werden. Für die Messungen der 1. Ordnung wurde das Plancksche Wirkungsquantum mit 5,5E-034 $\pm 0,4E-034$ Js und die Austrittsarbeit mit -1,9E-019 $\pm 0,3E-019$ J. Für die Messung der 2. Ordnung wurde h mit 5,33E-034 $\pm 0,35E-034$ Js und die Austrittsarbeit mit -1,9E-019 $\pm 0,2E-019$ bestimmt.
 
-Zum Schluss der Messung wurde noch die Abhängigkeit der Stoppspannung von der Intensität dazu wurde ein 20\%, 40\%, 60\%, 80\% und 100\% durchlässiger Intensitätsfilter  verwendet. Die Messdaten finden sich in Tabelle \ref{tab:intänsität}. Die abfallende Stoppspannung entsteht offensichtlich durch Leckströme unseres h/e-Geräts (der 'Kondensator' entlädt sich schneller, als der Aufladevorgang durch den Photostrom).
+Zum Schluss der Messung wurde noch die Abhängigkeit der Stoppspannung von der Intensität gemessen. Dazu wurde ein 20\%, 40\%, 60\%, 80\% und 100\% durchlässiger Intensitätsfilter  verwendet. Die Messdaten finden sich in Tabelle \ref{tab:intänsität}. Die abfallende Stoppspannung entsteht offensichtlich durch Leckströme unseres h/e-Geräts (der 'Kondensator' entlädt sich schneller, als der Aufladevorgang durch den Photostrom).
 
 \subsection{Diskussion}
 Das Plancksche Wirkungsquantum hat einen Literaturwert von 6,6$\cdot 10^{-34}$ Js\footnote{Entnommen von http://de.wikipedia.org/wiki/Plancksches\_Wirkungsquantum am  18.09.2014 um 16:15 Uhr}, unserer Wert für die Messung der 1. Ordnung Messung weicht um 16,6\% ab. Der Wert aus der Messung der 2. Ordnung weicht um 19,7\% ab. Diese große  Abweichung erklärt sich über die großen Leckströme, wodurch die von uns gemessene Spannung nicht die echte Stoppspannung ist und wir eine zu geringe Spannung gemessen haben. Der lineare Zusammenhang wird von dem Messdaten bestätigt, dies ist an den Werten der $\chi^2$ zu erkennen.
@@ -231,7 +247,8 @@ Wir wollen aus der Halbwertszeit für den Auf- und Entladevorgang, sowie der Sto
 \subsubsection{Verwendete Formeln}
 \textbf{Verwendete Bezeichnungen:}
 \begin{enumerate}
-\item $I_{ph}$ := Photonenstrom
+\item $I_{photo}$ := Photostrom\\
+(Oder Photoelektronenstrom --> hiermit ist ein elektrischer Strom gemeint.)
 \item $U_0$ := Stoppspannung
 \item $R$ := 'Aufladewiderstand'\\
 (Modellhaft wird der Kondensator über einen Widerstand aufgeladen, trivialerweise ergibt sich der verwendete Zusammenhang aus der zugehörigen Differentialgleichung)
@@ -243,7 +260,7 @@ Wir wollen aus der Halbwertszeit für den Auf- und Entladevorgang, sowie der Sto
 \end{enumerate}
 \textbf{Aus den beiden Halbwertszeiten für den Auf- und Entladevorgang und der Stoppspannung bestimmen wir den Photostrom nach der folgenden Formel:}
 \begin{align}
-I_{ph} = \frac{U_0}{R}
+I_{photo} = \frac{U_0}{R}
 \label{eqn:i_ph}
 \end{align}
 Dazu muss einerseits der 'Aufladewiderstand'
@@ -258,7 +275,7 @@ C_{\frac{h}{e}} = \frac{t_{1/2_e}}{\ln(2)R_i}
 \end{align}
 Die Fehler berechnen sich nach den folgenden Formeln:
 \begin{align}
-\delta_{I_{ph}}= \sqrt{
+\delta_{I_{photo}}= \sqrt{
 \left(\frac{\delta_{U_0}}{R}\right)^2+
 \left(\frac{U_0}{R^2}\delta_R\right)^2}
 \label{eqn:i_ph_delta}
@@ -296,20 +313,41 @@ t/ms & Fehler/ms \\ \hline
 
 
 \subsubsection{Auswertung}
-Zur Bestimmung des Photostroms wurde der Widerstand benötigt, dieser wurde über die Kapazität, welche nach Gleichung \ref{eqn:C} und der Fehler nach Gleichung \ref{eqn:c_delta} bestimmt wurden. Der Widerstand wurde dann nach Gleichung \ref{eqn:R} und der Fehler nach Gleichung \ref{eqn:r_delta} bestimmt. Daraus wurde dann nach Gleichung \ref{eqn:i_ph} der Photostrom berechnet, der Fehler wurde mit Gleichung \ref{eqn:i_ph_delta} bestimmt. Für die Kapazität ergab sich ein Wert von 1,30E-014	$\pm 0,05E-014$F, für den Widerstand ergab sich ein Wert von 4,0E014 $\pm 0,2E014 \Omega$, daraus wurde ein Photostrom vom 3,6E-014 $\pm 0,2E-014$A berechnet.
+Zur Bestimmung des Photostroms wurde der Widerstand benötigt, dieser wurde über die Kapazität, welche nach Gleichung \ref{eqn:C} und der Fehler nach Gleichung \ref{eqn:c_delta} errechnet wurden, bestimmt. Der Widerstand wurde dann nach Gleichung \ref{eqn:R} und der Fehler nach Gleichung \ref{eqn:r_delta} bestimmt. Daraus wurde nach Gleichung \ref{eqn:i_ph} der Photostrom berechnet und der Fehler mit Gleichung \ref{eqn:i_ph_delta} bestimmt. Für die Kapazität ergab sich ein Wert von 1,30E-014	$\pm 0,05E-014$F, für den 'Aufladewiderstand' ergab sich ein Wert von 4,0E014 $\pm 0,2E014 \Omega$. Daraus wurde ein Photostrom vom 3,6E-014 $\pm 0,2E-014$A berechnet.
 
 \subsubsection{Diskussion}
-Da wir sehr große Leckströme hatten und unser Gerät sehr alt ist, ist der Widerstand  mittlerweile warscheinlich viel kleiner. Der daraus errechnete Photostrom gibt deshalb nur die Größenordnung, in der wir uns befinden, an.
+Da wir sehr große Leckströme vermuten und unser Gerät sehr alt zu sein schien, ist der in der Versuchsanleitung angegebene Widerstand  mittlerweile warscheinlich viel kleiner. Der daraus errechnete Photostrom sollte deshalb nur die Größenordnung, in der wir uns befinden, angeben. Trotzdem ist der bestimmte Wert sehr klein, was wir uns nur durch die bereits angesprochenen Leckströme sowie den mittlerweile veralteten Wert für den Widerstand des $\frac{h}{e}$-Gerätes erklären können. Durch zu große Leckströme verursachte Messfehler wurden bereits im 4. Teil der 1. Aufgabe angesprochen.
 
 
 \subsection{2. Die Photozelle als Spektrometer}
 Es stehen uns verschiedene Leuchtdioden zur Verfügung. Diese schließen wir an ein Netzgerät an.
-(Strom etwa 20 mA, wird durch einen Widerstand bzw. Regler im Anschlußstecker begrenzt), Es ist zu beachten, dass Leuchtdioden -- wie gewöhnliche Dioden auch -- nur in einer Stromrichtung arbeiten.
+(Strom etwa 20 mA, wird durch einen Widerstand bzw. Regler im Anschlussstecker begrenzt)
 Wir befestigen die Leuchtdioden nacheinander in der 5-mm-Bohrung einer Kunststoffhalterung und schieben die Halterung waagerecht so über den weißen Schirm des h/e-Apparates, dass das Licht auf die Photozelle gelangen kann. Wir bestimmen dann die jeweiligen Stoppspannungen.
 Mit den Ergebnissen aus Versuchsteil 1 können wir, durch Messung der Stoppspannung, die Wellenlänge des Lichtes bestimmen. Diese vergleichen wir mit den Wellenlängen, welche in den Datenblättern der Leuchtdioden angegeben sind. (siehe auch Beschriftung an den Leuchtdioden):
 rot = 645 nm, gelb = 583 nm, grün = 565 nm, blau = 470 nm.
 %Erklären Sie die Abweichungen zum Literaturwert.
 \subsubsection{Verwendete Formeln}
+\textbf{Verwendete Bezeichnungen:}
+\begin{enumerate}
+\item $\lambda$ := Wellenlänge des Lichtes
+\item $c$ := Lichtgeschwindigkeit\\
+(Verwendet wurde der Literaturwert)
+\item $h$ := Plancksches WQ\\
+(Verwendet wurde der in Aufgabe 1 bestimmte Wert)
+\item $U_0$ := gemessene Stoppspannung\\
+(Für jede Diode wird die Stoppspannung wie in Aufgabe 1 gemessen)
+\textbf{Die Wellenlängen berechnen wir nach der folgenden Formel, welche sich aus der Einsteinschen Formel ergibt:}
+\end{enumerate}
+\begin{align}
+\lambda = \frac{c \cdot h}{U_0\cdot e + W_0}
+\end{align}
+Der Fehler ergibt nach der Formel:
+\begin{align}
+\delta_{\lambda} = \sqrt{
+\left(\frac{c \cdot\delta_h}{U_0\cdot e + W_0}\right)^2+
+\left(\frac{c \cdot h \cdot e}{(U_0\cdot e + W_0)^2}\delta_{U_0}\right)^2+
+\left(\frac{c \cdot h}{(U_0\cdot e + W_0)^2}\delta_{W_0}\right)^2}
+\end{align}
 \subsubsection{Messergebnisse}
 \subsubsection{Auswertung}
 \subsubsection{Diskussion}
@@ -318,7 +356,7 @@ rot = 645 nm, gelb = 583 nm, grün = 565 nm, blau = 470 nm.
 Nicht jedes erzeugte Photoelektron gelangt zur Anode, wenn -- wie in unserem Versuchsaufbau -- die
 Photozelle ohne hohe Vorspannung betrieben wird. Die Zahl der im Photostrom nachgewiesenen Photoelektronen ist viel kleiner als die Anzahl der einfallenden Lichtquanten. %(warum?)
 Wir wollen das Verhältnis zwischen der Anzahl $N_{ph}$ der Photonen (Lichtquanten), die von der Lichtquelle ausgehend in die Photozelle einfallen, zur
-Anzahl $N_{e,Zelle}$ der Elektronen, die von diesen Photonen in der Photozelle produziert werden und den Photostrom bewirken, abschätzen, also: Quantenausbeute = $\frac{N_{e,Zelle}} {N_{ph}}$.
+Anzahl $N_{e,Zelle}$ der Elektronen, die von diesen Photonen in der Photozelle produziert werden und den Photostrom bewirken, abschätzen, also: Quantenausbeute = $\frac{N_{e,Zelle}}{N_{ph}}$.
 Dazu verwenden wir folgendes Verfahren: Für diese Messung steht uns eine Halbleiter-Photodiode zur Verfügung. Eine solche Photodiode besteht aus einem kleinen Halbleiterkristall. Fällt Licht auf die strahlungsempfindliche Fläche (hier 2, 75 $\times$ 2, 75 mm groß), so werden durch den inneren Photoeffekt Ladungsträger erzeugt, es fließt ebenfalls ein Photostrom. In der Photodiode erzeugt fast jedes einfallende Photon ein Elektron: bei einer Wellenlänge von 850 nm werden
 etwa 88 Elektronen pro 100 Lichtquanten erzeugt, für andere Wellenlängen ist das Verhältnis geringer.
 Die folgende Abbildung zeigt die Abhängigkeit der relativen spektralen Empfindlichkeit für unseren Photodioden-
@@ -329,9 +367,57 @@ Wir schließen die Photodiode an ein Digitalmultimeter an, Messbereich 200 $\mu$
 Wir Klappen daher das Lichtschutzrohr zur Seite
 und halten die Photodiode vor der Photozelle in das Licht der Spektrallinie.
 Wir messen den Photostrom für diese und die anderen Spektrallinien.
-Wir können jetzt vom Photostrom der Photodiode auf die Zahl der Elektronen und daraus -- je nach Wellenlänge -- auf die Anzahl der Photonen (pro Zeitintervall) schließen. Wir nehmen an, dass die Öffnung an der Photozelle etwa so groß ist wie die Fläche der Photodiode, d.h. beide erhalten etwa gleich viel Photonen — vorausgesetzt, beide haben den gleichen Abstand zur Lichtquelle. Den Photostrom der Photozelle haben wir in Teil 1 abgeschätzt. Hiermit bestimmen wir die Quantenausbeute der Photozelle. Wir haben die Anzahl der Photonen (pro Zeitintervall) bestimmt; aus der Wellenlänge und der Planckschen Konstanten können wir die Energie jedes Photons berechnen. Wir bestimmen wir die Lichtleistung, die mit den einzelnen Spektrallinien auf die Photozelle gelangt.
+Wir können jetzt vom Photostrom der Photodiode auf die Zahl der Elektronen und daraus -- je nach Wellenlänge -- auf die Anzahl der Photonen (pro Zeitintervall) schließen. Wir nehmen an, dass die Öffnung an der Photozelle etwa so groß ist wie die Fläche der Photodiode, d.h. beide erhalten etwa gleich viel Photonen — vorausgesetzt, beide haben den gleichen Abstand zur Lichtquelle. Den Photostrom der Photozelle haben wir in Teil 1 abgeschätzt. Hiermit bestimmen wir die Quantenausbeute der Photozelle. Zuerst bestimmen wir die Anzahl der Photonen (pro Zeitintervall), aus der Wellenlänge und der Planckschen Konstanten können wir dann die Energie jedes Photons berechnen. Wir bestimmen die Lichtleistung, die mit den einzelnen Spektrallinien auf die Photozelle gelangt.
 
 \subsubsection{Verwendete Formeln}
+\textbf{Verwendete Bezeichnungen:}
+\begin{enumerate}
+\item $I_k$ := Photoelektronenstrom\\
+(Der Strom der Photoelektronen wird aus dem Diagramm in der Versuchsanleitung sowie mit dem an der \textbf{Photodiode} gemessenen Photostrom bestimmt. Den Photonenstrom, also die Anzahl der Photonen pro Zeitintervall erhält man nach teilen durch die Elementarladung.)
+\item $I_{Diode}$ := gemessener Diodenstrom\\
+(bzw. Photostrom der \textbf{Photodiode})
+\item $\Gamma(\lambda)$ := Korrekturfaktor\\
+(Wird am Graph für die relative Empfindlichkeit der Photodiode abhängig von der Wellenlänge abgelesen.)
+\item $\frac{N_{e,Zelle}}{N_{ph}}$ := Quantenausbeute
+\item $I_{photo}$ := Photostrom\\
+(Oder Photoelektronenstrom --> hiermit ist ein elektrischer Strom gemeint. Dies ist der für die \textbf{Photozelle} in Aufgabe 2.1 bestimmte Wert für den Photostrom!)
+\item $P_{Licht}$ := Lichtleistung
+\item $h$ := Plancksches WQ
+(In diesem Aufgabenteil wurde der Literaturwert für h benutzt. Der Fehler kann deshalb vernachlässigt werden.)
+\item $f$ := Frequenz der Lichtes
+(Aus der Versuchanleitung und ohne Fehler angenommen)
+\item $e$ := Elementarladung
+(Literaturwert)
+\end{enumerate}
+Der Photoelektronenstrom bestimmt sich durch die Formel:
+\begin{align}
+I_k = \frac{I_{Diode}}{0,88*\Gamma(\lambda)}
+\end{align}
+Mit dem Fehler:
+\begin{align}
+\delta_{I_k} = \sqrt{
+\left(\frac{\delta_{I_{Diode}}}{0,88*\Gamma(\lambda)}\right)^2+
+\left(\frac{I_{Diode}}{0,88*(\Gamma(\lambda))^2}
+\delta_{\Gamma(\lambda)}\right)^2}
+\end{align}
+Die Quantenausbeute berechnet sich durch:
+\begin{align}
+\frac{N_{e,Zelle}}{N_{ph}} = \frac{I_{photo}}{I_{k}}
+\end{align}
+Mit einem Fehler von:
+\begin{align}
+\delta_{\frac{N_{e,Zelle}}{N_{ph}}} = \sqrt{
+\left(\frac{\delta_{I_{photo}}}{I_{k}}\right)^2+
+\left(\frac{I_{photo}}{I_{k}^2}\delta_{I_{k}}\right)^2}
+\end{align}
+Die Lichtleistung berechnen wir mit der Formel:
+\begin{align}
+P_{Licht} = \frac{h\cdot f\cdot I_k}{e}
+\end{align}
+Mit einem Fehler von:
+\begin{align}
+\delta_{P_{Licht}} = \frac{h\cdot f\cdot \delta_{I_k}}{e}
+\end{align}
 \subsubsection{Messergebnisse}
 \subsubsection{Auswertung}
 \subsubsection{Diskussion}
