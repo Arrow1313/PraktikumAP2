@@ -80,10 +80,10 @@ Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne S
 \subsubsection{Praktische Durchführung}
 \paragraph{1. Kondensatorkapazität und Photostrom}
 Die Photozelle und der Eingang des Meßverstärkers im h/e-Apparat bilden einen kleinen Kondensator, der durch den Photostrom aufgeladen und durch Leckströme im Meßverstärker entladen wird.
-Wir wollen aus der Halbwertszeit für den Auf- und Entladevorgang, sowie der Stoppspannung $U_0$ die Kondensatorkapazität und den Photostrom abschätzen. 
+Wir wollen aus der Halbwertszeit für den Auf- und Entladevorgang, sowie der Stoppspannung $U_0$ die Kondensatorkapazität und den Photostrom abschätzen. Die Entladekurven haben wir mit einem Oszilloskop vermessen, da unsere Leckströme sehr groß waren.
 
 \paragraph{2. Die Photozelle als Spektrometer}
-Es stehen Uns verschiedene Leuchtdioden zur Verfügung. Diese schließen wir an ein Netzgerät an.
+Es stehen uns verschiedene Leuchtdioden zur Verfügung. Diese schließen wir an ein Netzgerät an.
 (Strom etwa 20 mA, wird durch einen Widerstand bzw. Regler im Anschlußstecker begrenzt), Es ist zu beachten, dass Leuchtdioden -- wie gewöhnliche Dioden auch -- nur in einer Stromrichtung arbeiten.
 Wir befestigen die Leuchtdioden nacheinander in der 5-mm-Bohrung einer Kunststoffhalterung und schieben die Halterung waagerecht so über den weißen Schirm des h/e-Apparates, dass das Licht auf die Photozelle gelangen kann. Wir bestimmen dann die jeweiligen Stoppspannungen.
 Mit den Ergebnissen aus Versuchsteil 1 können wir, durch Messung der Stoppspannung, die Wellenlänge des Lichtes bestimmen. Diese vergleichen wir mit den Wellenlängen, welche in den Datenblättern der Leuchtdioden angegeben sind. (siehe auch Beschriftung an den Leuchtdioden):
@@ -93,33 +93,18 @@ rot = 645 nm, gelb = 583 nm, grün = 565 nm, blau = 470 nm.
 Nicht jedes erzeugte Photoelektron gelangt zur Anode, wenn -- wie in unserem Versuchsaufbau -- die
 Photozelle ohne hohe Vorspannung betrieben wird. Die Zahl der im Photostrom nachgewiesenen Photoelektronen ist viel kleiner als die Anzahl der einfallenden Lichtquanten. %(warum?)
 Wir wollen das Verhältnis zwischen der Anzahl $N_{ph}$ der Photonen (Lichtquanten), die von der Lichtquelle ausgehend in die Photozelle einfallen, zur
-Anzahl $N_{e,Zelle}$ der Elektronen, die von diesen Photonen in der Photozelle produziert werden und den Photostrom bewirken, abschätzen also:
-Quantenausbeute = $\frac{N_{e,Zelle}}
-{N_{ph}}$
-Dazu verwenden wir folgendes Verfahren:
-Für diese Messung steht uns eine Halbleiter-Photodiode zur Verfügung. Eine solche Photodiode besteht aus einem kleinen Halbleiterkristall. Fällt Licht auf die strahlungsempfindliche Fläche (hier 2, 75 $\times$ 2, 75 mm groß),
-so werden durch den sogenannten inneren Photoeffekt Ladungsträger erzeugt, es fließt ebenfalls ein Photostrom.
-In der Photodiode erzeugt fast jedes einfallende Photon ein Elektron: bei einer Wellenlänge von 850 nm werden
+Anzahl $N_{e,Zelle}$ der Elektronen, die von diesen Photonen in der Photozelle produziert werden und den Photostrom bewirken, abschätzen, also: Quantenausbeute = $\frac{N_{e,Zelle}} {N_{ph}}$.
+Dazu verwenden wir folgendes Verfahren: Für diese Messung steht uns eine Halbleiter-Photodiode zur Verfügung. Eine solche Photodiode besteht aus einem kleinen Halbleiterkristall. Fällt Licht auf die strahlungsempfindliche Fläche (hier 2, 75 $\times$ 2, 75 mm groß), so werden durch den inneren Photoeffekt Ladungsträger erzeugt, es fließt ebenfalls ein Photostrom. In der Photodiode erzeugt fast jedes einfallende Photon ein Elektron: bei einer Wellenlänge von 850 nm werden
 etwa 88 Elektronen pro 100 Lichtquanten erzeugt, für andere Wellenlängen ist das Verhältnis geringer.
 Die folgende Abbildung zeigt die Abhängigkeit der relativen spektralen Empfindlichkeit für unseren Photodioden-
 typ BPW34 (100 \% entsprechen 88 Elektronen pro 100 Quanten).
 %bitte abbildung für die relative empfindlichkeit der photodiode einfügen
-Schließen Sie die Photodiode an ein Digitalmultimeter an, Meßbereich 200 $\mu$A. Die Polarität ist hier nicht wichtig,
-ignorieren Sie ein eventuelles Minuszeichen in der Anzeige. Halten Sie die Photodiode in den Strahlengang, so
-daß das Licht einer Spektrallinie auf die Photodiode fällt. Achten Sie darauf, daß die Photodiode etwa den gleichen
-Abstand von der Lichtquelle hat wie die Photozelle.
+Wir schließen die Photodiode an ein Digitalmultimeter an, Messbereich 200 $\mu$A. Die Polarität ist nicht wichtig. Wir halten die Photodiode in den Strahlengang, sodass das Licht einer Spektrallinie auf die Photodiode fällt. Es ist zu beachten, dass die Photodiode etwa den gleichen Abstand von der Lichtquelle hat wie die Photozelle.
 %(warum?)
-Klappen Sie daher das Lichtschutzrohr zur Seite
-und halten Sie die Photodiode vor der Photozelle in das Licht der Spektrallinie.
-Messen Sie den Photostrom für diese und die anderen Spektrallinien.
-Sie können jetzt vom Photostrom der Photodiode auf die Zahl der Elektronen und daraus -- je nach Wellenlänge
--- auf die Anzahl der Photonen (pro Zeitintervall) schließen.
-Sie können annehmen, daß die Offnung an der Photozelle etwa so groß ist wie die Fläche der Photodiode, d. h.
-beide erhalten etwa gleich viel Photonen — vorausgesetzt, beide haben den gleichen Abstand zur Lichtquelle, wie
-oben erwähnt. Den Photostrom der Photozelle haben Sie in Teil 1 abgeschätzt. Hiermit können Sie jetzt die
-Quantenausbeute der Photozelle bestimmen.
-Sie haben die Anzahl der Photonen (pro Zeitintervall) bestimmt; aus der Wellenlänge und der Planckschen Konstanten können Sie die Energie jedes Photons berechnen. Bestimmen Sie die Lichtleistung, die mit den einzelnen
-Spektrallinien auf die Photozelle gelangt.
+Wir Klappen daher das Lichtschutzrohr zur Seite
+und halten die Photodiode vor der Photozelle in das Licht der Spektrallinie.
+Wir messen den Photostrom für diese und die anderen Spektrallinien.
+Wir können jetzt vom Photostrom der Photodiode auf die Zahl der Elektronen und daraus -- je nach Wellenlänge -- auf die Anzahl der Photonen (pro Zeitintervall) schließen. Wir nehmen an, dass die Öffnung an der Photozelle etwa so groß ist wie die Fläche der Photodiode, d.h. beide erhalten etwa gleich viel Photonen — vorausgesetzt, beide haben den gleichen Abstand zur Lichtquelle. Den Photostrom der Photozelle haben wir in Teil 1 abgeschätzt. Hiermit bestimmen wir die Quantenausbeute der Photozelle. Wir haben die Anzahl der Photonen (pro Zeitintervall) bestimmt; aus der Wellenlänge und der Planckschen Konstanten können wir die Energie jedes Photons berechnen. Wir bestimmen wir die Lichtleistung, die mit den einzelnen Spektrallinien auf die Photozelle gelangt.
 
 \subsubsection{Verwendete Formeln}
 \subsection{Messergebnisse}
