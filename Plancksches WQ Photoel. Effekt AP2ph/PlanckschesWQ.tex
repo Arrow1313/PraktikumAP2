@@ -1,6 +1,7 @@
-\documentclass[12pt]{scrartcl}
+\documentclass[12px]{scrartcl}
 
  
+\usepackage{float}
 
 \usepackage[utf8]{inputenc}
 
@@ -49,6 +50,42 @@ unter Verwendung einer Halbleiter-Photodiode ab.
 %versuchsaufbau mit skizze
 
 \section{Versuchsaufbau}
+													
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 0.2]{versuchsmaterialien.pdf}
+  	\caption[Für den Versuch verwendete Materialien]{Für den Versuch verwendete Materialien}
+  \label{fig:a_3_A}
+\end{figure}
+
+\begin{enumerate}
+\item	Netzgerät für die Lampe
+
+\item	h/e-Gerät
+
+\item	Netzgerät für die Dioden (5)
+
+\item	grün, gelb, 10\% und 20-100\% Filter
+
+\item	rot, gelb, grün und blaue Dioden
+
+\item	Photodiode
+
+\item	Halterung für die Dioden
+
+\item	DMM
+
+\item	Oszilloskop
+
+\item	Sichtschirm mit dahinter stehender Lampe
+
+\item	Linsengitter Kombination
+
+\item	Verbindungskabel
+\end{enumerate}
+
+Das Licht aus der Lampe wird durch die Filterlinsen Kombination in die Spektralfarben aufgespalten, so dass sie mit dem h/e-Gerät die Stopspannung bestimmt werden kann.
+
 
 \section{Vergleich zwischen Wellen- und Quantenmodell und Bestimmung der Planckschen
 Konstante $h$}
@@ -83,11 +120,107 @@ Gelb- bzw. Grünfilter vor den weißen Schirm, falls wir die gelbe bzw. grüne S
 \textbf{Nach der Einsteinschen Formel ergibt sich für die Stoppspannung die folgende Beziehung:}
 \begin{align}
 U_0 = \frac{h}{e}\nu + \frac{W_0}{e}
+\label{enq:stop}
 \end{align}
+
 \subsection{Messergebnisse}
+\begin{table}[htbp]
+\caption{Frequenz der verschiedenen Farben.}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Frequenz/GHz} \\ \hline
+Ultraviolet & 820264 \\ \hline
+Violet  & 740858 \\ \hline
+Blau & 687858 \\ \hline
+Grün & 548996 \\ \hline
+Gelb & 518672 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:frequenz}
+\end{table}
+
+
+
+\begin{table}[H]
+\caption{Messung der Stoppannung für die 1. Ordnung, der Fehler der Stopspannung wurde mit 0,06V angenommen}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Spannung/V} \\ \hline
+Ultraviolett & 1,58 \\ \hline
+Violett & 1,35 \\ \hline
+Blau & 1,25 \\ \hline
+Grün & 0,71 \\ \hline
+Gelb & 0,65 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_1_1}
+\end{table}
+
+\begin{table}[H]
+\caption{Messung der Stopspannung für die 2. Ordnung, der Fehler der Stopspannung wurde mit 0,06V angenommen}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{Spannung/V} \\ \hline
+Ultraviolet & 1,48 \\ \hline
+Violet  & 1,25 \\ \hline
+Blau & 1,08 \\ \hline
+Grün & 0,66 \\ \hline
+Gelb & 0,60 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_1_2}
+\end{table}
+
+\begin{table}[H]
+\caption{Messung der Stopspannung in Abhängigkeit der Intänsität für grünes Licht, der Fehler für die Stopspannung wurde mit 0,06V angenommen}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+\multicolumn{1}{|l|}{Filterstärke/\%} & \multicolumn{1}{l|}{Stopspannung/V} \\ \hline
+20 & 0,54 \\ \hline
+40 & 0,58 \\ \hline
+60 & 0,61 \\ \hline
+80 & 0,64 \\ \hline
+100 & 0,65 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:intänsität}
+\end{table}
+
+
 \subsection{Auswertung}
 %Du musst bei dieser aufgabe beachten, was in der auswertung steht!
+In der ersten Aufgabe sollte die Stopspannung in Abhängigkeit der Frequenz graphisch dargestellt werden und nach Gleichung \ref{enq:stop} gefittet werden. Dabei ergab sich für die Messung der 1. Ordnung der folgende Plot (Messwerte aus Tabelle \ref{tab:a_1_1}).
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_1_1.pdf}
+  	\caption[Plot der Stopspannung, in Abhängigkeit der Frequenz]{Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand}
+  \label{fig:a_3_A}
+\end{figure}
+
+Die Regressionsgerade ergab mit f(x)=3,46E-015 $(\pm 2,35E-016) \nu$-1,19 $(\pm 0,1583)$, das reduzierte $\chi^2$ ergab sich mit 1,00175.
+
+Für die 2. Ordnung ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1_2}).
+
+\begin{figure}[H]
+\centering
+    \includegraphics[scale = 1]{a_1_2.pdf}
+  	\caption[Plot der Stopspannung, in Abhängigkeit der Frequenz]{Plot der Intensität an Empfänger A, in Abhängigkeit vom Abstand}
+  \label{fig:a_3_A}
+\end{figure}
+
+Die Regressionsgerade ergab mit f(x)=3,33E-015 $(\pm 2,19E-016) \nu$-1,2 $(\pm 0,1471)$, das reduzierte $\chi^2$ ergab sich mit 0.865638.
+
+Aus der Steigung und dem y-Achsenabschnitt der Regressionsgerade sollten das Plancksche Wirkungsquantum und die Austrittsarbeit bestimmt werden. Für die Messungen der 1. Ordnung wurde das Plancksche Wirkungsquantum mit 5,5E-034 $(\pm 0,4E-034)$ Js und die Austrittsarbeit mit -1,9E-019 $(\pm 0,3E-019)$ J. Für die Messung der 2. Ordnung wurde h mit 5,33E-034 $(\pm 0,35E-034)$ Js und die Austrittsarbeit mit -1,9E-019 $(\pm 0,2E-019)$ bestimmt.
+
+Zum Schluss der Messung wurde noch die Abhängigkeit der Stopspannung von der Intensität dazu wurde ein 20\%, 40\%, 60\%, 80\% und 100\% durchlässiger Intensitätsfilter  verwendet. Die Messdaten finden sich in Tabelle \ref{tab:intänsität}. Die abfallende Stopspannung entsteht offensichtlich durch Leckströme unseres h/e-Geräts (der "Kondensator" entlädt sich schneller, als der Aufladevorgang durch den Photostrom).
+
 \subsection{Diskussion}
+Das Plancksche Wirkungsquantum hat einen Literaturwert von 6,6$\cdot 10^34$ Js\footnote{Entnommen von http://de.wikipedia.org/wiki/Plancksches\_Wirkungsquantum am  18.09.2014 um 16:15 Uhr}, unsere Wert für die Messung der 1. Messung weicht um 16,6\% ab. Der Wert aus der Messung der 2. Ordnung weicht um 19,7\% ab. Diese große  Abweichung erklärt sich über die großen Leckströme, wodurch die von uns gemessene Spannung nicht die echte Stopspannung ist und wir eine zu geringe Spannung gemessen haben.
 
 \section{Abschätzung des Photostroms; Quantenausbeute der Photozelle und Lichtleistung}
 \subsection{1. Kondensatorkapazität und Photostrom}
