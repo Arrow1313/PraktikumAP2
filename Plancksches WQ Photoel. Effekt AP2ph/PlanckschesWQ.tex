@@ -140,7 +140,7 @@ sowie die Fehler:
 \delta_h = \delta_m\cdot e
 \end{align}
 \subsection{Messergebnisse}
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{Frequenz der verschiedenen Farben.}
 \begin{center}
 \begin{tabular}{|l|r|}
@@ -218,7 +218,7 @@ In der ersten Aufgabe sollte die Stoppspannung in Abhängigkeit der Frequenz gra
   \label{fig:a_3_A}
 \end{figure}
 
-Die Regressionsgerade ergab U($\nu$)=(34,6 $\pm 2,35)\cdot10^{-16} \nu$-(1,19 $\pm 0,1583)$, das reduzierte $\chi^2$ ergab sich mit 1,00175.
+Die Regressionsgerade ergab U($\nu$)=(34,6 $\pm 2,4)\cdot10^{-16} \nu$-(1,19 $\pm 0,16)$, das reduzierte $\chi^2$ ergab sich mit 1,00175.
 
 \newpage
 Für die 2. Ordnung ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1_2}).
@@ -230,9 +230,9 @@ Für die 2. Ordnung ergab sich der folgende Plot (Werte aus Tabelle \ref{tab:a_1
   \label{fig:a_3_A}
 \end{figure}
 
-Die Regressionsgerade ergab mit U($\nu$)=(33,3 $\pm 2,19)\cdot10^{-16} \nu$-(1,2 $\pm 0,1471)$, das reduzierte $\chi^2$ ergab sich mit 0.865638.
+Die Regressionsgerade ergab mit U($\nu$)=(33,3 $\pm 2,2)\cdot10^{-16} \nu$-(1,2 $\pm 0,1)$, das reduzierte $\chi^2$ ergab sich mit 0.865638.
 
-Aus der Steigung und dem y-Achsenabschnitt der Regressionsgerade sollten das Plancksche Wirkungsquantum und die Austrittsarbeit bestimmt werden. Für die Messungen der 1. Ordnung wurde das Plancksche Wirkungsquantum mit (5,5 $\pm 0,4)\cdot10^{-34}$ Js und die Austrittsarbeit mit (-1,9 $\pm 0,3)\cdot10^{-19}$ J. Für die Messung der 2. Ordnung wurde h mit (5,33 $\pm 0,35)\cdot10^{-34}$ Js und die Austrittsarbeit mit (-1,9 $\pm 0,2)\cdot10^{-19}$ bestimmt.
+Aus der Steigung und dem y-Achsenabschnitt der Regressionsgerade sollten das Plancksche Wirkungsquantum und die Austrittsarbeit bestimmt werden. Für die Messungen der 1. Ordnung wurde das Plancksche Wirkungsquantum mit (5,5 $\pm 0,4)\cdot10^{-34}$ Js und die Austrittsarbeit mit (1,9 $\pm 0,3)\cdot10^{-19}$ J. Für die Messung der 2. Ordnung wurde h mit (5,33 $\pm 0,35)\cdot10^{-34}$ Js und die Austrittsarbeit mit (1,9 $\pm 0,2)\cdot10^{-19}$ bestimmt.
 
 Zum Schluss der Messung wurde noch die Abhängigkeit der Stoppspannung von der Intensität gemessen. Dazu wurde ein 20\%, 40\%, 60\%, 80\% und 100\% durchlässiger Intensitätsfilter  verwendet. Die Messdaten finden sich in Tabelle \ref{tab:intänsität}. Die abfallende Stoppspannung entsteht offensichtlich durch Leckströme unseres h/e-Geräts (der 'Kondensator' entlädt sich schneller, als der Aufladevorgang durch den Photostrom).
 
@@ -293,7 +293,7 @@ Die Fehler berechnen sich nach den folgenden Formeln:
 \label{eqn:c_delta}
 \end{align}
 \subsubsection{Messergebnisse}
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{Messung zur Bestimmung des Photostroms}
 \begin{center}
 \begin{tabular}{|l|l|}
@@ -351,7 +351,7 @@ Der Fehler ergibt nach der Formel:
 
 
 \subsubsection{Messergebnisse}
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{Messung zur Bestimmung der Wellenlängen, der Fehler der Stoppspannung wurde mit 0,06V angenommen}
 \begin{center}
 \begin{tabular}{|l|r|r|}
@@ -412,6 +412,7 @@ Wir können jetzt vom Photostrom der Photodiode auf die Zahl der Elektronen und 
 Der Photoelektronenstrom bestimmt sich durch die Formel:
 \begin{align}
 I_k = \frac{I_{Diode}}{0,88*\Gamma(\lambda)}
+\label{eqn:i_k}
 \end{align}
 Mit dem Fehler:
 \begin{align}
@@ -419,6 +420,7 @@ Mit dem Fehler:
 \left(\frac{\delta_{I_{Diode}}}{0,88*\Gamma(\lambda)}\right)^2+
 \left(\frac{I_{Diode}}{0,88*(\Gamma(\lambda))^2}
 \delta_{\Gamma(\lambda)}\right)^2}
+\label{eqn:i_k_delta}
 \end{align}
 Die Quantenausbeute berechnet sich durch:
 \begin{align}
@@ -433,10 +435,12 @@ Mit einem Fehler von:
 Die Lichtleistung berechnen wir mit der Formel:
 \begin{align}
 P_{Licht} = \frac{h\cdot f\cdot I_k}{e}
+\label{eqn:p_l}
 \end{align}
 Mit einem Fehler von:
 \begin{align}
 \delta_{P_{Licht}} = \frac{h\cdot f\cdot \delta_{I_k}}{e}
+\label{eqn:p_l_delta}
 \end{align}
 
 \subsubsection{Messergebnisse}
@@ -457,7 +461,7 @@ Gelb & 0,11 & 0,01 \\ \hline
 \end{table}
 
 \begin{table}[H]
-\caption{Aus dem Graphen abgelesene Korrekturwerte}
+\caption{Aus dem Graphen abgelesene Korrekturwerte $\Gamma(\lambda)$}
 \begin{center}
 \begin{tabular}{|l|r|}
 \hline
@@ -473,20 +477,37 @@ Gelb & 54 \\ \hline
 \end{table}
 
 \begin{table}[H]
-\caption{Anzahl der Elektronen pro Zeiteinheit.}
+\caption{Anzahl der Photonen pro Zeiteinheit.}
 \begin{center}
 \begin{tabular}{|r|r|}
 \hline
-\multicolumn{1}{|l|}{Anzahl} & \multicolumn{1}{l|}{Fehler} \\ \hline
-4 & 1 \\ \hline
-3,9 & 0,6 \\ \hline
-3,2 & 0,3 \\ \hline
-2,6 & 0,2 \\ \hline
-4,3 & 0,1 \\ \hline
+\multicolumn{1}{|l|}{Anzahl Photonen pro Sekunde/(1/s)} & \multicolumn{1}{l|}{Fehler/(1/s)} \\ \hline
+4E012 & 1E012 \\ \hline
+3,9E012 & 0,6E012 \\ \hline
+3,2E012 & 0,3E012 \\ \hline
+2,6E012 & 0,2E012 \\ \hline
+4,3E012 & 0,1E012 \\ \hline
 \end{tabular}
 \end{center}
 \label{tab:a_2_3_a}
 \end{table}
+
+\begin{table}[H]
+\caption{Photoelekronenstrom der verschiedenen Farben, Werte bestimmt Gleichung \ref{eqn:i_k} und der Fehler nach Gleichung \ref{eqn:i_ph_delta}}
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+Farbe & \multicolumn{1}{l|}{I\_k/A} & \multicolumn{1}{l|}{Fehler/A} \\ \hline
+Ultraviolett & 6,5E-007 & 2E-007 \\ \hline
+Violett & 6,2E-007 & 1E-007 \\ \hline
+Blau & 5,1E-007 & 0,4E-008 \\ \hline
+Grün & 4,2E-007 & 0,3E-008 \\ \hline
+Gelb & 6,9E-007 & 0,2E-008 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:i_k}
+\end{table}
+
 
 
 \subsubsection{Auswertung}
@@ -499,7 +520,7 @@ In der letzten Aufgabe sollte die Quantenausbeute sowie die Lichtleistung bestim
   \label{fig:a_2_3}
 \end{figure}
 
-Die Messwerte wurden mit einer Konstanten gefittet, dabei ergab sich ein Wert von (0,059$\pm 0,006)\cdot10^{-6}$ mit einem reduzierten $\chi^2$ von ca. 5,12. Nach Gleichung ?? wurde die Lichtleistung berechnet, es ergeben sich die folgende Werte.
+Die Messwerte wurden mit einer Konstanten gefittet, dabei ergab sich ein Wert von (0,059$\pm 0,006)\cdot10^{-6}$ mit einem reduzierten $\chi^2$ von ca. 5,12. Nach Gleichung \ref{eqn:p_l} wurde die Lichtleistung berechnet und der Fehler nach Gleichung \ref{eqn:p_l_delta}, es ergeben sich die folgende Werte.
 
 \begin{table}[H]
 \caption{Berechnete Lichtleistungen}
