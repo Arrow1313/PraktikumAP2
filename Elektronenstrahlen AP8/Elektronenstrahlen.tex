@@ -1,73 +1,75 @@
-\documentclass[12pt]{scrartcl}
-
+\documentclass[12pt,a4paper]{article}
  
-
+\usepackage{float}
+%für feststellen der figures und tables [H] dranschreiben
+\usepackage{units}
+%wir so benutzt: 
+%\unit[value/Zahl]{dimension/Einheit} oder 
+%\unitfrac[value/Zahl]{dimension/Einheit num/Zähler}{dimension/Einheit denum/Nenner} oder
+%\nicefrac[fontcommand/Schriftart]{dimension/Einheit num/Zähler}{dimension/Einheit denum/Nenner}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[utf8]{inputenc}
-
 \usepackage[T1]{fontenc}
-
 \usepackage{lmodern}
-
 \usepackage[ngerman]{babel}
-
 \usepackage{amsmath}
-
 \usepackage{graphicx}
-
-
  
-
 \title{Versuch AP8\\ Elektronenstrahlen}
-
 \author{Frederik Strothmann, Henrik Jürgens}
-
 \date{\today}
-
-
+%es dürfen niemals zwei überschriften direkt übereinander stehen, also immer mindestens in einem satz was sinnvolles unter jede überschrift schreiben. (bei den versuchen z.B. das versuchsziel) 
 \begin{document}
-
-
- %deckblatt erstellen
-
+%deckblatt erstellen.
 \maketitle
+\newpage
 \tableofcontents
 \newpage
-
-%einleitung zu dem experiment
-
 \section{Einleitung}
-
+%einleitung zu dem experiment.
+%es muss hier auf die einstellungen, die vor dem versuch gemacht werden eingegangen werden oder auf eine anleitung dazu verwiesen werden.
 Die Entdeckung der Welleneigenschaften von massebehafteten Teilchen war historisch von größter Bedeutung
 für die Entwicklung der Quantenmechanik. Dabei nimmt die Schrödingergleichung als charakteristische Wellengleichung einen besonderen Stellenwert ein, da sie die Grundlage für die nicht-relativistische Quantenmechanik
 bildet. In diesem Versuch führen wir zwei Teilexperimente durch, die die Teilchen- bzw. Wellennatur von Elektronen demonstrieren. Mit Hilfe eines Fadenstrahlrohres bestimmen wir die spezifische Ladung e/m eines Elektrons, das im homogenen Magnetfeld eines Helmholtzspulenpaares auf eine Kreisbahn gezwungen wird.
 Die Welleneigenschaften eines Elektronenstrahles wird durch Beugung von Elektronen an einer dünnen Schicht von Kohlenstoffkristallen untersucht. Mit Hilfe der bekannten Gitterkonstanten dieser Kristalle soll
 die Gültigkeit der DeBroglie-Beziehung nachgewiesen werden. Dabei sollen die Grenzen nicht-relativistischer
 Beschreibungsweise sowie der Einfluß von Wechselwirkungen zwischen den Elektronen und dem inneren Potential der Kohlenstoffkristalle berücksichtigt werden.
-%versuchsaufbau mit skizze
-
-\section{Versuchsaufbau}
-
-
-\section{Versuchsdurchführung}
-
-
-\subsection{Praktische Durchführung}
-
-
-\subsection{Theoretische Durchführung}
-
-
-\section{Messergebnisse}
-
-
-
-\section{Auswertung}
-
-
-\section{Diskussion}
-
-
- %Werte stimmen mit den Formeln überein/nicht überein
-
+\section{Verwendete Materialien}
+%immer eine skizze oder ein foto einfügen und die geräte und materialien !nummerieren! und z.b. eine legende dazu schreiben.
+%falls wir am anfang des versuches noch nicht wissen, was wir alles brauchen, dann wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
+%-------------------------------------------------------------------------------------------
+%ab hier für jeden versuchsteil einzeln und falls doch noch welche materialien hinzugenommen werden immer im versuchsaufbau erwähnen!
+\section{Versuchsteil...}
+%hier am besten kurz das ziel dieses versuchsteiles ansprechen, damit wir keine zwei überschriften übereinander haben!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+\subsection{Versuchsaufbau}
+%skizze zum versuchsaufbau soll hier rein, foto geht auch aber es muss erklärt werden wie das ganze funktioniert und nochmal auf spezielle einstellungen eingegangen werden! z.b. welche knöpfe wir an unseren geräten für die messung verdreht haben.
+\subsection{Versuchsdurchführung}
+%hier soll hauptsächlich rein was wir machen, warum wir das machen und mit welchem ziel.
+%es ist wichtig präzize zu erklären wie wir bei dem versuch vorgegangen sind und was wir tuen mussten.
+\subsection{Verwendete Formeln}
+%es kann eine legende angefertigt werden aber die selbstverständlichen buchstaben müssen nicht extra erklärt werden.
+%hier kommen mit knappen erklärungen nur die verwendeten formeln, sowie die zugehörige Fehlerrechnung rein.
+\subsection{Messergebnisse}
+%hier werden die messwerte in !übersichtlichen! tabellen angegeben
+%falls zu viele kleine tabellen entstehen ist es sinnoll eine große tabelle daraus zu machen
+%anders herum müssen zu große tabellen mit dem [scale] befehl scaliert werden oder in zwei kleinere tabellen aufgeteilt werden.
+%es ist wichtig vor !jeder! tabelle zu sagen, was gemessen wurde und wie wir unsere fehler gewäht haben. aber vor allem muss ausreichend !erklärt! werden, !warum! wir unsere fehler grade so gewählt haben.
+\subsection{Auswertung}
+%hier sollen zuerst !alle! errechneten werte entweder in ganzen Sätzen genannt, oder in tabellen(übersichtilicher) dargestellt, sowie auf die verwendeten formeln verwiesen werden. die referenzierung der formel kann in der überschrift stehen.
+%es soll immer kurz erwähnt werden, warum wir das ganze ausrechnen bzw. was wir dor ausrechnen.
+%danach werden histogramme und plots erstellt, wobei wenn möglich funktionen durch die plots gelegt werden sollten. (zur not können auch splines benutzt werden, was aber angesprochen werden muss)
+%bei fits sollte immer die funktion und das reduzierte chiquadrat mit angegeben werden, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden sollte z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%es muss bei jedem fit erklärt werden, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung die richtige größe hat und die Legende im plot nicht die Messwerte verdeckt
+%zusätzlich soll in diesem teil die aufgabenstellung abgehandelt werden.
+\subsection{Diskussion}
+%es geht hier immer darum die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereiander zu vergleichen.
+%dafür kann zu einen genannt werden, in welchem fehlerintervall des messwertes der literaturwert oder der vergleichswert liegt, und zum anderen der relative anteil des fehlers am messwert bestimmt, und damit die qualität unserer messung abgeschätzt werden.
+%in einem satz soll dann kurz angesprochen werde, wie dut unser fehler und damit unsere messung also ist.
+%nun sollte kurz angesprochen werden, wie systematische fehler unsere messung beeinflusst haben könnten.
+%Zum schluss ist es wichtig anzusprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+\section{Fazit}
+%im fazit soll nochmal alles zusammengefasst werden und der verlauf der messung abgeschätzt werden
+%gravierende sytematische probleme bei den messungen müssen nochmal betont und die wertigkeit unserer ergebnisse sollte nocheinmal eingeordnet werden.
 \end{document}
-
