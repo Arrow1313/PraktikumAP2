@@ -7,7 +7,7 @@ show mxtics
 
 set sample 100000
 
-plot "q.dat" smooth csplines title "Messdaten mit csplines", "q.dat" with xyerrorbars title "Messdaten ohne csplines", "q_m.dat" with xyerrorbars title "Gemessene Maxima"
+plot "q_a.dat" smooth csplines title "Messdaten mit csplines", "q.dat" with xyerrorbars title "Messdaten ohne csplines", "q_m.dat" with xyerrorbars title "Gemessene Maxima"
 
 set terminal postscript eps enhanced color font 'Helvetica,10'
 

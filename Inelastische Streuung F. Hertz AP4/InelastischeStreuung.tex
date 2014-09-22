@@ -88,14 +88,17 @@ Die Beschleunigungsspannung bis zum ersten Maximum ist dafür gleichzusetzen mit
 Die Differenzspannung $U_{\Delta}$ wird aus der Potentialdifferenz zweier nebeneinander liegender Maxima bestimmt:
 \begin{align}
 U_{\Delta} = U_{max1}-U_{max2}
+\label{eqn:u_d}
 \end{align}
 Mit dem Fehler:
 \begin{align}
 \Delta_{U_{\Delta}} = \sqrt{\Delta_{U_{max1}}^2+\Delta_{U_{max2}}^2}
+\label{eqn:u_d_delta}
 \end{align}
 Um daraus die Anregungsspannung $U_A$ zu bestimmen werden die Spannungen $U_{\Delta}$ gemittelt:
 \begin{align}
 U_A = \frac{U_{\Delta_1}+\ldots+U_{\Delta_n}}{n}
+\label{eqn:u_a}
 \end{align}
 Mit dem Fehler:
 \begin{align}
@@ -103,10 +106,12 @@ Mit dem Fehler:
 \left(\frac{\Delta_{U_{\Delta_1}}}{n}\right)^2+
 \ldots+
 \left(\frac{\Delta_{U_{\Delta_n}}}{n}\right)^2}
+\label{eqn:u_a_delta}
 \end{align}
 Die Kontaktpotentialdifferenz $U_{kp}$ wird nach folgender Formel berechnet:
 \begin{align}
 U_{kp} = U_{max1} + U_1 - U_A
+\label{eqn:kp}
 \end{align}
 $U_1$ ist dabei die Spannung zwischen erstem Gitter und der Kathode ($U_1$ trägt genauso wie $U_{max1}$ zur Beschleunigung der Elektronen bei) und $U_{max1}$ die Spannung zwischen dem ersten Gitter und dem ersten Maximum.
 Der Fehler ergibt sich nach:
@@ -115,12 +120,97 @@ Der Fehler ergibt sich nach:
 \left(\Delta_{U_{max1}}\right)^2+
 \left(\Delta_{U_1}\right)^2+
 \left(\Delta_{U_A}\right)^2}
+\label{eqn:kp_delta}
 \end{align}
+
 \subsection{Messergebnisse}
 %hier werden die messwerte in !übersichtlichen! tabellen angegeben
 %falls zu viele kleine tabellen entstehen ist es sinnoll eine große tabelle daraus zu machen
 %anders herum müssen zu große tabellen mit dem [scale] befehl scaliert werden oder in zwei kleinere tabellen aufgeteilt werden.
 %es ist wichtig vor !jeder! tabelle zu sagen, was gemessen wurde und wie wir unsere fehler gewäht haben. aber vor allem muss ausreichend !erklärt! werden, !warum! wir unsere fehler grade so gewählt haben.
+
+In der folgenden Tabelle sind die Saugspannung, die Bremsspannung und die Temperatur eingetragen. Die Fehler wurden alle über die Ableseungenauigkeit bestimmt.
+
+\begin{table}[htbp]
+\caption{Materialeigenschaften des Versuchsaufbaus}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+U\_1/V & Fehler/V \\ \hline
+\multicolumn{1}{|r|}{5,04} & \multicolumn{1}{r|}{0,01} \\ \hline
+U\_3/V & Fehler/V \\ \hline
+\multicolumn{1}{|r|}{2,01} & \multicolumn{1}{r|}{0,01} \\ \hline
+T/$^\circ$ & Fehler/$^\circ$ \\ \hline
+\multicolumn{1}{|r|}{175} & \multicolumn{1}{r|}{1} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:eingenschaften}
+\end{table}
+
+In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wurde mit der Ableseungenauigkeit angenommen und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls hinzu addiert.
+
+\begin{table}[htbp]
+\caption{Messung des Anodenstroms in Abhängigkeit der Beschleunigungsspannung in Bereich von 0 bis 29 Volt}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U\_2/V} & \multicolumn{1}{l|}{Fehler/V} & \multicolumn{1}{l|}{I\_A/nA} & \multicolumn{1}{l|}{Fehler/nA} \\ \hline
+0 & 0,1 & -0,04 & 0,01 \\ \hline
+1 & 0,1 & 0,02 & 0,01 \\ \hline
+2 & 0,1 & 0,28 & 0,01 \\ \hline
+3 & 0,1 & 0,38 & 0,01 \\ \hline
+4 & 0,1 & 0,3 & 0,01 \\ \hline
+5 & 0,1 & 0,86 & 0,01 \\ \hline
+6 & 0,1 & 1,95 & 0,01 \\ \hline
+7 & 0,1 & 1,12 & 0,01 \\ \hline
+8 & 0,1 & 0,62 & 0,01 \\ \hline
+9 & 0,1 & 0,98 & 0,01 \\ \hline
+10 & 0,1 & 2,59 & 0,01 \\ \hline
+11 & 0,1 & 4 & 0,01 \\ \hline
+12 & 0,1 & 1,84 & 0,01 \\ \hline
+13 & 0,1 & 0,91 & 0,01 \\ \hline
+14 & 0,1 & 1,7 & 0,01 \\ \hline
+15 & 0,1 & 4,25 & 0,01 \\ \hline
+16 & 0,1 & 5,72 & 0,01 \\ \hline
+17 & 0,1 & 2,59 & 0,06 \\ \hline
+18 & 0,1 & 1,37 & 0,01 \\ \hline
+19 & 0,1 & 2,49 & 0,01 \\ \hline
+20 & 0,1 & 5,83 & 0,01 \\ \hline
+21 & 0,1 & 7,3 & 0,08 \\ \hline
+22 & 0,1 & 3,52 & 0,08 \\ \hline
+23 & 0,1 & 1,95 & 0,08 \\ \hline
+24 & 0,1 & 3,41 & 0,08 \\ \hline
+25 & 0,1 & 7,53 & 0,08 \\ \hline
+26 & 0,1 & 9,1 & 0,2 \\ \hline
+27 & 0,1 & 5,27 & 0,1 \\ \hline
+28 & 0,1 & 3,03 & 0,1 \\ \hline
+29 & 0,1 & 4,7 & 0,1 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:q_daten}
+\end{table}
+
+In der Tabelle sind die Daten der Bestimmung der Maxima der Frank-Hertz-Kurve. Die Fehler wurde mit der Ableseungenauigkeit angenommen und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls hinzu addiert.
+
+\begin{table}[htbp]
+\caption{Messung desMaxima des  Anodenstroms in Abhängigkeit der Beschleunigungspannung}
+\begin{center}
+\begin{tabular}{|r|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{Ordnung} & \multicolumn{1}{l|}{U\_2/V} & \multicolumn{1}{l|}{Fehler/V} & \multicolumn{1}{l|}{I\_A/nA} & \multicolumn{1}{l|}{Fehler/nA} \\ \hline
+1 & 2,4 & 0,1 & 0,23 & 0,02 \\ \hline
+2 & 7,2 & 0,1 & 2,22 & 0,02 \\ \hline
+3 & 11,8 & 0,1 & 4,32 & 0,02 \\ \hline
+4 & 16,6 & 0,1 & 5,92 & 0,02 \\ \hline
+5 & 21,6 & 0,1 & 7,97 & 0,02 \\ \hline
+6 & 26,7 & 0,1 & 10,11 & 0,1 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:q__max_messung}
+\end{table}
+
+
+
 \subsection{Auswertung}
 %hier sollen zuerst !alle! errechneten werte entweder in ganzen Sätzen genannt, oder in tabellen(übersichtilicher) dargestellt, sowie auf die verwendeten formeln verwiesen werden. die referenzierung der formel kann in der überschrift stehen.
 %es soll immer kurz erwähnt werden, warum wir das ganze ausrechnen bzw. was wir dor ausrechnen.
@@ -129,12 +219,49 @@ Der Fehler ergibt sich nach:
 %es muss bei jedem fit erklärt werden, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung die richtige größe hat und die Legende im plot nicht die Messwerte verdeckt
 %zusätzlich soll in diesem teil die aufgabenstellung abgehandelt werden.
+
+Aus den Messdaten soll die Anregungsspannung und die Kontaktpotentialdifferenz bestimmt werden.
+
+Aus den Bestimmten Maxima wurden die die Differenzen (Gleichung \ref{eqn:u_d}) zwei aufeinander folgender Maxima bestimmt, der Fehler wurde nach Gleichung \ref{eqn:u_d_delta}, dabei ergeben sich die folgende Werte.
+
+\begin{table}[H]
+\caption{Differenz der Maxima. Berechnet mit den Werten aus Tabelle \ref{tab:q__max_messung} }
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline
+\multicolumn{1}{|l|}{Differenz/V} & \multicolumn{1}{l|}{Fehler/V} \\ \hline
+4,8 & 0,1 \\ \hline
+4,6 & 0,1 \\ \hline
+4,8 & 0,1 \\ \hline
+5 & 0,1 \\ \hline
+5,1 & 0,1 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:q__diff}
+\end{table}
+
+Aus den Werten wurde dann der Mittelwert nach Gleichung \ref{eqn:u_a} und der Fehler nach Gleichung \ref{eqn:u_a_delta} bestimmt, dabei ergibt sich ein Wert von \unit[4,86 $\pm$ 0,3]{eV} für die Anregungsspannung.
+
+Trägt man die Messwerte graphisch auf, so ergibt sich der folgende Graph.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale= 1.5]{q_t.pdf}
+	\caption{Graphische Darstellung des Anodenstroms in Abhängigkeit der Beschleunigungsspannung}
+\end{figure}
+
+Die Messdaten wurden mit csplines versehen, was kein physikalisches Modell darstellt sondern zu besseren Darstellung dient. Für den Plot wurden die Daten aus Tabelle \ref{tab:q_daten} und Tabelle \ref{tab:q__max_messung} verwendet.
+
+Nach Gleichung \ref{eqn:kp} wurden die Kontaktpotentialdifferenz und nach Gleichung \ref{eqn:kp_delta} der Fehler bestimmt. Dabei ergab sich eine Wert von \unit[0,18 $\pm$ 0,33]{V}.
+
 \subsection{Diskussion}
 %es geht hier immer darum die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereiander zu vergleichen.
 %dafür kann zu einen genannt werden, in welchem fehlerintervall des messwertes der literaturwert oder der vergleichswert liegt, und zum anderen der relative anteil des fehlers am messwert bestimmt, und damit die qualität unserer messung abgeschätzt werden.
 %in einem satz soll dann kurz angesprochen werde, wie dut unser fehler und damit unsere messung also ist.
 %nun sollte kurz angesprochen werden, wie systematische fehler unsere messung beeinflusst haben könnten.
 %Zum schluss ist es wichtig anzusprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+
+Für die Anregungsspannung wurde ein Wert von \unit[4,9]{eV} erwartet,\footnote{Quelle: http://de.wikipedia.org/wiki/Franck-Hertz-Versuch aufgerufen am 22.09.2014 um 16:37 Uhr}, unser experimentell bestimmter Wert liegt bei \unit[4,86 $\pm$ 0,3]{eV}, dies entspricht einer Abweichung von 0,81\% was ein sehr guter Wert ist. Der Fehler ist in Relation zur prozentualen Abweichung groß, was an der Fehlerfortpflanzung der Mittelwertbildung liegt.
 
 \section{Franck-Hertz Versuch für Neon}
 %hier am besten kurz das ziel dieses versuchsteiles ansprechen, damit wir keine zwei überschriften übereinander haben!
