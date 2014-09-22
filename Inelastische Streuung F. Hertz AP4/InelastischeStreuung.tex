@@ -69,7 +69,7 @@ Beim diesem Versuch wird ein Experiment von Franck und Hertz aus dem Jahre 1914 
 \item	Spannungsteller für U$_2$
 \end{enumerate}
 
-\section{Franck-Hertz-Kurve für Quecksilber}
+\section{Franck-Hertz Versuch für Quecksilber}
 %hier am besten kurz das ziel dieses versuchsteiles ansprechen, damit wir keine zwei überschriften übereinander haben!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Ziel der Messung ist es die Franck-Hertz-Kurve für Quecksilber aufzunehmen und aus ihr die Energiedifferenz zwischen Grund- und angeregtem Zustand zu bestimmen, sowie die Kontaktpotentialdifferenz.
@@ -79,10 +79,9 @@ Ziel der Messung ist es die Franck-Hertz-Kurve für Quecksilber aufzunehmen und 
 \subsection{Versuchsdurchführung}
 %hier soll hauptsächlich rein was wir machen, warum wir das machen und mit welchem ziel.
 %es ist wichtig präzize zu erklären wie wir bei dem versuch vorgegangen sind und was wir tuen mussten.
-Zuerst muss die Franck-Hertz Röhre (Quecksilber) vorgeheizt werden (die Betriebstemperatur von 175$^{\circ}$ konnte an unserem Gerät nicht verstellt werden), $\frac{U_2}{10}$ (Kanal 1 des Oszilloskops := X-Achse) und $U_A$ (Kanal 2 des Oszilloskops := Y-Achse) an das Oszilloskop angeschlossen werden und die Franck-Hertz Kurve mit der Sägezahnspannung konfiguriert werden. Dazu können die Saugspannung $U_1$ und die Bremsspannung $U_3$ am Franck-Hertz Betriebsgerät verdreht, sowie
-am Oszilloskop die Auflösung in X- und Y-Richtung und die Verschiebung der Kurve auf der X- und Y-Achse eingestellt werden.
-Sobald die Franck-Hertz Kurve am Oszilloskop gut zu erkennen ist, kann das Franck-Hertz Gerät auf den manuellen Modus umgestellt werden. Nun kann die Kurve von Hand durch verändern der Beschleunigungsspannung $U_2$ durchgefahren und einige Messerte aufgenommen werden. Danach werden zusätzlich die genauen Maxima ausgemessen um später daraus die Anregungsspannung bzw. Anregungsenergie aus dem Mittelwert der Differenzspannungen $U_{\Delta}$ (zwischen zwei nebeneinander liegenden Maxima) zu bestimmen.
-Aus der Lage des ersten Maximum soll später die Kontaktspannung zwischen Anode und Kathode bestimmt werden.
+Zuerst muss die Franck-Hertz Röhre (Quecksilber) vorgeheizt werden (die Betriebstemperatur von 175$^{\circ}$ konnte an unserem Gerät nicht verstellt werden), $\frac{U_2}{10}$ (Kanal 1 des Oszilloskops := X-Achse) und $U_A$ (Kanal 2 des Oszilloskops := Y-Achse) an das Oszilloskop angeschlossen werden und die Franck-Hertz Kurve mit der Sägezahnspannung konfiguriert werden. Dazu können die Saugspannung $U_1$ und die Bremsspannung $U_3$ am Franck-Hertz Betriebsgerät verdreht, sowie am Oszilloskop die Auflösung in X- und Y-Richtung und die Verschiebung der Kurve auf der X- und Y-Achse eingestellt werden. Sobald die Franck-Hertz Kurve am Oszilloskop gut zu erkennen ist, kann das Franck-Hertz Betriebsgerät auf den manuellen Modus umgestellt werden. Nun kann die Kurve von Hand durch verändern der Beschleunigungsspannung $U_2$ durchgefahren und einige Messerte aufgenommen werden. Danach werden zusätzlich die genauen Maxima ausgemessen um später die Anregungsspannung bzw. Anregungsenergie aus dem Mittelwert der Differenzspannungen $U_{\Delta}$ (zwischen zwei nebeneinander liegenden Maxima) zu bestimmen.
+Zum Schluss wollen wir die Kontaktpotentialdifferenz zwischen Anode und Kathode bestimmen.
+Die Beschleunigungsspannung bis zum ersten Maximum ist dafür gleichzusetzen mit der Anregungsspannung der Quecksilberatome und der Kontaktpotentialdifferenz zwischen Anode und Kathode.
 \subsection{Verwendete Formeln}
 %es kann eine legende angefertigt werden aber die selbstverständlichen buchstaben müssen nicht extra erklärt werden.
 %hier kommen mit knappen erklärungen nur die verwendeten formeln, sowie die zugehörige Fehlerrechnung rein.
@@ -90,112 +89,38 @@ Die Differenzspannung $U_{\Delta}$ wird aus der Potentialdifferenz zweier nebene
 \begin{align}
 U_{\Delta} = U_{max1}-U_{max2}
 \end{align}
+Mit dem Fehler:
+\begin{align}
+\Delta_{U_{\Delta}} = \sqrt{\Delta_{U_{max1}}^2+\Delta_{U_{max2}}^2}
+\end{align}
+Um daraus die Anregungsspannung $U_A$ zu bestimmen werden die Spannungen $U_{\Delta}$ gemittelt:
+\begin{align}
+U_A = \frac{U_{\Delta_1}+\ldots+U_{\Delta_n}}{n}
+\end{align}
+Mit dem Fehler:
+\begin{align}
+\Delta_{U_A} = \sqrt{
+\left(\frac{\Delta_{U_{\Delta_1}}}{n}\right)^2+
+\ldots+
+\left(\frac{\Delta_{U_{\Delta_n}}}{n}\right)^2}
+\end{align}
+Die Kontaktpotentialdifferenz $U_{kp}$ wird nach folgender Formel berechnet:
+\begin{align}
+U_{kp} = U_{max1} + U_1 - U_A
+\end{align}
+$U_1$ ist dabei die Spannung zwischen erstem Gitter und der Kathode ($U_1$ trägt genauso wie $U_{max1}$ zur Beschleunigung der Elektronen bei) und $U_{max1}$ die Spannung zwischen dem ersten Gitter und dem ersten Maximum.
+Der Fehler ergibt sich nach:
+\begin{align}
+\Delta_{U_{kp}} = \sqrt{
+\left(\Delta_{U_{max1}}\right)^2+
+\left(\Delta_{U_1}\right)^2+
+\left(\Delta_{U_A}\right)^2}
+\end{align}
 \subsection{Messergebnisse}
 %hier werden die messwerte in !übersichtlichen! tabellen angegeben
 %falls zu viele kleine tabellen entstehen ist es sinnoll eine große tabelle daraus zu machen
 %anders herum müssen zu große tabellen mit dem [scale] befehl scaliert werden oder in zwei kleinere tabellen aufgeteilt werden.
 %es ist wichtig vor !jeder! tabelle zu sagen, was gemessen wurde und wie wir unsere fehler gewäht haben. aber vor allem muss ausreichend !erklärt! werden, !warum! wir unsere fehler grade so gewählt haben.
-
-In der folgenden Tabelle sind die Saugspannung, die Bremsspannung und die Temperatur eingetragen. Die Fehler wurden alle über die Ableseungenauigkeit bestimmt.
-
-\begin{table}[htbp]
-\caption{Materialeigenschaften des Versuchsaufbaus}
-\begin{center}
-\begin{tabular}{|l|l|}
-\hline
-U\_1/V & Fehler/V \\ \hline
-\multicolumn{1}{|r|}{5,04} & \multicolumn{1}{r|}{0,01} \\ \hline
-U\_3/V & Fehler/V \\ \hline
-\multicolumn{1}{|r|}{2,01} & \multicolumn{1}{r|}{0,01} \\ \hline
-T/$^\circ$ & Fehler/$^\circ$ \\ \hline
-\multicolumn{1}{|r|}{175} & \multicolumn{1}{r|}{1} \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:eingenschaften}
-\end{table}
-
-In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wurde mit der Ableseungenauigkeit angenommen und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls hinzu addiert.
-
-\begin{table}[htbp]
-\caption{Messung des Anodenstroms in Abhängigkeit der Beschleunigungsspannung in Bereich von 0 bis 29 Volt}
-\begin{center}
-\begin{tabular}{|r|r|r|r|}
-\hline
-\multicolumn{1}{|l|}{U\_2/V} & \multicolumn{1}{l|}{Fehler/V} & \multicolumn{1}{l|}{I\_A/nA} & \multicolumn{1}{l|}{Fehler/nA} \\ \hline
-0 & 0,1 & -0,04 & 0,01 \\ \hline
-1 & 0,1 & 0,02 & 0,01 \\ \hline
-2 & 0,1 & 0,28 & 0,01 \\ \hline
-3 & 0,1 & 0,38 & 0,01 \\ \hline
-4 & 0,1 & 0,3 & 0,01 \\ \hline
-5 & 0,1 & 0,86 & 0,01 \\ \hline
-6 & 0,1 & 1,95 & 0,01 \\ \hline
-7 & 0,1 & 1,12 & 0,01 \\ \hline
-8 & 0,1 & 0,62 & 0,01 \\ \hline
-9 & 0,1 & 0,98 & 0,01 \\ \hline
-10 & 0,1 & 2,59 & 0,01 \\ \hline
-11 & 0,1 & 4 & 0,01 \\ \hline
-12 & 0,1 & 1,84 & 0,01 \\ \hline
-13 & 0,1 & 0,91 & 0,01 \\ \hline
-14 & 0,1 & 1,7 & 0,01 \\ \hline
-15 & 0,1 & 4,25 & 0,01 \\ \hline
-16 & 0,1 & 5,72 & 0,01 \\ \hline
-17 & 0,1 & 2,59 & 0,06 \\ \hline
-18 & 0,1 & 1,37 & 0,01 \\ \hline
-19 & 0,1 & 2,49 & 0,01 \\ \hline
-20 & 0,1 & 5,83 & 0,01 \\ \hline
-21 & 0,1 & 7,3 & 0,08 \\ \hline
-22 & 0,1 & 3,52 & 0,08 \\ \hline
-23 & 0,1 & 1,95 & 0,08 \\ \hline
-24 & 0,1 & 3,41 & 0,08 \\ \hline
-25 & 0,1 & 7,53 & 0,08 \\ \hline
-26 & 0,1 & 9,1 & 0,2 \\ \hline
-27 & 0,1 & 5,27 & 0,1 \\ \hline
-28 & 0,1 & 3,03 & 0,1 \\ \hline
-29 & 0,1 & 4,7 & 0,1 \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:q_daten}
-\end{table}
-
-In der Tabelle sind die Daten der Bestimmung der Maxima der Frank-Hertz-Kurve. Die Fehler wurde mit der Ableseungenauigkeit angenommen und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls hinzu addiert.
-
-\begin{table}[htbp]
-\caption{Messung desMaxima des  Anodenstroms in Abhängigkeit der Beschleunigungspannung}
-\begin{center}
-\begin{tabular}{|r|r|r|r|r|}
-\hline
-\multicolumn{1}{|l|}{Ordnung} & \multicolumn{1}{l|}{U\_2/V} & \multicolumn{1}{l|}{Fehler/V} & \multicolumn{1}{l|}{I\_A/nA} & \multicolumn{1}{l|}{Fehler/nA} \\ \hline
-1 & 2,4 & 0,1 & 0,23 & 0,02 \\ \hline
-2 & 7,2 & 0,1 & 1,22 & 0,02 \\ \hline
-3 & 11,8 & 0,1 & 3,32 & 0,02 \\ \hline
-4 & 16,6 & 0,1 & 5,92 & 0,02 \\ \hline
-5 & 21,6 & 0,1 & 7,97 & 0,02 \\ \hline
-6 & 26,7 & 0,1 & 10,11 & 0,1 \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:q__max_messung}
-\end{table}
-
-In der folgende Tabelle sind die aus dem Plot bestimmten Maxima, der Fehler wurde doppelt so groß wie beim manuellem Bestimmend der Maxima, da die Daten mit einem cspline verbunden wurden.
-
-\begin{table}[htbp]
-\caption{Maxima der Frank-Hertz-Kurve, aus dem Plot abgelesen}
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline
-\multicolumn{1}{|l|}{U\_2/V} & \multicolumn{1}{l|}{Fehler/V} \\ \hline
-3,7 & 0,2 \\ \hline
-7 & 0,2 \\ \hline
-11,9 & 0,2 \\ \hline
-16,8 & 0,2 \\ \hline
-21,8 & 0,2 \\ \hline
-26,8 & 0,2 \\ \hline
-\end{tabular}
-\end{center}
-\label{tab:q__max_messung_g}
-\end{table}
-
-
 \subsection{Auswertung}
 %hier sollen zuerst !alle! errechneten werte entweder in ganzen Sätzen genannt, oder in tabellen(übersichtilicher) dargestellt, sowie auf die verwendeten formeln verwiesen werden. die referenzierung der formel kann in der überschrift stehen.
 %es soll immer kurz erwähnt werden, warum wir das ganze ausrechnen bzw. was wir dor ausrechnen.
@@ -204,19 +129,14 @@ In der folgende Tabelle sind die aus dem Plot bestimmten Maxima, der Fehler wurd
 %es muss bei jedem fit erklärt werden, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung die richtige größe hat und die Legende im plot nicht die Messwerte verdeckt
 %zusätzlich soll in diesem teil die aufgabenstellung abgehandelt werden.
-
-
 \subsection{Diskussion}
 %es geht hier immer darum die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereiander zu vergleichen.
 %dafür kann zu einen genannt werden, in welchem fehlerintervall des messwertes der literaturwert oder der vergleichswert liegt, und zum anderen der relative anteil des fehlers am messwert bestimmt, und damit die qualität unserer messung abgeschätzt werden.
 %in einem satz soll dann kurz angesprochen werde, wie dut unser fehler und damit unsere messung also ist.
 %nun sollte kurz angesprochen werden, wie systematische fehler unsere messung beeinflusst haben könnten.
 %Zum schluss ist es wichtig anzusprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-\section{Fazit}
-%im fazit soll nochmal alles zusammengefasst werden und der verlauf der messung abgeschätzt werden
-%gravierende sytematische probleme bei den messungen müssen nochmal betont und die wertigkeit unserer ergebnisse sollte nocheinmal eingeordnet werden.
 
-\section{Franck-Hertz-Kurve für Neon}
+\section{Franck-Hertz Versuch für Neon}
 %hier am besten kurz das ziel dieses versuchsteiles ansprechen, damit wir keine zwei überschriften übereinander haben!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Ziel der Messung ist es die Franck-Hertz-Kurve für Neon aufzunehmen und aus ihr die Energiedifferenz zwischen Grund- und angeregtem Zustand zu bestimmen, sowie die Kontaktpotentialdifferenz.
@@ -228,11 +148,13 @@ Ziel der Messung ist es die Franck-Hertz-Kurve für Neon aufzunehmen und aus ihr
 %es ist wichtig präzize zu erklären wie wir bei dem versuch vorgegangen sind und was wir tuen mussten.
 Zuerst muss die Franck-Hertz Röhre (Neon) $\frac{U_2}{10}$ (Kanal 1 des Oszilloskops := X-Achse) und $U_A$ (Kanal 2 des Oszilloskops := Y-Achse) an das Oszilloskop angeschlossen werden und die Franck-Hertz Kurve mit der Sägezahnspannung konfiguriert werden. Dazu können die Saugspannung $U_1$ und die Bremsspannung $U_3$ am Franck-Hertz Betriebsgerät verdreht, sowie
 am Oszilloskop die Auflösung in X- und Y-Richtung und die Verschiebung der Kurve auf der X- und Y-Achse eingestellt werden.
-Sobald die Franck-Hertz Kurve am Oszilloskop gut zu erkennen ist, kann das Franck-Hertz Gerät auf den manuellen Modus umgestellt werden. Nun kann die Kurve von Hand durch verändern der Beschleunigungsspannung $U_2$ durchgefahren und einige Messerte aufgenommen werden. Danach werden zusätzlich die genauen Maxima ausgemessen um später daraus die Anregungsspannung bzw. Anregungsenergie aus dem Mittelwert der Differenzspannungen $U_{\Delta}$ (zwischen zwei nebeneinander liegenden Maxima) zu bestimmen.
-Aus der Lage des ersten Maximum soll später die Kontaktspannung zwischen Anode und Kathode bestimmt werden
+Sobald die Franck-Hertz Kurve am Oszilloskop gut zu erkennen ist, kann das Franck-Hertz Betriebsgerät auf den manuellen Modus umgestellt werden. Nun kann die Kurve von Hand durch verändern der Beschleunigungsspannung $U_2$ durchgefahren und einige Messerte aufgenommen werden. Danach werden zusätzlich die genauen Maxima ausgemessen um später die Anregungsspannung bzw. Anregungsenergie aus dem Mittelwert der Differenzspannungen $U_{\Delta}$ (zwischen zwei nebeneinander liegenden Maxima) zu bestimmen.
+Zum Schluss wollen wir die Kontaktpotentialdifferenz zwischen Anode und Kathode bestimmen.
+Die Beschleunigungsspannung bis zum ersten Maximum ist dafür gleichzusetzen mit der Anregungsspannung der Quecksilberatome und der Kontaktpotentialdifferenz zwischen Anode und Kathode.
 \subsection{Verwendete Formeln}
 %es kann eine legende angefertigt werden aber die selbstverständlichen buchstaben müssen nicht extra erklärt werden.
 %hier kommen mit knappen erklärungen nur die verwendeten formeln, sowie die zugehörige Fehlerrechnung rein.
+Es wurden für den Franck-Hertz Versuch mit Neon die gleichen Formeln verwendet wie für Quecksilberdampf. (vgl. Franck-Hertz Versuch für Quecksilber 3.3)
 \subsection{Messergebnisse}
 %hier werden die messwerte in !übersichtlichen! tabellen angegeben
 %falls zu viele kleine tabellen entstehen ist es sinnoll eine große tabelle daraus zu machen
