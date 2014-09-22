@@ -69,6 +69,31 @@ Beim diesem Versuch wird ein Experiment von Franck und Hertz aus dem Jahre 1914 
 \item	Spannungsteller für U$_2$
 \end{enumerate}
 
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.3]{skizze_rohr.JPG}
+  	\caption[Schaltskizze der Franck-Hertz-Röhre]{Schaltskizze der Franck-Hertz-Röhre}
+  \label{fig:abb_versuch_3}
+\end{figure}
+
+\begin{itemize}
+\item	f,f$_\text{k}$:		Wechselspannung	zum betrieb der Glühkathode
+
+\item	g$_1$:				Gitter zum absaugen der Elektronen
+
+\item	U$_1$:				Absaugspannung
+
+\item	U$_2$:				Beschleunigungsspannung
+
+\item	g$_2$:				Bremsgitter
+
+\item	U$_3$:				Bremsspannung
+
+\item	I$_\text{A}$:		Anodenstrom
+
+\item	U$_\text{A}$:		Anodenspannung
+\end{itemize}
+
 \section{Franck-Hertz Versuch für Quecksilber}
 %hier am besten kurz das ziel dieses versuchsteiles ansprechen, damit wir keine zwei überschriften übereinander haben!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -139,7 +164,7 @@ U\_1/V & Fehler/V \\ \hline
 \multicolumn{1}{|r|}{5,04} & \multicolumn{1}{r|}{0,01} \\ \hline
 U\_3/V & Fehler/V \\ \hline
 \multicolumn{1}{|r|}{2,01} & \multicolumn{1}{r|}{0,01} \\ \hline
-T/$^\circ$ & Fehler/$^\circ$ \\ \hline
+T/$^\circ C$ & Fehler/$^\circ C$ \\ \hline
 \multicolumn{1}{|r|}{175} & \multicolumn{1}{r|}{1} \\ \hline
 \end{tabular}
 \end{center}
@@ -252,7 +277,7 @@ Trägt man die Messwerte graphisch auf, so ergibt sich der folgende Graph.
 Die Messdaten wurden mit csplines versehen, was kein physikalisches Modell darstellt sondern zur besseren Darstellung dient. Für den Plot wurden die Daten aus Tabelle \ref{tab:q_daten} und Tabelle \ref{tab:q__max_messung} verwendet.
 
 Die Kontaktpotentialdifferenz wurde nach Gleichung \ref{eqn:kp} und
-der Fehler nach Gleichung \ref{eqn:kp_delta}  bestimmt. Dabei ergab sich ein Wert von \unit[0,18 $\pm$ 0,33]{V}.
+der Fehler nach Gleichung \ref{eqn:kp_delta}  bestimmt. Dabei ergab sich ein Wert von \unit[2,58 $\pm$ 0,33]{V}.
 
 \subsection{Diskussion}
 %es geht hier immer darum die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereiander zu vergleichen.
@@ -270,14 +295,34 @@ Ziel der Messung ist es die Franck-Hertz-Kurve für Neon aufzunehmen und aus ihr
 
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau soll hier rein, foto geht auch aber es muss erklärt werden wie das ganze funktioniert und nochmal auf spezielle einstellungen eingegangen werden! z.b. welche knöpfe wir an unseren geräten für die messung verdreht haben.
+
+Der Versuchsaufbau besteht aus einer Frank-Hertz-Röhre, die mit Neon gefüllt ist, einem Franck-Hertz Betriebsgerät und einem Oszilloskop.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.3]{aufbau_n.pdf}
+  	\caption[Abbildung des Versuchsaufbaus für Neon]{Abbildung des Versuchsaufbaus für Neon}
+  \label{fig:abb_versuch_3}
+\end{figure}
+
+\begin{enumerate}
+\item	Franck-Hertz-Röhre
+
+\item	Franck-Hertz Betriebsgerät
+
+\item	Oszilloskop
+\end{enumerate}
+
 \subsection{Versuchsdurchführung}
 %hier soll hauptsächlich rein was wir machen, warum wir das machen und mit welchem ziel.
 %es ist wichtig präzize zu erklären wie wir bei dem versuch vorgegangen sind und was wir tuen mussten.
+
 Zuerst muss die Franck-Hertz Röhre (Neon) $\frac{U_2}{10}$ (Kanal 1 des Oszilloskops := X-Achse) und $U_A$ (Kanal 2 des Oszilloskops := Y-Achse) an das Oszilloskop angeschlossen werden und die Franck-Hertz Kurve mit der Sägezahnspannung konfiguriert werden. Dazu können die Saugspannung $U_1$ und die Bremsspannung $U_3$ am Franck-Hertz Betriebsgerät verdreht, sowie
 am Oszilloskop die Auflösung in X- und Y-Richtung und die Verschiebung der Kurve auf der X- und Y-Achse eingestellt werden.
 Sobald die Franck-Hertz Kurve am Oszilloskop gut zu erkennen ist, kann das Franck-Hertz Betriebsgerät auf den manuellen Modus umgestellt werden. Nun kann die Kurve von Hand durch verändern der Beschleunigungsspannung $U_2$ durchgefahren und einige Messerte aufgenommen werden. Danach werden zusätzlich die genauen Maxima ausgemessen um später die Anregungsspannung bzw. Anregungsenergie aus dem Mittelwert der Differenzspannungen $U_{\Delta}$ (zwischen zwei nebeneinander liegenden Maxima) zu bestimmen.
 Zum Schluss wollen wir die Kontaktpotentialdifferenz zwischen Anode und Kathode bestimmen.
 Die Beschleunigungsspannung bis zum ersten Maximum ist dafür gleichzusetzen mit der Anregungsspannung der Quecksilberatome und der Kontaktpotentialdifferenz zwischen Anode und Kathode.
+
 \subsection{Verwendete Formeln}
 %es kann eine legende angefertigt werden aber die selbstverständlichen buchstaben müssen nicht extra erklärt werden.
 %hier kommen mit knappen erklärungen nur die verwendeten formeln, sowie die zugehörige Fehlerrechnung rein.
@@ -287,6 +332,26 @@ Es wurden für den Franck-Hertz Versuch mit Neon die gleichen Formeln verwendet 
 %falls zu viele kleine tabellen entstehen ist es sinnoll eine große tabelle daraus zu machen
 %anders herum müssen zu große tabellen mit dem [scale] befehl scaliert werden oder in zwei kleinere tabellen aufgeteilt werden.
 %es ist wichtig vor !jeder! tabelle zu sagen, was gemessen wurde und wie wir unsere fehler gewäht haben. aber vor allem muss ausreichend !erklärt! werden, !warum! wir unsere fehler grade so gewählt haben.\\
+
+In der folgenden Tabelle sind die Saug- und Bremsspannung für die Messung der Frank-Hertz-Kurve für Neon eingetragen. Die angegebenen Fehler sind die Ablesefehler.
+
+\begin{table}[htbp]
+\caption{Einstellung der Saug- und Bremsspannung}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+U\_1/V & Fehler/V \\ \hline
+\multicolumn{1}{|r|}{3,06} & \multicolumn{1}{r|}{0,01} \\ \hline
+U\_3/V & Fehler/V \\ \hline
+\multicolumn{1}{|r|}{5,78} & \multicolumn{1}{r|}{0,01} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:material}
+\end{table}
+
+
+In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wurden nach der Ableseungenauigkeit gewählt und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls dazu addiert.
+
 \begin{table}[H]
 \caption{Messdaten der Franck-Hertz Kurve für Neon}
 \begin{center}
@@ -342,6 +407,7 @@ Es wurden für den Franck-Hertz Versuch mit Neon die gleichen Formeln verwendet 
 Die Spannungsdifferenz $U_\Delta$ sollte nach Gleichung \ref{eqn:u_d} und der Fehler nach Gleichung \ref{eqn:u_d_delta} berechnet werden.
 Da unser erstes Maximum sehr schlecht zu erkennen ist, haben wir bei den Maxima für $U_A$ das zweite $U_\Delta$ angenommen.
 Bei den Minima wurden die gleichen Formeln verwendet, wobei $U_max$ durch $U_min$ zu ersetzen ist. Für die Berechnung von $U_A$ aus den Minima wurde Gleichung \ref{eqn:u_a} und für den Fehler Gleichung \ref{eqn:u_a_delta} verwendet. ($U_min$ durch $U_max$ ersetzen)
+
 \begin{table}[H]
 \caption{Anregespannungen für Neon (Messdaten aus Tabelle ??)}
 \begin{center}
@@ -363,7 +429,9 @@ U\_A & Fehler \\ \hline
 \end{center}
 \label{tab: auswertung_n}
 \end{table}
+
 Graphisch ergab sich der folgende Plot. Die Messdaten wurden mit Geraden verbunden.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale= 1.5]{n_m.pdf}
