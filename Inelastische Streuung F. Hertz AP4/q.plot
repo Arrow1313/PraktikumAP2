@@ -1,6 +1,10 @@
+set yrange [-0.5:11]
 set xlabel "Beschleunigungsspannung/V"
 set ylabel "Anodenstrom/nA"
 
+set key top left
+
+set ytics 1
 set xtics 1
 set mxtics 5
 show mxtics
