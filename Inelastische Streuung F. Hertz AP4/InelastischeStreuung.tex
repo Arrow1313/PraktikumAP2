@@ -147,10 +147,10 @@ T/$^\circ$ & Fehler/$^\circ$ \\ \hline
 \label{tab:eingenschaften}
 \end{table}
 
-In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wurde mit der Ableseungenauigkeit angenommen und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls hinzu addiert.
+In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wurden nach der Ableseungenauigkeit gewählt und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls dazu addiert.
 
 \begin{table}[htbp]
-\caption{Messung des Anodenstroms in Abhängigkeit der Beschleunigungsspannung in Bereich von 0 bis 29 Volt}
+\caption{Messung des Anodenstroms in Abhängigkeit der Beschleunigungsspannung im Bereich von 0 bis 29 Volt}
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
@@ -190,10 +190,10 @@ In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wur
 \label{tab:q_daten}
 \end{table}
 
-In der Tabelle sind die Daten der Bestimmung der Maxima der Frank-Hertz-Kurve. Die Fehler wurde mit der Ableseungenauigkeit angenommen und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls hinzu addiert.
+In der Tabelle sind die Daten der gemessenen Maxima der Frank-Hertz-Kurve. Die Fehler wurden über die Ableseungenauigkeit bestimmt und bei Schwankungen der Anzeige wurde die Hälfte des Schwankungsintervalls dazu addiert.
 
 \begin{table}[htbp]
-\caption{Messung desMaxima des  Anodenstroms in Abhängigkeit der Beschleunigungspannung}
+\caption{Messung der Maxima des  Anodenstroms in Abhängigkeit der Beschleunigungspannung}
 \begin{center}
 \begin{tabular}{|r|r|r|r|r|}
 \hline
@@ -222,7 +222,7 @@ In der Tabelle sind die Daten der Bestimmung der Maxima der Frank-Hertz-Kurve. D
 
 Aus den Messdaten soll die Anregungsspannung und die Kontaktpotentialdifferenz bestimmt werden.
 
-Aus den Bestimmten Maxima wurden die die Differenzen (Gleichung \ref{eqn:u_d}) zwei aufeinander folgender Maxima bestimmt, der Fehler wurde nach Gleichung \ref{eqn:u_d_delta}, dabei ergeben sich die folgende Werte.
+Aus den Bestimmten Maxima wurden die die Differenzen (Gleichung \ref{eqn:u_d}) zweier aufeinander folgender Maxima bestimmt, der Fehler wurde nach Gleichung \ref{eqn:u_d_delta} angenommen, dabei ergeben sich die folgenden Werte.
 
 \begin{table}[H]
 \caption{Differenz der Maxima. Berechnet mit den Werten aus Tabelle \ref{tab:q__max_messung} }
@@ -250,9 +250,10 @@ Trägt man die Messwerte graphisch auf, so ergibt sich der folgende Graph.
 	\caption{Graphische Darstellung des Anodenstroms in Abhängigkeit der Beschleunigungsspannung}
 \end{figure}
 
-Die Messdaten wurden mit csplines versehen, was kein physikalisches Modell darstellt sondern zu besseren Darstellung dient. Für den Plot wurden die Daten aus Tabelle \ref{tab:q_daten} und Tabelle \ref{tab:q__max_messung} verwendet.
+Die Messdaten wurden mit csplines versehen, was kein physikalisches Modell darstellt sondern zur besseren Darstellung dient. Für den Plot wurden die Daten aus Tabelle \ref{tab:q_daten} und Tabelle \ref{tab:q__max_messung} verwendet.
 
-Nach Gleichung \ref{eqn:kp} wurden die Kontaktpotentialdifferenz und nach Gleichung \ref{eqn:kp_delta} der Fehler bestimmt. Dabei ergab sich eine Wert von \unit[0,18 $\pm$ 0,33]{V}.
+Die Kontaktpotentialdifferenz wurde nach Gleichung \ref{eqn:kp} und
+der Fehler nach Gleichung \ref{eqn:kp_delta}  bestimmt. Dabei ergab sich ein Wert von \unit[0,18 $\pm$ 0,33]{V}.
 
 \subsection{Diskussion}
 %es geht hier immer darum die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereiander zu vergleichen.
