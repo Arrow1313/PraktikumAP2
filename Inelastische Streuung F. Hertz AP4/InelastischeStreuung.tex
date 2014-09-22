@@ -285,7 +285,7 @@ Aus den Bestimmten Maxima wurden die die Spannungsdifferenzen (Gleichung \ref{eq
 \label{tab:q__diff}
 \end{table}
 
-Aus den Werten wurde dann der Mittelwert nach Gleichung \ref{eqn:u_a} und der Fehler nach Gleichung \ref{eqn:u_a_delta} bestimmt, dabei ergibt sich ein Wert von \unit[4,86 $\pm$ 0,3]{eV} für die Anregungsspannung.
+Aus den Werten wurde dann der Mittelwert nach Gleichung \ref{eqn:u_a} und der Fehler nach Gleichung \ref{eqn:u_a_delta} bestimmt, dabei ergibt sich ein Wert von \unit[4,86 $\pm$ 0,1]{eV} für die Anregungsspannung.
 
 Trägt man die Messwerte graphisch auf, so ergibt sich der folgende Graph.
 
@@ -417,6 +417,27 @@ In der folgende Tabelle sind die Messdaten der Frank-Hertz-Kurve, die Fehler wur
 \label{tab: daten_n}
 \end{table}
 
+\begin{table}[htbp]
+\caption{Gemesse Minima und Maxima, der Frank-Hertz-Kurve für Neon}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{Maxima} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+U\_2/V & I\_A/nA & Fehler/V & Fehler/nA \\ \hline
+15,8 & 4,9 & 0,1 & 0,02 \\ \hline
+32,6 & 8,4 & 0,1 & 0,02 \\ \hline
+50,6 & 11,01 & 0,1 & 0,02 \\ \hline
+\multicolumn{1}{|l|}{Minima} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+U\_2/V & I\_A/nA & Fehler/V & Fehler/nA \\ \hline
+19,7 & -0,04 & 0,1 & 0,02 \\ \hline
+38,2 & 1,57 & 0,1 & 0,02 \\ \hline
+57 & 7,4 & 0,1 & 0,02 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:n_m}
+\end{table}
+
+
 \subsection{Auswertung}
 %hier sollen zuerst !alle! errechneten werte entweder in ganzen Sätzen genannt, oder in tabellen(übersichtilicher) dargestellt, sowie auf die verwendeten formeln verwiesen werden. die referenzierung der formel kann in der überschrift stehen.
 %es soll immer kurz erwähnt werden, warum wir das ganze ausrechnen bzw. was wir dor ausrechnen.
@@ -431,7 +452,7 @@ Bei den Minima wurden die gleichen Formeln verwendet, wobei $U_{max}$ durch $U_{
 Bei den Minima wurden die gleichen Formeln verwendet, wobei $U_{max}$ durch $U_{min}$ zu ersetzen ist. Für die Berechnung von $U_A$ aus den Minima wurde Gleichung \ref{eqn:u_a} und für den Fehler Gleichung \ref{eqn:u_a_delta} verwendet. ($U_{min}$ durch $U_{max}$ ersetzen)
 
 \begin{table}[H]
-\caption{Anregespannungen für Neon (Messdaten aus Tabelle ??)}
+\caption{Anregespannungen für Neon (Messdaten aus Tabelle \ref{tab:n_m})}
 \begin{center}
 \begin{tabular}{|r|r|}
 \hline
@@ -446,7 +467,7 @@ U\_$\Delta$ & Fehler \\ \hline
 18.5 & 0.1 \\ \hline
 18.8 & 0.1 \\ \hline
 U\_A & Fehler \\ \hline
-18.65 & 0.2 \\ \hline
+18.65 & 0.1 \\ \hline
 \end{tabular}
 \end{center}
 \label{tab: auswertung_n}
@@ -469,6 +490,9 @@ Daraus ergibt sich eine Kontaktspannung von \unit[0,86$\pm$0,17]{V}.
 %in einem satz soll dann kurz angesprochen werde, wie dut unser fehler und damit unsere messung also ist.
 %nun sollte kurz angesprochen werden, wie systematische fehler unsere messung beeinflusst haben könnten.
 %Zum schluss ist es wichtig anzusprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+
+Bei Neon wird eine Anregungsspannung von \unit[18,4 bis 19,0]{eV} erwartet \footnote{Quelle: http://de.wikipedia.org/wiki/Franck-Hertz-Versuch aufgerufen am 22.09.2014 um 16:37 Uhr}. Wir haben eine Anregungsspannung von \unit[18,0 $\pm$ 0,1]{eV} für die Minima und für die Maxima ein Wert von \unit[18,65 $\pm$ 0,1]{eV}. Der Wert der Maxima weicht um 3,7\% ab, der Wert der Minima weicht um 0,23\% ab. Der Wert für die Minima liegt innerhalb des $\sigma_1$-Intervalls.
+
 \section{Fazit}
 %im fazit soll nochmal alles zusammengefasst werden und der verlauf der messung abgeschätzt werden
 %gravierende sytematische probleme bei den messungen müssen nochmal betont und die wertigkeit unserer ergebnisse sollte nocheinmal eingeordnet werden.
