@@ -1,0 +1,330 @@
+
+
+*******************************************************************************
+Thu Sep 25 15:11:59 2014
+
+
+FIT:    data read from "kreis_1.dat"
+        format = z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 14.5659           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.754003
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.33657e-07
+rel. change during last iteration : -1.10711e-12
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00037275
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.38943e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.0522632        +/- 0.002309     (4.419%)
+b               = -0.00161604      +/- 0.0008549    (52.9%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.988  1.000 
+
+
+*******************************************************************************
+Thu Sep 25 15:19:55 2014
+
+
+FIT:    data read from "kreis_1.dat"
+        format = z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Thu Sep 25 15:20:04 2014
+
+
+FIT:    data read from "kreis_1.dat"
+        format = z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 14.5659           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.754003
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.33657e-07
+rel. change during last iteration : -1.10711e-12
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00037275
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.38943e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.0522632        +/- 0.002309     (4.419%)
+b               = -0.00161604      +/- 0.0008549    (52.9%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.988  1.000 
+
+
+*******************************************************************************
+Thu Sep 25 15:20:59 2014
+
+
+FIT:    data read from "kreis_1.dat"
+        format = z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 14.5659           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.754003
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.33657e-07
+rel. change during last iteration : -1.10711e-12
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00037275
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.38943e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.0522632        +/- 0.002309     (4.419%)
+b               = -0.00161604      +/- 0.0008549    (52.9%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.988  1.000 
+
+
+*******************************************************************************
+Thu Sep 25 15:27:08 2014
+
+
+FIT:    data read from "kreis_1.dat" using 1:2:3
+        format = x:z:s
+        #datapoints = 8
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 3.51535e+06       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 376.098
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.209954
+rel. change during last iteration : -3.87736e-11
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.187062
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0349923
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.0491798        +/- 0.003427     (6.968%)
+b               = -0.000552062     +/- 0.001129     (204.5%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.993  1.000 
+
+
+*******************************************************************************
+Thu Sep 25 15:27:37 2014
+
+
+FIT:    data read from "kreis_1.dat" using 1:2:4
+        format = x:z:s
+        #datapoints = 8
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.45659e+07       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 754.003
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.833657
+rel. change during last iteration : -1.10961e-12
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.37275
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.138943
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.0522632        +/- 0.002309     (4.419%)
+b               = -0.00161604      +/- 0.0008549    (52.9%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.988  1.000 
+
+
+*******************************************************************************
+Thu Sep 25 15:30:22 2014
+
+
+FIT:    data read from "kreis_2.dat"
+        format = z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 14.2696           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.754003
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.11942e-06
+rel. change during last iteration : -2.77645e-13
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000721044
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.19904e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.076976         +/- 0.004467     (5.803%)
+b               = 0.00309491       +/- 0.001654     (53.43%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.988  1.000 
+
+
+*******************************************************************************
+Thu Sep 25 15:32:33 2014
+
+
+FIT:    data read from "kreis_2.dat" using 1:2:4
+        format = x:z:s
+        #datapoints = 8
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.42696e+07       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 754.003
+
+initial set of free parameter values
+
+m               = 1
+b               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.11942
+rel. change during last iteration : -2.73194e-13
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.721044
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.519904
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 0.076976         +/- 0.004467     (5.803%)
+b               = 0.00309491       +/- 0.001654     (53.43%)
+
+
+correlation matrix of the fit parameters:
+
+               m      b      
+m               1.000 
+b              -0.988  1.000 
