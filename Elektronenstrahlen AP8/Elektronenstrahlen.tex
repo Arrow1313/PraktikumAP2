@@ -52,7 +52,6 @@ Schaltskizze des Fadenstrahlrohrs zur bestimmung der spezifischen Ladung von Ele
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/\~kind/fadenstrahlrohr\_phywe\_0695900d.pdf am 24.09.2014}
 
-\begin{figure}[H]
 \begin{itemize}
 \item	6,3V:		Spannung für den Heitzdraht
 
@@ -60,7 +59,6 @@ Schaltskizze des Fadenstrahlrohrs zur bestimmung der spezifischen Ladung von Ele
 
 \item	0-300V:		Beschleunigungsspannung
 \end{itemize}
-\end{figure}
 
 Schaltskizze der Elektronenbeugungsröhre zur Bestimmung der Gitterkonstanten von Graphit.
 
@@ -72,7 +70,7 @@ Schaltskizze der Elektronenbeugungsröhre zur Bestimmung der Gitterkonstanten vo
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/\~kind/beugungsroehre\_phywe\_0672100d.pdf am 24.09.2014}
 
-\begin{figure}[H]
+
 \begin{itemize}
 \item	H:		Kathodenheizung 
 
@@ -86,7 +84,6 @@ Schaltskizze der Elektronenbeugungsröhre zur Bestimmung der Gitterkonstanten vo
 
 \item	G$_4$:	Gitter zur Fokussierung
 \end{itemize}
-\end{figure}
 
 Das Netzgerät, dass für beide Versuchsaufbauten benötigt wird.
 
@@ -137,7 +134,6 @@ Ziel der Messung ist die Bestimmung der spezifischen Ladung $\frac{e}{m}$ des El
   \label{fig:aufbau_h}
 \end{figure}
 
-\begin{figure}
 \begin{enumerate}
 \item	DMM zur Messung der Gitterspannung
 
@@ -149,7 +145,6 @@ Ziel der Messung ist die Bestimmung der spezifischen Ladung $\frac{e}{m}$ des El
 
 \item	Fadenstrahlrohr und Helmholtzspule
 \end{enumerate}
-\end{figure}
 
 
 \subsection{Versuchsdurchführung}
@@ -162,7 +157,38 @@ In der Mitte zwischen Wehnelt-Zylinder und Anode befindet sich das geerdete Gitt
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
-
+\textbf{Verwendete Bezeichnungen}
+\begin{enumerate}
+\item $B$ := Magnetische Flussdichte im inneren der Helmholtzspulen
+\item $n$ := Windungszahl
+\item $I$ := Strom durch die in Reihe geschalteten Helmholtzspulen
+\item $R$ := Radius der Helmholtzspulen\\
+(wird aus der Versuchsanleitung ohne Fehler angenommen)
+\item $\frac{e}{m}$ := Spezifische Ladung der Elektronen\\
+(experimentell bestimmter Wert soll mit dem Literaturwert von $\unitfrac[1,759\cdot10^{11}]{As}{kg}$ verglichen werden)
+\item $U$ := Beschleunigungsspannung
+\item $r$ := Radius des Elektronenstrahles\\
+(wird anhand einer in der Glaskuppel fest montierten Leiter bestimmt)
+\end{enumerate}
+Für die Berechung des B-Feldes verwenden wir die folgende Formel, welche sich aus dem Biot-Savart-Gesetz und der Superposition der Spulenfelder ergibt.
+\begin{align}
+B = \frac{8\mu_0 n I}{\sqrt{125} R}
+\end{align}
+Da $R$ als fehlerlos angenommen wurde ergibt sich nach Fehlerfortpflanzung der folgende Fehler:
+\begin{align}
+\Delta_B = \frac{8\mu_0 n \Delta_I}{\sqrt{125} R}
+\end{align}
+Für die Berechung der spezifischen Ladung $\frac{e}{m}$ verwenden wir die Formel:
+\begin{align}
+\frac{e}{m} = \frac{2U}{r^2B^2}
+\end{align}
+Mit dem Fehler:
+\begin{align}
+\Delta_{\frac{e}{m}} = \sqrt{
+\left(\frac{2\Delta_U}{r^2B^2}\right)^2+
+\left(\frac{4U\Delta_r}{r^3B^2}\right)^2+
+\left(\frac{4U\Delta_B}{r^2B^3}\right)^2}
+\end{align}
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -177,7 +203,7 @@ In der folgenden Tabelle sind die Materialeigenschaften, die zur Bestimmung des 
 \begin{tabular}{|l|l|l|}
 \hline
 Materialeigenschaften &  &  \\ \hline
-$\mu_0$/(tm/A) & Windungsanzahl & Spulenradius/m \\ \hline
+$\mu_0$/(Vs/Am) & Windungsanzahl & Spulenradius/m \\ \hline
 \multicolumn{1}{|r|}{0,000001256} & \multicolumn{1}{r|}{154} & \multicolumn{1}{r|}{0,2} \\ \hline
 \end{tabular}
 \end{center}
