@@ -295,6 +295,27 @@ Es wurde eine spezifische Ladung von \unit{1,76 $\cdot 10^{11}$}[$\frac{As}{kg}$
 Ziel des Versuchs ist die Bestimmung der Gitterkonstanten $d_1$ und $d_2$ einer Graphitschicht anhand des Interferenzmusters, welches durch den Beschuss mit Elektronen entsteht. Dabei sollen relativistische Effekte berücksichtigt werden.
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Versuchsaufbau zur Bestimmung der Gitterkonstanten von Graphit.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.3]{aufbau_b.pdf}
+  	\caption[Abbildung des Versuchsaufbaus zur Bestimmung der spezifischen Ladung von Elektronen]{Abbildung des Versuchsaufbaus zur Bestimmung der spezifischen Ladung von Elektronen}
+  \label{fig:aufbau_h}
+\end{figure}
+
+\begin{enumerate}
+\item	Netzgerät
+
+\item	Hochspannungsnetzgerät
+
+\item	Elektronenbeugungsröhre mit Fassung
+
+\item	10m$\Omega$ Vorwiederstand, damit der Anodenstrom den Wert von 1mA nicht überschreitet
+\end{enumerate}
+
+
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -309,6 +330,125 @@ Da die Kristallgitter statistisch angeordnet sind und wir in diesem Versuch nur 
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+In der folgend Tabelle sind die Materialeigenschaften und Einstellungen des Netzgerätes zur Bestimmung der Gitterkonstanten von Graphit eingetragen.
+
+\begin{table}[htbp]
+\caption{Materialeigenschaften und Einstellungen}
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+Materialeigenschaften und Einstellungen \\ \hline
+Glaskolbendurchmesser/m \\ \hline
+\multicolumn{1}{|r|}{0,127} \\ \hline
+Wehneltzylinderspannung/V \\ \hline
+\multicolumn{1}{|r|}{-50} \\ \hline
+Vorbeschleunigungsspannung/V \\ \hline
+\multicolumn{1}{|r|}{0} \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2_m}
+\end{table}
+
+
+In der folgende Tabelle sind die Messdaten zur Bestimmung der zwei Gitterkonstanten von Graphit. Die Fehler wurden mit der Ableseungenauigkeit bestimmt, dabei ergab sich Fehler von 0,1kV für die Beschleunigungsspannung und ein Fehler von 0,001m für den Durchmesser.
+
+\begin{table}[htbp]
+\caption{Messung der Durchmesser in Abhängigkeit der Beschleunigungsspannung}
+\begin{center}
+\begin{tabular}{|r|r|r|}
+\hline
+U$_\text{A}$/kV & Durchmesser\_1/m & Durchmesser\_2/m \\ \hline
+4,5 & 0,023 & 0,04 \\ \hline
+5,5 & 0,021 & 0,035 \\ \hline
+6,5 & 0,019 & 0,033 \\ \hline
+7,5 & 0,017 & 0,031 \\ \hline
+8,5 & 0,016 & 0,03 \\ \hline
+9,5 & 0,015 & 0,029 \\ \hline
+10,5 & 0,015 & 0,027 \\ \hline
+11,5 & 0,014 & 0,025 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:a_2}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Daten für den Plot des ersten Kreises im relativistischen Fall}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U\_A$^{-0,5}$/(1/V)} & \multicolumn{1}{l|}{Durchmesser/m} & \multicolumn{1}{l|}{Fehler/(1/V)} & \multicolumn{1}{l|}{Fehler/m} \\ \hline
+0,0148 & 0,023 & 0,0002 & 0,001 \\ \hline
+0,0134 & 0,021 & 0,0001 & 0,001 \\ \hline
+0,01228 & 0,019 & 0,00009 & 0,001 \\ \hline
+0,01142 & 0,017 & 0,00008 & 0,001 \\ \hline
+0,01071 & 0,016 & 0,00007 & 0,001 \\ \hline
+0,01012 & 0,015 & 0,00005 & 0,001 \\ \hline
+0,00961 & 0,015 & 0,00005 & 0,001 \\ \hline
+0,00917 & 0,014 & 0,00004 & 0,001 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:p_1_r}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Daten für den Plot des zweien Kreises im relativistischen Fall}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U\_A$^{-0,5}$/(1/V)} & \multicolumn{1}{l|}{Durchmesser/m} & \multicolumn{1}{l|}{Fehler(1/V)} & \multicolumn{1}{l|}{Fehler/m} \\ \hline
+0,0148 & 0,04 & 0,0002 & 0,001 \\ \hline
+0,0134 & 0,035 & 0,0001 & 0,001 \\ \hline
+0,01228 & 0,033 & 0,00009 & 0,001 \\ \hline
+0,01142 & 0,031 & 0,00008 & 0,001 \\ \hline
+0,01071 & 0,03 & 0,00006 & 0,001 \\ \hline
+0,01012 & 0,029 & 0,00005 & 0,001 \\ \hline
+0,00961 & 0,027 & 0,00005 & 0,001 \\ \hline
+0,00917 & 0,025 & 0,00005 & 0,001 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:p_2_r}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Daten für den Plot des zweien Kreisen im nicht relativistischen Fall}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U\_A$^{-0,5}$/(1/V)} & \multicolumn{1}{l|}{Durchmesser/m} & \multicolumn{1}{l|}{Fehler(1/V)} & \multicolumn{1}{l|}{Fehler/m} \\ \hline
+0,0149 & 0,023 & 0,0002 & 0,001 \\ \hline
+0,0135 & 0,021 & 0,0001 & 0,001 \\ \hline
+0,01240 & 0,019 & 0,00009 & 0,001 \\ \hline
+0,01155 & 0,017 & 0,00008 & 0,001 \\ \hline
+0,01085 & 0,016 & 0,00006 & 0,001 \\ \hline
+0,01026 & 0,015 & 0,00005 & 0,001 \\ \hline
+0,00976 & 0,015 & 0,00005 & 0,001 \\ \hline
+0,00933 & 0,014 & 0,00004 & 0,001 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:p_1}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Daten für den Plot des zweien Kreisen im nicht relativistischem Fall}
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U\_A$^{-0,5}$/(1/V)} & \multicolumn{1}{l|}{Durchmesser/m} & \multicolumn{1}{l|}{Fehler(1/V)} & \multicolumn{1}{l|}{Fehler/m} \\ \hline
+0,0149 & 0,04 & 0,0002 & 0,001 \\ \hline
+0,0135 & 0,035 & 0,0001 & 0,001 \\ \hline
+0,01240 & 0,033 & 0,00009 & 0,001 \\ \hline
+0,01155 & 0,031 & 0,00008 & 0,001 \\ \hline
+0,01085 & 0,03 & 0,00006 & 0,001 \\ \hline
+0,01026 & 0,029 & 0,00005 & 0,001 \\ \hline
+0,00976 & 0,027 & 0,00005 & 0,001 \\ \hline
+0,00933 & 0,025 & 0,00004 & 0,001 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:p_2}
+\end{table}
+
+
 \subsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -317,6 +457,54 @@ Da die Kristallgitter statistisch angeordnet sind und wir in diesem Versuch nur 
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+Es sollen die zwei Gitterkonstanten von Graphit bestimmt werden, dazu wurde der Durchmesser in Abhängigkeit von $\frac{1}{\sqrt{\text{U}_{\text{A}}}}$ aufgetragen. Da ein linearer Zusammenhang erwartet wird, werden die Messdaten mit f(x)=m$\cdot$x+b gefittet.
+Für den ersten Kreis ergibt sich der folgende Plot (Daten aus Tabelle \ref{tab:p_1_r}).
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 1]{kreis_1.pdf}
+  	\caption[Graphische Darstellung der Messdaten, des ersten Ringes, mit linearem Fit]{Graphische Darstellung der Messdaten, des ersten Ringes, mit linearem Fit}
+  \label{fig:plot_1}
+\end{figure}
+
+Die gefittete Funktion ergab sich mit f(x)=(1,65 $\pm$ 0,07)$\cdot$x-(0.0016 $\pm$ 0,0009), das reduzierte $\chi^2$ ergibt sich mit 0,14.
+Für den zweiten Kreis ergibt sich der folgende Plot (Daten aus Tabelle \ref{tab:p_2_r}).
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 1]{kreis_2.pdf}
+  	\caption[Graphische Darstellung der Messdaten, des zweiten Kreises, mit linearem Fit]{Graphische Darstellung der Messdaten, des zweiten Kreises, mit linearem Fit}
+  \label{fig:plot_1}
+\end{figure}
+
+Der Fit ergab sich mit f(x)=(2,4 $\pm$ 0,1)$\cdot$x+(0,003 $\pm$ 0,002), das reduzierte $\chi^2$ ergibt sich dabei mit 0,52.
+
+Aus der Steigung sollen die Gitterkonstanten berechnet werden, dazu wird Gleichung ?? und Gleichung ?? für den Fehler verwendet. Für die erste Steigung ergibt sich eine Gitterkonstante von (188,3$\pm$8,3)$\cdot 10^{-12}$ pm und für die zweite Steigung ergibt sich eine Gitterkonstante von (127,3$\pm$7,4)$\cdot 10^{-12}$pm.
+
+Unter relativistischer Betrachtung ergeben sich die folgenden Plots (Daten aus Tabelle \ref{tab:p_1}) .
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 1]{kreis_1_r.pdf}
+  	\caption[Graphische Darstellung der Messdaten, des ersten Ringes, mit linearem Fit, unter relativistischer Betrachtung]{Graphische Darstellung der Messdaten, des ersten Ringes, mit linearem Fit, unter relativistischer Betrachtung}
+  \label{fig:plot_1}
+\end{figure}
+
+Die gefittete Funktion ergab sich mit f(x)=(1,65 $\pm$ 0,07)$\cdot$x-(0.0016 $\pm$ 0,0008), das reduzierte $\chi^2$ ergibt sich mit 0,14.
+Für den zweiten Kreis ergibt sich der folgende Plot (Daten aus Tabelle \ref{tab:p_2}).
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 1]{kreis_2_r.pdf}
+  	\caption[Graphische Darstellung der Messdaten, des zweiten Kreises, mit linearem Fit, unter relativistischer Betrachtung]{Graphische Darstellung der Messdaten, des zweiten Kreises, mit linearem Fit, unter relativistischer Betrachtung}
+  \label{fig:plot_1}
+\end{figure}
+
+Der Fit ergab sich mit f(x)=(2,4 $\pm$ 0,1)$\cdot$x+(0,003 $\pm$ 0,002), das reduzierte $\chi^2$ ergibt sich dabei mit 0,52.
+
+Aus der Steigung sollen die Gitterkonstanten berechnet werden, dazu wird Gleichung ?? und Gleichung ?? für den Fehler verwendet. Für die erste Steigung ergibt sich eine Gitterkonstante von(190,3$\pm$8,5)$\cdot 10^{-12}$m und für die zweite Steigung ergibt sich eine Gitterkonstante von (128,7$\pm$7,5)$\cdot 10^{-12}$pm.
+
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?

@@ -1,0 +1,18 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {2}Verwendete Materialien}{3}
+\contentsline {section}{\numberline {3}Bestimmung der spezifischen Masse $\frac {e}{m}$}{5}
+\contentsline {subsection}{\numberline {3.1}Versuchsaufbau}{6}
+\contentsline {subsection}{\numberline {3.2}Versuchsdurchf\IeC {\"u}hrung}{6}
+\contentsline {subsection}{\numberline {3.3}Verwendete Formeln}{7}
+\contentsline {subsection}{\numberline {3.4}Messergebnisse}{7}
+\contentsline {subsection}{\numberline {3.5}Auswertung}{8}
+\contentsline {subsection}{\numberline {3.6}Diskussion}{8}
+\contentsline {section}{\numberline {4}Beugung von Elektronenstrahlen, Verifikation der DeBroglie-Beziehung}{9}
+\contentsline {subsection}{\numberline {4.1}Versuchsaufbau}{9}
+\contentsline {subsection}{\numberline {4.2}Versuchsdurchf\IeC {\"u}hrung}{10}
+\contentsline {subsection}{\numberline {4.3}Verwendete Formeln}{11}
+\contentsline {subsection}{\numberline {4.4}Messergebnisse}{11}
+\contentsline {subsection}{\numberline {4.5}Auswertung}{13}
+\contentsline {subsection}{\numberline {4.6}Diskussion}{15}
+\contentsline {section}{\numberline {5}Fazit}{15}
