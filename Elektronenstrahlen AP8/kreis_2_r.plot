@@ -1,6 +1,10 @@
-set xlabel "U_A^{(-1/2)}/(1/V)"
+set xlabel "1/U_A^{1/2}/(1/V^{1/2})"
 set ylabel "Druchmesser/m"
-
+set xrange [0:0.02]
+set key top left
+set yrange [0:0.045]
+set mxtics 5
+set mytics 5
 f(x) = m*x+b
 
 fit f(x) "kreis_2_r.dat" using 1:2:4 via m,b
